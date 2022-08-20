@@ -1,8 +1,8 @@
-package com.belcompany.oncln
+package com.autG.oncln
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.belcompany.oncln.databinding.ActivityMainBinding
+import com.autG.oncln.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

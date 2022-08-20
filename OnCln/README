@@ -20,8 +20,8 @@ E por final, temos a área de estratégias e logicas, que fica no setor java, de
 a primeira com o nome oncln, que é o principal de todos, lá temos uma coisinha diferente que
 acredito que gostaria de saber, utilizaremos um droid chamado binding, com ele não precisamos
 colocar o caminho inteiro de como chegar ao layout como no antecessor findViewById. Esse droid acaba
-sendo bem mais rápido e fácil de utilizar só precisamos chama-lo pelo nome "binding" e colocar o que
-queremos como por exemplo: binding.idTexto.
+sendo bem mais rápido e fácil de utilizar só precisamos chama-lo pelo apelido "view" e colocar o que
+queremos como por exemplo: view.idTexto.
 Viu como é fácil?.
 Temos também outros dois setores que são usados para os testes assim garantindo um bom
 funcionamento, a final não queremos uma nave nossa parando de funcionar ou responder não é mesmo?

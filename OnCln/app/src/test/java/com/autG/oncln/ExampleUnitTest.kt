@@ -1,4 +1,4 @@
-package com.belcompany.oncln
+package com.autG.oncln
 
 import org.junit.Test
 
