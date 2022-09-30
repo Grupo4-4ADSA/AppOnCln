@@ -86,7 +86,8 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginTop="120dp"
-            android:text="@string/text_suporte_24h"
+            android:fontFamily="@font/readex_pro_medium"
+            android:text="@string/text_botao_suporte"
             android:textAllCaps="false"
             android:textSize="20sp"
 

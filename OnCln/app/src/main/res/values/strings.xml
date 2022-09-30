@@ -4,6 +4,6 @@
     <string name="text_info_contato">Informações de contato</string>
     <string name="text_contato_email">Email: contato@autg.com.br</string>
     <string name="text_contato_telefone">Telefone: (11) 0000-1111</string>
-    <string name="text_suporte_24h">Suporte 24h</string>
+    <string name="text_botao_suporte">Suporte 24h</string>
     <string name="descricao_img_central_ajuda">ilustração de sugestão</string>
 </resources>
