@@ -33,7 +33,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="5dp"
-            android:background="@drawable/gradient" />
+            android:background="@drawable/gradiente" />
     </LinearLayout>
 
 
@@ -91,7 +91,7 @@
             android:textAllCaps="false"
             android:textSize="20sp"
 
-            android:background="@drawable/button_shadow"
+            android:background="@drawable/sombra_botao"
             />
 
     </LinearLayout>

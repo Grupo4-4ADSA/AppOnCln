@@ -6,4 +6,8 @@
     <string name="text_contato_telefone">Telefone: (11) 0000-1111</string>
     <string name="text_botao_suporte">Suporte 24h</string>
     <string name="descricao_img_central_ajuda">ilustração de sugestão</string>
+    <string name="text_configuracoes">Configurações</string>
+    <string name="text_jonas_bezerra">Jonas Bezerra</string>
+    <string name="text_modo_dark">Modo dark toggle</string>
+    <string name="text_alterar_senha">Alterar senha</string>
 </resources>
