@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">OnCln</string>
+    <string name="home">Home</string>
+    <string name="equipments">Equipamentos</string>
+    <string name="rooms">Salas</string>
+    <string name="toSchedule">Agendar</string>
+    <string name="register">Cadastrar</string>
     <string name="text_central_de_ajuda">Central de ajuda</string>
     <string name="text_info_contato">Informações de contato</string>
     <string name="text_contato_email">Email: contato@autg.com.br</string>
