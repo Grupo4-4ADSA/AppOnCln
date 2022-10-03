@@ -82,15 +82,12 @@
             android:textColor="@color/black"
             android:textSize="16sp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginTop="120dp"
-            android:fontFamily="@font/readex_pro_medium"
             android:text="@string/text_botao_suporte"
-            android:textAllCaps="false"
-            android:textSize="20sp"
-
+            style="@style/Botao.Azul"
             android:background="@drawable/sombra_botao"
             />
 
