@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginHorizontal="@dimen/dimen_minimum"
+        android:layout_marginHorizontal="@dimen/dimen_small"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/layout_equipments"
         app:layout_constraintTop_toTopOf="parent">
@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginHorizontal="@dimen/dimen_minimum"
+        android:layout_marginHorizontal="@dimen/dimen_small"
         app:layout_constraintStart_toEndOf="@+id/layout_home"
         app:layout_constraintEnd_toStartOf="@+id/layout_salas"
         app:layout_constraintTop_toTopOf="parent">
@@ -43,7 +43,7 @@
             android:id="@+id/img_equipments"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_home"
+            android:src="@drawable/ic_equipments"
             android:layout_gravity="center"
             />
         <TextView
@@ -59,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginHorizontal="@dimen/dimen_minimum"
+        android:layout_marginHorizontal="@dimen/dimen_small"
         app:layout_constraintStart_toEndOf="@+id/layout_equipments"
         app:layout_constraintEnd_toStartOf="@+id/layout_agendar"
         app:layout_constraintTop_toTopOf="parent">
@@ -67,7 +67,7 @@
             android:id="@+id/img_salas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_home"
+            android:src="@drawable/ic_meeting_room"
             android:layout_gravity="center"
             />
         <TextView
@@ -83,7 +83,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginHorizontal="@dimen/dimen_minimum"
+        android:layout_marginHorizontal="@dimen/dimen_small"
         app:layout_constraintStart_toEndOf="@+id/layout_salas"
         app:layout_constraintEnd_toStartOf="@+id/layout_cadastrar"
         app:layout_constraintTop_toTopOf="parent">
@@ -91,7 +91,7 @@
             android:id="@+id/img_agendar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_home"
+            android:src="@drawable/ic_to_schedule"
             android:layout_gravity="center"
             />
         <TextView
@@ -107,7 +107,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginHorizontal="@dimen/dimen_minimum"
+        android:layout_marginHorizontal="@dimen/dimen_small"
         app:layout_constraintStart_toEndOf="@+id/layout_agendar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -115,7 +115,7 @@
             android:id="@+id/img_cadastrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_home"
+            android:src="@drawable/ic_register"
             android:layout_gravity="center"
             />
         <TextView
