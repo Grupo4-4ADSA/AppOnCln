@@ -9,4 +9,10 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="cor_titulos">#1E2F3B</color>
+    <color name="cor_barra_e_texto">#20577D</color>
+
+    <color name="cor_sombra_botao">#26000000</color>
+    <color name="botao_desligado">#D9D9D9</color>
+
+
 </resources>
