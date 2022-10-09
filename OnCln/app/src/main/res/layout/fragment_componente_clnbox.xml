@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="80dp"
+    android:layout_gravity="top"
+    android:layout_margin="20dp"
+    android:background="@drawable/botao_redondado_componente"
+    android:backgroundTint="@color/botao_desligado"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/caixa"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/img_cln_box"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="10dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/descricao_caixa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/caixa"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:height="18dp"
+                android:fontFamily="@font/readex_pro_medium"
+                android:textColor="@color/cor_barra_e_texto"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="Id: 123" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:height="18dp"
+                android:fontFamily="@font/readex_pro_medium"
+                android:textColor="@color/cor_texto_cnlbox"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="Sala: A" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:height="18dp"
+                android:fontFamily="@font/readex_pro_medium"
+                android:textColor="@color/cor_texto_cnlbox"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="Andar: 1º" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_lixeira_cln_box"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

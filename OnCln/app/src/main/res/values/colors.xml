@@ -13,6 +13,6 @@
 
     <color name="cor_sombra_botao">#26000000</color>
     <color name="botao_desligado">#8E8E8E</color>
-
+    <color name="cor_texto_cnlbox">#656565</color>
 
 </resources>
