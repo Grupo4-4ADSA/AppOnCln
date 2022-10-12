@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragment_central_de_ajuda">
+
+    <fragment
+        android:id="@+id/fragment_central_de_ajuda"
+        android:name="com.autG.oncln.CentralDeAjudaActivity"
+        tools:layout="@layout/activity_central_de_ajuda">
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_configuracoes"
+        android:name="com.autG.oncln.ConfiguracoesActivity"
+        tools:layout="@layout/activity_configuracoes">
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_nav_bar_bottom"
+        android:name="com.autG.oncln.menus.NavBarBottom"
+        tools:layout="@layout/navbar_bottom">
+    </fragment>
+
+
+
+
+</navigation>
