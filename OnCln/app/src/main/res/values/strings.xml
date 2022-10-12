@@ -22,4 +22,20 @@
     <string name="text_salvar_alteracao">Salvar alteração</string>
     <string name="descricao_cancelar_alteracao">Cancelar alteração</string>
     <string name="text_digite_a_senha_antiga">Digite a senha antiga:</string>
+
+
+    <string-array name="activity_cadastro_on_cln_spinner">
+        <item>Selecione a sala</item>
+        <item>Sala 2A</item>
+        <item>Sala 3A</item>
+        <item>Sala 4A</item>
+        <item>Sala 5A</item>
+    </string-array>
+
+    <string-array name="activity_cadastro_equipamento">
+        <item>Selecione um equipamento</item>
+        <item>Ar Condicionado</item>
+        <item>Luz</item>
+        <item>Monitor</item>
+    </string-array>
 </resources>
