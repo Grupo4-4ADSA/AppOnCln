@@ -25,6 +25,8 @@ class ConfiguracoesActivity : AppCompatActivity() {
         binding.botaoAlterarSenha.setOnClickListener {
             janelaDeAlteracaoDeSenha()
         }
+
+        binding.include.textTitulo.text = "Configurações"
     }
 
     fun janelaDeAlteracaoDeSenha() {

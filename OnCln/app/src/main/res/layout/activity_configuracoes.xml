@@ -17,22 +17,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/text_titulo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:height="31dp"
-            android:fontFamily="@font/readex_pro_medium"
-            android:text="@string/text_configuracoes"
-            android:textColor="@color/cor_titulos"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:background="@drawable/gradiente" />
+        <include
+            android:id="@+id/include"
+            layout="@layout/activity_texto"/>
     </LinearLayout>
 
     <LinearLayout
