@@ -11,8 +11,11 @@
     <color name="cor_titulos">#1E2F3B</color>
     <color name="cor_barra_e_texto">#20577D</color>
 
-    <color name="cor_sombra_botao">#26000000</color>
-    <color name="botao_desligado">#8E8E8E</color>
+    <color name="cor_sombra_botao">#40000000</color>
+    <color name="cor_botao_desligado">#8E8E8E</color>
     <color name="cor_texto_cnlbox">#656565</color>
+
+    <color name="cor_equipamento_ligado">#00C720</color>
+    <color name="cor_equipamento_desligado">#E51818</color>
 
 </resources>

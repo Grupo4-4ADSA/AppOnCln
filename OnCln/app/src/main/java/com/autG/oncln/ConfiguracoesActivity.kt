@@ -30,7 +30,7 @@ class ConfiguracoesActivity : AppCompatActivity() {
     fun janelaDeAlteracaoDeSenha() {
         dialogBuilder = AlertDialog.Builder(this)
         val chamandoJanela: View =
-            layoutInflater.inflate(R.layout.activity_pop_up_configuracoes, null)
+            layoutInflater.inflate(R.layout.activity_configuracoes_pop_up, null)
 
         var campoSenhaAntiga: EditText = chamandoJanela.findViewById(R.id.edit_senha_antiga)
         var campoNovaSenha: EditText = chamandoJanela.findViewById(R.id.edit_nova_senha)
