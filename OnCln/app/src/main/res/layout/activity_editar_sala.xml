@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="<Nome e andar da sala>"
+            android:text="Nome e andar da sala"
             android:textColor="@color/cor_titulos"
             android:textSize="25sp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -55,7 +55,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="@dimen/dimen_extra_super_large"
             android:textColor="@color/black"
             android:fontFamily="@font/readex_pro_medium"
             android:textSize="20dp"
@@ -64,8 +64,8 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Digite o nome da sala"
-            app:backgroundTint="@color/grey"
+            android:hint="@string/txt_nome"
+            app:backgroundTint="@color/gray"
             android:textColor="@color/black"
             android:fontFamily="@font/readex_pro_medium"/>
 
@@ -74,15 +74,15 @@
             android:layout_height="match_parent"
             android:textColor="@color/black"
             android:fontFamily="@font/readex_pro_medium"
-            android:textSize="20dp"
+            android:textSize="@dimen/dimen_medium_large_txt"
             android:text="Andar:" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Digite o nome da sala"
+            android:hint="@string/txt_nome"
             android:textColor="@color/black"
-            app:backgroundTint="@color/grey"
+            app:backgroundTint="@color/gray"
             android:fontFamily="@font/readex_pro_medium"/>
 
 
@@ -102,7 +102,7 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:fontFamily="@font/readex_pro_medium"
-        android:textSize="20sp"/>
+        android:textSize="@dimen/dimen_large_txt"/>
 
 
 

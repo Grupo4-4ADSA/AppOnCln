@@ -23,6 +23,12 @@
     <string name="descricao_cancelar_alteracao">Cancelar alteração</string>
     <string name="text_digite_a_senha_antiga">Digite a senha antiga:</string>
 
+    <string name="txt_nome">Insira o nome</string>
+    <string name="txt_quantidade">Insira a quantidade</string>
+    <string name="txt_potencia">Insira a potência</string>
+    <string name="txt_vida">Digite a vida útil</string>
+    <string name="txt_usuario">Usuário:</string>
+    <string name="txt_senha">Senha:</string>
 
     <string-array name="activity_cadastro_on_cln_spinner">
         <item>Selecione a sala</item>

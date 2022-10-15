@@ -22,11 +22,11 @@
         <TextView
             android:id="@+id/txtHome"
             android:layout_width="wrap_content"
-            android:layout_height="35dp"
+            android:layout_height="@dimen/dimen_extra_large"
             android:fontFamily="@font/readex_pro_medium"
             android:text="Cadastrar Equipamento"
             android:textColor="@color/cor_titulos"
-            android:textSize="25dp"
+            android:textSize="@dimen/dimen_large"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -44,7 +44,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="350dp"
+        android:layout_width="@dimen/dimen_megalodon"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -54,96 +54,90 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="90dp"
-            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/dimen_extra_super_large"
             android:fontFamily="@font/readex_pro_medium"
-            android:textSize="16dp"
-            android:text="Sala:" />
+            android:text="Sala:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_medium_txt" />
 
         <Spinner
             android:id="@+id/sala_spinner"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textColorHint="@color/grey"
             android:entries="@array/activity_cadastro_on_cln_spinner"
             android:fontFamily="@font/readex_pro_medium"
-            style="@style/Widget.AppCompat.Spinner.Underlined"
-            app:backgroundTint="@color/grey"
+            android:spinnerMode="dropdown"
             android:textColor="@color/black"
-
-            android:spinnerMode="dropdown" />
+            android:textColorHint="@color/gray"
+            app:backgroundTint="@color/gray" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textColor="@color/black"
             android:fontFamily="@font/readex_pro_medium"
-            android:textSize="16dp"
-            android:text="Tipo equipamento:" />
+            android:text="Tipo equipamento:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_medium_txt" />
 
         <Spinner
             android:id="@+id/equipamento_spinner"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textColorHint="@color/grey"
             android:entries="@array/activity_cadastro_equipamento"
             android:fontFamily="@font/readex_pro_medium"
-            style="@style/Widget.AppCompat.Spinner.Underlined"
-            app:backgroundTint="@color/grey"
+            android:spinnerMode="dropdown"
             android:textColor="@color/black"
-
-            android:spinnerMode="dropdown" />
+            android:textColorHint="@color/gray"
+            app:backgroundTint="@color/gray" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textColor="@color/black"
             android:fontFamily="@font/readex_pro_medium"
-            android:textSize="16dp"
-            android:text="Nome:" />
+            android:text="Nome:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_medium_txt" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:fontFamily="@font/readex_pro_medium"
             android:hint="Digite o nome da sala"
-            android:textColorHint="@color/grey"
-            app:backgroundTint="@color/grey"
             android:textColor="@color/black"
-
-            android:fontFamily="@font/readex_pro_medium"/>
+            android:textColorHint="@color/gray"
+            app:backgroundTint="@color/gray" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textColor="@color/black"
             android:fontFamily="@font/readex_pro_medium"
-            android:textSize="16dp"
-            android:text="Andar:" />
+            android:text="Andar:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_medium_txt" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Digite o andar dessa sala"
-            android:textColorHint="@color/grey"
-            app:backgroundTint="@color/grey"
-            android:textColor="@color/black"
-            android:fontFamily="@font/readex_pro_medium"/>
-
-
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textColor="@color/black"
             android:fontFamily="@font/readex_pro_medium"
-            android:textSize="16dp"
-            android:text="Data final" />
+            android:hint="Digite o andar dessa sala"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            app:backgroundTint="@color/gray" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:fontFamily="@font/readex_pro_medium"
+            android:text="Data final"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_medium_txt" />
+
+        <TextView
             android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="@color/fundo_date"
             android:drawableRight="@drawable/calendar"
 
@@ -159,28 +153,29 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
+
                 <TextView
                     android:id="@+id/quantidade"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:textColor="@color/black"
                     android:fontFamily="@font/readex_pro_medium"
-                    android:textSize="16dp"
                     android:text="Quantidade:"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"/>
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_medium_txt"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    app:layout_constraintTop_toBottomOf="@id/quantidade"
-                    android:hint="Digite a quantidade"
-                    android:textSize="15sp"
-                    android:textColorHint="@color/grey"
                     android:fontFamily="@font/readex_pro_medium"
-                    app:backgroundTint="@color/grey"
+                    android:hint="Digite a quantidade"
                     android:textColor="@color/black"
-
-                    app:layout_constraintLeft_toLeftOf="parent"/>
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/dimen_medium"
+                    app:backgroundTint="@color/gray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/quantidade" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -189,28 +184,30 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
+
                 <TextView
                     android:id="@+id/potencia"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:textColor="@color/black"
                     android:fontFamily="@font/readex_pro_medium"
-                    android:textSize="16dp"
-                    android:textColorHint="@color/grey"
                     android:text="Potência:"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"/>
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/dimen_medium_txt"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    app:layout_constraintTop_toBottomOf="@id/potencia"
-                    android:hint="Digite a quantidade"
-                    android:textSize="15sp"
-                    android:textColorHint="@color/grey"
                     android:fontFamily="@font/readex_pro_medium"
-                    app:backgroundTint="@color/grey"
+                    android:hint="Digite a quantidade"
                     android:textColor="@color/black"
-                    app:layout_constraintRight_toRightOf="parent"/>
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/dimen_medium"
+                    app:backgroundTint="@color/gray"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/potencia" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -219,19 +216,19 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textColor="@color/black"
             android:fontFamily="@font/readex_pro_medium"
-            android:textSize="16dp"
-            android:text="Vida útil:" />
+            android:text="Vida útil:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_medium_txt" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:fontFamily="@font/readex_pro_medium"
             android:hint="Digite a vida útil"
-            android:textColorHint="@color/grey"
-            app:backgroundTint="@color/grey"
             android:textColor="@color/black"
-            android:fontFamily="@font/readex_pro_medium"/>
+            android:textColorHint="@color/gray"
+            app:backgroundTint="@color/gray" />
 
 
     </LinearLayout>
@@ -240,14 +237,14 @@
         android:layout_width="290dp"
         android:layout_height="wrap_content"
         android:background="@drawable/backgroud_button_cadastro"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:fontFamily="@font/readex_pro_medium"
         android:text="Cadastrar"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:fontFamily="@font/readex_pro_medium"
-        android:textSize="20dp"/>
+        android:textSize="@dimen/dimen_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
