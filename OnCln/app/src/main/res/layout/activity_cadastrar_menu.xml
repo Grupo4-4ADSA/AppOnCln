@@ -15,8 +15,7 @@
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
         <include
             android:id="@+id/include"
@@ -28,9 +27,11 @@
             android:layout_marginVertical="@dimen/dimen_extra_large"
             android:src="@drawable/img_background_cadastrar_menu" />
 
-     <include layout="@layout/button_home_cadastrar"/>
-     <include layout="@layout/button_home_cadastrar"/>
-     <include layout="@layout/button_home_cadastrar"/>
+        <include android:id="@+id/salas" layout="@layout/button_home_cadastrar" />
+
+        <include layout="@layout/button_home_cadastrar" />
+
+        <include layout="@layout/button_home_cadastrar" />
     </LinearLayout>
 
 
