@@ -17,13 +17,4 @@
         tools:layout="@layout/activity_configuracoes">
     </fragment>
 
-    <fragment
-        android:id="@+id/fragment_nav_bar_bottom"
-        android:name="com.autG.oncln.menus.NavBarBottom"
-        tools:layout="@layout/navbar_bottom">
-    </fragment>
-
-
-
-
 </navigation>
