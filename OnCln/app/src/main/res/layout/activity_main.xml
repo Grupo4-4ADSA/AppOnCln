@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <include
-        android:id="@+id/include"
-        layout="@layout/activity_configuracoes"/>
+        android:id="@+id/includec"
+        layout="@layout/activity_cadastrar_menu"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

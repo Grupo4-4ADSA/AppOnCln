@@ -23,10 +23,10 @@
             android:layout_gravity="center"
             android:height="31dp"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="@string/text_central_de_ajuda"
             android:textColor="@color/cor_titulos"
             android:textSize="@dimen/dimen_large"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:text="@string/text_central_de_ajuda" />
 
         <View
             android:layout_width="match_parent"

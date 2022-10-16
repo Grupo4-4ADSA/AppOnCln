@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <include
-            android:id="@+id/include"
+            android:id="@+id/includea"
             layout="@layout/activity_texto" />
 
     </LinearLayout>
@@ -68,15 +68,10 @@
             android:text="@string/text_contato_telefone"
             android:textColor="@color/black"
             android:textSize="16sp" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            style="@style/Botao.Azul"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginTop="120dp"
-            android:background="@drawable/sombra_botao"
-            android:text="@string/text_botao_suporte" />
-
     </LinearLayout>
+
+    <include
+        android:id="@+id/include_btn"
+        layout="@layout/botao_azul" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

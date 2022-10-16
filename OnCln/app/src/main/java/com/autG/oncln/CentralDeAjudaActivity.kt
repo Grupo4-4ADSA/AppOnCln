@@ -14,7 +14,7 @@ class CentralDeAjudaActivity : AppCompatActivity() {
         binding = ActivityCentralDeAjudaBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.include.textTitulo.text = "Central de ajuda"
+        binding.includea.textTitulo.text = "Central de ajuda"
 
     }
 

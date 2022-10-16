@@ -26,7 +26,7 @@ class ConfiguracoesActivity : AppCompatActivity() {
             janelaDeAlteracaoDeSenha()
         }
 
-        binding.include.textTitulo.text = "Configurações"
+        binding.includeb.textTitulo.text = "Configurações"
     }
 
     fun janelaDeAlteracaoDeSenha() {
