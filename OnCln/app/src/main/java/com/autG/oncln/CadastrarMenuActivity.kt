@@ -28,6 +28,7 @@ class CadastrarMenuActivity : Fragment() {
 
         binding.btnSalas.buttonBorder.text = "Salas"
 
+
         binding.btnOncln.buttonBorder.text="On Cln"
         binding.btnEquipamentos.buttonBorder.text="Equipamentos"
         return binding.root

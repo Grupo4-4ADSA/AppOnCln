@@ -21,7 +21,7 @@ class CentralDeAjudaActivity : AppCompatActivity() {
 
         binding.btnEquipamentos.buttonBorder.text="Equipamentos"
 
-        binding.btnEquipamentos.buttonBorder.setCompoundDrawables(getDrawable(R.drawable.ic_equipments),
+        binding.btnEquipamentos.buttonBorder.setCompoundDrawables(getDrawable(R.drawable.ic_meeting_room),
             null, null, null)
 
     }

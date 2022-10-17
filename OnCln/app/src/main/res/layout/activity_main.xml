@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <include
-        android:id="@+id/includec"
-        layout="@layout/activity_cadastrar_menu"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
