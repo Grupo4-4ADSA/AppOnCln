@@ -43,6 +43,9 @@
     <string name="txt_power">Potência:</string>
     <string name="txt_life">Vida útil:</string>
     <string name="txt_qrcode">Qr-Code:</string>
+    <string name="txt_agenda">Agendamento</string>
+    <string name="txt_register_edit">Cadastrar/Editar</string>
+    <string name="txt_consuming_equipments">Consumo/Equipamentos</string>
     <string name="hint_life">Digite a vida útil</string>
     <string name="hint_qrcode">Escaneie o qr-code do equipamento</string>
     <string name="hint_room">Digite o nome da sala</string>

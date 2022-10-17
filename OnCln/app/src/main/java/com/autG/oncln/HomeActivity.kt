@@ -5,9 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.autG.oncln.databinding.ActivityHomeBinding
 
-class HomeActivity: Fragment() {
+internal class HomeActivity: Fragment() {
 
     private lateinit var binding: ActivityHomeBinding
 
@@ -22,6 +23,10 @@ class HomeActivity: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        with(binding) {
+            btnAgendamento.setOnClickListener {
+                findNavController().navigate(HomeActivityDirections.actionFragmentHomeToFragmentAgendamento())
+            }
+        }
     }
 }

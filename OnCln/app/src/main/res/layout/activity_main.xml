@@ -9,10 +9,13 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment_container"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        app:defaultNavHost="false"
         tools:layout="@layout/activity_central_de_ajuda"
+        app:navGraph="@navigation/navigation"
         />
 
     <androidx.fragment.app.FragmentContainerView
