@@ -5,5 +5,15 @@
     <dimen name="dimen_medium">16dp</dimen>
     <dimen name="dimen_large">24dp</dimen>
     <dimen name="dimen_extra_large">36dp</dimen>
+    <dimen name="dimen_extra_super_large">90dp</dimen>
+    <dimen name="dimen_extra_super_amazing_large">250dp</dimen>
+    <dimen name="dimen_megalodon">350dp</dimen>
+
+    <dimen name="dimen_small_txt">8sp</dimen>
+    <dimen name="dimen_medium_txt">16sp</dimen>
+    <dimen name="dimen_medium_large_txt">20sp</dimen>
+    <dimen name="dimen_large_txt">24sp</dimen>
+    <dimen name="dimen_extra_large_txt">36sp</dimen>
+
 
 </resources>
