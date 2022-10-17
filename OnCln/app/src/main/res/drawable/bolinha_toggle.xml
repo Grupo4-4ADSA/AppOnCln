@@ -19,4 +19,5 @@
                 android:color="@color/cor_barra_e_texto"/>
         </shape>
     </item>
+
 </selector>
