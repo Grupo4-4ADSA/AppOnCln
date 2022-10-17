@@ -43,4 +43,11 @@
         <item name="cornerRadius">@dimen/dimen_extra_large</item>
         <item name="colorOutline">@color/black</item>
     </style>
+
+    <style name="Switch" parent="Theme.MaterialComponents">
+
+        <item name="colorOnSurface">@color/cor_barra_e_texto</item>
+        <item name="colorSecondary">@color/cor_barra_e_texto</item>
+        <item name="android:padding">0dp</item>
+    </style>
 </resources>

@@ -1,9 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <dimen name="dimen_small_small">4dp</dimen>
     <dimen name="dimen_small">8dp</dimen>
+    <dimen name="dimen_small_medium">12dp</dimen>
     <dimen name="dimen_medium">16dp</dimen>
+    <dimen name="dimen_medium_large">18dp</dimen>
+    <dimen name="dimen_extra_medium_large">20dp</dimen>
     <dimen name="dimen_large">24dp</dimen>
     <dimen name="dimen_extra_large">36dp</dimen>
+    <dimen name="dimen_extra_super_large">90dp</dimen>
+    <dimen name="dimen_extra_super_medium">162dp</dimen>
+    <dimen name="dimen_extra_super_amazing_large">250dp</dimen>
+    <dimen name="dimen_medium_megalodon">300dp</dimen>
+    <dimen name="dimen_megalodon">350dp</dimen>
+
+    <dimen name="dimen_small_txt">8sp</dimen>
+    <dimen name="dimen_small_medium_txt">12sp</dimen>
+    <dimen name="dimen_medium_txt">16sp</dimen>
+    <dimen name="dimen_medium_large_txt">20sp</dimen>
+    <dimen name="dimen_large_txt">24sp</dimen>
+    <dimen name="dimen_extra_large_txt">36sp</dimen>
+
 
 </resources>

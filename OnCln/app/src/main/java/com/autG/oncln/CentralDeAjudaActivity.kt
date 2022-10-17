@@ -2,27 +2,27 @@ package com.autG.oncln
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.core.graphics.drawable.toDrawable
+
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.autG.oncln.databinding.ActivityCentralDeAjudaBinding
-import com.autG.oncln.databinding.ActivityMainBinding
-import com.autG.oncln.databinding.ActivityTextoBinding
 
-class CentralDeAjudaActivity : AppCompatActivity() {
+class CentralDeAjudaActivity:Fragment() {
 
-    lateinit var binding: ActivityCentralDeAjudaBinding
+    private lateinit var binding: ActivityCentralDeAjudaBinding
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        binding = ActivityCentralDeAjudaBinding.inflate(inflater,container,false)
+        return binding.root
+    }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = ActivityCentralDeAjudaBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        binding.includea.textTitulo.text = "Central de ajuda"
-        binding.btnSalas.botaoAzul.text = "Suporte 24 h"
-
-        binding.btnEquipamentos.buttonBorder.text="Equipamentos"
-
-        binding.btnEquipamentos.buttonBorder.setCompoundDrawables(getDrawable(R.drawable.ic_meeting_room),
-            null, null, null)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
     }
 

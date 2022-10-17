@@ -37,9 +37,9 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_gravity="center_vertical"
-                android:background="@drawable/img_cancelar_operacao_configuracoes"
+                android:background="@drawable/img_configuracoes_cancelar"
                 android:contentDescription="@string/descricao_cancelar_alteracao"
-                android:src="@drawable/img_cancelar_operacao_configuracoes" />
+                android:src="@drawable/img_configuracoes_cancelar" />
         </RelativeLayout>
 
         <LinearLayout
