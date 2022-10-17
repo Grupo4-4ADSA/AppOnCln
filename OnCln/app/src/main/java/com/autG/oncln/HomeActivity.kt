@@ -1,23 +1,22 @@
 package com.autG.oncln
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.autG.oncln.databinding.ActivityAgendamentoBinding
+import com.autG.oncln.databinding.ActivityHomeBinding
 
-class Agendamento : Fragment() {
+class HomeActivity: Fragment() {
 
-    private lateinit var binding: ActivityAgendamentoBinding
+    private lateinit var binding: ActivityHomeBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = ActivityAgendamentoBinding.inflate(inflater, container, false)
+        binding = ActivityHomeBinding.inflate(inflater,container,false)
         return binding.root
     }
 
@@ -25,5 +24,4 @@ class Agendamento : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
     }
-
 }

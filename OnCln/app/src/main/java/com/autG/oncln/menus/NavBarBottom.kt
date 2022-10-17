@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat.getColor
 import androidx.fragment.app.Fragment
 import com.autG.oncln.ConfiguracoesActivity
+import com.autG.oncln.HomeActivity
 import com.autG.oncln.MainActivity
 import com.autG.oncln.R
 import com.autG.oncln.databinding.NavbarBottomBinding
@@ -23,7 +24,7 @@ class NavBarBottom :Fragment() {
     ): View? {
         binding = NavbarBottomBinding.inflate(inflater, container, false)
         binding.txtHome.setTextColor(getColor(requireContext(), R.color.cor_barra_e_texto))
-        binding.imgHome.setBackgroundColor(getColor(requireContext(), R.color.cor_barra_e_texto))
+        binding.imgHome.setColorFilter(getColor(requireContext(), R.color.cor_barra_e_texto))
         return binding.root
     }
 
@@ -32,7 +33,7 @@ class NavBarBottom :Fragment() {
 
         with(binding){
             layoutHome.setOnClickListener {
-                (activity as NavigationHost).navigateTo(ConfiguracoesActivity(),addToBackStack = true)
+                (activity as NavigationHost).navigateTo(HomeActivity(),addToBackStack = true)
             }
             layoutEquipments.setOnClickListener {
 
