@@ -70,8 +70,10 @@
             android:textSize="16sp" />
     </LinearLayout>
 
-    <include
-        android:id="@+id/include_btn"
+    <include android:id="@+id/btn_salas"
         layout="@layout/botao_azul" />
+
+    <include android:id="@+id/btn_equipamentos" layout="@layout/botao_com_borda" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
