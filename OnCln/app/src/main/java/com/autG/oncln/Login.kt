@@ -1,18 +1,14 @@
-package com.example.telasoncln
+package com.autG.oncln
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.autG.oncln.HomeActivity
-import com.autG.oncln.R
-import com.autG.oncln.databinding.ActivityHomeBinding
 import com.autG.oncln.databinding.ActivityLoginBinding
 import com.autG.oncln.services.NavigationHost
 
-class Login : Fragment() {
+internal class Login : Fragment() {
 
     private lateinit var binding: ActivityLoginBinding
 
@@ -21,15 +17,17 @@ class Login : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = ActivityLoginBinding.inflate(inflater,container,false)
+        binding = ActivityLoginBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnEntrar.setOnClickListener {
-            (activity as NavigationHost).navigateTo(HomeActivity(),addToBackStack = true)
+        with(binding) {
+            btnEntrar.setOnClickListener {
+                (activity as NavigationHost).navigateTo(HomeActivity(),addToBackStack = false)
+            }
         }
 
     }

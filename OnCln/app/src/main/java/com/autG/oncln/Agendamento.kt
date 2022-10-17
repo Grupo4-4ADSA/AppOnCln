@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.autG.oncln.databinding.ActivityAgendamentoBinding
 
-class Agendamento : Fragment() {
+internal class Agendamento : Fragment() {
 
     private lateinit var binding: ActivityAgendamentoBinding
 

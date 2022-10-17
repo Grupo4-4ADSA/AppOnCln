@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.autG.oncln.databinding.ActivityHomeBinding
+import com.autG.oncln.services.NavigationHost
 
 internal class HomeActivity: Fragment() {
 
@@ -25,7 +26,7 @@ internal class HomeActivity: Fragment() {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
             btnAgendamento.setOnClickListener {
-                findNavController().navigate(HomeActivityDirections.actionFragmentHomeToFragmentAgendamento())
+                //(activity as NavigationHost).navigateTo(Agendamento(),addToBackStack = true)
             }
         }
     }

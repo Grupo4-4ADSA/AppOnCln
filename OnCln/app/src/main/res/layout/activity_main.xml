@@ -13,10 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        app:defaultNavHost="false"
-        tools:layout="@layout/activity_central_de_ajuda"
-        app:navGraph="@navigation/navigation"
-        />
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/navigation" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_fragment_container"
