@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linear_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_extra_large_txt"
+            android:fontFamily="@font/readex_pro_medium"
+            android:text="Editar equipamento"
+            android:textColor="@color/cor_titulos"
+            android:textSize="@dimen/dimen_large_txt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:fontFamily="@font/readex_pro_medium"
+            android:text="nome da sala"
+            android:textColor="@color/cor_titulos"
+            android:textSize="@dimen/dimen_large_txt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_titulo">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/readex_pro_medium"
+            android:textSize="16dp"
+            android:text="Sala:" />
+
+        <Spinner
+            android:id="@+id/sala_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColorHint="@color/gray"
+            android:entries="@array/activity_cadastro_on_cln_spinner"
+            android:fontFamily="@font/readex_pro_medium"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            app:backgroundTint="@color/gray"
+            android:textColor="@color/black"
+
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:fontFamily="@font/readex_pro_medium"
+            android:textSize="16dp"
+            android:text="Tipo equipamento:" />
+
+        <Spinner
+            android:id="@+id/equipamento_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColorHint="@color/gray"
+            android:entries="@array/activity_cadastro_equipamento"
+            android:fontFamily="@font/readex_pro_medium"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            app:backgroundTint="@color/gray"
+            android:textColor="@color/black"
+
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:fontFamily="@font/readex_pro_medium"
+            android:textSize="@dimen/dimen_medium_txt"
+            android:text="Nome:" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/txt_nome"
+            android:textColorHint="@color/gray"
+            app:backgroundTint="@color/gray"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_medium_txt"
+            android:fontFamily="@font/readex_pro_medium"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:fontFamily="@font/readex_pro_medium"
+            android:textSize="@dimen/dimen_medium_txt"
+            android:text="Andar:" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/txt_nome"
+            android:textColorHint="@color/gray"
+            app:backgroundTint="@color/gray"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_medium_txt"
+            android:fontFamily="@font/readex_pro_medium"/>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:fontFamily="@font/readex_pro_medium"
+            android:textSize="@dimen/dimen_medium_txt"
+            android:text="Data final" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_date"
+            android:background="@color/fundo_date"
+            android:drawableRight="@drawable/calendar"
+
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:id="@+id/quantidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/readex_pro_medium"
+                    android:textSize="@dimen/dimen_medium_txt"
+                    android:text="Quantidade:"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@id/quantidade"
+                    android:hint="@string/txt_quantidade"
+                    android:textSize="@dimen/dimen_medium_txt"
+                    android:textColorHint="@color/gray"
+                    android:fontFamily="@font/readex_pro_medium"
+                    app:backgroundTint="@color/gray"
+                    android:textColor="@color/black"
+
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:id="@+id/potencia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/readex_pro_medium"
+                    android:textSize="@dimen/dimen_medium_txt"
+                    android:textColorHint="@color/gray"
+                    android:text="Potência:"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@id/potencia"
+                    android:hint="@string/txt_potencia"
+                    android:textSize="@dimen/dimen_medium_txt"
+                    android:textColorHint="@color/gray"
+                    android:fontFamily="@font/readex_pro_medium"
+                    app:backgroundTint="@color/gray"
+                    android:textColor="@color/black"
+                    app:layout_constraintRight_toRightOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:fontFamily="@font/readex_pro_medium"
+            android:textSize="@dimen/dimen_medium_txt"
+            android:text="Vida útil:" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Digite a vida útil"
+            android:textColorHint="@color/gray"
+            app:backgroundTint="@color/gray"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_medium_txt"
+            android:fontFamily="@font/readex_pro_medium"/>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroud_button_cadastro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Cadastrar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:fontFamily="@font/readex_pro_medium"
+        android:textSize="20dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
