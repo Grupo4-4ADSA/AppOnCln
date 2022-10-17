@@ -82,7 +82,7 @@
 
         <include
             android:id="@+id/botao_ligar_desligar"
-            layout="@layout/fragment_botao_ligar_e_desligar"
+            layout="@layout/item_switch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintRight_toRightOf="parent"

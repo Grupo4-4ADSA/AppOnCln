@@ -134,7 +134,7 @@
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
-            <include layout="@layout/fragment_botao_ligar_e_desligar" />
+            <include layout="@layout/item_switch" />
         </LinearLayout>
 
         <TextView

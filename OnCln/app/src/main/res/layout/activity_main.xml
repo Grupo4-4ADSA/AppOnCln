@@ -7,6 +7,6 @@
     tools:context=".MainActivity">
 
     <include
-        layout="@layout/teste"/>
+        layout="@layout/activity_configuracoes"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

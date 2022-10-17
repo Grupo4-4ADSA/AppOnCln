@@ -6,13 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-class ComponenteEquipamentoFragment : Fragment() {
+class EquipamentoActivity : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_componente_equipamento, container, false)
+        return inflater.inflate(R.layout.activity_equipamento, container, false)
     }
 }

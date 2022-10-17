@@ -8,14 +8,14 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.autG.oncln.databinding.ActivityConfiguracoesBinding
-import com.autG.oncln.databinding.ActivityPopUpConfiguracoesBinding
+import com.autG.oncln.databinding.ActivityConfiguracoesPopUpBinding
 
 class ConfiguracoesActivity : AppCompatActivity() {
 
     private lateinit var dialogBuilder: AlertDialog.Builder
     private lateinit var dialogo: AlertDialog
     private lateinit var binding: ActivityConfiguracoesBinding
-    private lateinit var bindingJanela: ActivityPopUpConfiguracoesBinding
+    private lateinit var bindingJanela:ActivityConfiguracoesPopUpBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
