@@ -24,6 +24,6 @@
         android:left="30dp"
         android:right="3dp"
         android:top="3dp">
-        <inset android:drawable="@drawable/img_camera_configuracoes" />
+        <inset android:drawable="@drawable/img_configuracoes_camera" />
     </item>
 </layer-list>
