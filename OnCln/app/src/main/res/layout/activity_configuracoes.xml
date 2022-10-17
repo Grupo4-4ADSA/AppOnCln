@@ -10,7 +10,7 @@
         android:id="@+id/bloco_padrao_titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="@dimen/dimen_large"
         android:orientation="vertical"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,19 +47,19 @@
         <FrameLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="@dimen/dimen_large">
 
             <ImageView
-                android:layout_width="250dp"
-                android:layout_height="250dp"
+                android:layout_width="@dimen/dimen_extra_super_amazing_large"
+                android:layout_height="@dimen/dimen_extra_super_amazing_large"
                 android:src="@drawable/fundo_foto_configuracoes" />
 
             <ImageView
                 android:id="@+id/foto_gestor"
-                android:layout_width="250dp"
-                android:layout_height="250dp"
+                android:layout_width="@dimen/dimen_extra_super_amazing_large"
+                android:layout_height="@dimen/dimen_extra_super_amazing_large"
                 android:layout_gravity="center"
-                android:padding="30dp"
+                android:padding="@dimen/dimen_extra_large"
                 android:src="@drawable/img_gestor_configuracoes" />
         </FrameLayout>
 
@@ -69,7 +69,7 @@
         android:id="@+id/bloco_edicao_nome_gestor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/dimen_small"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,7 +90,7 @@
                 android:hint="@string/text_jonas_bezerra"
                 android:maxLength="20"
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="@dimen/dimen_medium_txt"
                 android:textStyle="bold"
                 tools:text="@string/text_jonas_bezerra" />
 
@@ -104,8 +104,8 @@
         </LinearLayout>
 
         <View
-            android:layout_width="80dp"
-            android:layout_height="5dp"
+            android:layout_width="@dimen/dimen_extra_super_large"
+            android:layout_height="@dimen/dimen_small"
             android:background="@drawable/gradiente" />
     </LinearLayout>
 
@@ -113,7 +113,7 @@
         android:id="@+id/bloco_configuracoes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/dimen_large"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -132,7 +132,7 @@
                 android:fontFamily="@font/readex_pro_medium"
                 android:text="@string/text_modo_dark"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="@dimen/dimen_medium" />
 
             <include layout="@layout/item_switch" />
         </LinearLayout>
@@ -145,13 +145,13 @@
             android:scaleType="fitStart"
             android:text="@string/text_alterar_senha"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="@dimen/dimen_medium" />
     </LinearLayout>
 
     <ImageView
-        android:layout_width="250dp"
-        android:layout_height="162dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="@dimen/dimen_extra_super_amazing_large"
+        android:layout_height="@dimen/dimen_extra_super_medium"
+        android:layout_marginTop="@dimen/dimen_extra_large"
         android:foregroundGravity="center_vertical"
         android:orientation="vertical"
         android:src="@drawable/img_configuracoes"

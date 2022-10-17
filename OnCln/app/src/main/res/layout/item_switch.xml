@@ -8,7 +8,7 @@
    <com.google.android.material.switchmaterial.SwitchMaterial
        style="@style/Switch"
        android:layout_width="wrap_content"
-       android:layout_height="16dp"
+       android:layout_height="@dimen/dimen_medium"
        android:backgroundTint="@color/cor_barra_e_texto"
        android:scaleX="1.0"
        android:textColorHint="@color/cor_barra_e_texto"

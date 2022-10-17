@@ -9,7 +9,7 @@
     android:background="@drawable/botao_redondado_componente"
 
     android:orientation="horizontal"
-    android:padding="15dp">
+    android:padding="@dimen/dimen_small_medium">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -17,11 +17,11 @@
 
         <ImageView
             android:id="@+id/caixa"
-            android:layout_width="37dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="10dp"
-            android:backgroundTint="@color/cor_barra_e_texto"
+            android:layout_width="@dimen/dimen_extra_large"
+            android:layout_height="@dimen/dimen_extra_large"
+            android:layout_marginStart="@dimen/dimen_small"
             android:background="@drawable/img_clnbox_icone"
+            android:backgroundTint="@color/cor_barra_e_texto"
             android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -32,7 +32,7 @@
             android:id="@+id/descricao_caixa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="@dimen/dimen_small"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toRightOf="@id/caixa"
@@ -41,30 +41,30 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:height="18dp"
+                android:height="@dimen/dimen_medium_large"
                 android:fontFamily="@font/readex_pro_medium"
                 android:textColor="@color/cor_barra_e_texto"
-                android:textSize="12sp"
+                android:textSize="@dimen/dimen_medium_txt"
                 android:textStyle="bold"
                 tools:text="Id: 123" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:height="18dp"
+                android:height="@dimen/dimen_medium_large"
                 android:fontFamily="@font/readex_pro_medium"
-                android:textColor="@color/cor_texto_cnlbox"
-                android:textSize="12sp"
+                android:textColor="@color/gray_secundary"
+                android:textSize="@dimen/dimen_small_medium_txt"
                 android:textStyle="bold"
                 tools:text="Sala: A" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:height="18dp"
+                android:height="@dimen/dimen_medium_large"
                 android:fontFamily="@font/readex_pro_medium"
-                android:textColor="@color/cor_texto_cnlbox"
-                android:textSize="12sp"
+                android:textColor="@color/gray_secundary"
+                android:textSize="@dimen/dimen_small_medium"
                 android:textStyle="bold"
                 tools:text="Andar: 1º" />
 
@@ -72,8 +72,8 @@
 
         <ImageView
             android:id="@+id/botao_excluir"
-            android:layout_width="20dp"
-            android:layout_height="22dp"
+            android:layout_width="@dimen/dimen_medium_large"
+            android:layout_height="@dimen/dimen_extra_medium_large"
             android:background="@drawable/img_icone_deletar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
