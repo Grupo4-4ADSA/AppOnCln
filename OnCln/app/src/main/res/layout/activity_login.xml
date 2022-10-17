@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.example.telasoncln.Login">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_small"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/img_footer">
+
+
+    <LinearLayout
+        android:id="@+id/linear_login"
+        android:layout_width="@dimen/dimen_megalodon"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_marca"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_login"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/readex_pro_medium"
+            android:paddingTop="@dimen/dimen_medium"
+            android:paddingBottom="@dimen/dimen_medium"
+            android:text="Login"
+            android:textColor="@color/cor_tv"
+            android:textSize="@dimen/dimen_large" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/readex_pro_medium"
+            android:background="@null"
+            android:hint="Usuário:"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            app:backgroundTint="@color/gray"
+            android:textSize="@dimen/dimen_large_txt" />
+
+        <ImageView
+            android:id="@+id/linha_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_linha_menu"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/readex_pro_medium"
+            android:background="@null"
+            android:hint="Senha:"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textSize="@dimen/dimen_large_txt"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/gray"
+            android:textColorHint="@color/gray"
+            android:layout_marginTop="@dimen/dimen_large"/>
+
+        <ImageView
+            android:id="@+id/linha_menu2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:textColorHint="@color/gray"
+            android:src="@drawable/ic_linha_menu"/>
+
+        <TextView
+            android:id="@+id/tv_esqueceu_senha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:fontFamily="@font/readex_pro_medium"
+            android:text="Esqueceu sua senha?"
+            android:textColor="@color/cor_tv"
+            android:textSize="@dimen/dimen_medium_txt" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroud_button_login"
+            android:textAllCaps="false"
+            android:fontFamily="@font/readex_pro_medium"
+            android:padding="@dimen/dimen_medium"
+            android:text="Entrar"
+            android:textAlignment="center"
+            android:drawablePadding="@dimen/dimen_large"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/dimen_medium"
+            android:textSize="@dimen/dimen_large" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_outra"
+            android:layout_marginTop="@dimen/dimen_medium"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_google"
+            android:layout_marginTop="@dimen/dimen_large"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/img_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_img_footer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

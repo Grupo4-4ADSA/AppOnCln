@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">OnCln</string>
+    <string name="home">Home</string>
+    <string name="equipments">Equipamentos</string>
+    <string name="rooms">Salas</string>
+    <string name="toSchedule">Agendar</string>
+    <string name="register">Cadastrar</string>
     <string name="text_central_de_ajuda">Central de ajuda</string>
     <string name="text_info_contato">Informações de contato</string>
     <string name="text_contato_email">Email: contato@autg.com.br</string>
@@ -17,6 +22,26 @@
     <string name="text_salvar_alteracao">Salvar alteração</string>
     <string name="descricao_cancelar_alteracao">Cancelar alteração</string>
     <string name="text_digite_a_senha_antiga">Digite a senha antiga:</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="txt_nome">Insira o nome</string>
+    <string name="txt_quantidade">Insira a quantidade</string>
+    <string name="txt_potencia">Insira a potência</string>
+    <string name="txt_vida">Digite a vida útil</string>
+    <string name="txt_usuario">Usuário:</string>
+    <string name="txt_senha">Senha:</string>
+
+    <string-array name="activity_cadastro_on_cln_spinner">
+        <item>Selecione a sala</item>
+        <item>Sala 2A</item>
+        <item>Sala 3A</item>
+        <item>Sala 4A</item>
+        <item>Sala 5A</item>
+    </string-array>
+
+    <string-array name="activity_cadastro_equipamento">
+        <item>Selecione um equipamento</item>
+        <item>Ar Condicionado</item>
+        <item>Luz</item>
+        <item>Monitor</item>
+    </string-array>
 </resources>
