@@ -26,13 +26,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Agendamento"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".EditarEquipamento"
             android:exported="false">
             <meta-data

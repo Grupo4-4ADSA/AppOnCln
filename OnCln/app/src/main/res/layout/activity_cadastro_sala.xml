@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    android:padding="10dp"
+    android:padding="@dimen/dimen_small"
     tools:context=".MainActivity">
 
 
@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/dimen_extra_large"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="Cadastrar sala"
+            android:text="@string/register_room_title"
             android:textColor="@color/cor_titulos"
             android:textSize="@dimen/dimen_large_txt"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -44,9 +44,10 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="@dimen/dimen_megalodon"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_marginHorizontal="@dimen/dimen_small"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linear_titulo">
@@ -56,7 +57,7 @@
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/dimen_extra_super_large"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="Nome:"
+            android:text="@string/txt_name"
             android:textColor="@color/black"
             android:textSize="@dimen/dimen_large_txt" />
 
@@ -72,7 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="Andar:"
+            android:text="@string/txt_floor"
             android:textColor="@color/black"
             android:textSize="@dimen/dimen_medium_large_txt" />
 
@@ -89,11 +90,12 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_cadastro_sala"
-        android:layout_width="@dimen/dimen_extra_super_amazing_large"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_extra_large"
         android:background="@drawable/backgroud_button_cadastro"
         android:fontFamily="@font/readex_pro_medium"
-        android:text="Cadastrar"
+        android:text="@string/register"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="@dimen/dimen_large_txt"

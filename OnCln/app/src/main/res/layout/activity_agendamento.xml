@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    android:padding="10dp"
+    android:padding="@dimen/dimen_small"
     tools:context=".MainActivity">
 
 
@@ -24,9 +24,9 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/dimen_extra_large"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="Novo agendamento"
+            android:text="@string/agendamento_title"
             android:textColor="@color/cor_titulos"
-            android:textSize="@dimen/dimen_large"
+            android:textSize="@dimen/dimen_large_txt"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -44,9 +44,10 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="@dimen/dimen_megalodon"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_marginHorizontal="@dimen/dimen_small"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linear_titulo">
@@ -56,9 +57,9 @@
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/dimen_extra_super_large"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="Sala:"
+            android:text="@string/txt_room"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium" />
+            android:textSize="@dimen/dimen_medium_txt" />
 
         <Spinner
             android:id="@+id/sala_spinner"
@@ -76,9 +77,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="Andar"
+            android:text="@string/txt_floor"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium" />
+            android:textSize="@dimen/dimen_medium_txt" />
 
         <Spinner
             android:id="@+id/andar_spinner"
@@ -111,15 +112,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="Vida útil:"
+            android:text="@string/txt_life"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium" />
+            android:textSize="@dimen/dimen_medium_txt" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/readex_pro_medium"
-            android:hint="Digite a vida útil"
+            android:hint="@string/hint_life"
             android:textColor="@color/black"
             android:textColorHint="@color/gray"
             app:backgroundTint="@color/gray" />
@@ -128,14 +129,15 @@
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="@dimen/dimen_extra_super_amazing_large"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/backgroud_button_cadastro"
+        android:layout_marginHorizontal="@dimen/dimen_extra_large"
         android:fontFamily="@font/readex_pro_medium"
-        android:text="Cadastrar"
+        android:text="@string/register"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="@dimen/dimen_large"
+        android:textSize="@dimen/dimen_large_txt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
