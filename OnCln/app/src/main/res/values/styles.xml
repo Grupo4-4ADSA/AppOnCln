@@ -29,4 +29,18 @@
         <item name="cornerSize">@dimen/dimen_large</item>
         <item name="cornerRadius">@dimen/dimen_small</item>
     </style>
+
+    <style name="Botao.com.borda" parent="Theme.MaterialComponents">
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textSize">@dimen/dimen_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/cor_barra_e_texto</item>
+        <item name="strokeColor">@color/black</item>
+        <item name="strokeWidth">@dimen/m3_btn_stroke_size</item>
+        <item name="iconTint">@color/cor_barra_e_texto</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="iconSize">@dimen/dimen_extra_large</item>
+        <item name="cornerRadius">@dimen/dimen_extra_large</item>
+        <item name="colorOutline">@color/black</item>
+    </style>
 </resources>

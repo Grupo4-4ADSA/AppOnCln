@@ -19,8 +19,10 @@ class CentralDeAjudaActivity : AppCompatActivity() {
         binding.includea.textTitulo.text = "Central de ajuda"
         binding.btnSalas.botaoAzul.text = "Suporte 24 h"
 
+        binding.btnEquipamentos.buttonBorder.text="Equipamentos"
+
         binding.btnEquipamentos.buttonBorder.setCompoundDrawables(getDrawable(R.drawable.ic_equipments),
-                null,null,null)
+            null, null, null)
 
     }
 
