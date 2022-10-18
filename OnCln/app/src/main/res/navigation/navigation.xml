@@ -9,9 +9,6 @@
         android:id="@+id/fragment_home"
         android:name="com.autG.oncln.HomeActivity"
         tools:layout="@layout/activity_home">
-        <action
-            android:id="@+id/action_fragment_home_to_fragment_agendamento"
-            app:destination="@id/fragment_agendamento" />
     </fragment>
 
     <fragment

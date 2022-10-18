@@ -4,12 +4,20 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.autG.oncln.api.Auth
+import com.autG.oncln.api.Rest
 import com.autG.oncln.databinding.ActivityLoginBinding
+import com.autG.oncln.dtos.requests.LoginRequest
+import com.autG.oncln.dtos.responses.LoginResponse
 import com.autG.oncln.services.NavigationHost
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 internal class Login : Fragment() {
-
+    private val retrofit = Rest.getInstance()
     private lateinit var binding: ActivityLoginBinding
 
     override fun onCreateView(
@@ -26,9 +34,53 @@ internal class Login : Fragment() {
 
         with(binding) {
             btnEntrar.setOnClickListener {
-                (activity as NavigationHost).navigateTo(HomeActivity(),addToBackStack = false)
+                trylogin()
             }
         }
 
+    }
+
+    private fun trylogin() {
+        val login = binding.inputUsuario.text.toString()
+        val senha = binding.inputSenha.text.toString()
+        val body = LoginRequest(login, senha)
+
+        val authRequest = retrofit
+            .create(Auth::class.java)
+
+        authRequest.login(body).enqueue(
+            object : Callback<LoginResponse> {
+                override fun onResponse(
+                    call: Call<LoginResponse>,
+                    response: Response<LoginResponse>
+                ) {
+                    when {
+                        response.isSuccessful -> {
+                            Toast.makeText(
+                                context,
+                                "Usuário encontrado!",
+                                Toast.LENGTH_LONG
+                            ).show()
+                            (activity as NavigationHost).navigateTo(
+                                HomeActivity(),
+                                addToBackStack = false
+                            )
+                        }
+
+                        else -> {
+                            Toast.makeText(
+                                context,
+                                "Não existe esse usuário!",
+                                Toast.LENGTH_LONG
+                            ).show()
+                        }
+                    }
+                }
+
+                override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
+                    Toast.makeText(context, "Sistema fora do ar", Toast.LENGTH_LONG).show()
+
+                }
+            })
     }
 }
