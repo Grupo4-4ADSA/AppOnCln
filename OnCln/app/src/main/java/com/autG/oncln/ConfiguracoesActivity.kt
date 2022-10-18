@@ -35,7 +35,7 @@ class ConfiguracoesActivity : Fragment() {
             janelaDeAlteracaoDeSenha()
         }
 
-        binding.includeb.textTitulo.text = "Configurações"
+        binding.includeText.textTitulo.text = "Configurações"
     }
 
     fun janelaDeAlteracaoDeSenha() {

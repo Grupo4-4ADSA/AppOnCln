@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    android:padding="10dp"
+    android:padding="@dimen/dimen_small"
     tools:context=".MainActivity">
 
 
@@ -19,33 +19,17 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/txtHome"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/dimen_extra_large"
-            android:fontFamily="@font/readex_pro_medium"
-            android:text="Novo agendamento"
-            android:textColor="@color/cor_titulos"
-            android:textSize="@dimen/dimen_large"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/linha_menu"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_linha_menu"
-            app:layout_constraintLeft_toLeftOf="@id/txtHome"
-            app:layout_constraintRight_toRightOf="@+id/txtHome"
-            app:layout_constraintTop_toBottomOf="@id/txtHome" />
+        <include
+            android:id="@+id/include_text"
+            layout="@layout/activity_texto" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="@dimen/dimen_megalodon"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_small"
+        android:layout_marginTop="@dimen/dimen_extra_large"
         android:orientation="vertical"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -54,11 +38,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/dimen_extra_super_large"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="Sala:"
+            android:text="@string/txt_room"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium" />
+            android:textSize="@dimen/dimen_medium_txt" />
 
         <Spinner
             android:id="@+id/sala_spinner"
@@ -76,9 +59,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="Andar"
+            android:text="@string/txt_floor"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium" />
+            android:textSize="@dimen/dimen_medium_txt" />
 
         <Spinner
             android:id="@+id/andar_spinner"
@@ -92,53 +75,42 @@
             android:textColorHint="@color/gray"
             app:backgroundTint="@color/gray" />
 
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:fontFamily="@font/readex_pro_medium"-->
-<!--            android:text="Data final"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:textSize="16dp" />-->
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:fontFamily="@font/readex_pro_medium"-->
+        <!--            android:text="Data final"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="16dp" />-->
 
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:background="@color/fundo_date"-->
-<!--            android:drawableRight="@drawable/calendar"/>-->
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:background="@color/fundo_date"-->
+        <!--            android:drawableRight="@drawable/calendar"/>-->
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="Vida útil:"
+            android:text="@string/txt_life"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium" />
+            android:textSize="@dimen/dimen_medium_txt" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/readex_pro_medium"
-            android:hint="Digite a vida útil"
+            android:hint="@string/hint_life"
             android:textColor="@color/black"
             android:textColorHint="@color/gray"
             app:backgroundTint="@color/gray" />
-
-
     </LinearLayout>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="@dimen/dimen_extra_super_amazing_large"
-        android:layout_height="wrap_content"
-        android:background="@drawable/backgroud_button_cadastro"
-        android:fontFamily="@font/readex_pro_medium"
-        android:text="Cadastrar"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="@dimen/dimen_large"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+    <include
+        android:id="@+id/btn_blue"
+        layout="@layout/btn_blue"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

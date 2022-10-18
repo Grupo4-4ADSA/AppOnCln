@@ -16,13 +16,13 @@
             android:layout_width="@dimen/dimen_extra_medium_large"
             android:layout_height="@dimen/dimen_extra_medium_large"
             android:layout_marginEnd="@dimen/dimen_small"
-            android:background="@drawable/img_icone_editar" />
+            android:background="@drawable/ic_edit_delete" />
 
         <ImageView
             android:id="@+id/botao_excluir"
             android:layout_width="@dimen/dimen_extra_medium_large"
             android:layout_height="@dimen/dimen_extra_medium_large"
-            android:background="@drawable/img_icone_deletar" />
+            android:background="@drawable/ic_delete" />
 
     </LinearLayout>
 

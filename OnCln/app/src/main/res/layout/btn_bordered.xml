@@ -12,11 +12,12 @@
         android:layout_height="wrap_content"
         android:padding="@dimen/dimen_medium"
         android:paddingStart="@dimen/dimen_extra_large"
-        app:icon="@drawable/ic_equipments"
+        tools:icon="@drawable/ic_equipments"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:text="Text button"
+        android:layout_marginHorizontal="@dimen/dimen_medium"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

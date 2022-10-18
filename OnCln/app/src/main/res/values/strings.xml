@@ -23,14 +23,34 @@
     <string name="descricao_cancelar_alteracao">Cancelar alteração</string>
     <string name="text_digite_a_senha_antiga">Digite a senha antiga:</string>
 
-<<<<<<< HEAD
-=======
     <string name="txt_nome">Insira o nome</string>
     <string name="txt_quantidade">Insira a quantidade</string>
     <string name="txt_potencia">Insira a potência</string>
     <string name="txt_vida">Digite a vida útil</string>
     <string name="txt_usuario">Usuário:</string>
     <string name="txt_senha">Senha:</string>
+    <string name="equipment_title">Editar equipamento</string>
+    <string name="agendamento_title">Novo agendamento</string>
+    <string name="register_room_title">Cadastrar sala</string>
+    <string name="register_oncln_title">Cadastrar On-Cln</string>
+    <string name="register_equipment_title">Cadastrar Equipamento</string>
+    <string name="name_room_subtitle">nome da sala</string>
+    <string name="txt_floor">Andar:</string>
+    <string name="txt_room">Sala:</string>
+    <string name="txt_name">Nome:</string>
+    <string name="txt_date_end">Data final:</string>
+    <string name="txt_qtd">Quantidade:</string>
+    <string name="txt_power">Potência:</string>
+    <string name="txt_life">Vida útil:</string>
+    <string name="txt_qrcode">Qr-Code:</string>
+    <string name="txt_agenda">Agendamento</string>
+    <string name="txt_register_edit">Cadastrar/Editar</string>
+    <string name="txt_consuming_equipments">Consumo/Equipamentos</string>
+    <string name="hint_life">Digite a vida útil</string>
+    <string name="hint_qrcode">Escaneie o qr-code do equipamento</string>
+    <string name="hint_room">Digite o nome da sala</string>
+    <string name="hint_floor">Digite o andar dessa sala</string>
+    <string name="text_equipment_type">Tipo equipamento:</string>
 
     <string-array name="activity_cadastro_on_cln_spinner">
         <item>Selecione a sala</item>
@@ -46,5 +66,4 @@
         <item>Luz</item>
         <item>Monitor</item>
     </string-array>
->>>>>>> main
 </resources>

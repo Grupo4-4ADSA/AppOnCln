@@ -9,12 +9,12 @@
        style="@style/Switch"
        android:layout_width="wrap_content"
        android:layout_height="@dimen/dimen_small_medium"
-       android:backgroundTint="@color/cor_barra_e_texto"
+       android:backgroundTint="@color/blue_secundary"
        android:scaleX="1.0"
-       android:textColorHint="@color/cor_barra_e_texto"
-       android:textColorLink="@color/cor_barra_e_texto"
+       android:textColorHint="@color/blue_secundary"
+       android:textColorLink="@color/blue_secundary"
        app:thumbTint="@color/white"
-       app:trackTint="@color/cor_barra_e_texto"
+       app:trackTint="@color/blue_secundary"
        app:useMaterialThemeColors="true" />
 
 </LinearLayout >

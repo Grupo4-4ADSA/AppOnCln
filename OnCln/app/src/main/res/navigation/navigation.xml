@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragment_home">
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.autG.oncln.HomeActivity"
+        tools:layout="@layout/activity_home"></fragment>
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.autG.oncln.CadastrarMenuActivity"
+        tools:layout="@layout/activity_cadastrar_menu"></fragment>
+
+
+
+    <fragment
+        android:id="@+id/fragment_login"
+        android:name="com.autG.oncln.Login"
+        tools:layout="@layout/activity_login">
+        <action
+            android:id="@+id/action_fragment_login_to_fragment_home"
+            app:destination="@id/fragment_home" />
+    </fragment>
+    <!--
+<fragment
+        android:id="@+id/fragment_agendamento"
+        android:name="com.autG.oncln.Agendamento"
+        tools:layout="@layout/activity_agendamento" />
+
+    <fragment
+            android:id="@+id/fragment_central_de_ajuda"
+            android:name="com.autG.oncln.CentralDeAjudaActivity"
+            tools:layout="@layout/activity_central_de_ajuda">
+        </fragment>
+
+        <fragment
+            android:id="@+id/fragment_configuracoes"
+            android:name="com.autG.oncln.ConfiguracoesActivity"
+            tools:layout="@layout/activity_configuracoes">
+        </fragment>
+
+        <fragment
+            android:id="@+id/fragment_cadastrar_equipamento"
+            tools:layout="@layout/activity_cadastrar_equipamento">
+        </fragment>
+
+        <fragment
+            android:id="@+id/fragment_cadastrar_oncln"
+            tools:layout="@layout/activity_cadastro_on_cln">
+        </fragment>
+
+        <fragment
+            android:id="@+id/fragment_cadastrar_sala"
+            tools:layout="@layout/activity_cadastro_sala">
+        </fragment>
+
+        <fragment
+            android:id="@+id/fragment_editar_equipamento"
+            tools:layout="@layout/activity_editar_equipamento">
+        </fragment>
+
+        <fragment
+            android:id="@+id/fragment_editar_sala"
+            tools:layout="@layout/activity_editar_sala">
+        </fragment>
+    -->
+
+
+</navigation>

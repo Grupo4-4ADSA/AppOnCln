@@ -23,7 +23,7 @@
             android:layout_gravity="center"
             android:height="31dp"
             android:fontFamily="@font/readex_pro_medium"
-            android:textColor="@color/cor_titulos"
+            android:textColor="@color/dark_blue"
             android:textSize="@dimen/dimen_large"
             android:textStyle="bold"
             tools:text="@string/text_central_de_ajuda" />

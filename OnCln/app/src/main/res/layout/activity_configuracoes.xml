@@ -18,8 +18,8 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <include
-            android:id="@+id/includeb"
-            layout="@layout/activity_texto"/>
+            android:id="@+id/include_text"
+            layout="@layout/activity_texto" />
     </LinearLayout>
 
     <LinearLayout
@@ -86,8 +86,8 @@
                 android:layout_height="13dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="3dp"
-                android:background="@drawable/img_configuracoes_editar"
-                android:backgroundTint="@color/cor_barra_e_texto" />
+                android:background="@drawable/ic_edit"
+                android:backgroundTint="@color/blue_secundary" />
         </LinearLayout>
 
         <View
@@ -141,7 +141,7 @@
         android:layout_marginTop="@dimen/dimen_extra_large"
         android:foregroundGravity="center_vertical"
         android:orientation="vertical"
-        android:src="@drawable/img_configuracoes"
+        android:src="@drawable/background_settings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bloco_configuracoes" />
