@@ -1,4 +1,9 @@
-package com.autG.oncln.dtos.responses
+import com.autG.oncln.dtos.responses.Empresa
 
-//Todo analisar como puxar e o que puxar da response recebida pela register
-data class LoginResponse(val token: String)
+data class LoginResponse(
+    val empresa: Empresa,
+    val idGestor: Int,
+    val login: String,
+    val nome: String,
+    val senha: String
+)

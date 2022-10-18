@@ -1,5 +1,6 @@
 package com.autG.oncln
 
+import LoginResponse
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,7 +11,6 @@ import com.autG.oncln.api.Auth
 import com.autG.oncln.api.Rest
 import com.autG.oncln.databinding.ActivityLoginBinding
 import com.autG.oncln.dtos.requests.LoginRequest
-import com.autG.oncln.dtos.responses.LoginResponse
 import com.autG.oncln.services.NavigationHost
 import retrofit2.Call
 import retrofit2.Callback
@@ -56,11 +56,6 @@ internal class Login : Fragment() {
                 ) {
                     when {
                         response.isSuccessful -> {
-                            Toast.makeText(
-                                context,
-                                "Usuário encontrado!",
-                                Toast.LENGTH_LONG
-                            ).show()
                             (activity as NavigationHost).navigateTo(
                                 HomeActivity(),
                                 addToBackStack = false
@@ -70,7 +65,7 @@ internal class Login : Fragment() {
                         else -> {
                             Toast.makeText(
                                 context,
-                                "Não existe esse usuário!",
+                                "Login invalido",
                                 Toast.LENGTH_LONG
                             ).show()
                         }
