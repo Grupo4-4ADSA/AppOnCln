@@ -34,6 +34,8 @@ class ConfiguracoesActivity : Fragment() {
         binding.botaoAlterarSenha.setOnClickListener {
             janelaDeAlteracaoDeSenha()
         }
+
+        binding.includeText.textTitulo.text = "Configurações"
     }
 
     fun janelaDeAlteracaoDeSenha() {

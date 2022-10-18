@@ -13,9 +13,9 @@ import com.autG.oncln.R
 import com.autG.oncln.databinding.NavbarBottomBinding
 import com.autG.oncln.services.NavigationHost
 
-class NavBarBottom :Fragment() {
+class NavBarBottom : Fragment() {
 
-    private lateinit var binding : NavbarBottomBinding
+    private lateinit var binding: NavbarBottomBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -23,17 +23,17 @@ class NavBarBottom :Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = NavbarBottomBinding.inflate(inflater, container, false)
-        binding.txtHome.setTextColor(getColor(requireContext(), R.color.cor_barra_e_texto))
-        binding.imgHome.setColorFilter(getColor(requireContext(), R.color.cor_barra_e_texto))
+        binding.txtHome.setTextColor(getColor(requireContext(), R.color.blue_secundary))
+        binding.imgHome.setColorFilter(getColor(requireContext(), R.color.blue_secundary))
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        with(binding){
+        with(binding) {
             layoutHome.setOnClickListener {
-                (activity as NavigationHost).navigateTo(HomeActivity(),addToBackStack = true)
+                (activity as NavigationHost).navigateTo(HomeActivity(), addToBackStack = true)
             }
             layoutEquipments.setOnClickListener {
 

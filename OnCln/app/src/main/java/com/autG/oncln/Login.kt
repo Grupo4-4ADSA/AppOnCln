@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.autG.oncln.databinding.ActivityCadastrarMenuBinding
 import com.autG.oncln.databinding.ActivityLoginBinding
 import com.autG.oncln.services.NavigationHost
 

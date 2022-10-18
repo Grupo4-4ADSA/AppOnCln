@@ -6,7 +6,7 @@
     android:layout_height="80dp"
     android:layout_gravity="top|center"
     android:layout_margin="20dp"
-    android:background="@drawable/botao_redondado_componente"
+
 
     android:orientation="horizontal"
     android:padding="@dimen/dimen_small_medium">
@@ -20,8 +20,8 @@
             android:layout_width="@dimen/dimen_extra_large"
             android:layout_height="@dimen/dimen_extra_large"
             android:layout_marginStart="@dimen/dimen_small"
-            android:background="@drawable/img_clnbox_icone"
-            android:backgroundTint="@color/cor_barra_e_texto"
+            android:background="@drawable/ic_cashier_on_cln"
+            android:backgroundTint="@color/blue_secundary"
             android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:height="@dimen/dimen_medium_large"
                 android:fontFamily="@font/readex_pro_medium"
-                android:textColor="@color/cor_barra_e_texto"
+                android:textColor="@color/blue_secundary"
                 android:textSize="@dimen/dimen_medium_txt"
                 android:textStyle="bold"
                 tools:text="Id: 123" />
@@ -74,7 +74,7 @@
             android:id="@+id/botao_excluir"
             android:layout_width="@dimen/dimen_medium_large"
             android:layout_height="@dimen/dimen_extra_medium_large"
-            android:background="@drawable/img_icone_deletar"
+            android:background="@drawable/ic_delete"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

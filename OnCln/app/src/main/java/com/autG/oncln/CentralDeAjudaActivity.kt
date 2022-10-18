@@ -2,6 +2,7 @@ package com.autG.oncln
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -22,5 +23,8 @@ class CentralDeAjudaActivity:Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
     }
+
+
 }

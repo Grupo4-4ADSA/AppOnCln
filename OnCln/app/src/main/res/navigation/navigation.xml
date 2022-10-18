@@ -3,16 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/fragment_login">
+    app:startDestination="@id/fragment_home">
 
     <fragment
         android:id="@+id/fragment_home"
         android:name="com.autG.oncln.HomeActivity"
-        tools:layout="@layout/activity_home">
-        <action
-            android:id="@+id/action_fragment_home_to_fragment_agendamento"
-            app:destination="@id/fragment_agendamento" />
-    </fragment>
+        tools:layout="@layout/activity_home"></fragment>
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.autG.oncln.CadastrarMenuActivity"
+        tools:layout="@layout/activity_cadastrar_menu"></fragment>
+
+
 
     <fragment
         android:id="@+id/fragment_login"
