@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.autG.oncln.api.Auth
+import com.autG.oncln.services.Auth
 import com.autG.oncln.api.Rest
 import com.autG.oncln.databinding.ActivityLoginBinding
 import com.autG.oncln.dtos.requests.LoginRequest
