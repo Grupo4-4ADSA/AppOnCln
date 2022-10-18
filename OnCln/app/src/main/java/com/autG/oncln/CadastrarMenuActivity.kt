@@ -20,21 +20,21 @@ internal class CadastrarMenuActivity : Fragment() {
     ): View? {
         binding = ActivityCadastrarMenuBinding.inflate(inflater, container, false)
 
-        binding.includeText.textTitulo.text = "Cadastrar ou editar"
+        binding.includeText.textTitulo.text = getText(R.string.txt_register_edit)
 
         //cor_titulos
-        binding.btnSalas.buttonBorder.text = "Salas"
+        binding.btnSalas.buttonBorder.text = getText(R.string.rooms)
 
         binding.btnSalas.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_meeting_room_blue, 0, 0, 0
         )
 
-        binding.btnOncln.buttonBorder.text = "OnCln"
+        binding.btnOncln.buttonBorder.text = getText(R.string.txt_oncln)
         binding.btnOncln.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_oncln, 0, 0, 0
         )
 
-        binding.btnEquipamento.buttonBorder.text = "Equipamentos"
+        binding.btnEquipamento.buttonBorder.text = getText(R.string.equipments)
         binding.btnEquipamento.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_equipaments_blue, 0, 0, 0
         )
