@@ -35,7 +35,7 @@
             android:id="@+id/img_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/img_login"
+            android:src="@drawable/background_login"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -48,7 +48,7 @@
             android:paddingTop="@dimen/dimen_medium"
             android:paddingBottom="@dimen/dimen_medium"
             android:text="Login"
-            android:textColor="@color/cor_tv"
+            android:textColor="@color/blue_secundary"
             android:textSize="@dimen/dimen_large_txt" />
 
         <EditText
@@ -64,13 +64,10 @@
             android:textColorHint="@color/gray"
             app:backgroundTint="@color/gray"
             android:textSize="@dimen/dimen_large_txt" />
-
-        <ImageView
-            android:id="@+id/linha_menu"
+        <View
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_linha_menu"/>
+            android:layout_height="5dp"
+            android:background="@drawable/gradiente" />
 
         <EditText
             android:id="@+id/inputSenha"
@@ -86,14 +83,10 @@
             app:backgroundTint="@color/gray"
             android:textColorHint="@color/gray"
             android:layout_marginTop="@dimen/dimen_large"/>
-
-        <ImageView
-            android:id="@+id/linha_menu2"
+        <View
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
-            android:textColorHint="@color/gray"
-            android:src="@drawable/ic_linha_menu"/>
+            android:layout_height="5dp"
+            android:background="@drawable/gradiente" />
 
         <TextView
             android:id="@+id/tv_esqueceu_senha"
@@ -102,7 +95,7 @@
             android:layout_gravity="end"
             android:fontFamily="@font/readex_pro_medium"
             android:text="Esqueceu sua senha?"
-            android:textColor="@color/cor_tv"
+            android:textColor="@color/dark_blue_secundary"
             android:textSize="@dimen/dimen_medium_txt" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -112,7 +105,7 @@
             android:background="@drawable/backgroud_button_login"
             android:textAllCaps="false"
             android:fontFamily="@font/readex_pro_medium"
-            android:padding="@dimen/dimen_medium"
+            android:padding="@dimen/dimen_small"
             android:text="Entrar"
             android:textAlignment="center"
             android:drawablePadding="@dimen/dimen_large"

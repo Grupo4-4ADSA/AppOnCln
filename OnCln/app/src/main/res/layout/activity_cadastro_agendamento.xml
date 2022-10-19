@@ -19,35 +19,18 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/txtHome"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/dimen_extra_large"
-            android:fontFamily="@font/readex_pro_medium"
-            android:text="@string/agendamento_title"
-            android:textColor="@color/cor_titulos"
-            android:textSize="@dimen/dimen_large_txt"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/linha_menu"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_linha_menu"
-            app:layout_constraintLeft_toLeftOf="@id/txtHome"
-            app:layout_constraintRight_toRightOf="@+id/txtHome"
-            app:layout_constraintTop_toBottomOf="@id/txtHome" />
+        <include
+            android:id="@+id/include_text"
+            layout="@layout/activity_texto" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginHorizontal="@dimen/dimen_small"
+        android:layout_marginTop="@dimen/dimen_extra_large"
+        android:orientation="vertical"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linear_titulo">
@@ -55,7 +38,6 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/dimen_extra_super_large"
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/txt_room"
             android:textColor="@color/black"
@@ -93,19 +75,19 @@
             android:textColorHint="@color/gray"
             app:backgroundTint="@color/gray" />
 
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:fontFamily="@font/readex_pro_medium"-->
-<!--            android:text="Data final"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:textSize="16dp" />-->
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:fontFamily="@font/readex_pro_medium"-->
+        <!--            android:text="Data final"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="16dp" />-->
 
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:background="@color/fundo_date"-->
-<!--            android:drawableRight="@drawable/calendar"/>-->
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:background="@color/fundo_date"-->
+        <!--            android:drawableRight="@drawable/calendar"/>-->
 
 
         <TextView
@@ -124,23 +106,11 @@
             android:textColor="@color/black"
             android:textColorHint="@color/gray"
             app:backgroundTint="@color/gray" />
-
-
     </LinearLayout>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/backgroud_button_cadastro"
-        android:layout_marginHorizontal="@dimen/dimen_extra_large"
-        android:fontFamily="@font/readex_pro_medium"
-        android:text="@string/register"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="@dimen/dimen_large_txt"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+    <include
+        android:id="@+id/btn_blue"
+        layout="@layout/btn_blue"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

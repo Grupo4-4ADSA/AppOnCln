@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+
     <color name="black">#FF000000</color>
+    <color name="black_secundary">#26000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="white_secundary">#F0F0F0</color>
     <color name="gray">#C4C4C4</color>
-    <color name="gray_secundary">#676767</color>
+    <color name="gray_secundary">#D9D9D9</color>
+    <color name="gray_tertiary">#676767</color>
+    <color name="gray_quaternary">#33C4C4C4</color>
+
+    <color name="dark_blue">#1E2F3B</color>
+    <color name="dark_blue_secundary">#0D283B</color>
+    <color name="blue_secundary">#20577D</color>
 
 
-    <color name="cor_titulos">#1E2F3B</color>
-    <color name="cor_barra_e_texto">#20577D</color>
 
-    <color name="cor_sombra_botao">#26000000</color>
-    <color name="botao_desligado">#D9D9D9</color>
-
-    <color name="cor_btn">#F0F0F0</color>
-    <color name="cor_tv">#0D283B</color>
-    <color name="fundo_date">#33C4C4C4</color>
     <color name="borda_btn">#112D41</color>
     <color name="btn_desligar">#20577D</color>
     <color name="cor_hint_input">#A6A6A6</color>

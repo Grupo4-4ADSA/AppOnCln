@@ -19,28 +19,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/txtHome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/readex_pro_medium"
-            android:text="@string/register_oncln_title"
-            android:textColor="@color/cor_titulos"
-            android:textSize="@dimen/dimen_large"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
-        <ImageView
-            android:id="@+id/linha_menu"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_linha_menu"
-            app:layout_constraintLeft_toLeftOf="@id/txtHome"
-            app:layout_constraintRight_toRightOf="@+id/txtHome"
-            app:layout_constraintTop_toBottomOf="@id/txtHome" />
-
+        <include
+            android:id="@+id/include_text"
+            layout="@layout/activity_texto" />
     </LinearLayout>
 
     <LinearLayout
@@ -93,19 +74,9 @@
 
     </LinearLayout>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/dimen_extra_large"
-        android:background="@drawable/backgroud_button_cadastro"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:text="@string/register"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:fontFamily="@font/readex_pro_medium"
-        android:textSize="@dimen/dimen_medium_large_txt"/>
+    <include
+        android:id="@+id/btn_blue"
+        layout="@layout/btn_blue"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

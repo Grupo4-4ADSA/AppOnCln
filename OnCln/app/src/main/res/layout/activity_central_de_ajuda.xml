@@ -17,23 +17,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/text_titulo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:height="31dp"
-            android:fontFamily="@font/readex_pro_medium"
-            android:text="@string/text_central_de_ajuda"
-            android:textColor="@color/cor_titulos"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            />
+        <include
+            android:id="@+id/include_text"
+            layout="@layout/activity_texto" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:background="@drawable/gradiente" />
     </LinearLayout>
 
 
@@ -51,7 +38,7 @@
             android:layout_height="@dimen/dimen_medium_megalodon"
             android:layout_marginTop="@dimen/dimen_small"
             android:contentDescription="@string/descricao_img_central_ajuda"
-            android:src="@drawable/img_central_de_ajuda" />
+            android:src="@drawable/background_central_de_ajuda" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -59,7 +46,7 @@
             android:layout_marginTop="@dimen/dimen_small_medium"
             android:fontFamily="@font/reader_pro_bold"
             android:text="@string/text_info_contato"
-            android:textColor="@color/cor_barra_e_texto"
+            android:textColor="@color/blue_secundary"
             android:textSize="@dimen/dimen_medium_large"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/img_central_de_ajuda" />
@@ -82,15 +69,9 @@
             android:textColor="@color/black"
             android:textSize="@dimen/dimen_medium" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginTop="120dp"
-            android:text="@string/text_botao_suporte"
-            style="@style/Botao.Azul"
-            android:background="@drawable/sombra_botao"
-            />
-
     </LinearLayout>
 
+    <include
+        android:id="@+id/btn_blue"
+        layout="@layout/btn_blue" />
 </androidx.constraintlayout.widget.ConstraintLayout>

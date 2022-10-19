@@ -6,7 +6,7 @@
         android:top="5dp">
         <shape android:shape="oval">
             <corners android:radius="10dp" />
-            <solid android:color="@color/cor_sombra_botao" />
+            <solid android:color="@color/black_secundary" />
         </shape>
     </item>
     <item>
@@ -24,6 +24,6 @@
         android:left="30dp"
         android:right="3dp"
         android:top="3dp">
-        <inset android:drawable="@drawable/img_configuracoes_camera" />
+        <inset android:drawable="@drawable/ic_settings_camera" />
     </item>
 </layer-list>
