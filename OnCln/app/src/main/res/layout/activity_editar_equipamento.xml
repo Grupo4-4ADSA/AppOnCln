@@ -243,19 +243,9 @@
 
     </LinearLayout>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/dimen_extra_large"
-        android:background="@drawable/backgroud_button_cadastro"
-        android:fontFamily="@font/readex_pro_medium"
-        android:text="@string/register"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="@dimen/dimen_large_txt"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+    <include
+        android:id="@+id/btn_blue"
+        layout="@layout/btn_blue" />/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
