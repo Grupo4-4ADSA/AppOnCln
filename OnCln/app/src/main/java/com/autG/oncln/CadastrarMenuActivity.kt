@@ -4,9 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat.getColor
 import androidx.fragment.app.Fragment
 import com.autG.oncln.databinding.ActivityCadastrarMenuBinding
+import com.autG.oncln.services.NavigationHost
 
 
 internal class CadastrarMenuActivity : Fragment() {
@@ -44,6 +44,19 @@ internal class CadastrarMenuActivity : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        with(binding) {
+            btnSalas.buttonBorder.setOnClickListener{
+                (activity as NavigationHost).navigateTo(CadastroSala(),addToBackStack = true)
+            }
+
+//            btnAgendamento.buttonBorder.setOnClickListener {
+//                //(activity as NavigationHost).navigateTo(Agendamento(),addToBackStack = true)
+//            }
+//            btnCadastrar.buttonBorder.setOnClickListener {
+//                (activity as NavigationHost).navigateTo(CadastrarMenuActivity(),addToBackStack = true)
+//            }
+        }
 
     }
 }
