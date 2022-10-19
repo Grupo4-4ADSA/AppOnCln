@@ -52,7 +52,7 @@ internal class HomeActivity: Fragment() {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
             btnAgendamento.buttonBorder.setOnClickListener {
-                //(activity as NavigationHost).navigateTo(Agendamento(),addToBackStack = true)
+                (activity as NavigationHost).navigateTo(CadastroSala(),addToBackStack = true)
             }
             btnCadastrar.buttonBorder.setOnClickListener {
                 (activity as NavigationHost).navigateTo(CadastrarMenuActivity(),addToBackStack = true)
