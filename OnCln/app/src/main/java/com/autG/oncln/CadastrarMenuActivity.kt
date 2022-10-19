@@ -50,12 +50,13 @@ internal class CadastrarMenuActivity : Fragment() {
                 (activity as NavigationHost).navigateTo(CadastroSala(),addToBackStack = true)
             }
 
-//            btnAgendamento.buttonBorder.setOnClickListener {
-//                //(activity as NavigationHost).navigateTo(Agendamento(),addToBackStack = true)
-//            }
-//            btnCadastrar.buttonBorder.setOnClickListener {
-//                (activity as NavigationHost).navigateTo(CadastrarMenuActivity(),addToBackStack = true)
-//            }
+            btnEquipamento.buttonBorder.setOnClickListener {
+                //todo implementar navigate, futuramente
+            }
+
+            btnEquipamento.buttonBorder.setOnClickListener {
+                //todo implementar navigate, futuramente
+            }
         }
 
     }
