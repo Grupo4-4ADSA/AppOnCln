@@ -9,6 +9,8 @@
     <color name="gray_secundary">#D9D9D9</color>
     <color name="gray_tertiary">#676767</color>
     <color name="gray_quaternary">#33C4C4C4</color>
+    <color name="purple_primary">#7D2D78</color>
+    <color name="green_primary">#1A7D71</color>
 
     <color name="dark_blue">#1E2F3B</color>
     <color name="dark_blue_secundary">#0D283B</color>

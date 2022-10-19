@@ -58,6 +58,15 @@
         <item name="paddingStart">@dimen/dimen_medium</item>
     </style>
 
+    <style name="Botao.item.lista" parent="Theme.MaterialComponents">
+        <item name="backgroundTint">@color/blue_secundary</item>
+        <item name="android:textSize">@dimen/dimen_medium_txt</item>
+        <item name="android:textStyle">bold</item>
+        <item name="iconTint">@color/blue_secundary</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="iconSize">@dimen/dimen_extra_large</item>
+        <item name="cornerRadius">@dimen/dimen_extra_large</item>
+    </style>
 
     <style name="Switch" parent="Theme.MaterialComponents">
 

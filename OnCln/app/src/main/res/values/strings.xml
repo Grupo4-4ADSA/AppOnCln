@@ -22,6 +22,8 @@
     <string name="text_salvar_alteracao">Salvar alteração</string>
     <string name="descricao_cancelar_alteracao">Cancelar alteração</string>
     <string name="text_digite_a_senha_antiga">Digite a senha antiga:</string>
+    <string name="txt_total_sala">Tota(1)</string>
+    <string name="txt_pesquisar">Pesquisar</string>
 
     <string name="txt_nome">Insira o nome</string>
     <string name="txt_quantidade">Insira a quantidade</string>

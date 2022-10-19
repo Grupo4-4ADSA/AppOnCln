@@ -6,6 +6,17 @@
     android:background="@color/white"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:id="@+id/bloco_padrao_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_small"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_small_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
         <include
             android:id="@+id/include_text"
             layout="@layout/activity_texto" />
@@ -13,14 +24,25 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="@dimen/dimen_extra_large"
+            android:layout_marginVertical="@dimen/dimen_large"
             android:src="@drawable/background_home" />
 
-        <include android:id="@+id/btn_agendamento" layout="@layout/btn_bordered" />
-        <include android:id="@+id/btn_cadastrar" layout="@layout/btn_bordered" />
-        <include android:id="@+id/btn_consumo" layout="@layout/btn_bordered" />
-        <include android:id="@+id/btn_salas" layout="@layout/btn_bordered" />
+        <include
+            android:id="@+id/btn_agendamento"
+            layout="@layout/btn_bordered" />
 
+        <include
+            android:id="@+id/btn_cadastrar"
+            layout="@layout/btn_bordered" />
+
+        <include
+            android:id="@+id/btn_consumo"
+            layout="@layout/btn_bordered" />
+
+        <include
+            android:id="@+id/btn_salas"
+            layout="@layout/btn_bordered" />
+    </LinearLayout>
 </androidx.appcompat.widget.LinearLayoutCompat>
 
 

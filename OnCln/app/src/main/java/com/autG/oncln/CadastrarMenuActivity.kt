@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat.getColor
 import androidx.fragment.app.Fragment
 import com.autG.oncln.databinding.ActivityCadastrarMenuBinding
+import com.autG.oncln.services.NavigationHost
 
 
 internal class CadastrarMenuActivity : Fragment() {
@@ -44,6 +45,10 @@ internal class CadastrarMenuActivity : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.btnSalas.buttonBorder.setOnClickListener {
+            (activity as NavigationHost).navigateTo(SalasActivity(),addToBackStack = true)
+        }
 
     }
 }
