@@ -4,8 +4,10 @@ import LoginResponse
 import SalaResponse
 import com.autG.oncln.dtos.requests.LoginRequest
 import com.autG.oncln.dtos.requests.SalaRequest
+import com.autG.oncln.dtos.responses.Rooms
 import retrofit2.Call
 import retrofit2.http.Body
+import retrofit2.http.GET
 import retrofit2.http.POST
 
 interface Auth {
@@ -18,4 +20,8 @@ interface Auth {
     fun register(@Body body: SalaRequest):
             Call<SalaResponse>
 
+    //TODO mudar url no futuro colocar dinamica {idPredio}
+    @GET("/rooms/all/251")
+    fun requestRooms():
+            Call<Rooms>
 }
