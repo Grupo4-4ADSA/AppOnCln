@@ -89,18 +89,23 @@ internal class SalasActivity : Fragment() {
                     call: Call<Rooms?>,
                     response: Response<Rooms?>
                 ) {
-                    response.body()?.forEach {
-                        arrayList.add(it)
-                    }
+                    if (response.isSuccessful) {
 
-                    binding.recycleListRoom.adapter = RoomAdapter(arrayList)
+                        response.body()?.forEach {
+                            arrayList.add(it)
+                        }
+                        binding.recycleListRoom.adapter = RoomAdapter(arrayList)
+                    }
+                    else{
+                        Toast.makeText(requireContext(), "Falha ao carregar salas", Toast.LENGTH_SHORT).show()
+                    }
                 }
 
-                    override fun onFailure(call: Call<Rooms?>, t: Throwable) {
-                Toast.makeText(context, "Sistema fora do ar", Toast.LENGTH_LONG).show()
+                override fun onFailure(call: Call<Rooms?>, t: Throwable) {
+                    Toast.makeText(context, "Sistema fora do ar", Toast.LENGTH_LONG).show()
 
-            }
-    })
-}
+                }
+            })
+    }
 
 }
