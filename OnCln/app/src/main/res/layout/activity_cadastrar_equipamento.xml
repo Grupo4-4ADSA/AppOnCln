@@ -9,7 +9,6 @@
     android:padding="@dimen/dimen_small"
     tools:context=".MainActivity">
 
-
     <LinearLayout
         android:id="@+id/linear_titulo"
         android:layout_width="wrap_content"
@@ -21,8 +20,7 @@
 
         <include
             android:id="@+id/include_text"
-            layout="@layout/activity_texto" />
-
+            layout="@layout/item_text" />
     </LinearLayout>
 
     <LinearLayout

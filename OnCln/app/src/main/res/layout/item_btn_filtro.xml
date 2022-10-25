@@ -8,10 +8,10 @@
     <Button
         android:id="@+id/botao_filtro"
         style="@style/Botao.item.lista"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ociosas"
-        android:layout_marginHorizontal="@dimen/dimen_small"
+        android:text="Cadastradas"
+        android:layout_marginHorizontal="@dimen/dimen_small_small"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -30,6 +30,7 @@ internal class CadastrarMenuActivity : Fragment() {
         )
 
         binding.btnOncln.buttonBorder.text = getText(R.string.txt_oncln)
+
         binding.btnOncln.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_oncln, 0, 0, 0
         )

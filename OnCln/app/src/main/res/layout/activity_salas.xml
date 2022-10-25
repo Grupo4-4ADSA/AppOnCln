@@ -13,7 +13,7 @@
 
     <include
         android:id="@+id/include_text"
-        layout="@layout/activity_texto" />
+        layout="@layout/item_text" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,14 +33,13 @@
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:src="@drawable/ic_filter" />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Filtrar"
-
+                android:layout_height="match_parent"
+                android:text="@string/filter"
                 android:textColor="@color/black"
                 android:textSize="@dimen/dimen_medium_large_txt" />
 

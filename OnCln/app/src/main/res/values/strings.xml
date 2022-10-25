@@ -13,7 +13,7 @@
     <string name="descricao_img_central_ajuda">ilustração de sugestão</string>
     <string name="text_configuracoes">Configurações</string>
     <string name="text_jonas_bezerra">Jonas Bezerra</string>
-    <string name="text_modo_dark">Modo dark toggle</string>
+    <string name="text_modo_dark">Modo dark</string>
     <string name="text_alterar_senha">Alterar senha</string>
     <string name="text_alterar_senha_descricao">Alterar Senha:</string>
     <string name="fix_digite_a_nova_senha">Digite a nova senha:</string>
@@ -22,7 +22,7 @@
     <string name="text_salvar_alteracao">Salvar alteração</string>
     <string name="descricao_cancelar_alteracao">Cancelar alteração</string>
     <string name="text_digite_a_senha_antiga">Digite a senha antiga:</string>
-    <string name="txt_total_sala">Tota(1)</string>
+    <string name="txt_total">Tota(1)</string>
     <string name="txt_pesquisar">Pesquisar</string>
 
     <string name="txt_nome">Insira o nome</string>
@@ -54,6 +54,10 @@
     <string name="hint_room">Digite o nome da sala</string>
     <string name="hint_floor">Digite o andar dessa sala</string>
     <string name="text_equipment_type">Tipo equipamento:</string>
+    <string name="filter">Filtrar:</string>
+
+
+    <string name="text_exemple">Text exemple</string>
 
     <string-array name="activity_cadastro_on_cln_spinner">
         <item>Selecione a sala</item>
