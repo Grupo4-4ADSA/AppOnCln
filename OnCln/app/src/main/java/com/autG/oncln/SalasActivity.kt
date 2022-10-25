@@ -1,11 +1,9 @@
 package com.autG.oncln
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
@@ -13,11 +11,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.autG.oncln.adapter.RoomAdapter
 import com.autG.oncln.api.Rest
 import com.autG.oncln.databinding.ActivitySalasBinding
-import com.autG.oncln.dtos.requests.LoginRequest
 import com.autG.oncln.dtos.responses.Rooms
 import com.autG.oncln.dtos.responses.RoomsItem
 import com.autG.oncln.services.Auth
-import com.autG.oncln.services.NavigationHost
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -90,6 +86,8 @@ internal class SalasActivity : Fragment() {
                     response: Response<Rooms?>
                 ) {
                     if (response.isSuccessful) {
+
+                        binding.txtTotal.text = "Total(${response.body()?.size})"
 
                         response.body()?.forEach {
                             arrayList.add(it)

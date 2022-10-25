@@ -8,30 +8,34 @@
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     app:cardCornerRadius="@dimen/dimen_medium"
-    app:cardElevation="@dimen/dimen_large"
+    app:cardElevation="@dimen/dimen_small"
     app:rippleColor="@color/black"
     app:strokeColor="@color/black"
     app:strokeWidth="0dp">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/gray"
         android:padding="@dimen/dimen_small">
 
         <ImageView
-             android:id="@+id/img_icon"
+            android:id="@+id/img_icon"
             android:layout_width="@dimen/dimen_extra_y_large"
             android:layout_height="@dimen/dimen_extra_y_large"
-            android:src="@drawable/ic_meeting_room" />
-
+            android:src="@drawable/ic_meeting_room"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
+            android:id="@+id/layout_linear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             android:orientation="vertical"
-            android:paddingVertical="@dimen/dimen_medium"
-            android:paddingHorizontal="@dimen/dimen_large">
+            android:paddingHorizontal="@dimen/dimen_large"
+            app:layout_constraintStart_toEndOf="@+id/img_icon"
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -41,7 +45,6 @@
                     android:id="@+id/txt_type"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:height="@dimen/dimen_medium_large"
                     android:fontFamily="@font/readex_pro_medium"
                     android:textColor="@color/blue_secundary"
                     android:textSize="@dimen/dimen_medium_txt"
@@ -62,25 +65,18 @@
                 android:id="@+id/txt_floor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:height="@dimen/dimen_medium_large"
                 android:fontFamily="@font/readex_pro_medium"
                 android:textColor="@color/gray"
                 android:textSize="@dimen/dimen_medium_txt"
                 tools:text="Andar: 2º" />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:orientation="vertical"
-            android:paddingHorizontal="@dimen/dimen_large">
+        <include
+            android:id="@+id/editar_deletar_equipamento"
+            layout="@layout/item_edit_delete"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
-            <include
-                android:id="@+id/editar_deletar_equipamento"
-                layout="@layout/item_edit_delete" />
-        </LinearLayout>
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </com.google.android.material.card.MaterialCardView>
