@@ -49,7 +49,7 @@ internal class CadastroSala : Fragment() {
     private fun cadastroSala() {
         val nomeSala = binding.inputNomeSala.text.toString()
         //Todo Implementar a versão spinner futuramente
-        val nomeAndar = binding.inputAndarSala.text.toString()
+        val nomeAndar = binding.inputAndarSala.text.toString().toInt()
         val body = SalaRequest(nomeSala, nomeAndar, Predio(251))
 
         val registerRequest = retrofit
@@ -84,10 +84,6 @@ internal class CadastroSala : Fragment() {
                     Toast.makeText(context, "Sem conexão com servidor", Toast.LENGTH_LONG).show()
                 }
             })
-    }
-
-    fun cadastrarCln() {
-
     }
 
 
