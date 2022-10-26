@@ -74,7 +74,7 @@
         <include
             android:id="@+id/editar_deletar_equipamento"
             layout="@layout/item_edit_delete"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
