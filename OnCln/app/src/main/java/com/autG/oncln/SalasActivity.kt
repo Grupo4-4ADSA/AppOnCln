@@ -92,7 +92,9 @@ internal class SalasActivity : Fragment() {
                         response.body()?.forEach {
                             arrayList.add(it)
                         }
-                        binding.recycleListRoom.adapter = RoomAdapter(arrayList)
+                        binding.recycleListRoom.adapter = RoomAdapter(arrayList){
+                            msg -> Toast.makeText(requireContext(),msg,Toast.LENGTH_LONG).show()
+                        }
                     }
                     else{
                         Toast.makeText(requireContext(), "Falha ao carregar salas", Toast.LENGTH_SHORT).show()
