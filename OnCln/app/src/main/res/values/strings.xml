@@ -37,6 +37,10 @@
     <string name="register_oncln_title">Cadastrar On-Cln</string>
     <string name="register_equipment_title">Cadastrar Equipamento</string>
     <string name="name_room_subtitle">nome da sala</string>
+    <string name="login">Usuário:</string>
+    <string name="outra_forma_login">Entrar de outra forma</string>
+
+    <string name="senha">Senha:</string>
     <string name="txt_floor">Andar:</string>
     <string name="txt_room">Sala:</string>
     <string name="txt_name">Nome:</string>

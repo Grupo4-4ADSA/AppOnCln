@@ -71,10 +71,28 @@
                 tools:text="Andar: 2º" />
         </LinearLayout>
 
-        <include
-            android:id="@+id/editar_deletar_equipamento"
-            layout="@layout/item_edit_delete"
-            app:layout_constraintEnd_toEndOf="parent" />
+        <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/botao_editar"
+                android:layout_width="@dimen/dimen_extra_medium_large"
+                android:layout_height="@dimen/dimen_extra_medium_large"
+                android:layout_marginEnd="@dimen/dimen_small"
+                android:background="@drawable/ic_edit_delete"/>
+
+            <ImageView
+                android:id="@+id/botao_excluir"
+                android:layout_width="@dimen/dimen_extra_medium_large"
+                android:layout_height="@dimen/dimen_extra_medium_large"
+                android:background="@drawable/ic_delete"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
