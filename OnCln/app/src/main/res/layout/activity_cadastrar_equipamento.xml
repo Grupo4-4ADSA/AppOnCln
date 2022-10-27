@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_small"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/include_text"
+            layout="@layout/item_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_extra_large"
+        android:layout_marginTop="@dimen/dimen_extra_large"
+
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_titulo">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/readex_pro_medium"
+            android:text="@string/txt_room"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_medium_txt" />
+
+        <Spinner
+            android:id="@+id/sala_spinner"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/activity_cadastro_on_cln_spinner"
+            android:fontFamily="@font/readex_pro_medium"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            app:backgroundTint="@color/gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/readex_pro_medium"
+            android:text="@string/text_equipment_type"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_medium_txt" />
+
+        <Spinner
+            android:id="@+id/equipamento_spinner"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/activity_cadastro_equipamento"
+            android:fontFamily="@font/readex_pro_medium"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            app:backgroundTint="@color/gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/readex_pro_medium"
+            android:text="@string/txt_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_medium_txt" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/readex_pro_medium"
+            android:hint="@string/hint_room"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            app:backgroundTint="@color/gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/readex_pro_medium"
+            android:text="@string/txt_floor"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_medium_txt" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/readex_pro_medium"
+            android:hint="@string/hint_floor"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            app:backgroundTint="@color/gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/readex_pro_medium"
+            android:text="@string/txt_date_end"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_medium_txt" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_quaternary"
+            android:drawableRight="@drawable/ic_schedule"
+
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_small">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/quantidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/readex_pro_medium"
+                    android:text="@string/txt_qtd"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_medium_txt"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/readex_pro_medium"
+                    android:hint="@string/txt_quantidade"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/dimen_medium_txt"
+                    app:backgroundTint="@color/gray"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/quantidade" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/potencia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/readex_pro_medium"
+                    android:text="@string/txt_power"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/dimen_medium_txt"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/readex_pro_medium"
+                    android:hint="@string/txt_potencia"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/dimen_medium_txt"
+                    app:backgroundTint="@color/gray"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/potencia" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/readex_pro_medium"
+            android:text="@string/txt_life"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_medium_txt" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/readex_pro_medium"
+            android:hint="@string/hint_life"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            app:backgroundTint="@color/gray" />
+
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/btn_blue"
+        layout="@layout/btn_blue"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

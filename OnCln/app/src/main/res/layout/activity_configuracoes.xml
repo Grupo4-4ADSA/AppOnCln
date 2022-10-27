@@ -10,29 +10,16 @@
         android:id="@+id/bloco_padrao_titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="@dimen/dimen_large"
         android:orientation="vertical"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/text_titulo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:height="31dp"
-            android:fontFamily="@font/readex_pro_medium"
-            android:text="@string/text_configuracoes"
-            android:textColor="@color/cor_titulos"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:background="@drawable/gradiente" />
+        <include
+            android:id="@+id/include_text"
+            layout="@layout/item_text" />
     </LinearLayout>
 
     <LinearLayout
@@ -47,19 +34,19 @@
         <FrameLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="@dimen/dimen_large">
 
             <ImageView
-                android:layout_width="250dp"
-                android:layout_height="250dp"
+                android:layout_width="@dimen/dimen_extra_super_amazing_large"
+                android:layout_height="@dimen/dimen_extra_super_amazing_large"
                 android:src="@drawable/fundo_foto_configuracoes" />
 
             <ImageView
                 android:id="@+id/foto_gestor"
-                android:layout_width="250dp"
-                android:layout_height="250dp"
+                android:layout_width="@dimen/dimen_extra_super_amazing_large"
+                android:layout_height="@dimen/dimen_extra_super_amazing_large"
                 android:layout_gravity="center"
-                android:padding="30dp"
+                android:padding="@dimen/dimen_extra_large"
                 android:src="@drawable/img_gestor_configuracoes" />
         </FrameLayout>
 
@@ -69,7 +56,7 @@
         android:id="@+id/bloco_edicao_nome_gestor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/dimen_small"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,28 +66,33 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <TextView
+            <EditText
                 android:id="@+id/nome_gestor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:height="20dp"
+                android:background="@drawable/gradiente"
+                android:backgroundTint="@android:color/transparent"
                 android:fontFamily="@font/readex_pro_medium"
-                android:text="@string/text_jonas_bezerra"
-                android:textColor="@color/cor_titulos"
-                android:textSize="14sp" />
+                android:hint="@string/text_jonas_bezerra"
+                android:maxLength="20"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_medium_txt"
+                android:textStyle="bold"
+                tools:text="@string/text_jonas_bezerra" />
 
             <ImageView
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="11dp"
+                android:layout_height="13dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="3dp"
-                android:src="@drawable/img_lapis_configuracoes" />
+                android:background="@drawable/ic_edit"
+                android:backgroundTint="@color/blue_secundary" />
         </LinearLayout>
 
         <View
-            android:layout_width="80dp"
-            android:layout_height="5dp"
+            android:layout_width="@dimen/dimen_extra_super_large"
+            android:layout_height="@dimen/dimen_small"
             android:background="@drawable/gradiente" />
     </LinearLayout>
 
@@ -108,7 +100,7 @@
         android:id="@+id/bloco_configuracoes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/dimen_large"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -117,7 +109,8 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/text_modo_dark"
@@ -126,37 +119,32 @@
                 android:fontFamily="@font/readex_pro_medium"
                 android:text="@string/text_modo_dark"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="@dimen/dimen_medium" />
 
-            <androidx.appcompat.widget.SwitchCompat
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:thumb="@drawable/bolinha_toggle"
-                app:track="@drawable/corpo_toggle" />
+            <include layout="@layout/item_switch" />
         </LinearLayout>
 
         <TextView
             android:id="@+id/botao_alterar_senha"
             android:layout_width="wrap_content"
-            android:scaleType="fitStart"
             android:layout_height="wrap_content"
             android:fontFamily="@font/readex_pro_medium"
+            android:scaleType="fitStart"
             android:text="@string/text_alterar_senha"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="@dimen/dimen_medium" />
     </LinearLayout>
 
     <ImageView
-        android:layout_width="250dp"
-        android:layout_height="162dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="@dimen/dimen_extra_super_amazing_large"
+        android:layout_height="@dimen/dimen_extra_super_medium"
+        android:layout_marginTop="@dimen/dimen_extra_large"
+        android:foregroundGravity="center_vertical"
         android:orientation="vertical"
+        android:src="@drawable/background_settings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bloco_configuracoes"
-        android:foregroundGravity="center_vertical"
-        android:src="@drawable/img_configuracoes"/>
+        app:layout_constraintTop_toBottomOf="@+id/bloco_configuracoes" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

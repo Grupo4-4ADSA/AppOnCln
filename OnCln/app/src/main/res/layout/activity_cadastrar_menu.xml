@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_text"
+        layout="@layout/item_text" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dimen_extra_large"
+        android:src="@drawable/background_home" />
+
+    <include android:id="@+id/btn_salas" layout="@layout/btn_bordered" />
+    <include android:id="@+id/btn_oncln" layout="@layout/btn_bordered" />
+    <include android:id="@+id/btn_equipamento" layout="@layout/btn_bordered" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
