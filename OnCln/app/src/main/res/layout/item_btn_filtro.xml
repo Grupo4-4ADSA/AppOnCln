@@ -6,18 +6,15 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button_border"
-        style="@style/Botao.com.borda"
+        android:id="@+id/botao_filtro"
+        style="@style/Botao.item.lista"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/dimen_medium"
-        android:paddingStart="@dimen/dimen_extra_large"
-        tools:icon="@drawable/ic_equipments"
+        android:text="Cadastradas"
+        android:layout_marginHorizontal="@dimen/dimen_small_small"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/text_exemple"
-        android:layout_marginHorizontal="@dimen/dimen_medium"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

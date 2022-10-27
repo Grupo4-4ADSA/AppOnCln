@@ -6,10 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat.getColor
 import androidx.fragment.app.Fragment
-import com.autG.oncln.ConfiguracoesActivity
+import com.autG.oncln.*
 import com.autG.oncln.HomeActivity
-import com.autG.oncln.MainActivity
-import com.autG.oncln.R
 import com.autG.oncln.databinding.NavbarBottomBinding
 import com.autG.oncln.services.NavigationHost
 
@@ -35,8 +33,8 @@ class NavBarBottom : Fragment() {
             layoutHome.setOnClickListener {
                 (activity as NavigationHost).navigateTo(HomeActivity(), addToBackStack = true)
             }
-            layoutEquipments.setOnClickListener {
-
+            imgSalas.setOnClickListener {
+                (activity as NavigationHost).navigateTo(CadastroSala(), addToBackStack = true)
             }
         }
 

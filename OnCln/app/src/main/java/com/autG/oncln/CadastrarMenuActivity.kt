@@ -30,6 +30,7 @@ internal class CadastrarMenuActivity : Fragment() {
         )
 
         binding.btnOncln.buttonBorder.text = getText(R.string.txt_oncln)
+
         binding.btnOncln.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_oncln, 0, 0, 0
         )
@@ -46,19 +47,17 @@ internal class CadastrarMenuActivity : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         with(binding) {
-            btnSalas.buttonBorder.setOnClickListener{
-                (activity as NavigationHost).navigateTo(CadastroSala(),addToBackStack = true)
+            btnSalas.buttonBorder.setOnClickListener {
+                (activity as NavigationHost).navigateTo(SalasActivity(), addToBackStack = true)
+                btnEquipamento.buttonBorder.setOnClickListener {
+                }
+
+                btnEquipamento.buttonBorder.setOnClickListener {
+                    //todo implementar navigate, futuramente
+                }
             }
 
-            btnEquipamento.buttonBorder.setOnClickListener {
-                //todo implementar navigate, futuramente
-            }
-
-            btnEquipamento.buttonBorder.setOnClickListener {
-                //todo implementar navigate, futuramente
-            }
         }
-
     }
 }
 

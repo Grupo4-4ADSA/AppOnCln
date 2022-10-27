@@ -19,7 +19,7 @@
 
         <include
             android:id="@+id/include_text"
-            layout="@layout/activity_texto" />
+            layout="@layout/item_text" />
     </LinearLayout>
 
     <LinearLayout

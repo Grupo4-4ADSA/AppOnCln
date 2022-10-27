@@ -10,6 +10,7 @@
     <dimen name="dimen_large">24dp</dimen>
     <dimen name="dimen_extra_large">36dp</dimen>
     <dimen name="dimen_extra_x_large">50dp</dimen>
+    <dimen name="dimen_extra_y_large">60dp</dimen>
     <dimen name="dimen_extra_super_large">90dp</dimen>
     <dimen name="dimen_extra_super_medium">162dp</dimen>
     <dimen name="dimen_extra_super_amazing_large">250dp</dimen>

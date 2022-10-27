@@ -34,7 +34,10 @@ internal class Login : Fragment() {
 
         with(binding) {
             btnEntrar.setOnClickListener {
-                trylogin()
+                (activity as NavigationHost).navigateTo(
+                    SalasActivity(),
+                    addToBackStack = false
+                )
             }
         }
 
@@ -57,7 +60,7 @@ internal class Login : Fragment() {
                     when {
                         response.isSuccessful -> {
                             (activity as NavigationHost).navigateTo(
-                                HomeActivity(),
+                                SalasActivity(),
                                 addToBackStack = false
                             )
                         }

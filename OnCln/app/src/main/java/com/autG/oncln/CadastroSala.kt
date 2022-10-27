@@ -27,6 +27,7 @@ internal class CadastroSala : Fragment() {
     ): View? {
         binding = ActivityCadastroSalaBinding.inflate(inflater, container, false)
 
+
         binding.includeText.textTitulo.text = getText(R.string.register_room_title)
 
         binding.btnBlue.botaoAzul.text = getText(R.string.register)
@@ -48,17 +49,17 @@ internal class CadastroSala : Fragment() {
     private fun cadastroSala() {
         val nomeSala = binding.inputNomeSala.text.toString()
         //Todo Implementar a versão spinner futuramente
-        val nomeAndar = binding.inputAndarSala.text.toString()
+        val nomeAndar = binding.inputAndarSala.text.toString().toInt()
         val body = SalaRequest(nomeSala, nomeAndar, Predio(251))
 
         val registerRequest = retrofit
             .create(Auth::class.java)
 
         registerRequest.register(body).enqueue(
-            object : Callback<Any?> {
+            object : Callback<SalaResponse> {
                 override fun onResponse(
-                    call: Call<Any?>,
-                    response: Response<Any?>
+                    call: Call<SalaResponse>,
+                    response: Response<SalaResponse>
                 ) {
                     when {
                         response.isSuccessful -> {
@@ -79,9 +80,12 @@ internal class CadastroSala : Fragment() {
                     }
                 }
 
-                override fun onFailure(call: Call<Any?>, t: Throwable) {
-                    Toast.makeText(context, "Sala cadastrada com sucesso!", Toast.LENGTH_LONG).show()
+                override fun onFailure(call: Call<SalaResponse>, t: Throwable) {
+                    Toast.makeText(context, "Sem conexão com servidor", Toast.LENGTH_LONG).show()
                 }
             })
     }
+
+
 }
+

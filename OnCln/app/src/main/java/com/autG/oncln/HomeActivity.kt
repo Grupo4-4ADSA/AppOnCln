@@ -33,8 +33,8 @@ internal class HomeActivity: Fragment() {
             com.autG.oncln.R.drawable.ic_register,0,0,0)
 
 
-        binding.btnConsumo.buttonBorder.text=getText(R.string.txt_consuming_equipments)
-        binding.btnConsumo.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
+        binding.buttonBorder.text=getText(R.string.txt_consuming_equipments)
+        binding.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             com.autG.oncln.R.drawable.ic_grafico,0,0,0)
 
 
@@ -52,7 +52,7 @@ internal class HomeActivity: Fragment() {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
             btnAgendamento.buttonBorder.setOnClickListener {
-                //(activity as NavigationHost).navigateTo(Agendamento(),addToBackStack = true)
+                (activity as NavigationHost).navigateTo(CadastroSala(),addToBackStack = true)
             }
             btnCadastrar.buttonBorder.setOnClickListener {
                 (activity as NavigationHost).navigateTo(CadastrarMenuActivity(),addToBackStack = true)
