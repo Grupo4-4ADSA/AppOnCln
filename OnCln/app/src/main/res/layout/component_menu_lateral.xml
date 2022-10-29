@@ -10,7 +10,7 @@
         android:id="@+id/img_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src=""
+        android:src="@drawable/ic_register"
         android:layout_marginVertical="@dimen/dimen_extra_large"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,16 +51,8 @@
         app:layout_constraintTop_toBottomOf="@+id/layout_user"/>
 
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/view_line"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-        <include
-            layout="@layout/item_list_menu"/>
 
-    </androidx.appcompat.widget.LinearLayoutCompat>
+
 
 
 

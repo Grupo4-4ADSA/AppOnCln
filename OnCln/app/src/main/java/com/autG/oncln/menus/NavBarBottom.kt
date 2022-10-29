@@ -10,6 +10,7 @@ import com.autG.oncln.*
 import com.autG.oncln.HomeActivity
 import com.autG.oncln.databinding.NavbarBottomBinding
 import com.autG.oncln.services.NavigationHost
+import com.google.android.material.navigation.NavigationBarView
 
 class NavBarBottom : Fragment() {
 
@@ -21,22 +22,24 @@ class NavBarBottom : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = NavbarBottomBinding.inflate(inflater, container, false)
-        binding.txtHome.setTextColor(getColor(requireContext(), R.color.blue_secundary))
-        binding.imgHome.setColorFilter(getColor(requireContext(), R.color.blue_secundary))
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        with(binding) {
-            layoutHome.setOnClickListener {
-                (activity as NavigationHost).navigateTo(HomeActivity(), addToBackStack = true)
-            }
-            imgSalas.setOnClickListener {
-                (activity as NavigationHost).navigateTo(CadastroSala(), addToBackStack = true)
+        NavigationBarView.OnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.layout_home -> {
+                    (activity as NavigationHost).navigateTo(HomeActivity(), addToBackStack = true)
+                    true
+                }
+                R.id.layout_salas -> {
+                    (activity as NavigationHost).navigateTo(CadastroSala(), addToBackStack = true)
+                    true
+                }
+                else -> false
             }
         }
-
     }
 }
