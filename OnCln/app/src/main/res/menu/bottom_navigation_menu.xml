@@ -26,7 +26,6 @@
         android:title="@string/toSchedule" />
     <item
         android:id="@+id/layout_cadastrar"
-
         android:enabled="true"
         android:icon="@drawable/ic_register"
         android:title="@string/register" />

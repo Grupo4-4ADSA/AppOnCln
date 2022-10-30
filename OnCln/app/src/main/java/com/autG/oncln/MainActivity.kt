@@ -26,8 +26,7 @@ class MainActivity : AppCompatActivity(), NavigationHost {
     override fun navigateTo(fragment: Fragment, addToBackStack: Boolean) {
         val transaction: FragmentTransaction = supportFragmentManager
             .beginTransaction()
-            .replace(
-                R.id.nav_host_fragment_container, fragment)
+            .replace(R.id.nav_host_fragment_container, fragment)
 
         if (addToBackStack){
             transaction.addToBackStack(fragment.toString())

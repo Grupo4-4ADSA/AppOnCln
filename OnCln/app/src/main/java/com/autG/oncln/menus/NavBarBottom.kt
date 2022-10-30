@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.content.ContextCompat.getColor
 import androidx.fragment.app.Fragment
 import com.autG.oncln.*
@@ -28,14 +29,26 @@ class NavBarBottom : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        NavigationBarView.OnItemSelectedListener { item ->
+        binding.bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.layout_home -> {
                     (activity as NavigationHost).navigateTo(HomeActivity(), addToBackStack = true)
                     true
                 }
                 R.id.layout_salas -> {
-                    (activity as NavigationHost).navigateTo(CadastroSala(), addToBackStack = true)
+                    (activity as NavigationHost).navigateTo(SalasActivity(), addToBackStack = true)
+                    true
+                }
+                R.id.layout_equipments -> {
+                    (activity as NavigationHost).navigateTo(EquipamentoActivity(), addToBackStack = true)
+                    true
+                }
+                R.id.layout_agendar -> {
+                    (activity as NavigationHost).navigateTo(Agendamento(), addToBackStack = true)
+                    true
+                }
+                R.id.layout_cadastrar -> {
+                    (activity as NavigationHost).navigateTo(CadastrarMenuActivity(), addToBackStack = true)
                     true
                 }
                 else -> false
