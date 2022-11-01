@@ -17,6 +17,6 @@
     <color name="borda_btn">#112D41</color>
     <color name="btn_desligar">#20577D</color>
     <color name="cor_hint_input">#A6A6A6</color>
-
+    <color name="transparent">#00ffffff</color>
 
 </resources>

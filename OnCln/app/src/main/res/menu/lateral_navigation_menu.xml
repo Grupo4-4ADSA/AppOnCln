@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/layout_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/layout_equipments"
+        android:enabled="true"
+        android:icon="@drawable/ic_equipments"
+        android:title="@string/equipments" />
+    <item
+        android:id="@+id/layout_salas"
+        android:enabled="true"
+        android:icon="@drawable/ic_meeting_room"
+        android:title="@string/rooms" />
+    <item
+        android:id="@+id/layout_agendar"
+        android:enabled="true"
+        android:icon="@drawable/ic_schedule"
+        android:title="@string/toSchedule" />
+    <item
+        android:id="@+id/layout_cadastrar"
+        android:enabled="true"
+        android:icon="@drawable/ic_register"
+        android:title="@string/register" />
+    <item
+        android:id="@+id/layout_consumo"
+        android:enabled="true"
+        android:icon="@drawable/ic_meeting_room"
+        android:title="@string/rooms" />
+    <item
+        android:id="@+id/layout_resumo"
+        android:enabled="true"
+        android:icon="@drawable/ic_schedule"
+        android:title="@string/toSchedule" />
+    <item
+        android:id="@+id/layout_central"
+        android:enabled="true"
+        android:icon="@drawable/ic_register"
+        android:title="@string/register" />
+
+</menu>

@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat.getColor
 import androidx.fragment.app.Fragment
 import com.autG.oncln.databinding.ActivityHomeBinding
+import com.autG.oncln.menus.NavBarBottom
+import com.autG.oncln.menus.NavigationBar
 import com.autG.oncln.services.NavigationHost
 
 
@@ -56,6 +58,9 @@ internal class HomeActivity: Fragment() {
             }
             btnCadastrar.buttonBorder.setOnClickListener {
                 (activity as NavigationHost).navigateTo(CadastrarMenuActivity(),addToBackStack = true)
+            }
+            btnSalas.buttonBorder.setOnClickListener {
+                (activity as NavigationHost).navigateTo(NavigationBar(),addToBackStack = true)
             }
         }
     }

@@ -13,6 +13,7 @@ import com.autG.oncln.api.Rest
 import com.autG.oncln.databinding.ActivitySalasBinding
 import com.autG.oncln.dtos.responses.Rooms
 import com.autG.oncln.dtos.responses.RoomsItem
+import com.autG.oncln.menus.NavBarBottom
 import com.autG.oncln.services.Auth
 import retrofit2.Call
 import retrofit2.Callback
@@ -61,8 +62,6 @@ internal class SalasActivity : Fragment() {
         binding.recycleListRoom.layoutManager = LinearLayoutManager(context)
 
         arrayList = arrayListOf()
-
-
         requestRooms()
 
         return binding.root

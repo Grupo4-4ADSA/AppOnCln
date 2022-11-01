@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.autG.oncln.databinding.ActivityCadastrarMenuBinding
 import com.autG.oncln.services.NavigationHost
+import com.google.android.material.textfield.MaterialAutoCompleteTextView
 
 
 internal class CadastrarMenuActivity : Fragment() {
@@ -39,6 +40,7 @@ internal class CadastrarMenuActivity : Fragment() {
         binding.btnEquipamento.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_equipaments_blue, 0, 0, 0
         )
+
         return binding.root
 
     }
