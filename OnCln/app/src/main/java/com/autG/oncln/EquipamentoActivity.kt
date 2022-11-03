@@ -13,6 +13,6 @@ class EquipamentoActivity : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.activity_equipamento, container, false)
+        return inflater.inflate(R.layout.activity_cadastrar_equipamento, container, false)
     }
 }

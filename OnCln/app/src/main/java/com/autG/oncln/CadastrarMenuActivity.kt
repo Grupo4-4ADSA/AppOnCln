@@ -22,7 +22,7 @@ internal class CadastrarMenuActivity : Fragment() {
 
         binding.includeText.textTitulo.text = getText(R.string.txt_register_edit)
 
-        //cor_titulos
+
         binding.btnSalas.buttonBorder.text = getText(R.string.rooms)
 
         binding.btnSalas.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(

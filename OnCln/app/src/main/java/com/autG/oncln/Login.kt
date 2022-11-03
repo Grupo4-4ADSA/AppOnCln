@@ -35,7 +35,7 @@ internal class Login : Fragment() {
         with(binding) {
             btnEntrar.setOnClickListener {
                 (activity as NavigationHost).navigateTo(
-                    SalasActivity(),
+                    EquipamentoActivity(),
                     addToBackStack = false
                 )
             }
@@ -60,7 +60,7 @@ internal class Login : Fragment() {
                     when {
                         response.isSuccessful -> {
                             (activity as NavigationHost).navigateTo(
-                                SalasActivity(),
+                                EquipamentoActivity(),
                                 addToBackStack = false
                             )
                         }

@@ -33,24 +33,14 @@
             layout="@layout/btn_bordered" />
 
         <include
+            android:id="@+id/btn_consumo"
+            layout="@layout/btn_bordered" />
+
+        <include
             android:id="@+id/btn_cadastrar"
             layout="@layout/btn_bordered" />
 
-        <Button
-            android:id="@+id/button_border"
-            style="@style/Botao.com.borda"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/dimen_medium"
-            android:paddingStart="@dimen/dimen_extra_large"
-            android:textSize="@dimen/dimen_medium_large_txt"
-            tools:icon="@drawable/ic_equipments"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="Consumo/equipamentos"
-            android:layout_marginHorizontal="@dimen/dimen_medium"
-            />
+
 
         <include
             android:id="@+id/btn_salas"

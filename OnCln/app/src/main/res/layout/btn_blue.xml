@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/dimen_extra_large"
-        android:layout_marginBottom="@dimen/dimen_extra_large"
+        android:layout_marginVertical="@dimen/dimen_extra_large"
         android:background="@drawable/sombra_botao"
         android:text="@string/text_exemple"
         app:layout_constraintBottom_toBottomOf="parent"
