@@ -36,7 +36,7 @@ internal class Login : Fragment() {
         with(binding) {
             btnEntrar.setOnClickListener {
                 (activity as NavigationHost).navigateTo(
-                    EditarEquipamentoActivity(),
+                    HomeActivity(),
                     addToBackStack = false
                 )
             }
