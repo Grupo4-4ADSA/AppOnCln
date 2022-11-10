@@ -75,18 +75,19 @@
             android:id="@+id/txt_total"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:text="Total(1)"
-            android:textSize="@dimen/dimen_medium_large_txt"
+            android:layout_marginBottom="@dimen/dimen_small"
             android:textColor="@color/blue_secundary"
+            android:textSize="@dimen/dimen_medium_large_txt"
             android:textStyle="bold"
-            android:layout_marginBottom="@dimen/dimen_small"/>
+            tools:text="Total(1)" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycle_list_room"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             tools:itemCount="5"
-            tools:listitem="@layout/item_list_room"/>
+            tools:listitem="@layout/item_list_room" />
+
     </LinearLayout>
 </androidx.appcompat.widget.LinearLayoutCompat>
 
