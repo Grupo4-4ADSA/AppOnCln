@@ -19,14 +19,14 @@
         app:layout_constraintTop_toBottomOf="@+id/include_text">
 
         <TextView
-            android:id="@+id/tv_login"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_small"
             android:fontFamily="@font/readex_pro_medium"
-            android:paddingVertical="@dimen/dimen_small"
-            android:text="Login"
+            android:paddingTop="@dimen/dimen_medium"
+            android:text="@string/txt_room"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium_large_txt" />
+            android:textSize="@dimen/dimen_medium_primary_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -34,40 +34,46 @@
             app:boxStrokeWidthFocused="0dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/inputNomeSala"
+                android:id="@+id/input_name_room"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:hint="@string/login"
+                android:hint="@string/txt_nome"
                 android:inputType="textEmailSubject" />
         </com.google.android.material.textfield.TextInputLayout>
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_medium"
             android:fontFamily="@font/readex_pro_medium"
-            android:paddingVertical="@dimen/dimen_small"
-            android:text="Login"
+            android:paddingTop="@dimen/dimen_medium"
+            android:text="@string/txt_floor"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium_large_txt" />
+            android:textSize="@dimen/dimen_medium_primary_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:boxStrokeWidthFocused="0dp">
+            android:background="@color/gray_quaternary"
+            app:boxStrokeWidth="0dp">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/inputAndarSala"
+            <AutoCompleteTextView
+                android:id="@+id/select_floor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:hint="@string/login"
-                android:inputType="textEmailSubject" />
+                android:backgroundTint="@color/black"
+                android:hint="@string/hint_floor"
+                android:inputType="none"
+                android:paddingVertical="@dimen/dimen_small_small" />
         </com.google.android.material.textfield.TextInputLayout>
+
+
+
     </LinearLayout>
 
     <include
-        android:id="@+id/btn_blue"
+        android:id="@+id/btn_qr"
         layout="@layout/btn_blue" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

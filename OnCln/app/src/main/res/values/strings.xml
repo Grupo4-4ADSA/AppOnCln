@@ -55,9 +55,9 @@
     <string name="txt_consuming_equipments">Consumo/Equipamentos</string>
     <string name="hint_life">Insira a vida útil</string>
     <string name="hint_data">Insira a data</string>
+    <string name="hint_floor">Selecione o andar</string>
     <string name="hint_qrcode">Escaneie o qr-code</string>
     <string name="hint_room">Selecione uma sala</string>
-    <string name="hint_floor">Digite o andar dessa sala</string>
     <string name="text_equipment_type">Tipo de equipamento:</string>
     <string name="hint_equipment_type">Selecione o tipo de equipamento</string>
     <string name="filter">Filtrar:</string>
