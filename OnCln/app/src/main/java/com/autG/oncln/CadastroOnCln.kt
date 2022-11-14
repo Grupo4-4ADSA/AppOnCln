@@ -14,9 +14,7 @@ import com.autG.oncln.databinding.ActivityCadastroOnClnBinding
 
 class CadastroOnCln : Fragment() {
 
-
     private lateinit var binding: ActivityCadastroOnClnBinding
-
 
     override fun onCreateView(
         inflater: LayoutInflater,
