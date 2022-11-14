@@ -20,6 +20,7 @@
     <dimen name="dimen_small_txt">8sp</dimen>
     <dimen name="dimen_small_medium_txt">12sp</dimen>
     <dimen name="dimen_medium_txt">16sp</dimen>
+    <dimen name="dimen_medium_primary_txt">18sp</dimen>
     <dimen name="dimen_medium_large_txt">20sp</dimen>
     <dimen name="dimen_large_txt">24sp</dimen>
     <dimen name="dimen_extra_large_txt">36sp</dimen>

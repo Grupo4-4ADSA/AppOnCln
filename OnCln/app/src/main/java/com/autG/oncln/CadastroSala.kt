@@ -30,7 +30,7 @@ internal class CadastroSala : Fragment() {
 
         binding.includeText.textTitulo.text = getText(R.string.register_room_title)
 
-        binding.btnBlue.botaoAzul.text = getText(R.string.register)
+        binding.btnQr.botaoAzul.text = getText(R.string.register)
 
         return binding.root
     }
@@ -40,16 +40,16 @@ internal class CadastroSala : Fragment() {
 
         with(binding) {
 
-            binding.btnBlue.botaoAzul.setOnClickListener {
+            binding.btnQr.botaoAzul.setOnClickListener {
                 cadastroSala()
             }
         }
     }
 
     private fun cadastroSala() {
-        val nomeSala = binding.inputNomeSala.text.toString()
+        val nomeSala = binding.inputNameRoom.text.toString()
         //Todo Implementar a versão spinner futuramente
-        val nomeAndar = binding.inputAndarSala.text.toString().toInt()
+        val nomeAndar = binding.selectFloor.text.toString().toInt()
         val body = SalaRequest(nomeSala, nomeAndar, Predio(251))
 
         val registerRequest = retrofit

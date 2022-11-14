@@ -1,6 +1,5 @@
 package com.autG.oncln
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.autG.oncln.databinding.ActivityCadastroAgendamentoBinding
 
-internal class Agendamento : Fragment() {
+internal class AgendamentoActivity : Fragment() {
 
     private lateinit var binding: ActivityCadastroAgendamentoBinding
 

@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import com.autG.oncln.services.Auth
 import com.autG.oncln.api.Rest
 import com.autG.oncln.databinding.ActivityLoginBinding
+
 import com.autG.oncln.dtos.requests.LoginRequest
 import com.autG.oncln.services.NavigationHost
 import retrofit2.Call
@@ -35,7 +36,7 @@ internal class Login : Fragment() {
         with(binding) {
             btnEntrar.setOnClickListener {
                 (activity as NavigationHost).navigateTo(
-                    SalasActivity(),
+                    HomeActivity(),
                     addToBackStack = false
                 )
             }
@@ -60,7 +61,7 @@ internal class Login : Fragment() {
                     when {
                         response.isSuccessful -> {
                             (activity as NavigationHost).navigateTo(
-                                SalasActivity(),
+                                CadastroOnClnActivity(),
                                 addToBackStack = false
                             )
                         }

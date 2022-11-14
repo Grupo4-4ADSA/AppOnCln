@@ -26,13 +26,7 @@
             android:fontFamily="@font/readex_pro_medium"
             android:textColor="@color/dark_blue"
             android:textSize="@dimen/dimen_large"
-            android:textStyle="bold"
             tools:text="@string/text_central_de_ajuda" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:background="@drawable/gradiente" />
 
     </LinearLayout>
 
