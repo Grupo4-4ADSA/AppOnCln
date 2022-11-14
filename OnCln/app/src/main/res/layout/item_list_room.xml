@@ -9,13 +9,11 @@
     android:layout_margin="8dp"
     app:cardCornerRadius="@dimen/dimen_medium"
     app:cardElevation="@dimen/dimen_small"
-    app:rippleColor="@color/black"
-    app:strokeColor="@color/black"
     app:strokeWidth="0dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="403dp"
+        android:layout_height="84dp"
         android:backgroundTint="@color/gray"
         android:padding="@dimen/dimen_small">
 
@@ -75,22 +73,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="end"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent">
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:id="@+id/botao_editar"
                 android:layout_width="@dimen/dimen_extra_medium_large"
                 android:layout_height="@dimen/dimen_extra_medium_large"
                 android:layout_marginEnd="@dimen/dimen_small"
-                android:background="@drawable/ic_edit_delete"/>
+                android:background="@drawable/ic_edit_delete" />
 
             <ImageView
                 android:id="@+id/botao_excluir"
                 android:layout_width="@dimen/dimen_extra_medium_large"
                 android:layout_height="@dimen/dimen_extra_medium_large"
-                android:background="@drawable/ic_delete"/>
+                android:background="@drawable/ic_delete" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 

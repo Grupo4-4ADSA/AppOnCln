@@ -38,7 +38,7 @@
             android:layout_height="@dimen/dimen_medium_megalodon"
             android:layout_marginTop="@dimen/dimen_small"
             android:contentDescription="@string/descricao_img_central_ajuda"
-            android:src="@drawable/background_central_de_ajuda" />
+            android:src="@drawable/background_central" />
 
         <TextView
             android:layout_width="wrap_content"
