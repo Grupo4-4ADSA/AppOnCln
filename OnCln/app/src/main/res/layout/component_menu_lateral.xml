@@ -1,70 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
     android:background="@drawable/background_menu_lateral">
 
-    <ImageView
-        android:id="@+id/img_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_register"
-        android:layout_marginVertical="@dimen/dimen_extra_large"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/layout_user"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginVertical="@dimen/dimen_extra_large"
-        app:layout_constraintTop_toBottomOf="@+id/img_logo"
-        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:layout_width="116dp"
-            android:layout_height="116dp"
-            tools:src="@drawable/img_gestor_configuracoes"
-            android:layout_marginHorizontal="@dimen/dimen_extra_large"/>
-
-        <TextView
+            android:id="@+id/img_logo"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:text="Oi Jonas"
-            android:textSize="@dimen/dimen_large"
-            android:textColor="@color/white"
-            android:fontFamily="@font/readex_pro_medium" />
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dimen_extra_large"
+            android:src="@drawable/ic_register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dimen_extra_large"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_logo">
 
-    <View
-        android:id="@+id/view_line"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#C4C4C4"
-        android:layout_margin="@dimen/dimen_large"
-        app:layout_constraintTop_toBottomOf="@+id/layout_user"/>
+            <ImageView
+                android:layout_width="116dp"
+                android:layout_height="116dp"
+                android:layout_marginHorizontal="@dimen/dimen_extra_large"
+                tools:src="@drawable/img_gestor_configuracoes" />
 
-    <com.google.android.material.navigation.NavigationView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/navigationView"
-        android:backgroundTint="@color/transparent"
-        android:outlineSpotShadowColor="@color/transparent"
-        android:outlineAmbientShadowColor="@color/transparent"
-        android:theme="@style/Botao.menu.lateral"
-        app:itemShapeAppearanceOverlay="@style/Botao.menu.lateral"
-        app:itemTextColor="@color/white"
-        app:itemIconTint="@color/white"
-        app:menu="@menu/lateral_navigation_menu"
-        android:layout_margin="@dimen/dimen_small"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view_line"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/readex_pro_medium"
+                android:gravity="center_vertical"
+                android:text="Oi Jonas"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_large" />
 
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C4C4C4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_user" />
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_small"
+            android:backgroundTint="@color/transparent"
+            android:outlineAmbientShadowColor="@color/transparent"
+            android:outlineSpotShadowColor="@color/transparent"
+            android:theme="@style/Botao.menu.lateral"
+            app:itemIconTint="@color/white"
+            app:itemShapeAppearanceOverlay="@style/Botao.menu.lateral"
+            app:itemTextColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_line"
+            app:menu="@menu/lateral_navigation_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
