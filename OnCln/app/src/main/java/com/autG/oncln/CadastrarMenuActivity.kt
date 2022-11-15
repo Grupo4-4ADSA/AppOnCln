@@ -50,7 +50,8 @@ internal class CadastrarMenuActivity : Fragment() {
 
         with(binding) {
             btnSalas.buttonBorder.setOnClickListener {
-                (activity as NavigationHost).navigateTo(SalasActivity(), addToBackStack = true)
+                (activity as NavigationHost).navigateTo(SalasActivity(), addToBackStack = true,
+                R.layout.activity_salas)
                 btnEquipamento.buttonBorder.setOnClickListener {
                 }
 
