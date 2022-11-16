@@ -24,7 +24,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".EditarEquipamento"
+            android:name=".EditarEquipamentoActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

@@ -51,12 +51,12 @@ class NavBarBottom : Fragment() {
                     true
                 }
                 R.id.layout_equipments -> {
-                    (activity as NavigationHost).navigateTo(EquipamentoActivity(), addToBackStack = true,
+                    (activity as NavigationHost).navigateTo(CadastrarEquipamentoActivity(), addToBackStack = true,
                     R.layout.activity_equipamento)
                     true
                 }
                 R.id.layout_agendar -> {
-                    (activity as NavigationHost).navigateTo(Agendamento(), addToBackStack = true,
+                    (activity as NavigationHost).navigateTo(AgendamentoActivity(), addToBackStack = true,
                     R.layout.activity_cadastro_agendamento)
                     true
                 }

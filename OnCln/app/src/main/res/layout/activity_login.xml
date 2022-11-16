@@ -17,7 +17,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/logo_marca" />
+            android:src="@drawable/ic_meeting_room" />
 
         <ImageView
             android:id="@+id/img_login"
@@ -69,6 +69,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
+                android:textColorHint="@color/black"
                 android:hint="@string/senha"
                 android:inputType="textPassword" />
 

@@ -46,8 +46,7 @@
                 android:layout_width="@dimen/dimen_extra_super_amazing_large"
                 android:layout_height="@dimen/dimen_extra_super_amazing_large"
                 android:layout_gravity="center"
-                android:padding="@dimen/dimen_extra_large"
-                android:src="@drawable/img_gestor_configuracoes" />
+                android:padding="@dimen/dimen_extra_large" />
         </FrameLayout>
 
     </LinearLayout>
@@ -86,7 +85,6 @@
                 android:layout_height="13dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="3dp"
-                android:background="@drawable/ic_edit"
                 android:backgroundTint="@color/blue_secundary" />
         </LinearLayout>
 
@@ -141,7 +139,7 @@
         android:layout_marginTop="@dimen/dimen_extra_large"
         android:foregroundGravity="center_vertical"
         android:orientation="vertical"
-        android:src="@drawable/background_settings"
+        android:src="@drawable/background_config"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bloco_configuracoes" />

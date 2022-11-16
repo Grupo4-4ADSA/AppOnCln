@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import com.autG.oncln.databinding.ActivityCadastroAgendamentoBinding
 import com.autG.oncln.menus.NavBarBottom
 
-internal class Agendamento : Fragment() {
+internal class AgendamentoActivity : Fragment() {
 
     private lateinit var binding: ActivityCadastroAgendamentoBinding
 

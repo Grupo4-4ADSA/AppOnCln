@@ -4,80 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:orientation="vertical"
-    android:padding="@dimen/dimen_small"
+    android:padding="@dimen/dimen_medium"
     tools:context=".MainActivity">
 
-
-    <LinearLayout
-        android:id="@+id/linear_titulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <include
-            android:id="@+id/include_text"
-            layout="@layout/item_text" />
-    </LinearLayout>
+    <include
+        android:id="@+id/include_text"
+        layout="@layout/item_text" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_large"
         android:orientation="vertical"
-        android:layout_marginHorizontal="@dimen/dimen_extra_large"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linear_titulo">
+        app:layout_constraintTop_toBottomOf="@+id/include_text">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/dimen_extra_super_large"
+            android:layout_marginTop="@dimen/dimen_medium"
+            android:fontFamily="@font/readex_pro_medium"
+            android:paddingTop="@dimen/dimen_medium"
+            android:text="@string/txt_room"
             android:textColor="@color/black"
-            android:fontFamily="@font/readex_pro_medium"
-            android:textSize="@dimen/dimen_medium_txt"
-            android:text="@string/txt_room" />
+            android:textSize="@dimen/dimen_medium_primary_txt" />
 
-        <Spinner
-            android:id="@+id/sala_spinner"
-            style="@style/Widget.AppCompat.Spinner.Underlined"
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="@dimen/dimen_small"
-            android:entries="@array/activity_cadastro_on_cln_spinner"
-            android:fontFamily="@font/readex_pro_medium"
-            android:foregroundTint="@color/black"
-            android:spinnerMode="dropdown"
-            app:backgroundTint="@color/gray" />
+            android:layout_height="wrap_content"
+            android:background="@color/gray_quaternary"
+            app:boxStrokeWidth="0dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/select_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:hint="@string/hint_room"
+                android:inputType="none"
+                android:paddingVertical="@dimen/dimen_small_small" />
+        </com.google.android.material.textfield.TextInputLayout>
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/dimen_small"
             android:fontFamily="@font/readex_pro_medium"
-            android:textSize="@dimen/dimen_medium_txt"
-            android:text="@string/txt_qrcode" />
+            android:paddingTop="@dimen/dimen_medium"
+            android:text="@string/txt_qrcode"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_medium_primary_txt" />
 
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="@string/hint_qrcode"
-            android:textSize="@dimen/dimen_medium_txt"
-            android:drawableRight="@drawable/qr_code"
-            app:backgroundTint="@color/gray"
-            android:fontFamily="@font/readex_pro_medium"/>
+            android:layout_height="wrap_content"
+            app:boxStrokeWidthFocused="0dp">
 
-
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_qr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableRight="@drawable/ic_qr"
+                android:hint="@string/hint_qrcode"
+                android:inputType="textEmailSubject" />
+        </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
     <include
-        android:id="@+id/btn_blue"
-        layout="@layout/btn_blue"/>
-
+        android:id="@+id/btn_qr"
+        layout="@layout/btn_blue" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

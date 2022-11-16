@@ -10,14 +10,13 @@
         style="@style/Botao.com.borda"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_medium"
         android:padding="@dimen/dimen_medium"
         android:paddingStart="@dimen/dimen_extra_large"
-        tools:icon="@drawable/ic_equipments"
+        android:text="@string/text_example"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/text_exemple"
-        android:layout_marginHorizontal="@dimen/dimen_medium"
-        />
+        tools:icon="@drawable/ic_equipments" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

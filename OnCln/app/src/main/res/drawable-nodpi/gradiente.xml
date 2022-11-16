@@ -4,6 +4,8 @@
     <item>
         <shape>
             <corners android:radius="10dp" />
+            <corners android:color="@color/black" />
+
             <gradient android:angle="0"
                 android:centerColor="@color/blue_secundary"
                 android:endColor="@color/white"

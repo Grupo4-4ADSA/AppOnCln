@@ -5,11 +5,14 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
+import androidx.fragment.app.replace
 import com.autG.oncln.dataClass.MenuData
 import com.autG.oncln.databinding.ActivityMainBinding
+import com.autG.oncln.menus.EmptyScreen
 import com.autG.oncln.menus.NavBarBottom
 import com.autG.oncln.menus.NavigationBar
 import com.autG.oncln.services.NavigationHost
+import java.util.*
 
 class MainActivity : AppCompatActivity(), NavigationHost {
 
@@ -43,7 +46,7 @@ class MainActivity : AppCompatActivity(), NavigationHost {
             if (savedInstanceState == null) {
                 supportFragmentManager
                     .beginTransaction()
-                    .add(R.id.nav_menu_lateral, NavigationBar(), "menuLateral")
+                    .replace(R.id.nav_menu_lateral, NavigationBar(), "menuLateral")
                     .commit()
             }
         }
@@ -84,11 +87,10 @@ class MainActivity : AppCompatActivity(), NavigationHost {
     }
 
     override fun menuAction() {
-        binding.btnMenuLateral.visibility = View.VISIBLE
-        binding.navMenuLateral.visibility = View.GONE
         supportFragmentManager
             .beginTransaction()
-            .detach(NavigationBar())
+            .replace(R.id.nav_menu_lateral, EmptyScreen(), "menuLateral")
             .commit()
+            binding.btnMenuLateral.visibility = View.VISIBLE
     }
 }

@@ -12,17 +12,20 @@ import com.autG.oncln.MainActivity
 import com.autG.oncln.databinding.ComponentMenuLateralBinding
 import com.autG.oncln.services.NavigationHost
 
-class NavigationBar: Fragment() {
+class NavigationBar : Fragment() {
 
     private lateinit var binding: ComponentMenuLateralBinding
+    private lateinit var containerFragment: ViewGroup
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = ComponentMenuLateralBinding.inflate(inflater, container,false)
-
+        binding = ComponentMenuLateralBinding.inflate(inflater, container, false)
+        if (container != null) {
+            containerFragment = container
+        }
         TransitionManager.beginDelayedTransition(container, Slide(Gravity.RIGHT).setDuration(500))
 
         return binding.root
@@ -32,12 +35,13 @@ class NavigationBar: Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.viewVoid.setOnClickListener {
-            TransitionManager.beginDelayedTransition(this.binding.root, Slide(Gravity.RIGHT).setDuration(500))
             (activity as NavigationHost).menuAction()
         }
     }
 
-    override fun onDetach() {
-        super.onDetach()
+    override fun onPause() {
+        super.onPause()
+        TransitionManager.beginDelayedTransition(containerFragment, Slide(Gravity.RIGHT).setDuration(500))
     }
+
 }
