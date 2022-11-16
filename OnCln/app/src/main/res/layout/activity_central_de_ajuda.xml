@@ -34,31 +34,31 @@
 
         <ImageView
             android:id="@+id/img_central_de_ajuda"
-            android:layout_width="@dimen/dimen_medium_megalodon"
-            android:layout_height="@dimen/dimen_medium_megalodon"
-            android:layout_marginTop="@dimen/dimen_small"
+            android:layout_width="@dimen/dimen_super_big_300"
+            android:layout_height="@dimen/dimen_super_big_300"
+            android:layout_marginTop="@dimen/dimen_small_4"
             android:contentDescription="@string/descricao_img_central_ajuda"
             android:src="@drawable/background_central" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dimen_small_medium"
+            android:layout_marginTop="@dimen/dimen_small_12"
             android:fontFamily="@font/reader_pro_bold"
             android:text="@string/text_info_contato"
             android:textColor="@color/blue_secundary"
-            android:textSize="@dimen/dimen_medium_large"
+            android:textSize="@dimen/dimen_medium_18"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/img_central_de_ajuda" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dimen_small"
+            android:layout_marginTop="@dimen/dimen_small_4"
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/text_contato_email"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium" />
+            android:textSize="@dimen/dimen_medium_16" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -67,7 +67,7 @@
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/text_contato_telefone"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium" />
+            android:textSize="@dimen/dimen_medium_16" />
 
     </LinearLayout>
 

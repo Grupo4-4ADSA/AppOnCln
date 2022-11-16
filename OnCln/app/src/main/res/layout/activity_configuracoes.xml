@@ -10,7 +10,7 @@
         android:id="@+id/bloco_padrao_titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_large"
+        android:layout_marginTop="@dimen/dimen_large_24"
         android:orientation="vertical"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,19 +34,19 @@
         <FrameLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_marginTop="@dimen/dimen_large">
+            android:layout_marginTop="@dimen/dimen_large_24">
 
             <ImageView
-                android:layout_width="@dimen/dimen_extra_super_amazing_large"
-                android:layout_height="@dimen/dimen_extra_super_amazing_large"
+                android:layout_width="@dimen/dimen_super_big_250"
+                android:layout_height="@dimen/dimen_super_big_250"
                 android:src="@drawable/fundo_foto_configuracoes" />
 
             <ImageView
                 android:id="@+id/foto_gestor"
-                android:layout_width="@dimen/dimen_extra_super_amazing_large"
-                android:layout_height="@dimen/dimen_extra_super_amazing_large"
+                android:layout_width="@dimen/dimen_super_big_250"
+                android:layout_height="@dimen/dimen_super_big_250"
                 android:layout_gravity="center"
-                android:padding="@dimen/dimen_extra_large" />
+                android:padding="@dimen/dimen_large_36" />
         </FrameLayout>
 
     </LinearLayout>
@@ -55,7 +55,7 @@
         android:id="@+id/bloco_edicao_nome_gestor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_small"
+        android:layout_marginTop="@dimen/dimen_small_8"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,7 +76,7 @@
                 android:hint="@string/text_jonas_bezerra"
                 android:maxLength="20"
                 android:textColor="@color/black"
-                android:textSize="@dimen/dimen_medium_txt"
+                android:textSize="@dimen/dimen_medium_16_txt"
                 android:textStyle="bold"
                 tools:text="@string/text_jonas_bezerra" />
 
@@ -89,8 +89,8 @@
         </LinearLayout>
 
         <View
-            android:layout_width="@dimen/dimen_extra_super_large"
-            android:layout_height="@dimen/dimen_small"
+            android:layout_width="@dimen/dimen_large_90"
+            android:layout_height="@dimen/dimen_small_8"
             android:background="@drawable/gradiente" />
     </LinearLayout>
 
@@ -98,7 +98,7 @@
         android:id="@+id/bloco_configuracoes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_large"
+        android:layout_marginTop="@dimen/dimen_large_24"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -117,7 +117,7 @@
                 android:fontFamily="@font/readex_pro_medium"
                 android:text="@string/text_modo_dark"
                 android:textColor="@color/black"
-                android:textSize="@dimen/dimen_medium" />
+                android:textSize="@dimen/dimen_medium_16" />
 
             <include layout="@layout/item_switch" />
         </LinearLayout>
@@ -130,13 +130,13 @@
             android:scaleType="fitStart"
             android:text="@string/text_alterar_senha"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium" />
+            android:textSize="@dimen/dimen_medium_16" />
     </LinearLayout>
 
     <ImageView
-        android:layout_width="@dimen/dimen_extra_super_amazing_large"
-        android:layout_height="@dimen/dimen_extra_super_medium"
-        android:layout_marginTop="@dimen/dimen_extra_large"
+        android:layout_width="@dimen/dimen_super_big_250"
+        android:layout_height="@dimen/dimen_super_big_162"
+        android:layout_marginTop="@dimen/dimen_large_36"
         android:foregroundGravity="center_vertical"
         android:orientation="vertical"
         android:src="@drawable/background_config"

@@ -20,8 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-
-            android:padding="@dimen/dimen_small_small" />
+            android:padding="@dimen/dimen_small_4" />
 
 
     </com.google.android.material.textfield.TextInputLayout>

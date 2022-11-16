@@ -20,52 +20,52 @@
         <item name="android:textSize">20sp</item>
         <item name="textAllCaps">false</item>
         <item name="android:textColor">@color/white</item>
-        <item name="cornerRadius">@dimen/dimen_small</item>
+        <item name="cornerRadius">@dimen/dimen_small_4</item>
 
     </style>
 
     <style name="ButtonBlue" parent="ShapeAppearance.MaterialComponents.SmallComponent">
         <item name="cornerFamily">cut</item>
-        <item name="cornerSize">@dimen/dimen_large</item>
-        <item name="cornerRadius">@dimen/dimen_small</item>
+        <item name="cornerSize">@dimen/dimen_large_24</item>
+        <item name="cornerRadius">@dimen/dimen_small_4</item>
     </style>
 
     <style name="Botao.com.borda" parent="Theme.MaterialComponents">
         <item name="backgroundTint">@color/white</item>
-        <item name="android:textSize">@dimen/dimen_large</item>
+        <item name="android:textSize">@dimen/dimen_large_24_txt</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/blue_secundary</item>
         <item name="strokeWidth">@dimen/m3_btn_stroke_size</item>
         <item name="iconTint">@color/blue_secundary</item>
         <item name="android:textAlignment">textStart</item>
-        <item name="iconSize">@dimen/dimen_extra_large</item>
-        <item name="cornerRadius">@dimen/dimen_extra_large</item>
+        <item name="iconSize">@dimen/dimen_large_36</item>
+        <item name="cornerRadius">@dimen/dimen_large_36</item>
         <item name="colorOutline">@color/black</item>
     </style>
 
     <style name="Item.list" parent="Theme.MaterialComponents">
         <item name="backgroundTint">@color/white</item>
-        <item name="android:textSize">@dimen/dimen_large</item>
+        <item name="android:textSize">@dimen/dimen_large_24</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/blue_secundary</item>
         <item name="strokeWidth">@dimen/m3_btn_stroke_size</item>
         <item name="iconTint">@color/blue_secundary</item>
         <item name="android:textAlignment">textStart</item>
-        <item name="iconSize">@dimen/dimen_extra_y_large</item>
-        <item name="cornerRadius">@dimen/dimen_large</item>
+        <item name="iconSize">@dimen/dimen_large_60</item>
+        <item name="cornerRadius">@dimen/dimen_large_24</item>
         <item name="colorOutline">@color/black</item>
-        <item name="android:padding">@dimen/dimen_small</item>
-        <item name="paddingStart">@dimen/dimen_medium</item>
+        <item name="android:padding">@dimen/dimen_small_4</item>
+        <item name="paddingStart">@dimen/dimen_medium_16</item>
     </style>
 
     <style name="Botao.item.lista" parent="Theme.MaterialComponents">
         <item name="backgroundTint">@color/blue_secundary</item>
-        <item name="android:textSize">@dimen/dimen_medium_txt</item>
+        <item name="android:textSize">@dimen/dimen_medium_16_txt</item>
         <item name="android:textStyle">bold</item>
         <item name="iconTint">@color/blue_secundary</item>
         <item name="android:textAlignment">textStart</item>
-        <item name="iconSize">@dimen/dimen_extra_large</item>
-        <item name="cornerRadius">@dimen/dimen_extra_large</item>
+        <item name="iconSize">@dimen/dimen_large_36</item>
+        <item name="cornerRadius">@dimen/dimen_large_36</item>
     </style>
 
     <style name="Switch" parent="Theme.MaterialComponents">

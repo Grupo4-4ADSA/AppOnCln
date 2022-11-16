@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/dimen_medium"
+    android:padding="@dimen/dimen_medium_16"
     tools:context=".MainActivity">
 
     <include
@@ -14,7 +14,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/dimen_large"
+        android:layout_margin="@dimen/dimen_large_24"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/include_text">
 
@@ -23,9 +23,9 @@
             android:layout_height="match_parent"
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/txt_room"
-            android:layout_marginTop="@dimen/dimen_medium"
+            android:layout_marginTop="@dimen/dimen_medium_16"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium_primary_txt" />
+            android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
@@ -41,17 +41,17 @@
                 android:backgroundTint="@color/black"
                 android:hint="@string/hint_room"
                 android:inputType="none"
-                android:paddingVertical="@dimen/dimen_small_small" />
+                android:paddingVertical="@dimen/dimen_small_4" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/dimen_small"
+            android:layout_marginTop="@dimen/dimen_small_8"
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/text_equipment_type"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium_primary_txt" />
+            android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/text_field_equip"
@@ -68,17 +68,17 @@
                 android:backgroundTint="@color/black"
                 android:hint="@string/hint_equipment_type"
                 android:inputType="none"
-                android:paddingVertical="@dimen/dimen_small_small" />
+                android:paddingVertical="@dimen/dimen_small_4" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/dimen_small"
+            android:layout_marginTop="@dimen/dimen_small_8"
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/txt_date_insta"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium_primary_txt" />
+            android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -103,18 +103,18 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/dimen_small_small"
+                android:layout_marginHorizontal="@dimen/dimen_small_4"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="@dimen/dimen_small"
+                    android:layout_marginTop="@dimen/dimen_small_8"
                     android:fontFamily="@font/readex_pro_medium"
                     android:text="@string/txt_qtd"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/dimen_medium_primary_txt" />
+                    android:textSize="@dimen/dimen_medium_18_txt" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
@@ -128,7 +128,7 @@
                         android:background="@color/white"
                         android:hint="@string/hint_quantidade"
                         android:inputType="number"
-                        android:textSize="@dimen/dimen_small_medium_txt" />
+                        android:textSize="@dimen/dimen_small_12_txt" />
                 </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
@@ -136,18 +136,18 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/dimen_small_small"
+                android:layout_marginHorizontal="@dimen/dimen_small_4"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="@dimen/dimen_small"
+                    android:layout_marginTop="@dimen/dimen_small_8"
                     android:fontFamily="@font/readex_pro_medium"
                     android:text="@string/txt_power"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/dimen_medium_primary_txt" />
+                    android:textSize="@dimen/dimen_medium_18_txt" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/input_power"
@@ -161,7 +161,7 @@
                         android:background="@color/white"
                         android:hint="@string/hint_potencia"
                         android:inputType="number"
-                        android:textSize="@dimen/dimen_small_medium_txt" />
+                        android:textSize="@dimen/dimen_small_12_txt" />
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
         </LinearLayout>
@@ -169,12 +169,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/dimen_small"
+            android:layout_marginTop="@dimen/dimen_small_8"
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/txt_life"
             android:textColor="@color/black"
 
-            android:textSize="@dimen/dimen_medium_primary_txt" />
+            android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"

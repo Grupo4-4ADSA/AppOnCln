@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginHorizontal="@dimen/dimen_small"
+        android:layout_marginHorizontal="@dimen/dimen_small_8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/layout_equipments"
         app:layout_constraintTop_toTopOf="parent">
@@ -34,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginHorizontal="@dimen/dimen_small"
+        android:layout_marginHorizontal="@dimen/dimen_small_8"
         app:layout_constraintStart_toEndOf="@+id/layout_home"
         app:layout_constraintEnd_toStartOf="@+id/layout_salas"
         app:layout_constraintTop_toTopOf="parent">
@@ -58,7 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginHorizontal="@dimen/dimen_small"
+        android:layout_marginHorizontal="@dimen/dimen_small_8"
         app:layout_constraintStart_toEndOf="@+id/layout_equipments"
         app:layout_constraintEnd_toStartOf="@+id/layout_agendar"
         app:layout_constraintTop_toTopOf="parent">
@@ -82,7 +82,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginHorizontal="@dimen/dimen_small"
+        android:layout_marginHorizontal="@dimen/dimen_small_8"
         app:layout_constraintStart_toEndOf="@+id/layout_salas"
         app:layout_constraintEnd_toStartOf="@+id/layout_cadastrar"
         app:layout_constraintTop_toTopOf="parent">
@@ -106,7 +106,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginHorizontal="@dimen/dimen_small"
+        android:layout_marginHorizontal="@dimen/dimen_small_8"
         app:layout_constraintStart_toEndOf="@+id/layout_agendar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">

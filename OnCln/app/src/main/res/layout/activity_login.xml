@@ -18,7 +18,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_meeting_room" />
+            android:src="@drawable/ic_logo_empresa" />
 
         <ImageView
             android:id="@+id/img_login"
@@ -31,10 +31,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/readex_pro_medium"
-            android:paddingVertical="@dimen/dimen_medium"
+            android:paddingVertical="@dimen/dimen_medium_16"
             android:text="Login"
             android:textColor="@color/blue_secundary"
-            android:textSize="@dimen/dimen_large_txt" />
+            android:textSize="@dimen/dimen_large_24_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/txt_filter"
@@ -85,15 +85,15 @@
             android:id="@+id/btn_entrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="@dimen/dimen_large"
-            android:layout_marginTop="@dimen/dimen_medium"
+            android:layout_marginVertical="@dimen/dimen_large_24"
+            android:layout_marginTop="@dimen/dimen_medium_16"
             android:background="@drawable/backgroud_button_login"
             android:fontFamily="@font/readex_pro_medium"
             android:text="Entrar"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="@dimen/dimen_large_txt" />
+            android:textSize="@dimen/dimen_large_24_txt" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -111,7 +111,7 @@
                     android:layout_width="1dp"
                     android:layout_height="5dp"
                     android:layout_weight="1"
-                    android:layout_marginEnd="@dimen/dimen_small"
+                    android:layout_marginEnd="@dimen/dimen_small_8"
                     android:background="@drawable/gradiente"
                     android:rotationY="180" />
 
@@ -121,14 +121,14 @@
                     android:layout_height="wrap_content"
                     android:text="@string/outra_forma_login"
                     android:textColor="@color/blue_secundary"
-                    android:textSize="@dimen/dimen_medium"
+                    android:textSize="@dimen/dimen_medium_16"
                     android:textStyle="bold" />
 
                 <View
                     android:layout_width="1dp"
                     android:layout_height="5dp"
                     android:layout_weight="1"
-                    android:layout_marginStart="@dimen/dimen_small"
+                    android:layout_marginStart="@dimen/dimen_small_8"
                     android:background="@drawable/gradiente" />
 
 
@@ -137,7 +137,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="@dimen/dimen_large"
+                android:layout_marginTop="@dimen/dimen_large_24"
                 android:src="@drawable/ic_google" />
 
         </LinearLayout>
