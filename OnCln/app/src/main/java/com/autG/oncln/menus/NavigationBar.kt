@@ -8,7 +8,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.autG.oncln.MainActivity
+import com.autG.oncln.*
+import com.autG.oncln.AgendamentoActivity
+import com.autG.oncln.CadastrarMenuActivity
+import com.autG.oncln.HomeActivity
+import com.autG.oncln.SalasActivity
 import com.autG.oncln.databinding.ComponentMenuLateralBinding
 import com.autG.oncln.services.NavigationHost
 
@@ -37,6 +41,44 @@ class NavigationBar : Fragment() {
         binding.viewVoid.setOnClickListener {
             (activity as NavigationHost).menuAction()
         }
+
+        binding.navigationMenuView?.setNavigationItemSelectedListener {
+            when (it.itemId) {
+                R.id.layout_home -> {
+                    (activity as NavigationHost).navigateTo(
+                        HomeActivity(), addToBackStack = true,
+                        R.layout.activity_home
+                    )
+                    true
+                }
+                R.id.layout_salas -> {
+                    (activity as NavigationHost).navigateTo(
+                        SalasActivity(), addToBackStack = true,
+                        R.layout.activity_salas)
+                    true
+                }
+                R.id.layout_equipments -> {
+                    (activity as NavigationHost).navigateTo(
+                        CadastrarEquipamentoActivity(), addToBackStack = true,
+                        R.layout.activity_equipamento)
+                    true
+                }
+                R.id.layout_agendar -> {
+                    (activity as NavigationHost).navigateTo(
+                        AgendamentoActivity(), addToBackStack = true,
+                        R.layout.activity_cadastro_agendamento)
+                    true
+                }
+                R.id.layout_cadastrar -> {
+                    (activity as NavigationHost).navigateTo(
+                        CadastrarMenuActivity(), addToBackStack = true,
+                        R.layout.activity_cadastrar_menu)
+                    true
+                }
+                else -> false
+            }
+        }
+
     }
 
     override fun onPause() {

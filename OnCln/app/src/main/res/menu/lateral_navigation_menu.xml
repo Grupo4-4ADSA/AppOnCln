@@ -7,10 +7,10 @@
         android:icon="@drawable/ic_home"
         android:title="@string/home"/>
     <item
-        android:id="@+id/layout_equipments"
+        android:id="@+id/layout_cadastrar"
         android:enabled="true"
-        android:icon="@drawable/ic_equipments"
-        android:title="@string/equipments" />
+        android:icon="@drawable/ic_register"
+        android:title="@string/txt_register_edit" />
     <item
         android:id="@+id/layout_salas"
         android:enabled="true"
@@ -20,26 +20,28 @@
         android:id="@+id/layout_agendar"
         android:enabled="true"
         android:icon="@drawable/ic_schedule"
-        android:title="@string/toSchedule" />
+        android:title="@string/txt_agenda" />
     <item
-        android:id="@+id/layout_cadastrar"
+        android:id="@+id/layout_equipments"
         android:enabled="true"
-        android:icon="@drawable/ic_register"
-        android:title="@string/register" />
+        android:icon="@drawable/ic_equipments"
+        android:title="@string/txt_consuming_equipments" />
     <item
         android:id="@+id/layout_consumo"
         android:enabled="true"
-        android:icon="@drawable/ic_meeting_room"
-        android:title="@string/rooms" />
+        android:icon="@drawable/ic_grafico"
+        android:title="@string/txt_consuming_summary" />
+    <!-- TODO criar icone certo-->
     <item
-        android:id="@+id/layout_resumo"
+        android:id="@+id/layout_ajuda"
         android:enabled="true"
-        android:icon="@drawable/ic_schedule"
-        android:title="@string/toSchedule" />
+        android:icon="@drawable/ic_home"
+        android:title="@string/text_central_de_ajuda" />
+    <!-- TODO criar icone certo-->
     <item
-        android:id="@+id/layout_central"
+        android:id="@+id/layout_configuracoes"
         android:enabled="true"
-        android:icon="@drawable/ic_register"
-        android:title="@string/register" />
+        android:icon="@drawable/ic_home"
+        android:title="@string/text_configuracoes" />
 
 </menu>

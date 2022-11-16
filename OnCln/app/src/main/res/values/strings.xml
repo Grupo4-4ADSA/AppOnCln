@@ -50,7 +50,7 @@
     <string name="txt_life">Vida útil:</string>
     <string name="txt_qrcode">Qr-Code:</string>
     <string name="txt_oncln">OnCln</string>
-    <string name="txt_agenda">Agendamento</string>
+    <string name="txt_agenda">Agendamentos</string>
     <string name="txt_register_edit">Cadastrar ou Editar</string>
     <string name="txt_consuming_equipments">Consumo/Equipamentos</string>
     <string name="hint_life">Insira a vida útil</string>
@@ -61,6 +61,7 @@
     <string name="text_equipment_type">Tipo de equipamento:</string>
     <string name="hint_equipment_type">Selecione o tipo de equipamento</string>
     <string name="filter">Filtrar:</string>
+    <string name="txt_consuming_summary">Resumo de consumo</string>
 
 
     <string name="text_example">Text example</string>

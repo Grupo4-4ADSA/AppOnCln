@@ -84,6 +84,7 @@ class MainActivity : AppCompatActivity(), NavigationHost {
 
         binding.navFragmentContainer.visibility = View.VISIBLE
         binding.btnMenuLateral.visibility = View.VISIBLE
+        menuAction()
     }
 
     override fun menuAction() {

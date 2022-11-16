@@ -1,6 +1,10 @@
 package com.autG.oncln
 
 import android.os.Bundle
+import android.transition.Fade
+import android.transition.Slide
+import android.transition.TransitionManager
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -50,8 +54,6 @@ internal class HomeActivity: Fragment() {
             com.autG.oncln.R.drawable.ic_power,0,0,0)
         binding.btnSalas.buttonBorder.setBackgroundColor(getColor(requireContext(),
             com.autG.oncln.R.color.blue_secundary))
-
-
 
         return binding.root
     }
