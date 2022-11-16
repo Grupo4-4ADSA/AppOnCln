@@ -2,6 +2,7 @@ package com.autG.oncln.menus
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.Menu
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
@@ -29,7 +30,7 @@ class NavBarBottom : Fragment() {
         binding = NavbarBottomBinding.inflate(inflater, container, false)
 
         val data = arguments?.getSerializable("screen") as MenuData
-        binding.bottomNavigation.selectedItemId = filter(data.setPage, data.setBackLayout)
+        binding.bottomNavigation.selectedItemId = filter(data)
 
         return binding.root
     }
@@ -69,8 +70,8 @@ class NavBarBottom : Fragment() {
         }
     }
 
-    fun filter(item: Int, backLayout: Int?): Int{
-        return when (item) {
+    fun filter(item:MenuData): Int{
+        return when (item.setPage) {
              R.layout.activity_home -> {
                 R.id.layout_home
             }
@@ -86,7 +87,7 @@ class NavBarBottom : Fragment() {
              R.layout.activity_cadastrar_menu -> {
                 R.id.layout_cadastrar
             }
-            else -> backLayout!!
+            else -> item.setBackLayout!!
         }
     }
 }

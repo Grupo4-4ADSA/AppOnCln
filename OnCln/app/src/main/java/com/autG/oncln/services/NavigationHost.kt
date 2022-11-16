@@ -4,5 +4,6 @@ import androidx.fragment.app.Fragment
 
 
 interface NavigationHost {
-    fun navigateTo(fragment: Fragment, addToBackStack: Boolean, screen: Int)
+    fun navigateTo(fragment: Fragment, addToBackStack: Boolean, layout: Int)
+    fun menuAction()
 }
