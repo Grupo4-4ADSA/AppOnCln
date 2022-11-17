@@ -11,9 +11,9 @@
         android:id="@+id/bloco_padrao_titulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_small"
+        android:layout_marginTop="@dimen/dimen_small_8"
         android:orientation="vertical"
-        android:padding="@dimen/dimen_small_small"
+        android:padding="@dimen/dimen_small_4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -25,7 +25,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="@dimen/dimen_large"
+            android:layout_marginVertical="@dimen/dimen_large_24"
             android:src="@drawable/background_home" />
 
         <include

@@ -54,7 +54,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/dimen_extra_super_large"
+            android:layout_marginTop="@dimen/dimen_large_90"
             android:fontFamily="@font/readex_pro_medium"
             android:text="Nome:"
             android:textColor="@color/black"
@@ -74,7 +74,7 @@
             android:fontFamily="@font/readex_pro_medium"
             android:text="Andar:"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium_large_txt" />
+            android:textSize="@dimen/dimen_large_20_txt" />
 
         <EditText
             android:layout_width="match_parent"

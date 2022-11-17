@@ -6,7 +6,7 @@
         android:enabled="true"
         android:icon="@drawable/ic_home"
         android:checkable="true"
-        android:title="@string/home"/>
+        android:title="@string/home" />
     <item
         android:id="@+id/layout_cadastrar"
         android:enabled="true"

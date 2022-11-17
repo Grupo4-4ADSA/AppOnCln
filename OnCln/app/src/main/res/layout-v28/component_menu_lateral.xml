@@ -5,7 +5,7 @@
     android:id="@+id/menu_lateral"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:elevation="@dimen/dimen_medium"
+    android:elevation="@dimen/dimen_medium_16"
     android:orientation="horizontal"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
@@ -28,7 +28,7 @@
             android:id="@+id/img_logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="@dimen/dimen_extra_large"
+            android:layout_marginVertical="@dimen/dimen_large_36"
             android:src="@drawable/ic_register"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -38,7 +38,7 @@
             android:id="@+id/layout_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="@dimen/dimen_extra_large"
+            android:layout_marginVertical="@dimen/dimen_large_36"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/img_logo">
@@ -46,7 +46,7 @@
             <ImageView
                 android:layout_width="116dp"
                 android:layout_height="116dp"
-                android:layout_marginHorizontal="@dimen/dimen_extra_large"
+                android:layout_marginHorizontal="@dimen/dimen_large_36"
                 tools:src="@drawable/ic_nav_bar" />
 
             <TextView
@@ -56,7 +56,7 @@
                 android:gravity="center_vertical"
                 android:text="Oi Jonas"
                 android:textColor="@color/white"
-                android:textSize="@dimen/dimen_large" />
+                android:textSize="@dimen/dimen_large_24" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -72,7 +72,7 @@
             android:id="@+id/navigationView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dimen_small"
+            android:layout_margin="@dimen/dimen_small_8"
             android:backgroundTint="@color/transparent"
             android:outlineAmbientShadowColor="@color/transparent"
             android:outlineSpotShadowColor="@color/transparent"

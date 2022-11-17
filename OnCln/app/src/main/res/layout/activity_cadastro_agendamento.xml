@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    android:padding="@dimen/dimen_small"
+    android:padding="@dimen/dimen_small_4"
     tools:context=".MainActivity">
 
 
@@ -28,8 +28,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/dimen_small"
-        android:layout_marginTop="@dimen/dimen_extra_large"
+        android:layout_marginHorizontal="@dimen/dimen_small_4"
+        android:layout_marginTop="@dimen/dimen_large_36"
         android:orientation="vertical"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -41,7 +41,7 @@
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/txt_room"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium_txt" />
+            android:textSize="@dimen/dimen_medium_16_txt" />
 
         <Spinner
             android:id="@+id/sala_spinner"
@@ -61,7 +61,7 @@
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/txt_floor"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium_txt" />
+            android:textSize="@dimen/dimen_medium_16_txt" />
 
         <Spinner
             android:id="@+id/andar_spinner"
@@ -96,7 +96,7 @@
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/txt_life"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium_txt" />
+            android:textSize="@dimen/dimen_medium_16_txt" />
 
         <EditText
             android:layout_width="match_parent"

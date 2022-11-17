@@ -10,7 +10,7 @@
         android:id="@+id/nav_menu_lateral"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:elevation="@dimen/dimen_medium"
+        android:elevation="@dimen/dimen_medium_16"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,18 +21,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/black_transparent"
-        android:elevation="@dimen/dimen_small"
+        android:elevation="@dimen/dimen_small_8"
         android:visibility="gone" />
 
     <ImageButton
         android:id="@+id/btn_menu_lateral"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/dimen_medium"
-        android:padding="@dimen/dimen_small"
+        android:layout_margin="@dimen/dimen_medium_16"
+        android:padding="@dimen/dimen_small_8"
         android:visibility="gone"
         android:background="@color/transparent"
-        android:elevation="@dimen/dimen_small"
+        android:elevation="@dimen/dimen_small_8"
         android:src="@drawable/ic_nav_bar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -63,4 +63,5 @@
             app:layout_constraintStart_toStartOf="parent"
             tools:layout="@layout/navbar_bottom" />
     </androidx.appcompat.widget.LinearLayoutCompat>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
