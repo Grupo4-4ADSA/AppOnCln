@@ -20,27 +20,23 @@ internal class CadastrarMenuActivity : Fragment() {
     ): View? {
         binding = ActivityCadastrarMenuBinding.inflate(inflater, container, false)
 
-        binding.includeText.textTitulo.text = getText(R.string.txt_register_edit)
+        binding.includeText.textTitulo.text = getText(R.string.title_register_edit)
 
-
-        binding.btnSalas.buttonBorder.text = getText(R.string.rooms)
-
+        binding.btnSalas.buttonBorder.text = getText(R.string.title_rooms)
         binding.btnSalas.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_meeting_room_blue, 0, 0, 0
         )
 
-        binding.btnOncln.buttonBorder.text = getText(R.string.txt_oncln)
-
+        binding.btnOncln.buttonBorder.text = getText(R.string.title_input_oncln)
         binding.btnOncln.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_oncln, 0, 0, 0
         )
 
-        binding.btnEquipamento.buttonBorder.text = getText(R.string.equipments)
+        binding.btnEquipamento.buttonBorder.text = getText(R.string.title_equipaments)
         binding.btnEquipamento.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_equipaments_blue, 0, 0, 0
         )
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

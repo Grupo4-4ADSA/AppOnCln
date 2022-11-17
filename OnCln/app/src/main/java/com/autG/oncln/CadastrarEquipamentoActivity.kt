@@ -19,8 +19,8 @@ class CadastrarEquipamentoActivity : Fragment() {
         // Inflate the layout for this fragment
 
         binding = ActivityCadastrarEquipamentoBinding.inflate(inflater, container, false)
-        binding.includeText.textTitulo.text = getText(R.string.register_equipment_title)
-        binding.btnEquipment.botaoAzul.text = "Cadastrar"
+        binding.includeText.textTitulo.text = getText(R.string.title_register_equipment)
+        binding.btnEquipment.botaoAzul.text = getText(R.string.txt_register)
         return binding.root
 
     }

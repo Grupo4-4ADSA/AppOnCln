@@ -18,7 +18,6 @@ class EditarSala : Fragment() {
 
     private lateinit var binding: ActivityEditarSalaBinding
 
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -26,14 +25,14 @@ class EditarSala : Fragment() {
     ): View? {
         binding = ActivityEditarSalaBinding.inflate(inflater, container, false)
 
-        binding.btnBlue.botaoAzul.text = "Salvar"
+        binding.includeText.textTitulo.text= getText(R.string.title_edit_room)
+        binding.btnQr.botaoAzul.text = "Salvar"
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
     }
-
 
     fun cadastrarCln() {
 

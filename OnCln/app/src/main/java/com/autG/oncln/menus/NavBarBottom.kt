@@ -34,7 +34,7 @@ class NavBarBottom : Fragment() {
                 (activity as NavigationHost).navigateTo(HomeActivity(), addToBackStack = true)
             }
             imgSalas.setOnClickListener {
-                (activity as NavigationHost).navigateTo(CadastroSala(), addToBackStack = true)
+                (activity as NavigationHost).navigateTo(CadastrarSalaActivity(), addToBackStack = true)
             }
         }
 

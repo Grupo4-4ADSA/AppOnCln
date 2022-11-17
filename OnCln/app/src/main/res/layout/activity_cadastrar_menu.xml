@@ -3,12 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/white"
     android:orientation="vertical">
 
     <include
         android:id="@+id/include_text"
-        layout="@layout/item_text" />
+        layout="@layout/item_underlined_title" />
 
     <ImageView
         android:layout_width="match_parent"
@@ -16,9 +15,17 @@
         android:layout_marginVertical="@dimen/dimen_large_36"
         android:src="@drawable/background_home" />
 
-    <include android:id="@+id/btn_salas" layout="@layout/btn_bordered" />
-    <include android:id="@+id/btn_oncln" layout="@layout/btn_bordered" />
-    <include android:id="@+id/btn_equipamento" layout="@layout/btn_bordered" />
+    <include
+        android:id="@+id/btn_salas"
+        layout="@layout/btn_bordered" />
+
+    <include
+        android:id="@+id/btn_oncln"
+        layout="@layout/btn_bordered" />
+
+    <include
+        android:id="@+id/btn_equipamento"
+        layout="@layout/btn_bordered" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
 

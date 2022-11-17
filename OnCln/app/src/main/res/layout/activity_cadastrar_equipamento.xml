@@ -9,7 +9,7 @@
 
     <include
         android:id="@+id/include_text"
-        layout="@layout/item_text" />
+        layout="@layout/item_underlined_title" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="@string/txt_room"
+            android:text="@string/title_input_room"
             android:layout_marginTop="@dimen/dimen_medium_16"
             android:textColor="@color/black"
             android:textSize="@dimen/dimen_medium_18_txt" />
@@ -49,7 +49,7 @@
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/dimen_small_8"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="@string/text_equipment_type"
+            android:text="@string/title_input_equipament_type"
             android:textColor="@color/black"
             android:textSize="@dimen/dimen_medium_18_txt" />
 
@@ -76,7 +76,7 @@
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/dimen_small_8"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="@string/txt_date_insta"
+            android:text="@string/title_input_date_installation"
             android:textColor="@color/black"
             android:textSize="@dimen/dimen_medium_18_txt" />
 
@@ -112,7 +112,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="@dimen/dimen_small_8"
                     android:fontFamily="@font/readex_pro_medium"
-                    android:text="@string/txt_qtd"
+                    android:text="@string/title_input_amount"
                     android:textColor="@color/black"
                     android:textSize="@dimen/dimen_medium_18_txt" />
 
@@ -126,7 +126,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/white"
-                        android:hint="@string/hint_quantidade"
+                        android:hint="@string/hint_amount"
                         android:inputType="number"
                         android:textSize="@dimen/dimen_small_12_txt" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -145,7 +145,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="@dimen/dimen_small_8"
                     android:fontFamily="@font/readex_pro_medium"
-                    android:text="@string/txt_power"
+                    android:text="@string/title_input_power"
                     android:textColor="@color/black"
                     android:textSize="@dimen/dimen_medium_18_txt" />
 
@@ -159,7 +159,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/white"
-                        android:hint="@string/hint_potencia"
+                        android:hint="@string/hint_power"
                         android:inputType="number"
                         android:textSize="@dimen/dimen_small_12_txt" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -171,10 +171,10 @@
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/dimen_small_8"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="@string/txt_life"
+            android:text="@string/title_input_life"
             android:textColor="@color/black"
 
-            android:textSize="@dimen/dimen_medium_18_txt" />
+            android:textSize="@dimen/dimen_medium_18" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -186,8 +186,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:hint="@string/hint_vida"
-                android:inputType="textEmailSubject" />
+                android:hint="@string/hint_life"
+                android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 

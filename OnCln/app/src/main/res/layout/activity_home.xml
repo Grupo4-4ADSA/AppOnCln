@@ -4,14 +4,13 @@
     android:layout_width="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="wrap_content"
-    android:background="@color/white"
     android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/bloco_padrao_titulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_small_8"
+        android:layout_marginTop="@dimen/dimen_small_12"
         android:orientation="vertical"
         android:padding="@dimen/dimen_small_4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,7 +19,7 @@
 
         <include
             android:id="@+id/include_text"
-            layout="@layout/item_text" />
+            layout="@layout/item_underlined_title" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -33,14 +32,12 @@
             layout="@layout/btn_bordered" />
 
         <include
-            android:id="@+id/btn_consumo"
-            layout="@layout/btn_bordered" />
-
-        <include
             android:id="@+id/btn_cadastrar"
             layout="@layout/btn_bordered" />
 
-
+        <include
+            android:id="@+id/btn_consumo"
+            layout="@layout/btn_bordered" />
 
         <include
             android:id="@+id/btn_salas"

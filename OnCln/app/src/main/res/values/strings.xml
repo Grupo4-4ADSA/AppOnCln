@@ -1,82 +1,84 @@
 <resources>
-    <string name="app_name">OnCln</string>
-    <string name="home">Home</string>
-    <string name="equipments">Equipamentos</string>
-    <string name="rooms">Salas</string>
-    <string name="toSchedule">Agendar</string>
-    <string name="register">Cadastrar</string>
-    <string name="text_central_de_ajuda">Central de ajuda</string>
-    <string name="text_info_contato">Informações de contato</string>
-    <string name="text_contato_email">Email: contato@autg.com.br</string>
-    <string name="text_contato_telefone">Telefone: (11) 0000-1111</string>
-    <string name="text_botao_suporte">Suporte 24h</string>
-    <string name="descricao_img_central_ajuda">ilustração de sugestão</string>
-    <string name="text_configuracoes">Configurações</string>
-    <string name="text_jonas_bezerra">Jonas Bezerra</string>
-    <string name="text_modo_dark">Modo dark</string>
-    <string name="text_alterar_senha">Alterar senha</string>
-    <string name="text_alterar_senha_descricao">Alterar Senha:</string>
-    <string name="fix_digite_a_nova_senha">Digite a nova senha:</string>
-    <string name="text_senha">**********</string>
-    <string name="text_digite_a_nova_senha_novamente">Digite a nova senha novamente:</string>
-    <string name="text_salvar_alteracao">Salvar alteração</string>
-    <string name="descricao_cancelar_alteracao">Cancelar alteração</string>
-    <string name="text_digite_a_senha_antiga">Digite a senha antiga:</string>
-    <string name="txt_total">Tota(1)</string>
-    <string name="txt_pesquisar">Pesquisar</string>
 
-    <string name="txt_nome">Insira o nome</string>
-    <string name="hint_quantidade">Insira a quantidade</string>
-    <string name="hint_potencia">Insira a potência</string>
-    <string name="hint_vida">Insira a vida útil</string>
-    <string name="txt_usuario">Usuário:</string>
-    <string name="txt_senha">Senha:</string>
-    <string name="equipment_title">Editar equipamento</string>
-    <string name="agendamento_title">Novo agendamento</string>
-    <string name="register_room_title">Cadastrar sala</string>
-    <string name="register_oncln_title">Cadastrar On-Cln</string>
-    <string name="register_equipment_title">Cadastrar Equipamento</string>
-    <string name="name_room_subtitle">nome da sala</string>
-    <string name="login">Usuário:</string>
-    <string name="outra_forma_login">Entrar de outra forma</string>
+    //Padronizando:
+    //Botão: txt_btn
+    //Titulo: title_example
+    //input: hint_example
+    //Descrição: description_example
+    //Text Input: title_input_example
+    //Example text: text_example_example
+    <string name="description_cancel_change">Cancelar alteração</string>
+    <string name="description_img_help_center">ilustração de sugestão</string>
 
-    <string name="senha">Senha:</string>
-    <string name="txt_floor">Andar:</string>
-    <string name="txt_room">Sala:</string>
-    <string name="txt_name">Nome:</string>
-    <string name="txt_date_insta">Data de instalação:</string>
-    <string name="txt_qtd">Quantidade:</string>
-    <string name="txt_power">Potência:</string>
-    <string name="txt_life">Vida útil:</string>
-    <string name="txt_qrcode">Qr-Code:</string>
-    <string name="txt_oncln">OnCln</string>
-    <string name="txt_agenda">Agendamento</string>
-    <string name="txt_register_edit">Cadastrar ou Editar</string>
-    <string name="txt_consuming_equipments">Consumo/Equipamentos</string>
-    <string name="hint_life">Insira a vida útil</string>
+    <string name="hint_amount">Insira a quantidade</string>
     <string name="hint_data">Insira a data</string>
-    <string name="hint_floor">Selecione o andar</string>
-    <string name="hint_qrcode">Escaneie o qr-code</string>
-    <string name="hint_room">Selecione uma sala</string>
-    <string name="text_equipment_type">Tipo de equipamento:</string>
     <string name="hint_equipment_type">Selecione o tipo de equipamento</string>
-    <string name="filter">Filtrar:</string>
+    <string name="hint_floor">Selecione o andar</string>
+    <string name="hint_input_life">Insira a vida útil</string>
+    <string name="hint_life">Insira a vida útil em horas</string>
+    <string name="hint_name">Insira o nome</string>
+    <string name="hint_new_password">Insira a nova senha:</string>
+    <string name="hint_new_password_again">Digite novamente a senha</string>
+    <string name="hint_power">Insira a potência</string>
+    <string name="hint_qrcode">Escaneie ou insira o qr-code</string>
+    <string name="hint_room">Selecione uma sala</string>
 
+    <string name="title_contact_email">Email: contato@autg.com.br</string>
+    <string name="title_login">Login</string>
+    <string name="title_contact_information">Informações de contato</string>
+    <string name="title_contact_telephone">Telefone: (11) 0000-1111</string>
+    <string name="title_equipaments">Equipamentos</string>
+    <string name="title_help_center">Central de ajuda</string>
+    <string name="title_home">Home</string>
+    <string name="title_input_amount">Quantidade:</string>
+    <string name="title_input_consuming_equipments">Consumo/Equipamentos</string>
+    <string name="title_input_date_installation">Data de instalação:</string>
+    <string name="title_input_data_end">Data inicial:</string>
+    <string name="title_input_time">Horário:</string>
+    <string name="title_input_data_start">Data final:</string>
+    <string name="title_input_edit_equipment">Editar equipamento</string>
+    <string name="title_input_equipament_type">Tipo de equipamento:</string>
+    <string name="title_input_filter">Filtrar:</string>
+    <string name="title_input_floor">Andar:</string>
+    <string name="title_input_life">Vida útil:</string>
+    <string name="title_input_scheduling_function">Função do agendamento:</string>
+    <string name="title_input_name">Nome:</string>
+    <string name="title_input_new_scheduling">Novo agendamento</string>
+    <string name="title_input_old_password">Senha antiga:</string>
+    <string name="title_input_new_password_again">Digite novamente:</string>
+    <string name="title_input_new_password">Nova senha</string>
+    <string name="title_input_oncln">On Cln</string>
+    <string name="title_input_password">Senha:</string>
+    <string name="title_input_power">Potência:</string>
+    <string name="title_input_qr_code">Qr-Code:</string>
+    <string name="title_register_edit">Cadastrar/Editar</string>
+    <string name="title_edit_room">Editar Sala</string>
+    <string name="title_input_room">Sala:</string>
+    <string name="title_input_scheduling">Agendamentos</string>
+    <string name="title_input_user">Usuário:</string>
+    <string name="title_register_equipment">Cadastrar Equipamento</string>
+    <string name="title_register_oncln">Cadastrar On-Cln</string>
+    <string name="title_register_room">Cadastrar sala</string>
+    <string name="title_rooms">Salas</string>
+    <string name="title_settings">Configurações</string>
+    <string name="title_to_schedule">Agendar</string>
+    <string name="title_change_password">Alterar senha</string>
+
+    <string name="txt_register">Cadastrar</string>
+    <string name="txt_enter_otherwise">Entrar de outra forma</string>
+    <string name="txt_btn_enter">Entrar</string>
+    <string name="txt_btn_save_editions">Salvar alteração</string>
+    <string name="txt_btn_save">Salvar</string>
+    <string name="txt_btn_support">Suporte 24h</string>
+    <string name="txt_dark_mode">Modo dark</string>
+    <string name="txt_name_user">Jonas Bezerra</string>
+    <string name="txt_search">Pesquisar</string>
+    <string name="txt_total">Tota(1)</string>
+    <string name="app_name">OnCln</string>
 
     <string name="text_example">Text example</string>
+    <string name="text_example_air_conditioning">Ar condicionado 1</string>
+    <string name="text_example_floor">Andar: 2º</string>
+    <string name="text_example_room">Sala de reuniões</string>
 
-    <string-array name="activity_cadastro_on_cln_spinner">
-        <item>Selecione a sala</item>
-        <item>Sala 2A</item>
-        <item>Sala 3A</item>
-        <item>Sala 4A</item>
-        <item>Sala 5A</item>
-    </string-array>
-
-    <string-array name="activity_cadastro_equipamento">
-        <item>Selecione um equipamento</item>
-        <item>Ar Condicionado</item>
-        <item>Luz</item>
-        <item>Monitor</item>
-    </string-array>
 </resources>

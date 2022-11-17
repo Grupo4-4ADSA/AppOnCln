@@ -9,7 +9,7 @@
 
     <include
         android:id="@+id/include_text"
-        layout="@layout/item_text" />
+        layout="@layout/item_underlined_title" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
             android:layout_marginTop="@dimen/dimen_small_4"
             android:fontFamily="@font/readex_pro_medium"
             android:paddingTop="@dimen/dimen_medium_16"
-            android:text="@string/txt_room"
+            android:text="@string/title_input_room"
             android:textColor="@color/black"
             android:textSize="@dimen/dimen_medium_18_txt" />
 
@@ -38,7 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:hint="@string/txt_nome"
+                android:hint="@string/hint_name"
                 android:inputType="textEmailSubject" />
         </com.google.android.material.textfield.TextInputLayout>
         <TextView
@@ -47,7 +47,7 @@
             android:layout_marginTop="@dimen/dimen_medium_16"
             android:fontFamily="@font/readex_pro_medium"
             android:paddingTop="@dimen/dimen_medium_16"
-            android:text="@string/txt_floor"
+            android:text="@string/title_input_floor"
             android:textColor="@color/black"
             android:textSize="@dimen/dimen_medium_18_txt" />
 

@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.autG.oncln.databinding.ActivityCadastroOnClnBinding
 
-class CadastroOnClnActivity : Fragment() {
+class CadastrarOnClnActivity : Fragment() {
 
     private lateinit var binding: ActivityCadastroOnClnBinding
 
@@ -17,8 +17,8 @@ class CadastroOnClnActivity : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = ActivityCadastroOnClnBinding.inflate(inflater, container, false)
-        binding.includeText.textTitulo.text = "Cadastrar on cln"
-        binding.btnQr.botaoAzul.text = "Cadastrar"
+        binding.includeText.textTitulo.text = getText(R.string.title_register_oncln)
+        binding.btnQr.botaoAzul.text = getText(R.string.txt_register)
         return binding.root
     }
 

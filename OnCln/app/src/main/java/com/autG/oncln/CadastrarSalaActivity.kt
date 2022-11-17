@@ -16,7 +16,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-internal class CadastroSala : Fragment() {
+internal class CadastrarSalaActivity : Fragment() {
     private val retrofit = Rest.getInstance()
     private lateinit var binding: ActivityCadastroSalaBinding
 
@@ -28,9 +28,9 @@ internal class CadastroSala : Fragment() {
         binding = ActivityCadastroSalaBinding.inflate(inflater, container, false)
 
 
-        binding.includeText.textTitulo.text = getText(R.string.register_room_title)
+        binding.includeText.textTitulo.text = getText(R.string.title_rooms)
 
-        binding.btnQr.botaoAzul.text = getText(R.string.register)
+        binding.btnQr.botaoAzul.text = getText(R.string.txt_register)
 
         return binding.root
     }
