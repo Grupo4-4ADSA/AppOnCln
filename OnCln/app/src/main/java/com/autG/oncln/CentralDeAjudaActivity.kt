@@ -2,6 +2,8 @@ package com.autG.oncln
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.transition.Fade
+import android.transition.TransitionManager
 
 import android.view.LayoutInflater
 import android.view.View
@@ -18,6 +20,9 @@ class CentralDeAjudaActivity:Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = ActivityCentralDeAjudaBinding.inflate(inflater,container,false)
+
+        TransitionManager.beginDelayedTransition(container, Fade())
+
         return binding.root
     }
 

@@ -1,6 +1,10 @@
 package com.autG.oncln
 
 import android.os.Bundle
+import android.transition.Fade
+import android.transition.Slide
+import android.transition.TransitionManager
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -64,6 +68,8 @@ internal class SalasActivity : Fragment() {
         arrayList = arrayListOf()
         requestRooms()
 
+        TransitionManager.beginDelayedTransition(container, Fade())
+
         return binding.root
     }
 
@@ -91,12 +97,15 @@ internal class SalasActivity : Fragment() {
                         response.body()?.forEach {
                             arrayList.add(it)
                         }
-                        binding.recycleListRoom.adapter = RoomAdapter(arrayList){
-                            msg -> Toast.makeText(requireContext(),msg,Toast.LENGTH_LONG).show()
+                        binding.recycleListRoom.adapter = RoomAdapter(arrayList) { msg ->
+                            Toast.makeText(requireContext(), msg, Toast.LENGTH_LONG).show()
                         }
-                    }
-                    else{
-                        Toast.makeText(requireContext(), "Falha ao carregar salas", Toast.LENGTH_SHORT).show()
+                    } else {
+                        Toast.makeText(
+                            requireContext(),
+                            "Falha ao carregar salas",
+                            Toast.LENGTH_SHORT
+                        ).show()
                     }
                 }
 

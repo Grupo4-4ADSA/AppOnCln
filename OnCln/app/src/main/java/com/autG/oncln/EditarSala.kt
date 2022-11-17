@@ -2,6 +2,8 @@ package com.autG.oncln
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.transition.Fade
+import android.transition.TransitionManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -27,6 +29,9 @@ class EditarSala : Fragment() {
         binding = ActivityEditarSalaBinding.inflate(inflater, container, false)
 
         binding.btnBlue.botaoAzul.text = "Salvar"
+
+        TransitionManager.beginDelayedTransition(container, Fade())
+
         return binding.root
     }
 

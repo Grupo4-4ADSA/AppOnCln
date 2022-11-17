@@ -1,6 +1,8 @@
 package com.autG.oncln
 
 import android.os.Bundle
+import android.transition.Fade
+import android.transition.TransitionManager
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -21,6 +23,9 @@ class CadastrarEquipamentoActivity : Fragment() {
         binding = ActivityCadastrarEquipamentoBinding.inflate(inflater, container, false)
         binding.includeText.textTitulo.text = getText(R.string.register_equipment_title)
         binding.btnEquipment.botaoAzul.text = "Cadastrar"
+
+        TransitionManager.beginDelayedTransition(container, Fade())
+
         return binding.root
 
     }

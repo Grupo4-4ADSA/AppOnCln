@@ -1,6 +1,8 @@
 package com.autG.oncln
 
 import android.os.Bundle
+import android.transition.Fade
+import android.transition.TransitionManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -20,6 +22,7 @@ internal class AgendamentoActivity : Fragment() {
         binding = ActivityCadastroAgendamentoBinding.inflate(inflater, container, false)
         binding.includeText.textTitulo.text = "Novo agendamento"
 
+        TransitionManager.beginDelayedTransition(container, Fade())
 
         return binding.root
     }

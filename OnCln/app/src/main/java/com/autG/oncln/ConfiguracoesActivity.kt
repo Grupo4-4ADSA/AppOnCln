@@ -2,6 +2,8 @@ package com.autG.oncln
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.transition.Fade
+import android.transition.TransitionManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -26,6 +28,9 @@ class ConfiguracoesActivity : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = ActivityConfiguracoesBinding.inflate(inflater, container,false)
+
+        TransitionManager.beginDelayedTransition(container, Fade())
+
         return binding.root
     }
 

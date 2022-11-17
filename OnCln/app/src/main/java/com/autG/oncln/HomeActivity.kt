@@ -55,6 +55,8 @@ internal class HomeActivity: Fragment() {
         binding.btnSalas.buttonBorder.setBackgroundColor(getColor(requireContext(),
             com.autG.oncln.R.color.blue_secundary))
 
+        TransitionManager.beginDelayedTransition(container, Fade())
+
         return binding.root
     }
 

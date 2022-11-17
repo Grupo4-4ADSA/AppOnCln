@@ -1,6 +1,8 @@
 package com.autG.oncln
 
 import android.os.Bundle
+import android.transition.Fade
+import android.transition.TransitionManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -23,6 +25,9 @@ class EditarEquipamentoActivity : Fragment() {
         binding.includeText.textTitulo.text = "Editar Ar-condicionado"
 
         binding.btnEquipment.botaoAzul.text= "Salvar"
+
+        TransitionManager.beginDelayedTransition(container, Fade())
+
         return binding.root
     }
 

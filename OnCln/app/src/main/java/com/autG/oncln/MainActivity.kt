@@ -1,18 +1,17 @@
 package com.autG.oncln
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
-import androidx.fragment.app.replace
 import com.autG.oncln.dataClass.MenuData
 import com.autG.oncln.databinding.ActivityMainBinding
 import com.autG.oncln.menus.EmptyScreen
 import com.autG.oncln.menus.NavBarBottom
 import com.autG.oncln.menus.NavigationBar
 import com.autG.oncln.services.NavigationHost
-import java.util.*
+
 
 class MainActivity : AppCompatActivity(), NavigationHost {
 
@@ -46,7 +45,7 @@ class MainActivity : AppCompatActivity(), NavigationHost {
             if (savedInstanceState == null) {
                 supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.nav_menu_lateral, NavigationBar(), "menuLateral")
+                    .replace(R.id.nav_menu_lateral, setLayoutMenuLeft(backScreen.setPage,backScreen.setBackLayout), "menuLateral")
                     .commit()
             }
         }
@@ -62,6 +61,18 @@ class MainActivity : AppCompatActivity(), NavigationHost {
         navBarBottom.arguments = args
 
         return navBarBottom
+    }
+
+    fun setLayoutMenuLeft(fragment: Int, back: Int?): NavigationBar {
+
+        val args = Bundle()
+        val data = MenuData(fragment, back)
+        args.putSerializable("screen", data)
+
+        val navigationBar = NavigationBar.newIntance()
+        navigationBar.arguments = args
+
+        return navigationBar
     }
 
     override fun navigateTo(fragment: Fragment, addToBackStack: Boolean, layout: Int) {
@@ -84,6 +95,7 @@ class MainActivity : AppCompatActivity(), NavigationHost {
 
         binding.navFragmentContainer.visibility = View.VISIBLE
         binding.btnMenuLateral.visibility = View.VISIBLE
+
         menuAction()
     }
 

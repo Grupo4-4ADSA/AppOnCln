@@ -2,6 +2,8 @@ package com.autG.oncln
 
 import SalaResponse
 import android.os.Bundle
+import android.transition.Fade
+import android.transition.TransitionManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -31,6 +33,8 @@ internal class CadastroSala : Fragment() {
         binding.includeText.textTitulo.text = getText(R.string.register_room_title)
 
         binding.btnQr.botaoAzul.text = getText(R.string.register)
+
+        TransitionManager.beginDelayedTransition(container, Fade())
 
         return binding.root
     }
