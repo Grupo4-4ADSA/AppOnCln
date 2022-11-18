@@ -78,7 +78,6 @@
             android:outlineSpotShadowColor="@color/transparent"
             android:theme="@style/Botao.menu.lateral"
             app:itemIconTint="@color/white"
-            app:simpleItemSelectedColor="@color/white"
             app:itemShapeAppearanceOverlay="@style/Botao.menu.lateral"
             app:itemTextColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"

@@ -80,6 +80,10 @@
         <item name="cornerSize">@dimen/dimen_large_24</item>
     </style>
 
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/white</item>
+    </style>
+
     <style name="ThemeOverlay.NavigationView" parent="">
         <item name="android:colorControlHighlight">@android:color/transparent</item>
     </style>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_border"
+        style="@style/Botao.com.borda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_medium_16"
+        android:padding="@dimen/dimen_small_8"
+        android:paddingStart="@dimen/dimen_large_36"
+        android:text="@string/text_example"
+        android:textSize="@dimen/dimen_medium_16_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:icon="@drawable/ic_equipments" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

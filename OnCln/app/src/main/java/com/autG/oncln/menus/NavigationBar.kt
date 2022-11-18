@@ -7,6 +7,7 @@ import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat.getColor
 import androidx.fragment.app.Fragment
 import com.autG.oncln.*
 import com.autG.oncln.AgendamentoActivity
@@ -39,8 +40,7 @@ class NavigationBar : Fragment() {
         TransitionManager.beginDelayedTransition(container, Slide(Gravity.RIGHT).setDuration(300))
 
         val data = arguments?.getSerializable("screen") as MenuData
-        binding.navigationView?.setCheckedItem(filter(data))
-        //binding.navigationView?.setCheckedItem()
+        binding.navigationMenuView?.setCheckedItem(filter(data))
 
         return binding.root
     }
@@ -52,7 +52,7 @@ class NavigationBar : Fragment() {
             (activity as NavigationHost).menuAction()
         }
 
-        binding.navigationView?.setNavigationItemSelectedListener { menuItem ->
+        binding.navigationMenuView?.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.layout_home -> {
                     (activity as NavigationHost).navigateTo(
