@@ -80,5 +80,14 @@
     <string name="text_example_air_conditioning">Ar condicionado 1</string>
     <string name="text_example_floor">Andar: 2º</string>
     <string name="text_example_room">Sala de reuniões</string>
+    <string name="title_activity_equipamento_por_sala">EquipamentoPorSalaActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
 </resources>

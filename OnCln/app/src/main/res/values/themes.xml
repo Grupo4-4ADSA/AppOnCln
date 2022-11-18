@@ -14,4 +14,10 @@
         <!-- Customize your theme here. -->
         <item name="android:textColor">?attr/colorOnSecondary</item>
     </style>
+    <style name="Theme.OnCln.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.OnCln.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.OnCln.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

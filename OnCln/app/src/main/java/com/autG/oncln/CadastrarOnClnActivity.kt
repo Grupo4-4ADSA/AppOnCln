@@ -5,18 +5,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.autG.oncln.databinding.ActivityCadastroOnClnBinding
+import com.autG.oncln.databinding.ActivityCadastrarOnClnBinding
 
 class CadastrarOnClnActivity : Fragment() {
 
-    private lateinit var binding: ActivityCadastroOnClnBinding
+    private lateinit var binding: ActivityCadastrarOnClnBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = ActivityCadastroOnClnBinding.inflate(inflater, container, false)
+        binding = ActivityCadastrarOnClnBinding.inflate(inflater, container, false)
         binding.includeText.textTitulo.text = getText(R.string.title_register_oncln)
         binding.btnQr.botaoAzul.text = getText(R.string.txt_register)
         return binding.root

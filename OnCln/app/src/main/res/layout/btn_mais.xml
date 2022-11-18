@@ -6,13 +6,12 @@
     android:layout_height="wrap_content">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floating_action_button"
+        android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="16dp"
-        android:elevation="@dimen/dimen_large_24"
-        app:elevation="6dp"
-        app:srcCompat="@drawable/ic_plus" />
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@android:drawable/ic_plus" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

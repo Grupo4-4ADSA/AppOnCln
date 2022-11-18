@@ -17,7 +17,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-internal class Login : Fragment() {
+internal class LoginActivity : Fragment() {
     private val retrofit = Rest.getInstance()
     private lateinit var binding: ActivityLoginBinding
 

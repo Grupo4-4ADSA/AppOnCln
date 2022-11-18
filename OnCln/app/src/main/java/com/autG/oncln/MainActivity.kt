@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity(), NavigationHost {
         if (savedInstanceState == null) {
             supportFragmentManager
                 .beginTransaction()
-                .add(R.id.nav_host_fragment_container, Login(), Login().toString())
+                .add(R.id.nav_host_fragment_container, LoginActivity(), LoginActivity().toString())
                 .add(R.id.nav_fragment_container, NavBarBottom(), null)
                 .commit()
         }

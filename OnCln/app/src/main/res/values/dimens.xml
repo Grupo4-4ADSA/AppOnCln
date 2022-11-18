@@ -24,5 +24,6 @@
     <dimen name="dimen_large_20_txt">20sp</dimen>
     <dimen name="dimen_large_24_txt">24sp</dimen>
     <dimen name="dimen_super_big_36_txt">36sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 
 </resources>
