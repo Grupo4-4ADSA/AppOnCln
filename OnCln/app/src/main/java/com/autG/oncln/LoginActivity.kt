@@ -32,11 +32,13 @@ internal class LoginActivity : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         with(binding) {
             btnEntrar.setOnClickListener {
                 (activity as NavigationHost).navigateTo(
-                    EditarEquipamentoActivity(),
-                    addToBackStack = false
+                    HomeActivity(),
+                    addToBackStack = false,
+                    R.layout.activity_editar_equipamento
                 )
             }
         }
@@ -59,8 +61,9 @@ internal class LoginActivity : Fragment() {
                     when {
                         response.isSuccessful -> {
                             (activity as NavigationHost).navigateTo(
-                                CadastrarOnClnActivity(),
-                                addToBackStack = false
+                                HomeActivity(),
+                                addToBackStack = false,
+                                R.layout.activity_home
                             )
                         }
 

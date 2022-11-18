@@ -1,6 +1,8 @@
 package com.autG.oncln
 
 import android.os.Bundle
+import android.transition.Fade
+import android.transition.TransitionManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,6 +18,8 @@ internal class CadastrarAgendamentoActivity : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        TransitionManager.beginDelayedTransition(container, Fade())
+
         binding = ActivityCadastrarAgendamentoBinding.inflate(inflater, container, false)
         binding.includeText.textTitulo.text = getText(R.string.title_input_new_scheduling)
         binding.btnAgendamento.botaoAzul.text= getText(R.string.txt_btn_save)

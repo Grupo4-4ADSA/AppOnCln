@@ -1,12 +1,15 @@
 package com.autG.oncln
 
 import android.os.Bundle
+import android.transition.Fade
+import android.transition.TransitionManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.autG.oncln.databinding.ActivityCadastroMenuBinding
 import com.autG.oncln.services.NavigationHost
+import com.google.android.material.textfield.MaterialAutoCompleteTextView
 
 
 internal class CadastrarMenuActivity : Fragment() {
@@ -36,6 +39,9 @@ internal class CadastrarMenuActivity : Fragment() {
         binding.btnEquipamento.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_equipaments_blue, 0, 0, 0
         )
+
+        TransitionManager.beginDelayedTransition(container, Fade())
+
         return binding.root
     }
 
@@ -44,13 +50,19 @@ internal class CadastrarMenuActivity : Fragment() {
 
         with(binding) {
             btnSalas.buttonBorder.setOnClickListener {
-                (activity as NavigationHost).navigateTo(SalasActivity(), addToBackStack = true)
-                btnEquipamento.buttonBorder.setOnClickListener {
-                }
-
-                btnEquipamento.buttonBorder.setOnClickListener {
-                    //todo implementar navigate, futuramente
-                }
+                (activity as NavigationHost).navigateTo(
+                    SalasActivity(), addToBackStack = true,
+                    R.layout.activity_salas
+                )
+            }
+            btnOncln.buttonBorder.setOnClickListener {
+                (activity as NavigationHost).navigateTo(
+                    CadastrarOnClnActivity(), addToBackStack = true,
+                    R.layout.activity_salas
+                )
+            }
+            btnEquipamento.buttonBorder.setOnClickListener {
+                //todo implementar navigate, futuramente
             }
 
         }

@@ -1,6 +1,8 @@
 package com.autG.oncln
 
 import android.os.Bundle
+import android.transition.Fade
+import android.transition.TransitionManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,6 +21,7 @@ class CadastrarOnClnActivity : Fragment() {
         binding = ActivityCadastrarOnClnBinding.inflate(inflater, container, false)
         binding.includeText.textTitulo.text = getText(R.string.title_register_oncln)
         binding.btnQr.botaoAzul.text = getText(R.string.txt_register)
+        TransitionManager.beginDelayedTransition(container, Fade())
         return binding.root
     }
 

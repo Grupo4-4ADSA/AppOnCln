@@ -1,6 +1,10 @@
 package com.autG.oncln
 
 import android.os.Bundle
+import android.transition.Fade
+import android.transition.Slide
+import android.transition.TransitionManager
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,6 +17,7 @@ import com.autG.oncln.api.Rest
 import com.autG.oncln.databinding.ActivitySalasBinding
 import com.autG.oncln.dtos.responses.Rooms
 import com.autG.oncln.dtos.responses.RoomsItem
+import com.autG.oncln.menus.NavBarBottom
 import com.autG.oncln.services.Auth
 import retrofit2.Call
 import retrofit2.Callback
@@ -61,9 +66,9 @@ internal class SalasActivity : Fragment() {
         binding.recycleListRoom.layoutManager = LinearLayoutManager(context)
 
         arrayList = arrayListOf()
-
-
         requestRooms()
+
+        TransitionManager.beginDelayedTransition(container, Fade())
 
         return binding.root
     }
@@ -92,12 +97,15 @@ internal class SalasActivity : Fragment() {
                         response.body()?.forEach {
                             arrayList.add(it)
                         }
-                        binding.recycleListRoom.adapter = RoomAdapter(arrayList){
-                            msg -> Toast.makeText(requireContext(),msg,Toast.LENGTH_LONG).show()
+                        binding.recycleListRoom.adapter = RoomAdapter(arrayList) { msg ->
+                            Toast.makeText(requireContext(), msg, Toast.LENGTH_LONG).show()
                         }
-                    }
-                    else{
-                        Toast.makeText(requireContext(), "Falha ao carregar salas", Toast.LENGTH_SHORT).show()
+                    } else {
+                        Toast.makeText(
+                            requireContext(),
+                            "Falha ao carregar salas",
+                            Toast.LENGTH_SHORT
+                        ).show()
                     }
                 }
 

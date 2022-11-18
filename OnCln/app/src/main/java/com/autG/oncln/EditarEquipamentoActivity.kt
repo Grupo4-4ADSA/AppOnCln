@@ -1,6 +1,8 @@
 package com.autG.oncln
 
 import android.os.Bundle
+import android.transition.Fade
+import android.transition.TransitionManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -22,6 +24,9 @@ class EditarEquipamentoActivity : Fragment() {
         //TODO se eu clicar em editar um conjunto de lâmpadas, aparecer de acordo com o que se refere
         binding.includeText.textTitulo.text = getText(R.string.title_input_edit_equipment)
         binding.btnEquipment.botaoAzul.text= getText(R.string.txt_btn_save)
+
+        TransitionManager.beginDelayedTransition(container, Fade())
+
         return binding.root
     }
 

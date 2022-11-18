@@ -1,6 +1,8 @@
 package com.autG.oncln
 
 import android.os.Bundle
+import android.transition.Fade
+import android.transition.TransitionManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,6 +23,9 @@ class EditarSalaActivity : Fragment() {
 
         binding.includeText.textTitulo.text= getText(R.string.title_edit_room)
         binding.btnQr.botaoAzul.text = getText(R.string.txt_btn_save)
+
+        TransitionManager.beginDelayedTransition(container, Fade())
+
         return binding.root
     }
 
