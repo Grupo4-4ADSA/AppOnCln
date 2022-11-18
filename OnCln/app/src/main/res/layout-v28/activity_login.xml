@@ -49,7 +49,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:hint="@string/login"
+                android:hint="@string/title_login"
                 android:inputType="textEmailSubject" />
 
             <View
@@ -70,7 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:hint="@string/senha"
+                android:hint="@string/title_input_password"
                 android:inputType="textPassword"
                 android:textColorHint="@color/black" />
 
@@ -119,7 +119,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/outra_forma_login"
+                    android:text="@string/txt_enter_otherwise"
                     android:textColor="@color/blue_secundary"
                     android:textSize="@dimen/dimen_medium_16"
                     android:textStyle="bold" />

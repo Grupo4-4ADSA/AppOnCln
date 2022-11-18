@@ -7,38 +7,35 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.autG.oncln.databinding.ActivityCadastrarMenuBinding
+import com.autG.oncln.databinding.ActivityCadastroMenuBinding
 import com.autG.oncln.services.NavigationHost
 import com.google.android.material.textfield.MaterialAutoCompleteTextView
 
 
 internal class CadastrarMenuActivity : Fragment() {
 
-    private lateinit var binding: ActivityCadastrarMenuBinding
+    private lateinit var binding: ActivityCadastroMenuBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = ActivityCadastrarMenuBinding.inflate(inflater, container, false)
+        binding = ActivityCadastroMenuBinding.inflate(inflater, container, false)
 
-        binding.includeText.textTitulo.text = getText(R.string.txt_register_edit)
+        binding.includeText.textTitulo.text = getText(R.string.title_register_edit)
 
-
-        binding.btnSalas.buttonBorder.text = getText(R.string.rooms)
-
+        binding.btnSalas.buttonBorder.text = getText(R.string.title_rooms)
         binding.btnSalas.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_meeting_room_blue, 0, 0, 0
         )
 
-        binding.btnOncln.buttonBorder.text = getText(R.string.txt_oncln)
-
+        binding.btnOncln.buttonBorder.text = getText(R.string.title_input_oncln)
         binding.btnOncln.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_oncln, 0, 0, 0
         )
 
-        binding.btnEquipamento.buttonBorder.text = getText(R.string.equipments)
+        binding.btnEquipamento.buttonBorder.text = getText(R.string.title_equipaments)
         binding.btnEquipamento.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_equipaments_blue, 0, 0, 0
         )
@@ -46,7 +43,6 @@ internal class CadastrarMenuActivity : Fragment() {
         TransitionManager.beginDelayedTransition(container, Fade())
 
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -61,7 +57,7 @@ internal class CadastrarMenuActivity : Fragment() {
             }
             btnOncln.buttonBorder.setOnClickListener {
                 (activity as NavigationHost).navigateTo(
-                    CadastroOnClnActivity(), addToBackStack = true,
+                    CadastrarOnClnActivity(), addToBackStack = true,
                     R.layout.activity_salas
                 )
             }

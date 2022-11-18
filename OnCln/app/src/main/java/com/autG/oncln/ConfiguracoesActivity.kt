@@ -40,7 +40,7 @@ class ConfiguracoesActivity : Fragment() {
             janelaDeAlteracaoDeSenha()
         }
 
-        binding.includeText.textTitulo.text = "Configurações"
+        binding.includeText.textTitulo.text = getText(R.string.title_settings)
     }
 
     fun janelaDeAlteracaoDeSenha() {

@@ -52,17 +52,17 @@ class NavBarBottom : Fragment() {
                 }
                 R.id.layout_equipments -> {
                     (activity as NavigationHost).navigateTo(CadastrarEquipamentoActivity(), addToBackStack = true,
-                    R.layout.activity_equipamento)
+                    R.layout.activity_equipamentos)
                     true
                 }
                 R.id.layout_agendar -> {
-                    (activity as NavigationHost).navigateTo(AgendamentoActivity(), addToBackStack = true,
-                    R.layout.activity_cadastro_agendamento)
+                    (activity as NavigationHost).navigateTo(AgendamentosActivity(), addToBackStack = true,
+                    R.layout.activity_cadastrar_agendamento)
                     true
                 }
                 R.id.layout_cadastrar -> {
                     (activity as NavigationHost).navigateTo(CadastrarMenuActivity(), addToBackStack = true,
-                    R.layout.activity_cadastrar_menu)
+                    R.layout.activity_cadastro_menu)
                     true
                 }
                 else -> false
@@ -78,13 +78,13 @@ class NavBarBottom : Fragment() {
              R.layout.activity_salas -> {
                  R.id.layout_salas
             }
-             R.layout.activity_equipamento -> {
+             R.layout.activity_equipamentos -> {
                 R.id.layout_equipments
             }
-             R.layout.activity_cadastro_agendamento -> {
+             R.layout.activity_cadastrar_agendamento -> {
                 R.id.layout_agendar
             }
-             R.layout.activity_cadastrar_menu -> {
+             R.layout.activity_cadastro_menu -> {
                 R.id.layout_cadastrar
             }
             else -> item.setBackLayout!!

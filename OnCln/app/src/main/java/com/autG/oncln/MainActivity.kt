@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity(), NavigationHost {
 
             supportFragmentManager
                 .beginTransaction()
-                .add(R.id.nav_host_fragment_container, Login(), Login().toString())
+                .add(R.id.nav_host_fragment_container, LoginActivity(), LoginActivity().toString())
                 .add(
                     R.id.nav_fragment_container,
                     setLayoutMenu(R.id.layout_home, R.layout.activity_home),

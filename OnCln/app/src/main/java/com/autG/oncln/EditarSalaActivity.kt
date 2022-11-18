@@ -1,25 +1,18 @@
 package com.autG.oncln
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.transition.Fade
 import android.transition.TransitionManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
-import android.widget.Spinner
 import androidx.fragment.app.Fragment
-import com.autG.oncln.R
-import com.autG.oncln.databinding.ActivityCadastrarEquipamentoBinding
-import com.autG.oncln.databinding.ActivityCadastroOnClnBinding
 import com.autG.oncln.databinding.ActivityEditarSalaBinding
 
-class EditarSala : Fragment() {
+class EditarSalaActivity : Fragment() {
 
 
     private lateinit var binding: ActivityEditarSalaBinding
-
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -28,7 +21,8 @@ class EditarSala : Fragment() {
     ): View? {
         binding = ActivityEditarSalaBinding.inflate(inflater, container, false)
 
-        binding.btnBlue.botaoAzul.text = "Salvar"
+        binding.includeText.textTitulo.text= getText(R.string.title_edit_room)
+        binding.btnQr.botaoAzul.text = getText(R.string.txt_btn_save)
 
         TransitionManager.beginDelayedTransition(container, Fade())
 
@@ -38,7 +32,6 @@ class EditarSala : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
     }
-
 
     fun cadastrarCln() {
 

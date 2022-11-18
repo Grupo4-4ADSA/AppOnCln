@@ -49,7 +49,7 @@
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/dimen_small_8"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="@string/title_input_equipament_type"
+            android:text="@string/title_input_floor"
             android:textColor="@color/black"
             android:textSize="@dimen/dimen_medium_18_txt" />
 
@@ -70,36 +70,12 @@
                 android:inputType="none"
                 android:paddingVertical="@dimen/dimen_small_4" />
         </com.google.android.material.textfield.TextInputLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/dimen_small_8"
-            android:fontFamily="@font/readex_pro_medium"
-            android:text="@string/title_input_date_installation"
-            android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium_18_txt" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="datetime"
-            app:boxStrokeWidthFocused="0dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:drawableRight="@drawable/ic_schedule"
-                android:hint="@string/hint_data"
-                android:inputType="datetime" />
-        </com.google.android.material.textfield.TextInputLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+            <!--->Colocar campos certos<-->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -112,7 +88,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="@dimen/dimen_small_8"
                     android:fontFamily="@font/readex_pro_medium"
-                    android:text="@string/title_input_amount"
+                    android:text="@string/title_input_data_end"
                     android:textColor="@color/black"
                     android:textSize="@dimen/dimen_medium_18_txt" />
 
@@ -126,7 +102,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/white"
-                        android:hint="@string/hint_amount"
+                        android:hint="@string/hint_data"
                         android:inputType="number"
                         android:textSize="@dimen/dimen_small_12_txt" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -145,7 +121,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="@dimen/dimen_small_8"
                     android:fontFamily="@font/readex_pro_medium"
-                    android:text="@string/title_input_power"
+                    android:text="@string/title_input_data_start"
                     android:textColor="@color/black"
                     android:textSize="@dimen/dimen_medium_18_txt" />
 
@@ -159,7 +135,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/white"
-                        android:hint="@string/hint_power"
+                        android:hint="@string/hint_data"
                         android:inputType="number"
                         android:textSize="@dimen/dimen_small_12_txt" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -171,9 +147,31 @@
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/dimen_small_8"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="@string/title_input_life"
+            android:text="@string/title_input_scheduling_function"
             android:textColor="@color/black"
+            android:textSize="@dimen/dimen_medium_18" />
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeWidthFocused="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_function"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="@string/hint_life"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_small_8"
+            android:fontFamily="@font/readex_pro_medium"
+            android:text="@string/title_input_time"
+            android:textColor="@color/black"
             android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -192,7 +190,7 @@
     </LinearLayout>
 
     <include
-        android:id="@+id/btn_equipment"
+        android:id="@+id/btn_agendamento"
         layout="@layout/btn_blue" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

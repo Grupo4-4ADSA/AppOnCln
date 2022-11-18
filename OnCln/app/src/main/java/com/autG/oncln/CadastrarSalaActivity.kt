@@ -10,7 +10,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.autG.oncln.api.Rest
-import com.autG.oncln.databinding.ActivityCadastroSalaBinding
+import com.autG.oncln.databinding.ActivityCadastrarSalaBinding
 import com.autG.oncln.dtos.requests.Predio
 import com.autG.oncln.dtos.requests.SalaRequest
 import com.autG.oncln.services.Auth
@@ -18,21 +18,21 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-internal class CadastroSala : Fragment() {
+internal class CadastrarSalaActivity : Fragment() {
     private val retrofit = Rest.getInstance()
-    private lateinit var binding: ActivityCadastroSalaBinding
+    private lateinit var binding: ActivityCadastrarSalaBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = ActivityCadastroSalaBinding.inflate(inflater, container, false)
+        binding = ActivityCadastrarSalaBinding.inflate(inflater, container, false)
 
 
-        binding.includeText.textTitulo.text = getText(R.string.register_room_title)
+        binding.includeText.textTitulo.text = getText(R.string.title_rooms)
 
-        binding.btnQr.botaoAzul.text = getText(R.string.register)
+        binding.btnQr.botaoAzul.text = getText(R.string.txt_register)
 
         TransitionManager.beginDelayedTransition(container, Fade())
 
@@ -69,6 +69,7 @@ internal class CadastroSala : Fragment() {
                         response.isSuccessful -> {
                             Toast.makeText(
                                 context,
+                                //TODO Colocar depois o item resposta
                                 "Sala cadastrada com sucesso!",
                                 Toast.LENGTH_LONG
                             ).show()

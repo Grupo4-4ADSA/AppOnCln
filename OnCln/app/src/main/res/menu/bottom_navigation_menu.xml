@@ -6,29 +6,29 @@
         android:enabled="true"
         android:icon="@drawable/ic_home"
         android:iconTint="@color/black"
-        android:title="@string/home"
-        android:titleCondensed="@string/home"/>
+        android:title="@string/title_home"
+        android:titleCondensed="@string/title_home"/>
     <item
         android:id="@+id/layout_equipments"
         android:enabled="true"
         android:icon="@drawable/ic_equipments"
         android:iconTint="@color/black"
-        android:title="@string/equipments" />
+        android:title="@string/title_equipaments" />
     <item
         android:id="@+id/layout_salas"
         android:enabled="true"
         android:icon="@drawable/ic_meeting_room"
-        android:title="@string/rooms" />
+        android:title="@string/title_rooms" />
     <item
         android:id="@+id/layout_agendar"
         android:enabled="true"
         android:icon="@drawable/ic_schedule"
-        android:title="@string/toSchedule" />
+        android:title="@string/title_to_schedule" />
     <item
         android:id="@+id/layout_cadastrar"
         android:enabled="true"
         android:icon="@drawable/ic_register"
-        android:title="@string/register" />
+        android:title="@string/txt_register" />
 </menu>
 
     <!--

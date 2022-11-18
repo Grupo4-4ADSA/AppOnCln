@@ -7,10 +7,9 @@ import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat.getColor
 import androidx.fragment.app.Fragment
 import com.autG.oncln.*
-import com.autG.oncln.AgendamentoActivity
+import com.autG.oncln.AgendamentosActivity
 import com.autG.oncln.CadastrarMenuActivity
 import com.autG.oncln.HomeActivity
 import com.autG.oncln.SalasActivity
@@ -71,21 +70,21 @@ class NavigationBar : Fragment() {
                 R.id.layout_equipments -> {
                     (activity as NavigationHost).navigateTo(
                         CadastrarEquipamentoActivity(), addToBackStack = true,
-                        R.layout.activity_equipamento
+                        R.layout.activity_equipamentos
                     )
                     true
                 }
                 R.id.layout_agendar -> {
                     (activity as NavigationHost).navigateTo(
-                        AgendamentoActivity(), addToBackStack = true,
-                        R.layout.activity_cadastro_agendamento
+                        AgendamentosActivity(), addToBackStack = true,
+                        R.layout.activity_cadastrar_agendamento
                     )
                     true
                 }
                 R.id.layout_cadastrar -> {
                     (activity as NavigationHost).navigateTo(
                         CadastrarMenuActivity(), addToBackStack = true,
-                        R.layout.activity_cadastrar_menu
+                        R.layout.activity_cadastro_menu
                     )
                     true
                 }
@@ -111,13 +110,13 @@ class NavigationBar : Fragment() {
             R.layout.activity_salas -> {
                 R.id.layout_salas
             }
-            R.layout.activity_equipamento -> {
+            R.layout.activity_equipamentos -> {
                 R.id.layout_equipments
             }
-            R.layout.activity_cadastro_agendamento -> {
+            R.layout.activity_cadastrar_agendamento -> {
                 R.id.layout_agendar
             }
-            R.layout.activity_cadastrar_menu -> {
+            R.layout.activity_cadastro_menu -> {
                 R.id.layout_cadastrar
             }
             else -> item.setBackLayout!!

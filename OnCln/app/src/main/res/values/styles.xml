@@ -32,13 +32,13 @@
 
     <style name="Botao.com.borda" parent="Theme.MaterialComponents">
         <item name="backgroundTint">@color/white</item>
-        <item name="android:textSize">@dimen/dimen_large_24_txt</item>
+        <item name="android:textSize">@dimen/dimen_large_20_txt</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/blue_secundary</item>
         <item name="strokeWidth">@dimen/m3_btn_stroke_size</item>
         <item name="iconTint">@color/blue_secundary</item>
         <item name="android:textAlignment">textStart</item>
-        <item name="iconSize">@dimen/dimen_large_36</item>
+        <item name="iconSize">@dimen/dimen_large_24</item>
         <item name="cornerRadius">@dimen/dimen_large_36</item>
         <item name="colorOutline">@color/black</item>
     </style>

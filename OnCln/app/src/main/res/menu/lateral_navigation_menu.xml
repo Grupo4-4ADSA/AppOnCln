@@ -7,48 +7,48 @@
         android:icon="@drawable/ic_home"
         android:checkable="true"
 
-        android:title="@string/home" />
+        android:title="@string/title_home" />
     <item
         android:id="@+id/layout_cadastrar"
         android:enabled="true"
         android:icon="@drawable/ic_register"
         android:checkable="true"
-        android:title="@string/txt_register_edit" />
+        android:title="@string/title_register_edit" />
     <item
         android:id="@+id/layout_salas"
         android:enabled="true"
         android:icon="@drawable/ic_meeting_room"
         android:checkable="true"
-        android:title="@string/rooms" />
+        android:title="@string/title_rooms" />
     <item
         android:id="@+id/layout_agendar"
         android:enabled="true"
         android:icon="@drawable/ic_schedule"
         android:checkable="true"
-        android:title="@string/txt_agenda" />
+        android:title="@string/title_to_schedule" />
     <item
         android:id="@+id/layout_equipments"
         android:enabled="true"
         android:icon="@drawable/ic_equipments"
         android:checkable="true"
-        android:title="@string/txt_consuming_equipments" />
+        android:title="@string/title_equipaments" />
     <item
         android:id="@+id/layout_consumo"
         android:enabled="true"
         android:icon="@drawable/ic_grafico"
         android:checkable="true"
-        android:title="@string/txt_consuming_summary" />
+        android:title="@string/title_input_consuming_equipments" />
     <item
         android:id="@+id/layout_ajuda"
         android:enabled="true"
         android:icon="@drawable/ic_headset"
         android:checkable="true"
-        android:title="@string/text_central_de_ajuda" />
+        android:title="@string/title_help_center" />
     <item
         android:id="@+id/layout_configuracoes"
         android:enabled="true"
         android:icon="@drawable/ic_settings"
         android:checkable="true"
-        android:title="@string/text_configuracoes" />
+        android:title="@string/title_settings" />
 
 </menu>

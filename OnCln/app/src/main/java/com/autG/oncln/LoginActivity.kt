@@ -10,13 +10,14 @@ import androidx.fragment.app.Fragment
 import com.autG.oncln.services.Auth
 import com.autG.oncln.api.Rest
 import com.autG.oncln.databinding.ActivityLoginBinding
+
 import com.autG.oncln.dtos.requests.LoginRequest
 import com.autG.oncln.services.NavigationHost
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-internal class Login : Fragment() {
+internal class LoginActivity : Fragment() {
     private val retrofit = Rest.getInstance()
     private lateinit var binding: ActivityLoginBinding
 
@@ -37,11 +38,10 @@ internal class Login : Fragment() {
                 (activity as NavigationHost).navigateTo(
                     HomeActivity(),
                     addToBackStack = false,
-                    R.layout.activity_home
+                    R.layout.activity_editar_equipamento
                 )
             }
         }
-
     }
 
     private fun trylogin() {
@@ -61,7 +61,7 @@ internal class Login : Fragment() {
                     when {
                         response.isSuccessful -> {
                             (activity as NavigationHost).navigateTo(
-                                SalasActivity(),
+                                HomeActivity(),
                                 addToBackStack = false,
                                 R.layout.activity_home
                             )

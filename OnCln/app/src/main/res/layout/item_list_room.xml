@@ -47,7 +47,7 @@
                     android:textColor="@color/blue_secundary"
                     android:textSize="@dimen/dimen_medium_16_txt"
                     android:textStyle="bold"
-                    tools:text="Ar condicionado 1" />
+                    tools:text="@string/text_example_air_conditioning" />
 
                 <ImageView
                     android:id="@+id/icon_power"
@@ -66,7 +66,7 @@
                 android:fontFamily="@font/readex_pro_medium"
                 android:textColor="@color/gray"
                 android:textSize="@dimen/dimen_medium_16_txt"
-                tools:text="Andar: 2º" />
+                tools:text="@string/text_example_floor" />
         </LinearLayout>
 
         <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"

@@ -45,7 +45,7 @@
                     android:textColor="@color/blue_secundary"
                     android:textSize="@dimen/dimen_medium_16_txt"
                     android:textStyle="bold"
-                    tools:text="Ar condicionado 1" />
+                    tools:text="@string/text_example_air_conditioning" />
 
                 <ImageView
                     android:layout_width="@dimen/dimen_medium_18"
@@ -63,7 +63,7 @@
                 android:fontFamily="@font/readex_pro_medium"
                 android:textColor="@color/gray"
                 android:textSize="@dimen/dimen_medium_16_txt"
-                tools:text="Sala de reuniões"
+                tools:text="@string/text_example_room"
                 android:textStyle="bold"/>
 
             <TextView
@@ -73,7 +73,7 @@
                 android:fontFamily="@font/readex_pro_medium"
                 android:textColor="@color/gray"
                 android:textSize="@dimen/dimen_medium_16_txt"
-                tools:text="Andar: 2º" />
+                tools:text="@string/text_example_floor" />
         </LinearLayout>
 
         <LinearLayout

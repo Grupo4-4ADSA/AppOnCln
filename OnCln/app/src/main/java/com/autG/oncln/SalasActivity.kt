@@ -37,9 +37,9 @@ internal class SalasActivity : Fragment() {
     ): View? {
         binding = ActivitySalasBinding.inflate(inflater, container, false)
 
-        binding.includeText.textTitulo.text = "Salas"
+        binding.includeText.textTitulo.text = getText(R.string.title_rooms)
 
-        binding.incBtnFiltrarCadastradas.botaoFiltro.text = "Cadastradas"
+        binding.incBtnFiltrarCadastradas.botaoFiltro.text =  getText(R.string.txt_btn_registers)
         binding.incBtnFiltrarCadastradas.botaoFiltro.setBackgroundColor(
             ContextCompat.getColor(
                 requireContext(),
@@ -47,7 +47,7 @@ internal class SalasActivity : Fragment() {
             )
         )
 
-        binding.incBtnFiltrarUso.botaoFiltro.text = "Em uso"
+        binding.incBtnFiltrarUso.botaoFiltro.text =  getText(R.string.txt_btn_in_use)
         binding.incBtnFiltrarUso.botaoFiltro.setBackgroundColor(
             ContextCompat.getColor(
                 requireContext(),
@@ -55,7 +55,7 @@ internal class SalasActivity : Fragment() {
             )
         )
 
-        binding.incBtnFiltrarOciosas.botaoFiltro.text = "Ociosas"
+        binding.incBtnFiltrarOciosas.botaoFiltro.text =  getText(R.string.txt_btn_idle)
         binding.incBtnFiltrarOciosas.botaoFiltro.setBackgroundColor(
             ContextCompat.getColor(
                 requireContext(),

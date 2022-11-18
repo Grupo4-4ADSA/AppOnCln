@@ -9,7 +9,7 @@
 
     <include
         android:id="@+id/include_text"
-        layout="@layout/item_text" />
+        layout="@layout/item_underlined_title" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,7 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:hint="@string/login"
+                android:hint="@string/title_input_user"
                 android:inputType="textEmailSubject" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -59,7 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:hint="@string/login"
+                android:hint="@string/title_input_user"
                 android:inputType="textEmailSubject" />
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>

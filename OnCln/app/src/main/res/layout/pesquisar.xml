@@ -8,7 +8,7 @@
         android:id="@+id/txt_filter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/txt_pesquisar"
+        android:hint="@string/txt_search"
         android:inputType="textFilter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

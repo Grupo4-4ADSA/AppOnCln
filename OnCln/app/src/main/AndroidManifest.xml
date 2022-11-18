@@ -17,10 +17,45 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity2"
+            android:name=".OnclnsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ResumoConsumoActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".EditarAgendamentoActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AgendamentosActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".EquipamentoPorSalaActivity"
             android:exported="false"
-            android:label="@string/title_activity_main2"
+            android:label="@string/title_activity_equipamento_por_sala"
             android:theme="@style/Theme.OnCln.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ConsumoEquipamentoActivity"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -42,7 +77,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".EditarSala"
+            android:name=".EditarSalaActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
