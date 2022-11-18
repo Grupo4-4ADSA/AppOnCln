@@ -20,7 +20,7 @@ class EditarSalaActivity : Fragment() {
         binding = ActivityEditarSalaBinding.inflate(inflater, container, false)
 
         binding.includeText.textTitulo.text= getText(R.string.title_edit_room)
-        binding.btnQr.botaoAzul.text = "Salvar"
+        binding.btnQr.botaoAzul.text = getText(R.string.txt_btn_save)
         return binding.root
     }
 

@@ -117,7 +117,7 @@
                 android:fontFamily="@font/readex_pro_medium"
                 android:text="@string/txt_dark_mode"
                 android:textColor="@color/black"
-                android:textSize="@dimen/dimen_medium_18" />
+                android:textSize="@dimen/dimen_medium_18_txt" />
 
             <include layout="@layout/item_switch" />
         </LinearLayout>

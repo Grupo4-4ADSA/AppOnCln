@@ -28,7 +28,7 @@
                 android:fontFamily="@font/readex_pro_medium"
                 android:text="@string/title_change_password"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:textSize="@dimen/dimen_large_20_txt" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/botao_cancelarAlteracao"
@@ -55,7 +55,7 @@
                 android:fontFamily="@font/readex_pro_medium"
                 android:text="@string/title_input_old_password"
                 android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:textSize="@dimen/dimen_medium_16_txt" />
 
             <EditText
                 android:id="@+id/edit_senha_antiga"
@@ -75,11 +75,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="@dimen/dimen_medium_16_txt"
                 android:fontFamily="@font/readex_pro_medium"
                 android:text="@string/title_input_new_password"
                 android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:textSize="@dimen/dimen_medium_16_txt" />
 
             <EditText
                 android:id="@+id/edit_nova_senha"
@@ -97,11 +97,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="@dimen/dimen_medium_16_txt"
                 android:fontFamily="@font/readex_pro_medium"
                 android:text="@string/hint_new_password_again"
                 android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:textSize="@dimen/dimen_medium_16_txt" />
 
             <EditText
                 android:id="@+id/edit_nova_senha_confirmacao"
@@ -121,7 +121,7 @@
                 style="@style/Botao.Branco"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/dimen_small_12_txt"
                 android:text="@string/txt_btn_save_editions" />
         </LinearLayout>
 

@@ -65,6 +65,9 @@
     <string name="title_change_password">Alterar senha</string>
 
     <string name="txt_register">Cadastrar</string>
+    <string name="txt_btn_in_use">Em uso</string>
+    <string name="txt_btn_idle">Ociosas</string>
+    <string name="txt_btn_registers">Cadastradas</string>
     <string name="txt_enter_otherwise">Entrar de outra forma</string>
     <string name="txt_btn_enter">Entrar</string>
     <string name="txt_btn_save_editions">Salvar alteração</string>

@@ -174,7 +174,7 @@
             android:text="@string/title_input_life"
             android:textColor="@color/black"
 
-            android:textSize="@dimen/dimen_medium_18" />
+            android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"

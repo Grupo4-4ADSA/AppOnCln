@@ -40,7 +40,7 @@
                 android:layout_height="match_parent"
                 android:text="@string/title_input_filter"
                 android:textColor="@color/black"
-                android:textSize="@dimen/dimen_medium_20" />
+                android:textSize="@dimen/dimen_large_20_txt" />
 
         </LinearLayout>
     </LinearLayout>

@@ -47,7 +47,7 @@
             android:fontFamily="@font/reader_pro_bold"
             android:text="@string/title_contact_information"
             android:textColor="@color/blue_secundary"
-            android:textSize="@dimen/dimen_medium_20"
+            android:textSize="@dimen/dimen_large_20_txt"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/img_central_de_ajuda" />
 
@@ -67,7 +67,7 @@
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/title_contact_telephone"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium_16" />
+            android:textSize="@dimen/dimen_medium_16_txt" />
 
     </LinearLayout>
 
