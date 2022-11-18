@@ -17,12 +17,12 @@
     <fragment
         android:id="@+id/fragment_cadastra_edita"
         android:name="com.autG.oncln.CadastrarMenuActivity"
-        tools:layout="@layout/activity_cadastrar_menu"></fragment>
+        tools:layout="@layout/activity_cadastro_menu"></fragment>
 
 
     <fragment
         android:id="@+id/fragment_login"
-        android:name="com.autG.oncln.Login"
+        android:name="com.autG.oncln.LoginActivity"
         tools:layout="@layout/activity_login">
         <action
             android:id="@+id/action_fragment_login_to_fragment_home"

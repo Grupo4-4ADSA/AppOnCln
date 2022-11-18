@@ -26,9 +26,9 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:fontFamily="@font/readex_pro_medium"
-                android:text="@string/text_alterar_senha_descricao"
+                android:text="@string/title_change_password"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:textSize="@dimen/dimen_large_20_txt" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/botao_cancelarAlteracao"
@@ -38,7 +38,7 @@
                 android:layout_centerVertical="true"
                 android:layout_gravity="center_vertical"
                 android:background="@drawable/ic_x"
-                android:contentDescription="@string/descricao_cancelar_alteracao"
+                android:contentDescription="@string/description_cancel_change"
                 android:src="@drawable/ic_x" />
         </RelativeLayout>
 
@@ -53,9 +53,9 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/readex_pro_medium"
-                android:text="@string/text_digite_a_senha_antiga"
+                android:text="@string/title_input_old_password"
                 android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:textSize="@dimen/dimen_medium_16_txt" />
 
             <EditText
                 android:id="@+id/edit_senha_antiga"
@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/readex_pro_medium"
-                android:hint="@string/text_senha"
+                android:hint="@string/hint_new_password"
                 android:inputType="textPassword"
                 android:minHeight="48dp"
                 android:textColor="@color/white"
@@ -75,11 +75,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="@dimen/dimen_medium_16_txt"
                 android:fontFamily="@font/readex_pro_medium"
-                android:text="@string/fix_digite_a_nova_senha"
+                android:text="@string/title_input_new_password"
                 android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:textSize="@dimen/dimen_medium_16_txt" />
 
             <EditText
                 android:id="@+id/edit_nova_senha"
@@ -87,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/readex_pro_medium"
-                android:hint="@string/text_senha"
+                android:hint="@string/hint_new_password"
                 android:inputType="textPassword"
                 android:minHeight="48dp"
                 android:textColor="@color/white"
@@ -97,11 +97,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="@dimen/dimen_medium_16_txt"
                 android:fontFamily="@font/readex_pro_medium"
-                android:text="@string/text_digite_a_nova_senha_novamente"
+                android:text="@string/hint_new_password_again"
                 android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:textSize="@dimen/dimen_medium_16_txt" />
 
             <EditText
                 android:id="@+id/edit_nova_senha_confirmacao"
@@ -109,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/readex_pro_medium"
-                android:hint="@string/text_senha"
+                android:hint="@string/hint_new_password_again"
                 android:inputType="textPassword"
                 android:minHeight="48dp"
                 android:textColor="@color/white"
@@ -121,8 +121,8 @@
                 style="@style/Botao.Branco"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="@string/text_salvar_alteracao" />
+                android:layout_marginTop="@dimen/dimen_small_12_txt"
+                android:text="@string/txt_btn_save_editions" />
         </LinearLayout>
 
 

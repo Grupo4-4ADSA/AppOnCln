@@ -25,8 +25,8 @@
             android:height="31dp"
             android:fontFamily="@font/readex_pro_medium"
             android:textColor="@color/dark_blue"
-            android:textSize="@dimen/dimen_large"
-            tools:text="@string/text_central_de_ajuda" />
+            android:textSize="@dimen/dimen_large_24"
+            tools:text="@string/text_example" />
 
     </LinearLayout>
 

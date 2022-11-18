@@ -23,10 +23,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawableStart="@drawable/ic_ok"
-                android:drawablePadding="@dimen/dimen_medium"
+                android:drawablePadding="@dimen/dimen_medium_16"
                 android:gravity="center"
                 android:text="Cadastrado com sucesso"
-                android:textSize="@dimen/dimen_medium_large_txt"
+                android:textSize="@dimen/dimen_large_20_txt"
                 android:textStyle="bold" />
         </LinearLayout>
 

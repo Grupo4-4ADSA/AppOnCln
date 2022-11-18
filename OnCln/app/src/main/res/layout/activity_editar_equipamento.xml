@@ -4,29 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/dimen_medium"
-    tools:context=".MainActivity">
+    android:padding="@dimen/dimen_medium_16">
 
     <include
         android:id="@+id/include_text"
-        layout="@layout/item_title" />
+        layout="@layout/item_underlined_title" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/dimen_large"
+        android:layout_margin="@dimen/dimen_large_24"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/include_text">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/dimen_medium"
+            android:layout_marginTop="@dimen/dimen_medium_16"
             android:drawableRight="@drawable/ic_info"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="@string/txt_room"
+            android:text="@string/title_rooms"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium_primary_txt" />
+            android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
@@ -42,17 +41,17 @@
                 android:backgroundTint="@color/black"
                 android:hint="@string/hint_room"
                 android:inputType="none"
-                android:paddingVertical="@dimen/dimen_small_small" />
+                android:paddingVertical="@dimen/dimen_small_4" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/dimen_small"
+            android:layout_marginTop="@dimen/dimen_small_8"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="@string/text_equipment_type"
+            android:text="@string/title_input_equipament_type"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium_primary_txt" />
+            android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/text_field_equip"
@@ -69,17 +68,17 @@
                 android:backgroundTint="@color/black"
                 android:hint="@string/hint_equipment_type"
                 android:inputType="none"
-                android:paddingVertical="@dimen/dimen_small_small" />
+                android:paddingVertical="@dimen/dimen_small_4" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/dimen_small"
+            android:layout_marginTop="@dimen/dimen_small_8"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="@string/txt_date_insta"
+            android:text="@string/title_input_date_installation"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium_primary_txt" />
+            android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -104,18 +103,18 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/dimen_small_small"
+                android:layout_marginHorizontal="@dimen/dimen_small_4"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="@dimen/dimen_small"
+                    android:layout_marginTop="@dimen/dimen_small_8"
                     android:fontFamily="@font/readex_pro_medium"
-                    android:text="@string/txt_qtd"
+                    android:text="@string/title_input_amount"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/dimen_medium_primary_txt" />
+                    android:textSize="@dimen/dimen_medium_18_txt" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
@@ -127,9 +126,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/white"
-                        android:hint="@string/hint_quantidade"
+                        android:hint="@string/hint_amount"
                         android:inputType="number"
-                        android:textSize="@dimen/dimen_small_medium_txt" />
+                        android:textSize="@dimen/dimen_small_12_txt" />
                 </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
@@ -137,18 +136,18 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/dimen_small_small"
+                android:layout_marginHorizontal="@dimen/dimen_small_4"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="@dimen/dimen_small"
+                    android:layout_marginTop="@dimen/dimen_small_8"
                     android:fontFamily="@font/readex_pro_medium"
-                    android:text="@string/txt_power"
+                    android:text="@string/title_input_power"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/dimen_medium_primary_txt" />
+                    android:textSize="@dimen/dimen_medium_18_txt" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/input_power"
@@ -160,9 +159,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/white"
-                        android:hint="@string/hint_potencia"
+                        android:hint="@string/hint_power"
                         android:inputType="number"
-                        android:textSize="@dimen/dimen_small_medium_txt" />
+                        android:textSize="@dimen/dimen_small_12_txt" />
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
         </LinearLayout>
@@ -170,12 +169,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/dimen_small"
+            android:layout_marginTop="@dimen/dimen_small_8"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="@string/txt_life"
+            android:text="@string/title_input_life"
             android:textColor="@color/black"
 
-            android:textSize="@dimen/dimen_medium_primary_txt" />
+            android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -187,8 +186,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:hint="@string/hint_vida"
-                android:inputType="textEmailSubject" />
+                android:hint="@string/hint_life"
+                android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 

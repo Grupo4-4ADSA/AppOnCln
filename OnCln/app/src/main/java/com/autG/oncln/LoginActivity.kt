@@ -17,7 +17,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-internal class Login : Fragment() {
+internal class LoginActivity : Fragment() {
     private val retrofit = Rest.getInstance()
     private lateinit var binding: ActivityLoginBinding
 
@@ -32,16 +32,14 @@ internal class Login : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         with(binding) {
             btnEntrar.setOnClickListener {
                 (activity as NavigationHost).navigateTo(
-                    HomeActivity(),
+                    EditarEquipamentoActivity(),
                     addToBackStack = false
                 )
             }
         }
-
     }
 
     private fun trylogin() {
@@ -61,7 +59,7 @@ internal class Login : Fragment() {
                     when {
                         response.isSuccessful -> {
                             (activity as NavigationHost).navigateTo(
-                                CadastroOnClnActivity(),
+                                CadastrarOnClnActivity(),
                                 addToBackStack = false
                             )
                         }

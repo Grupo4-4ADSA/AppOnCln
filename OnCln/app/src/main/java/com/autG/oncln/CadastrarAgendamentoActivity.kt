@@ -5,19 +5,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.autG.oncln.databinding.ActivityCadastroAgendamentoBinding
+import com.autG.oncln.databinding.ActivityCadastrarAgendamentoBinding
 
-internal class AgendamentoActivity : Fragment() {
+internal class CadastrarAgendamentoActivity : Fragment() {
 
-    private lateinit var binding: ActivityCadastroAgendamentoBinding
+    private lateinit var binding: ActivityCadastrarAgendamentoBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = ActivityCadastroAgendamentoBinding.inflate(inflater, container, false)
-        binding.includeText.textTitulo.text = "Novo agendamento"
+        binding = ActivityCadastrarAgendamentoBinding.inflate(inflater, container, false)
+        binding.includeText.textTitulo.text = getText(R.string.title_input_new_scheduling)
+        binding.btnAgendamento.botaoAzul.text= getText(R.string.txt_btn_save)
         return binding.root
     }
 

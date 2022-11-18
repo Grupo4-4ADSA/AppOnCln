@@ -20,9 +20,8 @@ class EditarEquipamentoActivity : Fragment() {
 
         //TODO colocar o nome do equipamento de acordo com o clique no btn editar, exemplo:
         //TODO se eu clicar em editar um conjunto de lâmpadas, aparecer de acordo com o que se refere
-        binding.includeText.textTitulo.text = "Editar Ar-condicionado"
-
-        binding.btnEquipment.botaoAzul.text= "Salvar"
+        binding.includeText.textTitulo.text = getText(R.string.title_input_edit_equipment)
+        binding.btnEquipment.botaoAzul.text= getText(R.string.txt_btn_save)
         return binding.root
     }
 

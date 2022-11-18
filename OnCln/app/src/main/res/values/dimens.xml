@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <dimen name="dimen_small_small">4dp</dimen>
-    <dimen name="dimen_small">8dp</dimen>
-    <dimen name="dimen_small_medium">12dp</dimen>
-    <dimen name="dimen_medium">16dp</dimen>
-    <dimen name="dimen_medium_large">18dp</dimen>
-    <dimen name="dimen_extra_medium_large">20dp</dimen>
-    <dimen name="dimen_large">24dp</dimen>
-    <dimen name="dimen_extra_large">36dp</dimen>
-    <dimen name="dimen_extra_x_large">50dp</dimen>
-    <dimen name="dimen_extra_y_large">60dp</dimen>
-    <dimen name="dimen_extra_super_large">90dp</dimen>
-    <dimen name="dimen_extra_super_medium">162dp</dimen>
-    <dimen name="dimen_extra_super_amazing_large">250dp</dimen>
-    <dimen name="dimen_medium_megalodon">300dp</dimen>
-    <dimen name="dimen_megalodon">350dp</dimen>
+    <dimen name="dimen_small_4">4dp</dimen>
+    <dimen name="dimen_small_8">8dp</dimen>
+    <dimen name="dimen_small_12">12dp</dimen>
+    <dimen name="dimen_medium_16">16dp</dimen>
+    <dimen name="dimen_medium_18">18dp</dimen>
+    <dimen name="dimen_medium_20">20dp</dimen>
+    <dimen name="dimen_large_24">24dp</dimen>
+    <dimen name="dimen_large_36">36dp</dimen>
+    <dimen name="dimen_large_50">50dp</dimen>
+    <dimen name="dimen_large_60">60dp</dimen>
+    <dimen name="dimen_large_90">90dp</dimen>
+    <dimen name="dimen_super_big_162">162dp</dimen>
+    <dimen name="dimen_super_big_250">250dp</dimen>
+    <dimen name="dimen_super_big_300">300dp</dimen>
+    <dimen name="dimen_super_big_350">350dp</dimen>
 
-    <dimen name="dimen_small_txt">8sp</dimen>
-    <dimen name="dimen_small_medium_txt">12sp</dimen>
-    <dimen name="dimen_medium_txt">16sp</dimen>
-    <dimen name="dimen_medium_primary_txt">18sp</dimen>
-    <dimen name="dimen_medium_large_txt">20sp</dimen>
-    <dimen name="dimen_large_txt">24sp</dimen>
-    <dimen name="dimen_extra_large_txt">36sp</dimen>
-
+    <dimen name="dimen_small_8_txt">8sp</dimen>
+    <dimen name="dimen_small_12_txt">12sp</dimen>
+    <dimen name="dimen_medium_16_txt">16sp</dimen>
+    <dimen name="dimen_medium_18_txt">18sp</dimen>
+    <dimen name="dimen_large_20_txt">20sp</dimen>
+    <dimen name="dimen_large_24_txt">24sp</dimen>
+    <dimen name="dimen_super_big_36_txt">36sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 
 </resources>

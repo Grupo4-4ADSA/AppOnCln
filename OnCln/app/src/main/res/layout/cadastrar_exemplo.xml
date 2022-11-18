@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/dimen_medium"
+    android:padding="@dimen/dimen_medium_16"
     tools:context=".MainActivity">
 
     <include
         android:id="@+id/include_text"
-        layout="@layout/item_text" />
+        layout="@layout/item_underlined_title" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/dimen_large"
+        android:layout_margin="@dimen/dimen_large_24"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/include_text">
 
@@ -23,10 +23,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/readex_pro_medium"
-            android:paddingVertical="@dimen/dimen_small"
+            android:paddingVertical="@dimen/dimen_small_8"
             android:text="Login"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium_large_txt" />
+            android:textSize="@dimen/dimen_large_20_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -37,7 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:hint="@string/login"
+                android:hint="@string/title_input_user"
                 android:inputType="textEmailSubject" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -45,10 +45,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/readex_pro_medium"
-            android:paddingVertical="@dimen/dimen_small"
+            android:paddingVertical="@dimen/dimen_small_8"
             android:text="Login"
             android:textColor="@color/black"
-            android:textSize="@dimen/dimen_medium_large_txt" />
+            android:textSize="@dimen/dimen_large_20_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -59,7 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:hint="@string/login"
+                android:hint="@string/title_input_user"
                 android:inputType="textEmailSubject" />
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>

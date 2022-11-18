@@ -8,7 +8,7 @@
         android:id="@+id/txt_filter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/txt_pesquisar"
+        android:hint="@string/txt_search"
         android:inputType="textFilter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,8 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-
-            android:padding="@dimen/dimen_small_small" />
+            android:padding="@dimen/dimen_small_4" />
 
 
     </com.google.android.material.textfield.TextInputLayout>

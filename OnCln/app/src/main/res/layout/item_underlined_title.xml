@@ -25,9 +25,9 @@
             android:height="31dp"
             android:fontFamily="@font/readex_pro_medium"
             android:textColor="@color/dark_blue"
-            android:textSize="@dimen/dimen_large"
+            android:textSize="@dimen/dimen_large_24"
             android:textStyle="bold"
-            tools:text="@string/text_central_de_ajuda" />
+            tools:text="@string/text_example" />
 
         <View
             android:layout_width="match_parent"
