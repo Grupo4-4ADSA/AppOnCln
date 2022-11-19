@@ -1,81 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="300dp"
-    android:layout_height="80dp"
-    android:layout_gravity="top|center"
-    android:layout_margin="20dp"
-    android:orientation="horizontal"
-    android:padding="@dimen/dimen_small_12">
+    android:id="@+id/card"
+    style="?attr/materialCardViewElevatedStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="@dimen/dimen_medium_16"
+    app:cardElevation="@dimen/dimen_small_8"
+    app:strokeWidth="0dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gray"
+        android:padding="@dimen/dimen_small_8">
 
         <ImageView
-            android:id="@+id/caixa"
-            android:layout_width="@dimen/dimen_large_36"
-            android:layout_height="@dimen/dimen_large_36"
-            android:layout_marginStart="@dimen/dimen_small_8"
-            android:background="@drawable/ic_cashier_on_cln"
-            android:backgroundTint="@color/blue_secundary"
-            android:scaleType="fitCenter"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/img_icon"
+            android:layout_width="@dimen/dimen_large_60"
+            android:layout_height="@dimen/dimen_large_60"
+            android:src="@drawable/ic_cashier_on_cln"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
 
         <LinearLayout
-            android:id="@+id/descricao_caixa"
+            android:id="@+id/layout_linear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_small_8"
+            android:layout_gravity="center_vertical"
             android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toRightOf="@id/caixa"
+            android:paddingHorizontal="@dimen/dimen_large_24"
+            app:layout_constraintStart_toEndOf="@+id/img_icon"
             app:layout_constraintTop_toTopOf="parent">
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/readex_pro_medium"
+                    android:textColor="@color/blue_secundary"
+                    android:textSize="@dimen/dimen_medium_16_txt"
+                    android:textStyle="bold"
+                    tools:text="@string/text_example_air_conditioning" />
+
+                <ImageView
+                    android:id="@+id/icon_power"
+                    android:layout_width="@dimen/dimen_medium_18"
+                    android:layout_height="@dimen/dimen_medium_18"
+                    android:layout_marginStart="@dimen/dimen_small_8"
+                    android:background="@drawable/ic_power_black"
+                    tools:backgroundTint="@color/black" />
+
+            </LinearLayout>
+
             <TextView
+                android:id="@+id/txt_room"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:height="@dimen/dimen_medium_18"
                 android:fontFamily="@font/readex_pro_medium"
-                android:textColor="@color/blue_secundary"
+                android:textColor="@color/gray_terciary"
                 android:textSize="@dimen/dimen_medium_16_txt"
-                android:textStyle="bold"
-                tools:text="Id: 123" />
+                tools:text="@string/text_example_room" />
 
             <TextView
+                android:id="@+id/txt_floor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:height="@dimen/dimen_medium_18"
                 android:fontFamily="@font/readex_pro_medium"
-                android:textColor="@color/gray_secundary"
-                android:textSize="@dimen/dimen_small_12_txt"
-                android:textStyle="bold"
-                tools:text="Sala: A" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:height="@dimen/dimen_medium_18"
-                android:fontFamily="@font/readex_pro_medium"
-                android:textColor="@color/gray_secundary"
-                android:textSize="@dimen/dimen_small_12"
-                android:textStyle="bold"
-                tools:text="Andar: 1º" />
-
+                android:textColor="@color/gray"
+                android:textSize="@dimen/dimen_medium_16_txt"
+                tools:text="@string/text_example_floor" />
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/botao_excluir"
-            android:layout_width="@dimen/dimen_medium_18"
-            android:layout_height="@dimen/dimen_medium_20"
-            android:background="@drawable/ic_delete"
+        <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/botao_excluir"
+                android:layout_width="@dimen/dimen_medium_20"
+                android:layout_height="@dimen/dimen_medium_20"
+                android:background="@drawable/ic_delete" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

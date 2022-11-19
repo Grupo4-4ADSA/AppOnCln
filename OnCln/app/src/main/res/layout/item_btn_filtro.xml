@@ -8,10 +8,11 @@
     <Button
         android:id="@+id/botao_filtro"
         style="@style/Botao.item.lista"
-        android:layout_width="match_parent"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="@string/txt_register"
         android:layout_marginHorizontal="@dimen/dimen_small_4"
+        android:gravity="center"
+        android:text="@string/txt_register"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

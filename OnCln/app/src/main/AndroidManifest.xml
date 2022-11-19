@@ -24,28 +24,28 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ResumoConsumoActivity"
+            android:name=".ConsumptionSummaryActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".EditarAgendamentoActivity"
+            android:name=".EditSchedulingActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".AgendamentosActivity"
+            android:name=".SchedulesActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".EquipamentoPorSalaActivity"
+            android:name=".EquipmentRoomActivity"
             android:exported="false"
             android:label="@string/title_activity_equipamento_por_sala"
             android:theme="@style/Theme.OnCln.NoActionBar">
@@ -54,7 +54,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ConsumoEquipamentoActivity"
+            android:name=".EquipmentConsumptionActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -70,14 +70,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".EditarEquipamentoActivity"
+            android:name=".EditEquipmentActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".EditarSalaActivity"
+            android:name=".EditRoomActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
