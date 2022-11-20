@@ -16,6 +16,7 @@ import com.autG.oncln.SalasActivity
 import com.autG.oncln.dataClass.MenuData
 import com.autG.oncln.databinding.ComponentMenuLateralBinding
 import com.autG.oncln.services.NavigationHost
+import com.squareup.picasso.Picasso
 
 class NavigationBar : Fragment() {
 
@@ -40,6 +41,8 @@ class NavigationBar : Fragment() {
 
         val data = arguments?.getSerializable("screen") as MenuData
         binding.navigationMenuView?.setCheckedItem(filter(data))
+
+        Picasso.get().load("http://servidordb.ddns.net:9651/profile/SteveProfile.png").into(binding.profileImage);
 
         return binding.root
     }
