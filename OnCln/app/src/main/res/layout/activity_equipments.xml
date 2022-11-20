@@ -78,14 +78,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:itemCount="5"
-            tools:listitem="@layout/item_list_clnbox"/>
+            tools:listitem="@layout/item_list_equipment" />
 
     </LinearLayout>
+
     <include
         android:id="@+id/btn_plus"
         layout="@layout/btn_mais"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 </androidx.appcompat.widget.LinearLayoutCompat>
 
 

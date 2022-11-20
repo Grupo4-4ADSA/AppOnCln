@@ -9,10 +9,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.autG.oncln.*
-import com.autG.oncln.AgendamentosActivity
-import com.autG.oncln.CadastrarMenuActivity
+import com.autG.oncln.SchedulesActivity
+import com.autG.oncln.RegistrationMenuActivity
 import com.autG.oncln.HomeActivity
-import com.autG.oncln.SalasActivity
+import com.autG.oncln.RoomsActivity
 import com.autG.oncln.dataClass.MenuData
 import com.autG.oncln.databinding.ComponentMenuLateralBinding
 import com.autG.oncln.services.NavigationHost
@@ -65,29 +65,29 @@ class NavigationBar : Fragment() {
                 }
                 R.id.layout_salas -> {
                     (activity as NavigationHost).navigateTo(
-                        SalasActivity(), addToBackStack = true,
-                        R.layout.activity_salas
+                        RoomsActivity(), addToBackStack = true,
+                        R.layout.activity_rooms
                     )
                     true
                 }
                 R.id.layout_equipments -> {
                     (activity as NavigationHost).navigateTo(
-                        CadastrarEquipamentoActivity(), addToBackStack = true,
-                        R.layout.activity_equipamentos
+                        RegisterEquipamentActivity(), addToBackStack = true,
+                        R.layout.activity_equipments
                     )
                     true
                 }
                 R.id.layout_agendar -> {
                     (activity as NavigationHost).navigateTo(
-                        AgendamentosActivity(), addToBackStack = true,
-                        R.layout.activity_cadastrar_agendamento
+                        SchedulesActivity(), addToBackStack = true,
+                        R.layout.activity_register_schedule
                     )
                     true
                 }
                 R.id.layout_cadastrar -> {
                     (activity as NavigationHost).navigateTo(
-                        CadastrarMenuActivity(), addToBackStack = true,
-                        R.layout.activity_cadastro_menu
+                        RegistrationMenuActivity(), addToBackStack = true,
+                        R.layout.activity_registration_menu
                     )
                     true
                 }
@@ -110,16 +110,16 @@ class NavigationBar : Fragment() {
             R.layout.activity_home -> {
                 R.id.layout_home
             }
-            R.layout.activity_salas -> {
+            R.layout.activity_rooms -> {
                 R.id.layout_salas
             }
-            R.layout.activity_equipamentos -> {
+            R.layout.activity_equipments -> {
                 R.id.layout_equipments
             }
-            R.layout.activity_cadastrar_agendamento -> {
+            R.layout.activity_register_schedule -> {
                 R.id.layout_agendar
             }
-            R.layout.activity_cadastro_menu -> {
+            R.layout.activity_registration_menu -> {
                 R.id.layout_cadastrar
             }
             else -> item.setBackLayout!!

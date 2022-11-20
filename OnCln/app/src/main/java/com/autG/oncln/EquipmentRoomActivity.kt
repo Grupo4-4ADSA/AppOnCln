@@ -11,10 +11,11 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.autG.oncln.adapter.RoomAdapter
 import com.autG.oncln.api.Rest
-import com.autG.oncln.databinding.ActivityOnclnsBinding
+import com.autG.oncln.databinding.ActivityEquipmentRoomBinding
 import com.autG.oncln.dtos.responses.Rooms
 import com.autG.oncln.dtos.responses.RoomsItem
 import com.autG.oncln.menus.NavBarBottom
@@ -24,9 +25,9 @@ import retrofit2.Callback
 import retrofit2.Response
 import java.util.ArrayList
 
-internal class OnclnsActivity : Fragment() {
+internal class EquipmentRoomActivity : Fragment() {
 
-    private lateinit var binding: ActivityOnclnsBinding
+    private lateinit var binding: ActivityEquipmentRoomBinding
     private lateinit var arrayList: ArrayList<RoomsItem>
     private val retrofit = Rest.getInstance()
 
@@ -35,11 +36,13 @@ internal class OnclnsActivity : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = ActivityOnclnsBinding.inflate(inflater, container, false)
+        binding = ActivityEquipmentRoomBinding.inflate(inflater, container, false)
 
-        binding.includeText.textTitulo.text = getText(R.string.title_oncln)
+        binding.includeText.textTitulo.text = getText(R.string.title_equipaments)
 
-        binding.itemFiltros.botaoFiltroCadastrar.text =  getText(R.string.txt_btn_registers)
+        binding.includeText.textTitulo.text = getText(R.string.title_rooms)
+
+        binding.itemFiltros.botaoFiltroCadastrar.text = getText(R.string.txt_btn_registers)
         binding.itemFiltros.botaoFiltroCadastrar.setBackgroundColor(
             ContextCompat.getColor(
                 requireContext(),
@@ -47,7 +50,7 @@ internal class OnclnsActivity : Fragment() {
             )
         )
 
-        binding.itemFiltros.botaoFiltroEmUso.text =  getText(R.string.txt_btn_in_use)
+        binding.itemFiltros.botaoFiltroEmUso.text = getText(R.string.txt_btn_in_use)
         binding.itemFiltros.botaoFiltroEmUso.setBackgroundColor(
             ContextCompat.getColor(
                 requireContext(),
@@ -55,8 +58,7 @@ internal class OnclnsActivity : Fragment() {
             )
         )
 
-
-        binding.itemFiltros.botaoFiltroOciosas.text =  getText(R.string.txt_btn_idle)
+        binding.itemFiltros.botaoFiltroOciosas.text = getText(R.string.txt_btn_idle)
         binding.itemFiltros.botaoFiltroOciosas.setBackgroundColor(
             ContextCompat.getColor(
                 requireContext(),
@@ -64,7 +66,12 @@ internal class OnclnsActivity : Fragment() {
             )
         )
 
-        binding.recycleListRoom.layoutManager = LinearLayoutManager(context)
+
+        binding.recycleListRoom.layoutManager =
+            GridLayoutManager(
+                context,
+                2
+            )
 
         arrayList = arrayListOf()
         requestRooms()
