@@ -33,7 +33,7 @@
             android:fontFamily="@font/readex_pro_medium"
             android:paddingVertical="@dimen/dimen_medium_16"
             android:text="Login"
-            android:textColor="@color/blue_secundary"
+            android:textColor="?attr/colorOnSecondary"
             android:textSize="@dimen/dimen_large_24_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -48,7 +48,7 @@
                 android:id="@+id/input_usuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
+                android:background="@color/transparent"
                 android:hint="@string/title_login"
                 android:inputType="textEmailSubject" />
 
@@ -69,7 +69,7 @@
                 android:id="@+id/input_senha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
+                android:background="@color/transparent"
                 android:hint="@string/title_input_password"
                 android:inputType="textPassword"
                 android:textColorHint="@color/black" />
@@ -89,7 +89,7 @@
             android:layout_marginTop="@dimen/dimen_medium_16"
             android:background="@drawable/backgroud_button_login"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="Entrar"
+            android:text="@string/txt_btn_enter"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -120,7 +120,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/txt_enter_otherwise"
-                    android:textColor="@color/blue_secundary"
+                    android:textColor="?attr/colorOnSecondary"
                     android:textSize="@dimen/dimen_medium_16"
                     android:textStyle="bold" />
 

@@ -62,11 +62,7 @@ internal class RoomsActivity : Fragment() {
             )
         )
 
-        binding.recycleListRoom.layoutManager =
-            GridLayoutManager(
-                context,
-                2
-            )
+        binding.recycleListRoom.layoutManager = LinearLayoutManager(context)
 
         arrayList = arrayListOf()
         requestRooms()

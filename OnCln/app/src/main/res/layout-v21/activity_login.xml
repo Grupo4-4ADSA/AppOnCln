@@ -89,7 +89,7 @@
             android:layout_marginTop="@dimen/dimen_small_8"
             android:background="@drawable/backgroud_button_login"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="Entrar"
+            android:text="@string/txt_btn_enter"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/white"

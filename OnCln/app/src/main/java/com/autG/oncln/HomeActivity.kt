@@ -30,35 +30,17 @@ internal class HomeActivity : Fragment() {
         binding.btnAgendamento.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             com.autG.oncln.R.drawable.ic_schedule, 0, 0, 0
         )
-        binding.btnAgendamento.buttonBorder.setTextColor(
-            getColor(
-                requireContext(),
-                com.autG.oncln.R.color.black
-            )
-        )
 
         //btn cadastrar ou editar
         binding.btnCadastrar.buttonBorder.text = getText(R.string.title_register_edit)
         binding.btnCadastrar.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             com.autG.oncln.R.drawable.ic_register, 0, 0, 0
         )
-        binding.btnCadastrar.buttonBorder.setTextColor(
-            getColor(
-                requireContext(),
-                com.autG.oncln.R.color.black
-            )
-        )
 
         //btn consumo por equipamento
         binding.btnConsumo.buttonBorder.text = getText(R.string.title_input_consuming_equipments)
         binding.btnConsumo.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             com.autG.oncln.R.drawable.ic_grafico, 0, 0, 0
-        )
-        binding.btnConsumo.buttonBorder.setTextColor(
-            getColor(
-                requireContext(),
-                com.autG.oncln.R.color.black
-            )
         )
 
         //btn salas

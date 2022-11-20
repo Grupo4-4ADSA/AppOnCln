@@ -6,6 +6,7 @@ import android.transition.TransitionManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat.getColor
 import androidx.fragment.app.Fragment
 import com.autG.oncln.databinding.ActivityRegistrationMenuBinding
 import com.autG.oncln.services.NavigationHost
@@ -27,21 +28,25 @@ internal class RegistrationMenuActivity : Fragment() {
         binding.btnSalas.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_meeting_room_blue, 0, 0, 0
         )
+        binding.btnSalas.buttonBorder.setTextColor(getColor(requireContext(), R.color.blue_secundary))
 
         binding.btnOncln.buttonBorder.text = getText(R.string.title_input_oncln)
         binding.btnOncln.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_oncln, 0, 0, 0
         )
+        binding.btnOncln.buttonBorder.setTextColor(getColor(requireContext(), R.color.blue_secundary))
 
         binding.btnEquipamento.buttonBorder.text = getText(R.string.title_equipaments)
         binding.btnEquipamento.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_equipaments_blue, 0, 0, 0
         )
+        binding.btnEquipamento.buttonBorder.setTextColor(getColor(requireContext(), R.color.blue_secundary))
 
         binding.btnAgenmento.buttonBorder.text = getText(R.string.title_input_scheduling)
         binding.btnAgenmento.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_schedule_blue, 0, 0, 0
         )
+        binding.btnAgenmento.buttonBorder.setTextColor(getColor(requireContext(), R.color.blue_secundary))
 
         TransitionManager.beginDelayedTransition(container, Fade())
 
