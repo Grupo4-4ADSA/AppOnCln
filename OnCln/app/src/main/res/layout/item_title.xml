@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".CentralDeAjudaActivity">
+    tools:context=".HelpCenterActivity">
 
     <LinearLayout
         android:id="@+id/layout_padrao_titulo"

@@ -11,9 +11,12 @@ import com.autG.oncln.menus.EmptyScreen
 import com.autG.oncln.menus.NavBarBottom
 import com.autG.oncln.menus.NavigationBar
 import com.autG.oncln.services.NavigationHost
+import java.util.*
+import kotlin.concurrent.schedule
 
 
 class MainActivity : AppCompatActivity(), NavigationHost {
+
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var backScreen: MenuData
@@ -93,9 +96,10 @@ class MainActivity : AppCompatActivity(), NavigationHost {
         }
         transaction.commit()
 
-        binding.navFragmentContainer.visibility = View.VISIBLE
-        binding.btnMenuLateral.visibility = View.VISIBLE
-
+        Timer().schedule(150) {
+            binding.navFragmentContainer.visibility = View.VISIBLE
+            binding.btnMenuLateral.visibility = View.VISIBLE
+        }
         menuAction()
     }
 
@@ -106,4 +110,5 @@ class MainActivity : AppCompatActivity(), NavigationHost {
             .commit()
             binding.btnMenuLateral.visibility = View.VISIBLE
     }
+
 }

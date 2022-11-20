@@ -2,9 +2,7 @@ package com.autG.oncln
 
 import android.os.Bundle
 import android.transition.Fade
-import android.transition.Slide
 import android.transition.TransitionManager
-import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,19 +12,18 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.autG.oncln.adapter.RoomAdapter
 import com.autG.oncln.api.Rest
-import com.autG.oncln.databinding.ActivityOnclnsBinding
+import com.autG.oncln.databinding.ActivityRoomsBinding
 import com.autG.oncln.dtos.responses.Rooms
 import com.autG.oncln.dtos.responses.RoomsItem
-import com.autG.oncln.menus.NavBarBottom
 import com.autG.oncln.services.Auth
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import java.util.ArrayList
 
-internal class OnclnsActivity : Fragment() {
+internal class RoomsActivity : Fragment() {
 
-    private lateinit var binding: ActivityOnclnsBinding
+    private lateinit var binding: ActivityRoomsBinding
     private lateinit var arrayList: ArrayList<RoomsItem>
     private val retrofit = Rest.getInstance()
 
@@ -35,9 +32,9 @@ internal class OnclnsActivity : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = ActivityOnclnsBinding.inflate(inflater, container, false)
+        binding = ActivityRoomsBinding.inflate(inflater, container, false)
 
-        binding.includeText.textTitulo.text = getText(R.string.title_oncln)
+        binding.includeText.textTitulo.text = getText(R.string.title_rooms)
 
         binding.itemFiltros.botaoFiltroCadastrar.text =  getText(R.string.txt_btn_registers)
         binding.itemFiltros.botaoFiltroCadastrar.setBackgroundColor(

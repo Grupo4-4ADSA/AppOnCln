@@ -38,7 +38,7 @@ internal class LoginActivity : Fragment() {
                 (activity as NavigationHost).navigateTo(
                     HomeActivity(),
                     addToBackStack = false,
-                    R.layout.activity_editar_equipamento
+                    R.layout.activity_edit_equipment
                 )
             }
         }

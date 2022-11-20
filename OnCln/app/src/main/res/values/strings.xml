@@ -31,6 +31,7 @@
     <string name="title_help_center">Central de ajuda</string>
     <string name="title_home">Home</string>
     <string name="title_input_amount">Quantidade:</string>
+    <string name="title_consumption_summary">Resumo de consumo</string>
     <string name="title_input_consuming_equipments">Consumo/Equipamentos</string>
     <string name="title_input_date_installation">Data de instalação:</string>
     <string name="title_input_data_end">Data inicial:</string>
@@ -54,10 +55,12 @@
     <string name="title_register_edit">Cadastrar/Editar</string>
     <string name="title_edit_room">Editar Sala</string>
     <string name="title_input_room">Sala:</string>
+    <string name="title_edit_scheduling">Editar Agendamento</string>
     <string name="title_input_scheduling">Agendamentos</string>
     <string name="title_input_user">Usuário:</string>
     <string name="title_register_equipment">Cadastrar Equipamento</string>
     <string name="title_register_oncln">Cadastrar On-Cln</string>
+    <string name="title_oncln">On-Cln cadastrados</string>
     <string name="title_register_room">Cadastrar sala</string>
     <string name="title_rooms">Salas</string>
     <string name="title_settings">Configurações</string>
@@ -80,11 +83,11 @@
     <string name="app_name">OnCln</string>
 
     <string name="text_example">Text example</string>
+    <string name="text_example_power">200</string>
     <string name="text_example_air_conditioning">Ar condicionado 1</string>
     <string name="text_example_floor">Andar: 2º</string>
     <string name="text_example_room">Sala de reuniões</string>
     <string name="title_activity_equipamento_por_sala">EquipamentoPorSalaActivity</string>
-    <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>

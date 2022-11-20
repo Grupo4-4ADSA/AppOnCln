@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/readex_pro_medium"
         android:orientation="vertical"
-        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -25,14 +24,8 @@
             android:height="31dp"
             android:fontFamily="@font/readex_pro_medium"
             android:textColor="@color/dark_blue"
-            android:textSize="@dimen/dimen_large_24"
-            android:textStyle="bold"
+            android:textSize="@dimen/dimen_medium_16"
             tools:text="@string/text_example" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:background="@drawable/gradiente" />
 
     </LinearLayout>
 

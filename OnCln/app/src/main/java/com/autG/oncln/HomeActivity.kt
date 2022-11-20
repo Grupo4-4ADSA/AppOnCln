@@ -2,9 +2,7 @@ package com.autG.oncln
 
 import android.os.Bundle
 import android.transition.Fade
-import android.transition.Slide
 import android.transition.TransitionManager
-import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -93,16 +91,16 @@ internal class HomeActivity : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
             btnAgendamento.buttonBorder.setOnClickListener {
-                (activity as NavigationHost).navigateTo(CadastrarSalaActivity(),addToBackStack = true,
-                    R.layout.activity_cadastrar_sala)
+                (activity as NavigationHost).navigateTo(RegisterRoomActivity(),addToBackStack = true,
+                    R.layout.activity_register_room)
             }
             btnCadastrar.buttonBorder.setOnClickListener {
-                (activity as NavigationHost).navigateTo(CadastrarMenuActivity(),addToBackStack = true,
-                    R.layout.activity_cadastro_menu)
+                (activity as NavigationHost).navigateTo(RegistrationMenuActivity(),addToBackStack = true,
+                    R.layout.activity_registration_menu)
             }
             btnSalas.buttonBorder.setOnClickListener {
-                (activity as NavigationHost).navigateTo(SalasActivity(),addToBackStack = true,
-                    R.layout.activity_salas)
+                (activity as NavigationHost).navigateTo(RoomsActivity(),addToBackStack = true,
+                    R.layout.activity_rooms)
             }
         }
     }
