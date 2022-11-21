@@ -9,7 +9,7 @@
         android:layout_width="@dimen/dimen_medium_20"
         android:layout_height="@dimen/dimen_medium_20"
         android:layout_marginEnd="@dimen/dimen_small_8"
-        android:background="@drawable/ic_edit_delete"/>
+        android:background="@drawable/ic_edit"/>
 
     <ImageView
         android:id="@+id/botao_excluir"

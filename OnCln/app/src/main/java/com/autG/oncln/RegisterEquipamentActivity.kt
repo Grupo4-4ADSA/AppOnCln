@@ -34,7 +34,10 @@ class RegisterEquipamentActivity : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         //TODO fazer o array de salas pegando as mesmas do banco
-        val items = arrayOf("Ar-condicionado", "Conjunto de lâmpadas", "Conjunto de tomadas")
+        val items = arrayOf(
+            getText(R.string.txt_air).toString(),
+            getText(R.string.txt_set_of_lamps).toString(),
+            getText(R.string.txt_socket_set).toString())
         (binding.textFieldEquip.editText as? MaterialAutoCompleteTextView)?.setSimpleItems(items)
     }
 }

@@ -36,7 +36,7 @@ internal class RoomsActivity : Fragment() {
 
         binding.includeText.textTitulo.text = getText(R.string.title_rooms)
 
-        binding.itemFiltros.botaoFiltroCadastrar.text =  getText(R.string.txt_btn_registers)
+        binding.itemFiltros.botaoFiltroCadastrar.text = getText(R.string.txt_btn_registers)
         binding.itemFiltros.botaoFiltroCadastrar.setBackgroundColor(
             ContextCompat.getColor(
                 requireContext(),
@@ -44,22 +44,22 @@ internal class RoomsActivity : Fragment() {
             )
         )
 
-        binding.itemFiltros.botaoFiltroEmUso.text =  getText(R.string.txt_btn_in_use)
-        binding.itemFiltros.botaoFiltroEmUso.setBackgroundColor(
-            ContextCompat.getColor(
-                requireContext(),
-                R.color.blue_secundary
-            )
-        )
+        binding.itemFiltros.botaoFiltroEmUso.text = getText(R.string.txt_btn_in_use)
+        //binding.itemFiltros.botaoFiltroEmUso.setBackgroundColor(
+        //    ContextCompat.getColor(
+        //        requireContext(),
+        //        R.color.blue_secondary
+        //    )
+        //)
 
 
-        binding.itemFiltros.botaoFiltroOciosas.text =  getText(R.string.txt_btn_idle)
-        binding.itemFiltros.botaoFiltroOciosas.setBackgroundColor(
-            ContextCompat.getColor(
-                requireContext(),
-                R.color.green_primary
-            )
-        )
+        binding.itemFiltros.botaoFiltroOciosas.text = getText(R.string.txt_btn_idle)
+        //binding.itemFiltros.botaoFiltroOciosas.setBackgroundColor(
+        //    ContextCompat.getColor(
+        //        requireContext(),
+        //        R.color.green_primary
+        //    )
+        //)
 
         binding.recycleListRoom.layoutManager = LinearLayoutManager(context)
 
@@ -73,7 +73,6 @@ internal class RoomsActivity : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
 
     }
 
@@ -95,7 +94,12 @@ internal class RoomsActivity : Fragment() {
                         response.body()?.forEach {
                             arrayList.add(it)
                         }
-                        binding.recycleListRoom.adapter = RoomAdapter(arrayList) { msg ->
+                        binding.recycleListRoom.adapter = RoomAdapter(
+                            arrayList,
+                            getText(R.string.title_input_floor).toString(),
+                            requireContext()
+
+                        ) { msg ->
                             Toast.makeText(requireContext(), msg, Toast.LENGTH_LONG).show()
                         }
                     } else {

@@ -33,7 +33,7 @@
             android:paddingVertical="@dimen/dimen_medium_16"
             android:text="@string/title_login"
             android:contentDescription="@string/title_login"
-            android:textColor="@color/blue_secundary"
+            android:textColor="@color/blue_secondary"
             android:textSize="@dimen/dimen_large_24_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -119,7 +119,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/txt_enter_otherwise"
-                    android:textColor="@color/blue_secundary"
+                    android:textColor="@color/blue_secondary"
                     android:textSize="@dimen/dimen_medium_16"
                     android:textStyle="bold" />
 
