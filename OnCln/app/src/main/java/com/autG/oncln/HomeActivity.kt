@@ -65,8 +65,7 @@ internal class HomeActivity : Fragment() {
         binding.btnSalas.buttonBorder.text = getText(R.string.title_rooms)
         binding.btnSalas.buttonBorder.setTextColor(
             getColor(
-                requireContext(),
-                com.autG.oncln.R.color.white
+                requireContext(), R.color.white
             )
         )
         binding.btnSalas.buttonBorder.clipToOutline
@@ -78,7 +77,7 @@ internal class HomeActivity : Fragment() {
         binding.btnSalas.buttonBorder.setBackgroundColor(
             getColor(
                 requireContext(),
-                com.autG.oncln.R.color.blue_secundary
+                com.autG.oncln.R.color.blue_secondary
             )
         )
 
@@ -91,16 +90,22 @@ internal class HomeActivity : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
             btnAgendamento.buttonBorder.setOnClickListener {
-                (activity as NavigationHost).navigateTo(RegisterRoomActivity(),addToBackStack = true,
-                    R.layout.activity_register_room)
+                (activity as NavigationHost).navigateTo(
+                    RegisterRoomActivity(), addToBackStack = true,
+                    R.layout.activity_register_room
+                )
             }
             btnCadastrar.buttonBorder.setOnClickListener {
-                (activity as NavigationHost).navigateTo(RegistrationMenuActivity(),addToBackStack = true,
-                    R.layout.activity_registration_menu)
+                (activity as NavigationHost).navigateTo(
+                    RegistrationMenuActivity(), addToBackStack = true,
+                    R.layout.activity_registration_menu
+                )
             }
             btnSalas.buttonBorder.setOnClickListener {
-                (activity as NavigationHost).navigateTo(RoomsActivity(),addToBackStack = true,
-                    R.layout.activity_rooms)
+                (activity as NavigationHost).navigateTo(
+                    RoomsActivity(), addToBackStack = true,
+                    R.layout.activity_rooms
+                )
             }
         }
     }

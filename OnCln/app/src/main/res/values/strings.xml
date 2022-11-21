@@ -69,6 +69,8 @@
 
     <string name="txt_register">Cadastrar</string>
     <string name="txt_btn_in_use">Em uso</string>
+    <string name="txt_btn_edit">Editar</string>
+    <string name="txt_btn_delete">Deletar</string>
     <string name="txt_btn_idle">Ociosas</string>
     <string name="txt_btn_registers">Cadastradas</string>
     <string name="txt_enter_otherwise">Entrar de outra forma</string>
@@ -81,9 +83,13 @@
     <string name="txt_search">Pesquisar</string>
     <string name="txt_total">Tota(1)</string>
     <string name="app_name">OnCln</string>
+    <string name="txt_air">Ar condicionado</string>
+    <string name="txt_set_of_lamps">Conjunto de lâmpadas</string>
+    <string name="txt_socket_set">Conjunto de tomadas</string>
 
     <string name="text_example">Text example</string>
     <string name="text_example_power">200</string>
+    <string name="text_example_id">Id:123</string>
     <string name="text_example_air_conditioning">Ar condicionado 1</string>
     <string name="text_example_floor">Andar: 2º</string>
     <string name="text_example_room">Sala de reuniões</string>

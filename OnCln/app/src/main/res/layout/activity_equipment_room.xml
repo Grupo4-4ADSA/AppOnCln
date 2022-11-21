@@ -68,7 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="@dimen/dimen_small_8"
-            android:textColor="@color/blue_secundary"
+            android:textColor="@color/blue_secondary"
             android:textSize="@dimen/dimen_medium_20"
             android:textStyle="bold"
             tools:text="@string/txt_total" />

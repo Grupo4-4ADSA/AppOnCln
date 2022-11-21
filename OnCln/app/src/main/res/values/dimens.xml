@@ -3,8 +3,10 @@
 
     <dimen name="dimen_small_2">2dp</dimen>
     <dimen name="dimen_small_4">4dp</dimen>
+    <dimen name="dimen_small_6">6dp</dimen>
     <dimen name="dimen_small_8">8dp</dimen>
     <dimen name="dimen_small_12">12dp</dimen>
+    <dimen name="dimen_small_14">14dp</dimen>
     <dimen name="dimen_medium_16">16dp</dimen>
     <dimen name="dimen_medium_18">18dp</dimen>
     <dimen name="dimen_medium_20">20dp</dimen>
@@ -21,6 +23,7 @@
 
     <dimen name="dimen_small_8_txt">8sp</dimen>
     <dimen name="dimen_small_12_txt">12sp</dimen>
+    <dimen name="dimen_small_14_txt">14sp</dimen>
     <dimen name="dimen_medium_16_txt">16sp</dimen>
     <dimen name="dimen_medium_18_txt">18sp</dimen>
     <dimen name="dimen_large_20_txt">20sp</dimen>

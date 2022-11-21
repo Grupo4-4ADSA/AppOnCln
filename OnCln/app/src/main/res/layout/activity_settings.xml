@@ -85,7 +85,7 @@
                 android:layout_height="13dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="3dp"
-                android:backgroundTint="@color/blue_secundary" />
+                android:backgroundTint="@color/blue_secondary" />
         </LinearLayout>
 
         <View

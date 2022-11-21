@@ -51,7 +51,7 @@ internal class OnclnsActivity : Fragment() {
         binding.itemFiltros.botaoFiltroEmUso.setBackgroundColor(
             ContextCompat.getColor(
                 requireContext(),
-                R.color.blue_secundary
+                R.color.blue_secondary
             )
         )
 
@@ -98,7 +98,7 @@ internal class OnclnsActivity : Fragment() {
                         response.body()?.forEach {
                             arrayList.add(it)
                         }
-                        binding.recycleListRoom.adapter = RoomAdapter(arrayList) { msg ->
+                        binding.recycleListRoom.adapter = RoomAdapter(arrayList, "nha",requireContext()) { msg ->
                             Toast.makeText(requireContext(), msg, Toast.LENGTH_LONG).show()
                         }
                     } else {
