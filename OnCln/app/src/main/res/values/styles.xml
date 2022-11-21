@@ -79,6 +79,8 @@
     <style name="Botao.menu.lateral" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">@dimen/dimen_large_24</item>
+        <item name="indicatorColor">@color/white</item>
+        <item name="android:backgroundStacked">@color/white</item>
     </style>
 
     <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">

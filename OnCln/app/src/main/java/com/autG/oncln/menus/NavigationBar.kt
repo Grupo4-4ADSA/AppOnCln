@@ -63,27 +63,6 @@ class NavigationBar : Fragment() {
                     )
                     true
                 }
-                R.id.layout_salas -> {
-                    (activity as NavigationHost).navigateTo(
-                        RoomsActivity(), addToBackStack = true,
-                        R.layout.activity_rooms
-                    )
-                    true
-                }
-                R.id.layout_equipments -> {
-                    (activity as NavigationHost).navigateTo(
-                        RegisterEquipamentActivity(), addToBackStack = true,
-                        R.layout.activity_equipments
-                    )
-                    true
-                }
-                R.id.layout_agendar -> {
-                    (activity as NavigationHost).navigateTo(
-                        SchedulesActivity(), addToBackStack = true,
-                        R.layout.activity_register_schedule
-                    )
-                    true
-                }
                 R.id.layout_cadastrar -> {
                     (activity as NavigationHost).navigateTo(
                         RegistrationMenuActivity(), addToBackStack = true,
@@ -91,39 +70,90 @@ class NavigationBar : Fragment() {
                     )
                     true
                 }
+                R.id.layout_salas -> {
+                    (activity as NavigationHost).navigateTo(
+                        RoomsActivity(), addToBackStack = true,
+                        R.layout.activity_rooms
+                    )
+                    true
+                }
+                R.id.layout_agendar -> {
+                    (activity as NavigationHost).navigateTo(
+                        SchedulesActivity(), addToBackStack = true,
+                        R.layout.activity_schedules
+                    )
+                    true
+                }
+                R.id.layout_equipments -> {
+                    (activity as NavigationHost).navigateTo(
+                        EquipmentsActivity(), addToBackStack = true,
+                        R.layout.activity_equipments
+                    )
+                    true
+                }
+                R.id.layout_consumo_equipments -> {
+                    (activity as NavigationHost).navigateTo(
+                        EquipmentConsumptionActivity(), addToBackStack = true,
+                        R.layout.activity_equipment_consumption
+                    )
+                    true
+                }
+                R.id.layout_consumo -> {
+                    (activity as NavigationHost).navigateTo(
+                        ConsumptionSummaryActivity(), addToBackStack = true,
+                        R.layout.activity_consumption_summary
+                    )
+                    true
+                }
+                R.id.layout_ajuda -> {
+                    (activity as NavigationHost).navigateTo(
+                        HelpCenterActivity(), addToBackStack = true,
+                        R.layout.activity_help_center
+                    )
+                    true
+                }
+                R.id.layout_configuracoes -> {
+                    (activity as NavigationHost).navigateTo(
+                        SettingsActivity(), addToBackStack = true,
+                        R.layout.activity_settings
+                    )
+                    true
+                }
                 else -> false
             }
         }
-
-    }
-
-    override fun onPause() {
-        super.onPause()
-        TransitionManager.beginDelayedTransition(
-            containerFragment,
-            Slide(Gravity.RIGHT).setDuration(500)
-        )
     }
 
     fun filter(item: MenuData): Int {
         return when (item.setPage) {
-            R.layout.activity_home -> {
-                R.id.layout_home
+            R.id.layout_home -> {
+                R.layout.activity_home
             }
-            R.layout.activity_rooms -> {
-                R.id.layout_salas
+            R.id.layout_cadastrar -> {
+                R.layout.activity_registration_menu
             }
-            R.layout.activity_equipments -> {
-                R.id.layout_equipments
+            R.id.layout_salas -> {
+                R.layout.activity_rooms
             }
-            R.layout.activity_register_schedule -> {
-                R.id.layout_agendar
+            R.id.layout_agendar -> {
+                R.layout.activity_schedules
             }
-            R.layout.activity_registration_menu -> {
-                R.id.layout_cadastrar
+            R.id.layout_equipments -> {
+                R.layout.activity_equipments
+            }
+            R.id.layout_consumo_equipments -> {
+                R.layout.activity_equipment_consumption
+            }
+            R.id.layout_consumo -> {
+                R.layout.activity_consumption_summary
+            }
+            R.id.layout_ajuda -> {
+                R.layout.activity_help_center
+            }
+            R.id.layout_configuracoes -> {
+                R.layout.activity_settings
             }
             else -> item.setBackLayout!!
         }
-
     }
 }

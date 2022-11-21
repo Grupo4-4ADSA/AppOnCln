@@ -67,7 +67,7 @@
                 android:id="@+id/input_qr"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
+                android:background="?attr/colorOnPrimary"
                 android:drawableRight="@drawable/ic_qr"
                 android:hint="@string/hint_qrcode"
                 android:inputType="textEmailSubject" />

@@ -37,48 +37,42 @@
             android:textSize="@dimen/dimen_large_24_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txt_filter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:outlineProvider="none"
-            app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_usuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/transparent"
-                android:hint="@string/title_login"
-                android:inputType="textEmailSubject" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="5dp"
-                android:background="@drawable/gradiente" />
+                android:background="?attr/colorOnPrimary"
+                android:hint="@string/title_input_user"
+                android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/gradiente" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:outlineProvider="none"
-            app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_senha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/transparent"
+                android:background="?attr/colorOnPrimary"
                 android:hint="@string/title_input_password"
-                android:inputType="textPassword"
-                android:textColorHint="@color/black" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="5dp"
-                android:background="@drawable/gradiente" />
+                android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/gradiente" />
 
 
         <androidx.appcompat.widget.AppCompatButton

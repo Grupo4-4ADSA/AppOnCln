@@ -6,7 +6,6 @@
         android:enabled="true"
         android:icon="@drawable/ic_home"
         android:checkable="true"
-
         android:title="@string/title_home" />
     <item
         android:id="@+id/layout_cadastrar"
@@ -25,7 +24,7 @@
         android:enabled="true"
         android:icon="@drawable/ic_schedule"
         android:checkable="true"
-        android:title="@string/title_to_schedule" />
+        android:title="@string/title_input_scheduling" />
     <item
         android:id="@+id/layout_equipments"
         android:enabled="true"
@@ -33,11 +32,17 @@
         android:checkable="true"
         android:title="@string/title_equipaments" />
     <item
-        android:id="@+id/layout_consumo"
+        android:id="@+id/layout_consumo_equipments"
         android:enabled="true"
         android:icon="@drawable/ic_grafico"
         android:checkable="true"
         android:title="@string/title_input_consuming_equipments" />
+    <item
+        android:id="@+id/layout_consumo"
+        android:enabled="true"
+        android:icon="@drawable/ic_consuption_summary"
+        android:checkable="true"
+        android:title="@string/title_consumption_summary" />
     <item
         android:id="@+id/layout_ajuda"
         android:enabled="true"

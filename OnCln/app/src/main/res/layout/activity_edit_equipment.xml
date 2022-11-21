@@ -68,6 +68,7 @@
                 android:backgroundTint="@color/black"
                 android:hint="@string/hint_equipment_type"
                 android:inputType="none"
+                android:focusable="false"
                 android:paddingVertical="@dimen/dimen_small_4" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -89,7 +90,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
+                android:background="?attr/colorOnPrimary"
                 android:drawableRight="@drawable/ic_schedule"
                 android:hint="@string/hint_data"
                 android:inputType="datetime" />
@@ -125,7 +126,7 @@
                         android:id="@+id/input_qtd"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/white"
+                        android:background="?attr/colorOnPrimary"
                         android:hint="@string/hint_amount"
                         android:inputType="number"
                         android:textSize="@dimen/dimen_small_12_txt" />
@@ -158,7 +159,7 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/white"
+                        android:background="?attr/colorOnPrimary"
                         android:hint="@string/hint_power"
                         android:inputType="number"
                         android:textSize="@dimen/dimen_small_12_txt" />
@@ -185,7 +186,7 @@
                 android:id="@+id/input_life"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
+                android:background="?attr/colorOnPrimary"
                 android:hint="@string/hint_life"
                 android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>

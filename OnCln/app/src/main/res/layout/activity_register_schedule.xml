@@ -101,7 +101,6 @@
                         android:id="@+id/input_qtd"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/white"
                         android:hint="@string/hint_data"
                         android:inputType="number"
                         android:textSize="@dimen/dimen_small_12_txt" />
@@ -134,7 +133,6 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/white"
                         android:hint="@string/hint_data"
                         android:inputType="number"
                         android:textSize="@dimen/dimen_small_12_txt" />
@@ -160,7 +158,6 @@
                 android:id="@+id/input_function"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
                 android:hint="@string/hint_life"
                 android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -183,7 +180,6 @@
                 android:id="@+id/input_life"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
                 android:hint="@string/hint_life"
                 android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>

@@ -42,11 +42,11 @@ internal class RegistrationMenuActivity : Fragment() {
         )
         binding.btnEquipamento.buttonBorder.setTextColor(getColor(requireContext(), R.color.blue_secundary))
 
-        binding.btnAgenmento.buttonBorder.text = getText(R.string.title_input_scheduling)
-        binding.btnAgenmento.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
+        binding.btnAgendamento.buttonBorder.text = getText(R.string.title_input_scheduling)
+        binding.btnAgendamento.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_schedule_blue, 0, 0, 0
         )
-        binding.btnAgenmento.buttonBorder.setTextColor(getColor(requireContext(), R.color.blue_secundary))
+        binding.btnAgendamento.buttonBorder.setTextColor(getColor(requireContext(), R.color.blue_secundary))
 
         TransitionManager.beginDelayedTransition(container, Fade())
 
@@ -59,18 +59,27 @@ internal class RegistrationMenuActivity : Fragment() {
         with(binding) {
             btnSalas.buttonBorder.setOnClickListener {
                 (activity as NavigationHost).navigateTo(
-                    RoomsActivity(), addToBackStack = true,
-                    R.layout.activity_rooms
+                    RegisterRoomActivity(), addToBackStack = true,
+                    R.layout.activity_register_room
                 )
             }
             btnOncln.buttonBorder.setOnClickListener {
                 (activity as NavigationHost).navigateTo(
                     RegisterOnClnActivity(), addToBackStack = true,
-                    R.layout.activity_rooms
+                    R.layout.activity_register_on_cln
                 )
             }
             btnEquipamento.buttonBorder.setOnClickListener {
-                //todo implementar navigate, futuramente
+                (activity as NavigationHost).navigateTo(
+                    RegisterEquipamentActivity(), addToBackStack = true,
+                    R.layout.activity_register_equipament
+                )
+            }
+            btnAgendamento.buttonBorder.setOnClickListener {
+                (activity as NavigationHost).navigateTo(
+                    RegisterSchedulesActivity(), addToBackStack = true,
+                    R.layout.activity_register_schedule
+                )
             }
 
         }

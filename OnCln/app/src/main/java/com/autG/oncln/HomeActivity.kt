@@ -73,12 +73,16 @@ internal class HomeActivity : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
             btnAgendamento.buttonBorder.setOnClickListener {
-                (activity as NavigationHost).navigateTo(RegisterRoomActivity(),addToBackStack = true,
-                    R.layout.activity_register_room)
+                (activity as NavigationHost).navigateTo(SchedulesActivity(),addToBackStack = true,
+                    R.layout.activity_schedules)
             }
             btnCadastrar.buttonBorder.setOnClickListener {
                 (activity as NavigationHost).navigateTo(RegistrationMenuActivity(),addToBackStack = true,
                     R.layout.activity_registration_menu)
+            }
+            btnConsumo.buttonBorder.setOnClickListener {
+                (activity as NavigationHost).navigateTo(EquipmentConsumptionActivity(),addToBackStack = true,
+                    R.layout.activity_equipment_consumption)
             }
             btnSalas.buttonBorder.setOnClickListener {
                 (activity as NavigationHost).navigateTo(RoomsActivity(),addToBackStack = true,

@@ -37,7 +37,7 @@
                 android:id="@+id/input_name_room"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
+                android:background="?attr/colorOnPrimary"
                 android:hint="@string/hint_name"
                 android:inputType="textEmailSubject" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -67,6 +67,8 @@
                 android:backgroundTint="@color/black"
                 android:hint="@string/hint_floor"
                 android:inputType="none"
+
+                android:focusable="false"
                 android:paddingVertical="@dimen/dimen_small_4" />
         </com.google.android.material.textfield.TextInputLayout>
 
