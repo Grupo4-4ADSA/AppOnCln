@@ -20,6 +20,8 @@ class HelpCenterActivity:Fragment() {
     ): View? {
         binding = ActivityHelpCenterBinding.inflate(inflater,container,false)
 
+        binding.includeText.textTitulo.text = getText(R.string.title_help_center)
+
         TransitionManager.beginDelayedTransition(container, Fade())
 
         return binding.root

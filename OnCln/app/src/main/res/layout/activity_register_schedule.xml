@@ -24,7 +24,7 @@
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/title_input_room"
             android:layout_marginTop="@dimen/dimen_medium_16"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorSecondaryVariant"
             android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -50,7 +50,7 @@
             android:layout_marginTop="@dimen/dimen_small_8"
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/title_input_floor"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorSecondaryVariant"
             android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -89,7 +89,7 @@
                     android:layout_marginTop="@dimen/dimen_small_8"
                     android:fontFamily="@font/readex_pro_medium"
                     android:text="@string/title_input_data_end"
-                    android:textColor="@color/black"
+                    android:textColor="?attr/colorSecondaryVariant"
                     android:textSize="@dimen/dimen_medium_18_txt" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -121,7 +121,7 @@
                     android:layout_marginTop="@dimen/dimen_small_8"
                     android:fontFamily="@font/readex_pro_medium"
                     android:text="@string/title_input_data_start"
-                    android:textColor="@color/black"
+                    android:textColor="?attr/colorSecondaryVariant"
                     android:textSize="@dimen/dimen_medium_18_txt" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -146,7 +146,7 @@
             android:layout_marginTop="@dimen/dimen_small_8"
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/title_input_scheduling_function"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorSecondaryVariant"
             android:textSize="@dimen/dimen_medium_18" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -168,7 +168,7 @@
             android:layout_marginTop="@dimen/dimen_small_8"
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/title_input_time"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorSecondaryVariant"
             android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout

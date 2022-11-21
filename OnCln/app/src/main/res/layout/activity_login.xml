@@ -39,6 +39,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -47,7 +48,10 @@
                 android:layout_height="wrap_content"
                 android:background="?attr/colorOnPrimary"
                 android:hint="@string/title_input_user"
-                android:inputType="textEmailSubject" />
+                android:inputType="textEmailSubject"
+                android:outlineAmbientShadowColor="@color/transparent"
+                android:outlineProvider="none"
+                android:outlineSpotShadowColor="@color/transparent" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <View
@@ -58,6 +62,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp">
 
             <com.google.android.material.textfield.TextInputEditText

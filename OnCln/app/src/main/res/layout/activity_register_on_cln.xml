@@ -26,7 +26,7 @@
             android:fontFamily="@font/readex_pro_medium"
             android:paddingTop="@dimen/dimen_medium_16"
             android:text="@string/title_input_room"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorSecondaryVariant"
             android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -55,7 +55,7 @@
             android:fontFamily="@font/readex_pro_medium"
             android:paddingTop="@dimen/dimen_medium_16"
             android:text="@string/title_input_qr_code"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorSecondaryVariant"
             android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout

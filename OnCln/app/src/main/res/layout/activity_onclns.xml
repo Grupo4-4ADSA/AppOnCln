@@ -39,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/title_input_filter"
-                android:textColor="@color/black"
+                android:textColor="?attr/colorSecondaryVariant"
                 android:textSize="@dimen/dimen_large_20_txt" />
 
         </LinearLayout>
