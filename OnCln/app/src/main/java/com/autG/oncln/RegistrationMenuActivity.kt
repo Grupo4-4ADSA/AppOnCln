@@ -6,6 +6,7 @@ import android.transition.TransitionManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat.getColor
 import androidx.fragment.app.Fragment
 import com.autG.oncln.databinding.ActivityRegistrationMenuBinding
 import com.autG.oncln.services.NavigationHost
@@ -27,21 +28,25 @@ internal class RegistrationMenuActivity : Fragment() {
         binding.btnSalas.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_meeting_room_blue, 0, 0, 0
         )
+        binding.btnSalas.buttonBorder.setTextColor(getColor(requireContext(), R.color.blue_secondary))
 
         binding.btnOncln.buttonBorder.text = getText(R.string.title_input_oncln)
         binding.btnOncln.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_oncln, 0, 0, 0
         )
+        binding.btnOncln.buttonBorder.setTextColor(getColor(requireContext(), R.color.blue_secondary))
 
         binding.btnEquipamento.buttonBorder.text = getText(R.string.title_equipaments)
         binding.btnEquipamento.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_equipaments_blue, 0, 0, 0
         )
+        binding.btnEquipamento.buttonBorder.setTextColor(getColor(requireContext(), R.color.blue_secondary))
 
-        binding.btnAgenmento.buttonBorder.text = getText(R.string.title_input_scheduling)
-        binding.btnAgenmento.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
+        binding.btnAgendamento.buttonBorder.text = getText(R.string.title_input_scheduling)
+        binding.btnAgendamento.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_schedule_blue, 0, 0, 0
         )
+        binding.btnAgendamento.buttonBorder.setTextColor(getColor(requireContext(), R.color.blue_secondary))
 
         TransitionManager.beginDelayedTransition(container, Fade())
 
@@ -54,18 +59,27 @@ internal class RegistrationMenuActivity : Fragment() {
         with(binding) {
             btnSalas.buttonBorder.setOnClickListener {
                 (activity as NavigationHost).navigateTo(
-                    RoomsActivity(), addToBackStack = true,
-                    R.layout.activity_rooms
+                    RegisterRoomActivity(), addToBackStack = true,
+                    R.layout.activity_register_room
                 )
             }
             btnOncln.buttonBorder.setOnClickListener {
                 (activity as NavigationHost).navigateTo(
                     RegisterOnClnActivity(), addToBackStack = true,
-                    R.layout.activity_rooms
+                    R.layout.activity_register_on_cln
                 )
             }
             btnEquipamento.buttonBorder.setOnClickListener {
-                //todo implementar navigate, futuramente
+                (activity as NavigationHost).navigateTo(
+                    RegisterEquipamentActivity(), addToBackStack = true,
+                    R.layout.activity_register_equipament
+                )
+            }
+            btnAgendamento.buttonBorder.setOnClickListener {
+                (activity as NavigationHost).navigateTo(
+                    RegisterSchedulesActivity(), addToBackStack = true,
+                    R.layout.activity_register_schedule
+                )
             }
 
         }

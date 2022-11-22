@@ -13,6 +13,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import com.autG.oncln.databinding.ActivitySettingsBinding
 import com.autG.oncln.databinding.ActivitySettingsPopUpBinding
+import com.squareup.picasso.Picasso
 
 class SettingsActivity : Fragment() {
 
@@ -28,6 +29,8 @@ class SettingsActivity : Fragment() {
     ): View? {
         binding = ActivitySettingsBinding.inflate(inflater, container,false)
 
+        Picasso.get().load("http://servidordb.ddns.net:9651/profile/SteveProfile.png").into(binding.fotoGestor)
+        binding.includeText.textTitulo.text = getText(R.string.title_settings)
         TransitionManager.beginDelayedTransition(container, Fade())
 
         return binding.root
@@ -39,7 +42,7 @@ class SettingsActivity : Fragment() {
             janelaDeAlteracaoDeSenha()
         }
 
-        binding.includeText.textTitulo.text = getText(R.string.title_settings)
+
     }
 
     fun janelaDeAlteracaoDeSenha() {

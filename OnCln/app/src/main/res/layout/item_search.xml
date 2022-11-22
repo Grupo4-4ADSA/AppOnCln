@@ -10,7 +10,7 @@
         android:layout_height="match_parent"
         android:hint="@string/txt_search"
         android:inputType="textFilter"
-        app:boxStrokeColor="@color/transparent"
+        app:boxStrokeColor="?attr/colorSecondaryVariant"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -20,7 +20,8 @@
             android:id="@+id/edt_filter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"/>
+            android:background="?attr/colorOnPrimary"
+            android:padding="@dimen/dimen_small_4" />
 
 
     </com.google.android.material.textfield.TextInputLayout>

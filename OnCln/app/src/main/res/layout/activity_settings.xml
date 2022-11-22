@@ -36,17 +36,14 @@
             android:layout_height="fill_parent"
             android:layout_marginTop="@dimen/dimen_large_24">
 
-            <ImageView
-                android:layout_width="@dimen/dimen_super_big_250"
-                android:layout_height="@dimen/dimen_super_big_250"
-                android:src="@drawable/fundo_foto_configuracoes" />
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/foto_gestor"
                 android:layout_width="@dimen/dimen_super_big_250"
                 android:layout_height="@dimen/dimen_super_big_250"
-                android:layout_gravity="center"
-                android:padding="@dimen/dimen_large_36" />
+                android:layout_margin="@dimen/dimen_large_36"
+                tools:src="@drawable/ic_nav_bar"/>
         </FrameLayout>
 
     </LinearLayout>
@@ -116,7 +113,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/readex_pro_medium"
                 android:text="@string/txt_dark_mode"
-                android:textColor="@color/black"
+                android:textColor="?attr/colorSecondaryVariant"
                 android:textSize="@dimen/dimen_medium_18_txt" />
 
             <include layout="@layout/item_switch" />
@@ -129,7 +126,7 @@
             android:fontFamily="@font/readex_pro_medium"
             android:scaleType="fitStart"
             android:text="@string/title_change_password"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorSecondaryVariant"
             android:textSize="@dimen/dimen_medium_16" />
     </LinearLayout>
 

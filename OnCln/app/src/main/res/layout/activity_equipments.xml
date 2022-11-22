@@ -30,7 +30,7 @@
             android:drawableStart="@drawable/ic_filter"
             android:paddingVertical="@dimen/dimen_small_12"
             android:text="@string/title_input_filter"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorSecondaryVariant"
             android:textSize="@dimen/dimen_large_20_txt" />
 
     </LinearLayout>

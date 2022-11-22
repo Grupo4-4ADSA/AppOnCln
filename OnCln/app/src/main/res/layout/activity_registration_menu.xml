@@ -35,7 +35,7 @@
             layout="@layout/btn_bordered" />
 
         <include
-            android:id="@+id/btn_agenmento"
+            android:id="@+id/btn_agendamento"
             layout="@layout/btn_bordered" />
     </LinearLayout>
 

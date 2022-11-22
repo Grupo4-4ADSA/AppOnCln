@@ -24,7 +24,7 @@
             android:layout_marginTop="@dimen/dimen_medium_16"
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/title_input_room"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorSecondaryVariant"
             android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -51,7 +51,7 @@
             android:layout_marginTop="@dimen/dimen_small_8"
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/title_input_equipament_type"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorSecondaryVariant"
             android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -81,7 +81,7 @@
             android:layout_marginTop="@dimen/dimen_small_8"
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/title_input_date_installation"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorSecondaryVariant"
             android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -93,7 +93,6 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
                 android:drawableRight="@drawable/ic_schedule"
                 android:hint="@string/hint_data"
                 android:inputType="datetime" />
@@ -117,7 +116,7 @@
                     android:layout_marginTop="@dimen/dimen_small_8"
                     android:fontFamily="@font/readex_pro_medium"
                     android:text="@string/title_input_amount"
-                    android:textColor="@color/black"
+                    android:textColor="?attr/colorSecondaryVariant"
                     android:textSize="@dimen/dimen_medium_18_txt" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -129,7 +128,6 @@
                         android:id="@+id/input_qtd"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/white"
                         android:hint="@string/hint_amount"
                         android:inputType="number"
                         android:textSize="@dimen/dimen_small_12_txt" />
@@ -150,7 +148,7 @@
                     android:layout_marginTop="@dimen/dimen_small_8"
                     android:fontFamily="@font/readex_pro_medium"
                     android:text="@string/title_input_power"
-                    android:textColor="@color/black"
+                    android:textColor="?attr/colorSecondaryVariant"
                     android:textSize="@dimen/dimen_medium_18_txt" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -162,7 +160,6 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/white"
                         android:hint="@string/hint_power"
                         android:inputType="number"
                         android:textSize="@dimen/dimen_small_12_txt" />
@@ -176,7 +173,7 @@
             android:layout_marginTop="@dimen/dimen_small_8"
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/title_input_life"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorSecondaryVariant"
 
             android:textSize="@dimen/dimen_medium_18_txt" />
 
@@ -189,7 +186,6 @@
                 android:id="@+id/input_life"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
                 android:hint="@string/hint_life"
                 android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>

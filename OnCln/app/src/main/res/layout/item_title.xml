@@ -24,7 +24,7 @@
             android:layout_gravity="center"
             android:height="31dp"
             android:fontFamily="@font/readex_pro_medium"
-            android:textColor="@color/dark_blue"
+            android:textColor="?attr/colorSecondary"
             android:textSize="@dimen/dimen_large_24"
             tools:text="@string/text_example" />
 
