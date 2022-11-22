@@ -124,6 +124,12 @@ class NavigationBar : Fragment() {
         }
     }
 
+    override fun onPause() {
+        super.onPause()
+
+        TransitionManager.beginDelayedTransition(containerFragment, Slide(Gravity.RIGHT).setDuration(300))
+    }
+
     fun filter(item: MenuData): Int {
         return when (item.setPage) {
             R.id.layout_home -> {

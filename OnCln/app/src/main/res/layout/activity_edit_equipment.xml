@@ -21,7 +21,6 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/dimen_medium_16"
-            android:drawableRight="@drawable/ic_info"
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/title_rooms"
             android:textColor="@color/black"
@@ -32,13 +31,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/gray_quaternary"
+            app:boxStrokeColor="@color/transparent"
             app:boxStrokeWidth="0dp">
 
             <AutoCompleteTextView
                 android:id="@+id/select_room"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/black"
+                android:backgroundTint="?attr/colorOnPrimary"
                 android:hint="@string/hint_room"
                 android:inputType="none"
                 android:paddingVertical="@dimen/dimen_small_4" />
@@ -59,13 +59,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/gray_quaternary"
+            app:boxStrokeColor="@color/transparent"
             app:boxStrokeWidth="0dp">
 
             <AutoCompleteTextView
                 android:id="@+id/select_equipment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/black"
+                android:backgroundTint="?attr/colorOnPrimary"
                 android:hint="@string/hint_equipment_type"
                 android:inputType="none"
                 android:focusable="false"

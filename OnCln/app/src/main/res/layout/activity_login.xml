@@ -118,7 +118,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/txt_enter_otherwise"
-                    android:textColor="@color/blue_secundary"
+                    android:textColor="@color/blue_secondary"
                     android:textSize="@dimen/dimen_medium_16"
                     android:textStyle="bold" />
 

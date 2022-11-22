@@ -46,7 +46,7 @@
             android:layout_marginTop="@dimen/dimen_small_12"
             android:fontFamily="@font/reader_pro_bold"
             android:text="@string/title_contact_information"
-            android:textColor="@color/blue_secundary"
+            android:textColor="@color/blue_secondary"
             android:textSize="@dimen/dimen_large_20_txt"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/img_central_de_ajuda" />

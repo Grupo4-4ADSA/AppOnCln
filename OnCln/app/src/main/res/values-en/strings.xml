@@ -40,7 +40,7 @@
     <string name="title_input_edit_equipment">edit equipment</string>
     <string name="title_input_equipament_type">Kind of equipment:</string>
     <string name="title_input_filter">Filter:</string>
-    <string name="title_input_floor">To walk:</string>
+    <string name="title_input_floor">Floor:</string>
     <string name="title_input_life">Lifespan:</string>
     <string name="title_input_scheduling_function">Scheduling feature:</string>
     <string name="title_input_name">Name:</string>
@@ -69,6 +69,8 @@
 
     <string name="txt_register">register</string>
     <string name="txt_btn_in_use">In use</string>
+    <string name="txt_btn_edit">To edit</string>
+    <string name="txt_btn_delete">Delete</string>
     <string name="txt_btn_idle">idle</string>
     <string name="txt_btn_registers">Indexed</string>
     <string name="txt_enter_otherwise">Enter otherwise</string>
@@ -81,10 +83,14 @@
     <string name="txt_search">Search</string>
     <string name="txt_total">Total(1)</string>
     <string name="app_name">OnCln</string>
+    <string name="txt_air">Air conditioning</string>
+    <string name="txt_set_of_lamps">set of lamps</string>
+    <string name="txt_socket_set">socket set</string>
 
     <string name="text_example">Text example</string>
     <string name="text_example_power">200</string>
     <string name="text_example_air_conditioning">Air conditioning 1</string>
+    <string name="text_example_id">Id:123</string>
     <string name="text_example_floor">Floor: 2nd</string>
     <string name="text_example_room">Meeting room</string>
     <string name="title_activity_equipamento_por_sala">EquipmentByRoomActivity</string>

@@ -28,25 +28,25 @@ internal class RegistrationMenuActivity : Fragment() {
         binding.btnSalas.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_meeting_room_blue, 0, 0, 0
         )
-        binding.btnSalas.buttonBorder.setTextColor(getColor(requireContext(), R.color.blue_secundary))
+        binding.btnSalas.buttonBorder.setTextColor(getColor(requireContext(), R.color.blue_secondary))
 
         binding.btnOncln.buttonBorder.text = getText(R.string.title_input_oncln)
         binding.btnOncln.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_oncln, 0, 0, 0
         )
-        binding.btnOncln.buttonBorder.setTextColor(getColor(requireContext(), R.color.blue_secundary))
+        binding.btnOncln.buttonBorder.setTextColor(getColor(requireContext(), R.color.blue_secondary))
 
         binding.btnEquipamento.buttonBorder.text = getText(R.string.title_equipaments)
         binding.btnEquipamento.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_equipaments_blue, 0, 0, 0
         )
-        binding.btnEquipamento.buttonBorder.setTextColor(getColor(requireContext(), R.color.blue_secundary))
+        binding.btnEquipamento.buttonBorder.setTextColor(getColor(requireContext(), R.color.blue_secondary))
 
         binding.btnAgendamento.buttonBorder.text = getText(R.string.title_input_scheduling)
         binding.btnAgendamento.buttonBorder.setCompoundDrawablesWithIntrinsicBounds(
             R.drawable.ic_schedule_blue, 0, 0, 0
         )
-        binding.btnAgendamento.buttonBorder.setTextColor(getColor(requireContext(), R.color.blue_secundary))
+        binding.btnAgendamento.buttonBorder.setTextColor(getColor(requireContext(), R.color.blue_secondary))
 
         TransitionManager.beginDelayedTransition(container, Fade())
 

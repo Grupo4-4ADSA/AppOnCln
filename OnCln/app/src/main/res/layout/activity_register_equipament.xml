@@ -61,6 +61,7 @@
             android:layout_height="wrap_content"
             android:background="@color/gray_quaternary"
             app:boxStrokeColor="@color/transparent"
+            android:allowClickWhenDisabled="true"
             app:boxStrokeWidth="0dp">
 
             <AutoCompleteTextView
@@ -68,6 +69,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/black"
+                android:allowClickWhenDisabled="true"
                 android:hint="@string/hint_equipment_type"
                 android:inputType="none"
                 android:paddingVertical="@dimen/dimen_small_4" />

@@ -5,7 +5,6 @@
     android:id="@+id/bloco_padrao_titulo"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="@dimen/dimen_large_24"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:padding="@dimen/dimen_small_8">
@@ -19,73 +18,66 @@
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:paddingHorizontal="@dimen/dimen_small_8">
+        android:paddingHorizontal="@dimen/dimen_small_12">
 
         <include
             android:id="@+id/include_filter"
             layout="@layout/item_search" />
 
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/dimen_medium_16">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:src="@drawable/ic_filter" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/title_input_filter"
-                android:textColor="?attr/colorSecondaryVariant"
-                android:textSize="@dimen/dimen_large_20_txt" />
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent">
-
-        <include
-            android:id="@+id/item_filtros"
-            layout="@layout/item_filtro" />
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/ic_filter"
+            android:paddingVertical="@dimen/dimen_small_8"
+            android:text="@string/title_input_filter"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_large_20_txt" />
 
     </LinearLayout>
+
+    <include
+        android:id="@+id/item_filtros"
+        layout="@layout/item_filtro" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingHorizontal="@dimen/dimen_medium_16"
-        android:paddingTop="@dimen/dimen_large_24">
+        android:paddingHorizontal="@dimen/dimen_small_8">
 
         <TextView
             android:id="@+id/txt_total"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="@dimen/dimen_small_8"
-            android:textColor="@color/blue_secundary"
-            android:textSize="@dimen/dimen_medium_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_small_4"
+            android:textColor="@color/blue_secondary"
+            android:textSize="@dimen/dimen_large_20_txt"
+            android:layout_marginVertical="@dimen/dimen_medium_16"
             android:textStyle="bold"
             tools:text="@string/txt_total" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycle_list_room"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:itemCount="5"
-            tools:listitem="@layout/item_list_clnbox"/>
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_list_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_large_24"
+                app:layout_constraintBottom_toTopOf="@+id/btn_plus"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:itemCount="4"
+                tools:listitem="@layout/item_list_clnbox" />
+
+            <include
+                android:id="@+id/btn_plus"
+                layout="@layout/btn_mais" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
-    <include
-        android:id="@+id/btn_plus"
-        layout="@layout/btn_mais"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+
 </androidx.appcompat.widget.LinearLayoutCompat>
 
 

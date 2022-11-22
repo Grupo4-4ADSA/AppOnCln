@@ -47,8 +47,7 @@ internal class HomeActivity : Fragment() {
         binding.btnSalas.buttonBorder.text = getText(R.string.title_rooms)
         binding.btnSalas.buttonBorder.setTextColor(
             getColor(
-                requireContext(),
-                com.autG.oncln.R.color.white
+                requireContext(), R.color.white
             )
         )
         binding.btnSalas.buttonBorder.clipToOutline
@@ -60,7 +59,7 @@ internal class HomeActivity : Fragment() {
         binding.btnSalas.buttonBorder.setBackgroundColor(
             getColor(
                 requireContext(),
-                com.autG.oncln.R.color.blue_secundary
+                com.autG.oncln.R.color.blue_secondary
             )
         )
 
