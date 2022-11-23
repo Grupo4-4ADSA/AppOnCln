@@ -11,7 +11,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.autG.oncln.api.Rest
 import com.autG.oncln.databinding.ActivityCadastrarSalaBinding
-import com.autG.oncln.dtos.requests.Predio
+import com.autG.oncln.models.Predio
 import com.autG.oncln.dtos.requests.SalaRequest
 import com.autG.oncln.services.Auth
 import retrofit2.Call
@@ -46,8 +46,7 @@ internal class CadastrarSalaActivity : Fragment() {
 
             binding.btnQr.botaoAzul.setOnClickListener {
                 cadastroSala()
-            }
-        }
+            }        }
     }
 
     private fun cadastroSala() {

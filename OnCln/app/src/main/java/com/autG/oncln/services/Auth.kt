@@ -1,8 +1,10 @@
 package com.autG.oncln.services
 
 import LoginResponse
+import OnClnResponse
 import SalaResponse
 import com.autG.oncln.dtos.requests.LoginRequest
+import com.autG.oncln.dtos.requests.OnClnRequest
 import com.autG.oncln.dtos.requests.SalaRequest
 import com.autG.oncln.dtos.responses.Rooms
 import retrofit2.Call
@@ -24,4 +26,9 @@ interface Auth {
     @GET("/rooms/all/251")
     fun requestRooms():
             Call<Rooms>
+
+    @POST("/clnboxex")
+    fun registerCLNBox(@Body body: OnClnRequest):
+            Call<OnClnResponse>
+
 }

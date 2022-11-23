@@ -1,5 +1,6 @@
-package com.autG.oncln.dtos.requests
+package com.autG.oncln.models
 
+import com.autG.oncln.dtos.requests.RoomsRequest
 import com.autG.oncln.dtos.responses.Empresa
 
 data class Building(
