@@ -12,6 +12,7 @@
     <dimen name="dimen_medium_20">20dp</dimen>
     <dimen name="dimen_large_24">24dp</dimen>
     <dimen name="dimen_large_36">36dp</dimen>
+    <dimen name="dimen_large_40">40dp</dimen>
     <dimen name="dimen_large_50">50dp</dimen>
     <dimen name="dimen_large_60">60dp</dimen>
     <dimen name="dimen_large_90">90dp</dimen>
@@ -28,6 +29,7 @@
     <dimen name="dimen_medium_18_txt">18sp</dimen>
     <dimen name="dimen_large_20_txt">20sp</dimen>
     <dimen name="dimen_large_24_txt">24sp</dimen>
+    <dimen name="dimen_large_28_txt">28sp</dimen>
     <dimen name="dimen_super_big_36_txt">36sp</dimen>
     <dimen name="fab_margin">16dp</dimen>
 

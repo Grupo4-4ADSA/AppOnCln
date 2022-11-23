@@ -55,7 +55,6 @@ internal class OnclnsActivity : Fragment() {
             )
         )
 
-
         binding.itemFiltros.botaoFiltroOciosas.text =  getText(R.string.txt_btn_idle)
         binding.itemFiltros.botaoFiltroOciosas.setBackgroundColor(
             ContextCompat.getColor(
@@ -76,8 +75,6 @@ internal class OnclnsActivity : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
     }
 
     private fun requestRooms() {
@@ -111,7 +108,7 @@ internal class OnclnsActivity : Fragment() {
                 }
 
                 override fun onFailure(call: Call<Rooms?>, t: Throwable) {
-                    Toast.makeText(context, "Sistema fora do ar", Toast.LENGTH_LONG).show()
+                    Toast.makeText(context, getText(R.string.txt_offline_system), Toast.LENGTH_LONG).show()
 
                 }
             })

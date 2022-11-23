@@ -27,7 +27,6 @@ class RegisterEquipamentActivity : Fragment() {
         TransitionManager.beginDelayedTransition(container, Fade())
 
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

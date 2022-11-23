@@ -37,6 +37,7 @@ internal class RoomsActivity : Fragment() {
 
         binding.includeText.textTitulo.text = getText(R.string.title_rooms)
 
+        //TODO só deixar colorido quando o filtro estiver ativo
         binding.itemFiltros.botaoFiltroCadastrar.text = getText(R.string.txt_btn_registers)
         binding.itemFiltros.botaoFiltroCadastrar.setBackgroundColor(
             ContextCompat.getColor(
