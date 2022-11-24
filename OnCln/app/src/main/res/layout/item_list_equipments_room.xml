@@ -30,9 +30,9 @@
 
                 <ImageView
                     android:id="@+id/img_icon"
-                    android:layout_width="wrap_content"
+                    android:layout_width="40dp"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_meeting_room"
+                    android:src="@drawable/ic_air_conditioning"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,9 +42,9 @@
                     android:layout_height="@dimen/dimen_medium_18"
                     android:layout_marginStart="@dimen/dimen_small_8"
                     android:background="@drawable/ic_power_black"
-                    tools:backgroundTint="@color/black"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:backgroundTint="@color/black" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <LinearLayout
@@ -66,28 +66,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/readex_pro_medium"
+                    android:text="@string/text_example_air_conditioning"
                     android:textColor="@color/blue_secondary"
                     android:textSize="@dimen/dimen_medium_16_txt"
-                    android:textStyle="bold"
-                    android:text="@string/text_example_air_conditioning" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/txt_room"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/readex_pro_medium"
+                    android:text="@string/title_input_power"
                     android:textColor="@color/gray_tertiary"
-                    android:textSize="@dimen/dimen_medium_16_txt"
-                    android:text="@string/text_example_room" />
+                    android:textSize="@dimen/dimen_medium_16_txt" />
 
                 <TextView
                     android:id="@+id/txt_floor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/readex_pro_medium"
-                    android:textColor="@color/gray"
-                    android:textSize="@dimen/dimen_medium_16_txt"
-                    android:text="@string/text_example_floor" />
+                    android:text="@string/text_example_power"
+                    android:textColor="@color/gray_tertiary"
+                    android:textSize="@dimen/dimen_medium_16_txt" />
             </LinearLayout>
         </LinearLayout>
 

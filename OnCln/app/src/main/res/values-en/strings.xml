@@ -76,6 +76,7 @@
     <string name="txt_enter_otherwise">Enter otherwise</string>
     <string name="txt_btn_enter">Log in</string>
     <string name="txt_btn_save_editions">save change</string>
+    <string name="title_equipment_room">Room equipment</string>
     <string name="txt_btn_save">To save</string>
     <string name="txt_btn_support">24h support</string>
     <string name="txt_dark_mode">dark mode</string>
@@ -86,13 +87,21 @@
     <string name="txt_air">Air conditioning</string>
     <string name="txt_set_of_lamps">set of lamps</string>
     <string name="txt_socket_set">socket set</string>
+    <string name="txt_offline_system">Offline system</string>
+    <string name="txt_invalid_login">Invalid login</string>
 
     <string name="text_example">Text example</string>
     <string name="text_example_power">200</string>
+    <string name="text_confirm_delete">Are you sure you want to delete?</string>
+    <string name="txt_btn_cancel">Cancel</string>
     <string name="text_example_air_conditioning">Air conditioning 1</string>
     <string name="text_example_id">Id:123</string>
     <string name="text_example_floor">Floor: 2nd</string>
-    <string name="text_example_room">Meeting room</string>
+    <string name="text_example_data_end">Final date: 28/03/2022</string>
+    <string name="text_example_data_start">Initial date: 28/03/2022</string>
+    <string name="text_example_time">Time: 08:50</string>
+    <string name="text_example_action">Action: Call</string>
+    <string name="text_example_room">Action: Call</string>
     <string name="title_activity_equipamento_por_sala">EquipmentByRoomActivity</string>
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>

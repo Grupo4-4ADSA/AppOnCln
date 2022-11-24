@@ -22,7 +22,7 @@
             android:id="@+id/img_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_meeting_room" />
+            android:src="@drawable/ic_air_conditioning" />
 
         <LinearLayout
             android:id="@+id/layout_linear"
@@ -41,7 +41,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/readex_pro_medium"
-                    android:textColor="@color/black"
+                    android:textColor="@color/blue_secondary"
                     android:textSize="@dimen/dimen_medium_16_txt"
                     android:textStyle="bold"
                     tools:text="@string/text_example_air_conditioning" />
@@ -65,7 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/readex_pro_medium"
-                android:textColor="@color/gray_tertiary"
+                android:textColor="@color/black"
                 android:textSize="@dimen/dimen_medium_16_txt"
                 tools:text="@string/text_example_room" />
 
@@ -78,7 +78,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/readex_pro_medium"
-                    android:textColor="@color/gray"
+                    android:textColor="@color/gray_tertiary"
                     android:textSize="@dimen/dimen_medium_16_txt"
                     tools:text="@string/text_example_floor" />
 
@@ -92,7 +92,6 @@
                         style="@style/Botao.edit_delet"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="@dimen/dimen_small_4"
                         android:backgroundTint="@color/gray_secondary"
                         android:text="@string/txt_btn_edit"
                         app:icon="@drawable/ic_edit" />
@@ -102,6 +101,7 @@
                         style="@style/Botao.edit_delet"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_small_4"
                         android:backgroundTint="@color/red"
                         android:text="@string/txt_btn_delete"
                         app:icon="@drawable/ic_delete" />
