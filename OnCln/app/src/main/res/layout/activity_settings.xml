@@ -116,7 +116,8 @@
                 android:textColor="?attr/colorSecondaryVariant"
                 android:textSize="@dimen/dimen_medium_18_txt" />
 
-            <include layout="@layout/item_switch" />
+            <include
+                android:id="@+id/switch_mode" layout="@layout/item_switch" />
         </LinearLayout>
 
         <TextView

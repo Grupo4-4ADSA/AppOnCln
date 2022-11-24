@@ -86,5 +86,4 @@
 
     <style name="ThemeOverlay.NavigationView" parent="">
         <item name="android:colorControlHighlight">@android:color/transparent</item>
-    </style>
-</resources>
+    </style></resources>

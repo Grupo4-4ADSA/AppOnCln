@@ -6,6 +6,7 @@
     android:layout_height="wrap_content">
 
    <com.google.android.material.switchmaterial.SwitchMaterial
+       android:id="@+id/switch_mode"
        android:layout_width="wrap_content"
        android:layout_height="@dimen/dimen_small_12"
        android:backgroundTint="@color/blue_secondary"

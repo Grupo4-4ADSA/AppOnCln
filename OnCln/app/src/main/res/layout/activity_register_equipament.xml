@@ -91,11 +91,12 @@
             app:boxStrokeWidthFocused="0dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/date_picker_actions"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableRight="@drawable/ic_schedule"
                 android:hint="@string/hint_data"
-                android:inputType="datetime" />
+                android:focusable="false"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <LinearLayout

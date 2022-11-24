@@ -4,11 +4,10 @@
     <item>
         <shape>
             <corners android:radius="10dp" />
-            <corners android:color="@color/black" />
 
             <gradient android:angle="90"
-                android:endColor="@color/gray_tertiary"
-                android:startColor="@color/black"
+                android:endColor="@color/white"
+                android:startColor="@color/white"
                 android:type="linear" />
         </shape>
     </item>

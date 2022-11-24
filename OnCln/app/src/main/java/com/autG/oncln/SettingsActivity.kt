@@ -10,6 +10,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import com.autG.oncln.databinding.ActivitySettingsBinding
 import com.autG.oncln.databinding.ActivitySettingsPopUpBinding
@@ -42,6 +43,19 @@ class SettingsActivity : Fragment() {
             janelaDeAlteracaoDeSenha()
         }
 
+
+        binding.switchMode.switchMode.setOnClickListener {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            binding.textModoDark.text = "Light mode"
+        }
+
+        if (binding.switchMode.switchMode.isChecked) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            binding.textModoDark.text = "Light mode"
+        } else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            binding.textModoDark.text = "Dark mode"
+        }
 
     }
 

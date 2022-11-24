@@ -20,7 +20,7 @@
             android:id="@+id/edt_filter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/colorOnPrimary"
+            android:background="?attr/colorTertiary"
             android:padding="@dimen/dimen_small_4" />
 
 
