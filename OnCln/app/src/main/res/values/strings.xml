@@ -31,6 +31,7 @@
     <string name="title_help_center">Central de ajuda</string>
     <string name="title_home">Home</string>
     <string name="title_input_amount">Quantidade:</string>
+    <string name="title_consumption_summary">Resumo de consumo</string>
     <string name="title_input_consuming_equipments">Consumo/Equipamentos</string>
     <string name="title_input_date_installation">Data de instalação:</string>
     <string name="title_input_data_end">Data inicial:</string>
@@ -54,11 +55,14 @@
     <string name="title_register_edit">Cadastrar/Editar</string>
     <string name="title_edit_room">Editar Sala</string>
     <string name="title_input_room">Sala:</string>
+    <string name="title_edit_scheduling">Editar Agendamento</string>
     <string name="title_input_scheduling">Agendamentos</string>
     <string name="title_input_user">Usuário:</string>
     <string name="title_register_equipment">Cadastrar Equipamento</string>
     <string name="title_register_oncln">Cadastrar On-Cln</string>
+    <string name="title_oncln">On-Cln cadastrados</string>
     <string name="title_register_room">Cadastrar sala</string>
+    <string name="title_equipment_room">Equipamentos da sala</string>
     <string name="title_rooms">Salas</string>
     <string name="title_settings">Configurações</string>
     <string name="title_to_schedule">Agendar</string>
@@ -66,6 +70,9 @@
 
     <string name="txt_register">Cadastrar</string>
     <string name="txt_btn_in_use">Em uso</string>
+    <string name="txt_btn_edit">Editar</string>
+    <string name="txt_btn_delete">Deletar</string>
+    <string name="txt_btn_cancel">Cancelar</string>
     <string name="txt_btn_idle">Ociosas</string>
     <string name="txt_btn_registers">Cadastradas</string>
     <string name="txt_enter_otherwise">Entrar de outra forma</string>
@@ -78,13 +85,24 @@
     <string name="txt_search">Pesquisar</string>
     <string name="txt_total">Tota(1)</string>
     <string name="app_name">OnCln</string>
+    <string name="txt_air">Ar condicionado</string>
+    <string name="txt_set_of_lamps">Conjunto de lâmpadas</string>
+    <string name="txt_socket_set">Conjunto de tomadas</string>
+    <string name="txt_offline_system">Sem conexão com servidor</string>
+    <string name="txt_invalid_login">Login inválido</string>
 
     <string name="text_example">Text example</string>
+    <string name="text_example_power">200</string>
+    <string name="text_confirm_delete">Tem certeza que deseja deletar?</string>
+    <string name="text_example_id">Id:123</string>
     <string name="text_example_air_conditioning">Ar condicionado 1</string>
     <string name="text_example_floor">Andar: 2º</string>
+    <string name="text_example_data_end" >Data final: 28/03/2022</string>
+    <string name="text_example_data_start">Data inicial: 28/03/2022</string>
+    <string name="text_example_time">Horário: 08:50</string>
+    <string name="text_example_action">Ação: Ligar</string>
     <string name="text_example_room">Sala de reuniões</string>
     <string name="title_activity_equipamento_por_sala">EquipamentoPorSalaActivity</string>
-    <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>

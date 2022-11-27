@@ -1,0 +1,114 @@
+<resources>
+
+    //Padronizando:
+    //Botão: txt_btn
+    //Titulo: title_example
+    //input: hint_example
+    //Descrição: description_example
+    //Text Input: title_input_example
+    //Example text: text_example_example
+    <string name="description_cancel_change">cancel change</string>
+    <string name="description_img_help_center">suggestion illustration</string>
+
+    <string name="hint_amount">enter the quantity</string>
+    <string name="hint_data">enter the date</string>
+    <string name="hint_equipment_type">Select the type of equipment</string>
+    <string name="hint_floor">select the floor</string>
+    <string name="hint_input_life">Enter the lifetime</string>
+    <string name="hint_life">Enter lifetime in hours</string>
+    <string name="hint_name">Enter the name</string>
+    <string name="hint_new_password">Enter the new password:</string>
+    <string name="hint_new_password_again">Enter the password again</string>
+    <string name="hint_power">enter the power</string>
+    <string name="hint_qrcode">Scan or enter the qr-code</string>
+    <string name="hint_room">select a room</string>
+
+    <string name="title_contact_email">Email: contato@autg.com.br</string>
+    <string name="title_login">Login</string>
+    <string name="title_contact_information">Contact information</string>
+    <string name="title_contact_telephone">Phone: (11) 0000-1111</string>
+    <string name="title_equipaments">Equipment</string>
+    <string name="title_help_center">Help Center</string>
+    <string name="title_home">Home</string>
+    <string name="title_input_amount">The amount:</string>
+    <string name="title_consumption_summary">consumption summary</string>
+    <string name="title_input_consuming_equipments">Consumption/Equipment</string>
+    <string name="title_input_date_installation">Installation date:</string>
+    <string name="title_input_data_end">Initial date:</string>
+    <string name="title_input_time">Time:</string>
+    <string name="title_input_data_start">Final date:</string>
+    <string name="title_input_edit_equipment">edit equipment</string>
+    <string name="title_input_equipament_type">Kind of equipment:</string>
+    <string name="title_input_filter">Filter:</string>
+    <string name="title_input_floor">Floor:</string>
+    <string name="title_input_life">Lifespan:</string>
+    <string name="title_input_scheduling_function">Scheduling feature:</string>
+    <string name="title_input_name">Name:</string>
+    <string name="title_input_new_scheduling">new schedule</string>
+    <string name="title_input_old_password">Old password:</string>
+    <string name="title_input_new_password_again">Type it again:</string>
+    <string name="title_input_new_password">New Password</string>
+    <string name="title_input_oncln">On Cln</string>
+    <string name="title_input_password">Password:</string>
+    <string name="title_input_power">Power:</string>
+    <string name="title_input_qr_code">Qr-Code:</string>
+    <string name="title_register_edit">Register/Edit</string>
+    <string name="title_edit_room">edit room</string>
+    <string name="title_input_room">Living room:</string>
+    <string name="title_edit_scheduling">Edit Schedule</string>
+    <string name="title_input_scheduling">Schedules</string>
+    <string name="title_input_user">User:</string>
+    <string name="title_register_equipment">Register Equipment</string>
+    <string name="title_register_oncln">Register On-Cln</string>
+    <string name="title_oncln">registered On-Cln</string>
+    <string name="title_register_room">register room</string>
+    <string name="title_rooms">Rooms</string>
+    <string name="title_settings">settings</string>
+    <string name="title_to_schedule">To schedule</string>
+    <string name="title_change_password">Change Password</string>
+
+    <string name="txt_register">register</string>
+    <string name="txt_btn_in_use">In use</string>
+    <string name="txt_btn_edit">To edit</string>
+    <string name="txt_btn_delete">Delete</string>
+    <string name="txt_btn_idle">idle</string>
+    <string name="txt_btn_registers">Indexed</string>
+    <string name="txt_enter_otherwise">Enter otherwise</string>
+    <string name="txt_btn_enter">Log in</string>
+    <string name="txt_btn_save_editions">save change</string>
+    <string name="title_equipment_room">Room equipment</string>
+    <string name="txt_btn_save">To save</string>
+    <string name="txt_btn_support">24h support</string>
+    <string name="txt_dark_mode">dark mode</string>
+    <string name="txt_name_user">Jonas Bezerra</string>
+    <string name="txt_search">Search</string>
+    <string name="txt_total">Total(1)</string>
+    <string name="app_name">OnCln</string>
+    <string name="txt_air">Air conditioning</string>
+    <string name="txt_set_of_lamps">set of lamps</string>
+    <string name="txt_socket_set">socket set</string>
+    <string name="txt_offline_system">Offline system</string>
+    <string name="txt_invalid_login">Invalid login</string>
+
+    <string name="text_example">Text example</string>
+    <string name="text_example_power">200</string>
+    <string name="text_confirm_delete">Are you sure you want to delete?</string>
+    <string name="txt_btn_cancel">Cancel</string>
+    <string name="text_example_air_conditioning">Air conditioning 1</string>
+    <string name="text_example_id">Id:123</string>
+    <string name="text_example_floor">Floor: 2nd</string>
+    <string name="text_example_data_end">Final date: 28/03/2022</string>
+    <string name="text_example_data_start">Initial date: 28/03/2022</string>
+    <string name="text_example_time">Time: 08:50</string>
+    <string name="text_example_action">Action: Call</string>
+    <string name="text_example_room">Action: Call</string>
+    <string name="title_activity_equipamento_por_sala">EquipmentByRoomActivity</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

@@ -2,7 +2,6 @@ package com.autG.oncln.menus
 
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.Menu
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
@@ -17,7 +16,7 @@ class NavBarBottom : Fragment() {
     lateinit var binding: NavbarBottomBinding
     lateinit var data: MenuData
 
-    companion object{
+    companion object {
         fun newIntance() = NavBarBottom()
     }
 
@@ -41,28 +40,38 @@ class NavBarBottom : Fragment() {
         binding.bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.layout_home -> {
-                    (activity as NavigationHost).navigateTo(HomeActivity(), addToBackStack = true,
-                    R.layout.activity_home)
+                    (activity as NavigationHost).navigateTo(
+                        HomeActivity(), addToBackStack = true,
+                        R.layout.activity_home
+                    )
                     true
                 }
                 R.id.layout_salas -> {
-                    (activity as NavigationHost).navigateTo(SalasActivity(), addToBackStack = true,
-                    R.layout.activity_salas)
+                    (activity as NavigationHost).navigateTo(
+                        RoomsActivity(), addToBackStack = true,
+                        R.layout.activity_rooms
+                    )
                     true
                 }
                 R.id.layout_equipments -> {
-                    (activity as NavigationHost).navigateTo(CadastrarEquipamentoActivity(), addToBackStack = true,
-                    R.layout.activity_equipamentos)
+                    (activity as NavigationHost).navigateTo(
+                        EquipmentsActivity(), addToBackStack = true,
+                        R.layout.activity_equipments
+                    )
                     true
                 }
                 R.id.layout_agendar -> {
-                    (activity as NavigationHost).navigateTo(AgendamentosActivity(), addToBackStack = true,
-                    R.layout.activity_cadastrar_agendamento)
+                    (activity as NavigationHost).navigateTo(
+                        SchedulesActivity(), addToBackStack = true,
+                        R.layout.activity_register_schedule
+                    )
                     true
                 }
                 R.id.layout_cadastrar -> {
-                    (activity as NavigationHost).navigateTo(CadastrarMenuActivity(), addToBackStack = true,
-                    R.layout.activity_cadastro_menu)
+                    (activity as NavigationHost).navigateTo(
+                        RegistrationMenuActivity(), addToBackStack = true,
+                        R.layout.activity_registration_menu
+                    )
                     true
                 }
                 else -> false
@@ -70,21 +79,21 @@ class NavBarBottom : Fragment() {
         }
     }
 
-    fun filter(item:MenuData): Int{
+    fun filter(item: MenuData): Int {
         return when (item.setPage) {
-             R.layout.activity_home -> {
+            R.layout.activity_home -> {
                 R.id.layout_home
             }
-             R.layout.activity_salas -> {
-                 R.id.layout_salas
+            R.layout.activity_rooms -> {
+                R.id.layout_salas
             }
-             R.layout.activity_equipamentos -> {
+            R.layout.activity_equipments -> {
                 R.id.layout_equipments
             }
-             R.layout.activity_cadastrar_agendamento -> {
+            R.layout.activity_register_schedule -> {
                 R.id.layout_agendar
             }
-             R.layout.activity_cadastro_menu -> {
+            R.layout.activity_registration_menu -> {
                 R.id.layout_cadastrar
             }
             else -> item.setBackLayout!!

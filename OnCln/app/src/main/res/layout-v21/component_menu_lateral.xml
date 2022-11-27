@@ -30,6 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="@dimen/dimen_medium_16"
             android:src="@drawable/ic_logo_empresa"
+            android:backgroundTint="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -43,11 +44,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/img_logo">
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
                 android:layout_width="@dimen/dimen_large_60"
                 android:layout_height="@dimen/dimen_large_60"
-                android:layout_marginHorizontal="@dimen/dimen_large_24"
-                tools:src="@drawable/ic_nav_bar" />
+                android:layout_marginHorizontal="@dimen/dimen_large_36"
+                tools:src="@drawable/ic_nav_bar"/>
 
             <TextView
                 android:layout_width="wrap_content"

@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <dimen name="dimen_small_2">2dp</dimen>
     <dimen name="dimen_small_4">4dp</dimen>
+    <dimen name="dimen_small_6">6dp</dimen>
     <dimen name="dimen_small_8">8dp</dimen>
     <dimen name="dimen_small_12">12dp</dimen>
+    <dimen name="dimen_small_14">14dp</dimen>
     <dimen name="dimen_medium_16">16dp</dimen>
     <dimen name="dimen_medium_18">18dp</dimen>
     <dimen name="dimen_medium_20">20dp</dimen>
     <dimen name="dimen_large_24">24dp</dimen>
     <dimen name="dimen_large_36">36dp</dimen>
+    <dimen name="dimen_large_40">40dp</dimen>
     <dimen name="dimen_large_50">50dp</dimen>
     <dimen name="dimen_large_60">60dp</dimen>
     <dimen name="dimen_large_90">90dp</dimen>
+    <dimen name="dimen_large_120">120dp</dimen>
     <dimen name="dimen_super_big_162">162dp</dimen>
     <dimen name="dimen_super_big_250">250dp</dimen>
     <dimen name="dimen_super_big_300">300dp</dimen>
@@ -19,10 +24,12 @@
 
     <dimen name="dimen_small_8_txt">8sp</dimen>
     <dimen name="dimen_small_12_txt">12sp</dimen>
+    <dimen name="dimen_small_14_txt">14sp</dimen>
     <dimen name="dimen_medium_16_txt">16sp</dimen>
     <dimen name="dimen_medium_18_txt">18sp</dimen>
     <dimen name="dimen_large_20_txt">20sp</dimen>
     <dimen name="dimen_large_24_txt">24sp</dimen>
+    <dimen name="dimen_large_28_txt">28sp</dimen>
     <dimen name="dimen_super_big_36_txt">36sp</dimen>
     <dimen name="fab_margin">16dp</dimen>
 

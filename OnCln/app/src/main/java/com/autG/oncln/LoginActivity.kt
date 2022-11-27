@@ -36,9 +36,9 @@ internal class LoginActivity : Fragment() {
         with(binding) {
             btnEntrar.setOnClickListener {
                 (activity as NavigationHost).navigateTo(
-                    HomeActivity(),
+                   HomeActivity(),
                     addToBackStack = false,
-                    R.layout.activity_editar_equipamento
+                    R.layout.activity_edit_equipment
                 )
             }
         }
@@ -70,7 +70,7 @@ internal class LoginActivity : Fragment() {
                         else -> {
                             Toast.makeText(
                                 context,
-                                "Login invalido",
+                                getText(R.string.txt_invalid_login),
                                 Toast.LENGTH_LONG
                             ).show()
                         }
@@ -78,7 +78,7 @@ internal class LoginActivity : Fragment() {
                 }
 
                 override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
-                    Toast.makeText(context, "Sistema fora do ar", Toast.LENGTH_LONG).show()
+                    Toast.makeText(context, getText(R.string.txt_offline_system), Toast.LENGTH_LONG).show()
 
                 }
             })

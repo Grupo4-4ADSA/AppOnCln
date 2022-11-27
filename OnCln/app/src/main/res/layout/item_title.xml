@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".CentralDeAjudaActivity">
+    tools:context=".HelpCenterActivity">
 
     <LinearLayout
         android:id="@+id/layout_padrao_titulo"
@@ -24,7 +24,7 @@
             android:layout_gravity="center"
             android:height="31dp"
             android:fontFamily="@font/readex_pro_medium"
-            android:textColor="@color/dark_blue"
+            android:textColor="?attr/colorSecondary"
             android:textSize="@dimen/dimen_large_24"
             tools:text="@string/text_example" />
 

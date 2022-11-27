@@ -2,41 +2,37 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/card"
     style="?attr/materialCardViewElevatedStyle"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
+    android:layout_margin="@dimen/dimen_small_4"
     app:cardCornerRadius="@dimen/dimen_medium_16"
     app:cardElevation="@dimen/dimen_small_8"
     app:strokeWidth="0dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/gray"
+        android:gravity="center|start"
         android:padding="@dimen/dimen_small_8">
 
         <ImageView
             android:id="@+id/img_icon"
-            android:layout_width="@dimen/dimen_large_60"
-            android:layout_height="@dimen/dimen_large_60"
-            android:src="@drawable/ic_meeting_room"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_meeting_room" />
 
         <LinearLayout
             android:id="@+id/layout_linear"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:orientation="vertical"
-            android:paddingHorizontal="@dimen/dimen_large_24"
-            app:layout_constraintStart_toEndOf="@+id/img_icon"
-            app:layout_constraintTop_toTopOf="parent">
+            android:paddingHorizontal="@dimen/dimen_small_4">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <TextView
@@ -44,55 +40,71 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/readex_pro_medium"
-                    android:textColor="@color/blue_secundary"
+                    android:textColor="@color/blue_secondary"
                     android:textSize="@dimen/dimen_medium_16_txt"
                     android:textStyle="bold"
-                    tools:text="@string/text_example_air_conditioning" />
+                    tools:text="@string/text_example_room" />
 
-                <ImageView
-                    android:id="@+id/icon_power"
-                    android:layout_width="@dimen/dimen_medium_18"
-                    android:layout_height="@dimen/dimen_medium_18"
-                    android:layout_marginStart="@dimen/dimen_small_8"
-                    android:background="@drawable/ic_power_black"
-                    tools:backgroundTint="@color/black" />
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end">
+
+                    <ImageView
+                        android:id="@+id/icon_power"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_small_8"
+                        android:background="@drawable/ic_power_black" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
 
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/txt_floor"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/readex_pro_medium"
-                android:textColor="@color/gray"
-                android:textSize="@dimen/dimen_medium_16_txt"
-                tools:text="@string/text_example_floor" />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_floor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/readex_pro_medium"
+                    android:textColor="@color/gray_tertiary"
+                    android:textSize="@dimen/dimen_small_14_txt"
+                    tools:text="@string/text_example_floor" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end">
+
+                    <Button
+                        android:id="@+id/botao_editar"
+                        style="@style/Botao.edit_delet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/dimen_small_4"
+                        android:backgroundTint="@color/gray_secondary"
+                        android:text="@string/txt_btn_edit"
+                        app:icon="@drawable/ic_edit" />
+
+                    <Button
+                        android:id="@+id/botao_excluir"
+                        style="@style/Botao.edit_delet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/red"
+                        android:text="@string/txt_btn_delete"
+                        app:icon="@drawable/ic_delete" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
         </LinearLayout>
 
-        <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="end"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageView
-                android:id="@+id/botao_editar"
-                android:layout_width="@dimen/dimen_medium_20"
-                android:layout_height="@dimen/dimen_medium_20"
-                android:layout_marginEnd="@dimen/dimen_small_8"
-                android:background="@drawable/ic_edit_delete" />
-
-            <ImageView
-                android:id="@+id/botao_excluir"
-                android:layout_width="@dimen/dimen_medium_20"
-                android:layout_height="@dimen/dimen_medium_20"
-                android:background="@drawable/ic_delete" />
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 
 </com.google.android.material.card.MaterialCardView>

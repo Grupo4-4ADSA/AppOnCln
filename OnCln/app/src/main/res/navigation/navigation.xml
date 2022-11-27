@@ -16,8 +16,8 @@
 
     <fragment
         android:id="@+id/fragment_cadastra_edita"
-        android:name="com.autG.oncln.CadastrarMenuActivity"
-        tools:layout="@layout/activity_cadastro_menu"></fragment>
+        android:name="com.autG.oncln.RegistrationMenuActivity"
+        tools:layout="@layout/activity_registration_menu"></fragment>
 
 
     <fragment

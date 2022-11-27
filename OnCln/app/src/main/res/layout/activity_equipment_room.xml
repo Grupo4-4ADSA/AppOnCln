@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bloco_padrao_titulo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_small_8">
+
+    <include
+        android:id="@+id/include_text_room"
+        layout="@layout/item_title" />
+
+    <include
+        android:id="@+id/include_text_floor"
+        layout="@layout/item_text_subtitle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/dimen_small_12"
+        android:paddingTop="@dimen/dimen_medium_20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_small_4"
+                android:textColor="@color/blue_secondary"
+                android:textSize="@dimen/dimen_large_20_txt"
+                android:textStyle="bold"
+                tools:text="@string/title_equipment_room" />
+
+            <include
+                android:id="@+id/botao_ligar_desligar"
+                layout="@layout/item_switch" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dimen_medium_16"
+            android:layout_marginBottom="@dimen/dimen_small_4"
+            android:textColor="@color/gray_tertiary"
+            android:textSize="@dimen/dimen_medium_18_txt"
+            android:textStyle="bold"
+            tools:text="@string/txt_total" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_list_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_large_24"
+                app:layout_constraintBottom_toTopOf="@+id/btn_plus"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:itemCount="4"
+                tools:listitem="@layout/item_list_equipments_room" />
+
+            <include
+                android:id="@+id/btn_plus"
+                layout="@layout/btn_mais" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+

@@ -11,13 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/dimen_medium_16"
-        android:padding="@dimen/dimen_medium_16"
+        android:padding="@dimen/dimen_small_14"
         android:paddingStart="@dimen/dimen_large_36"
         android:text="@string/text_example"
-        android:textSize="@dimen/dimen_large_24"
+        android:textSize="@dimen/dimen_large_20_txt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="?attr/colorSecondaryVariant"
         tools:icon="@drawable/ic_equipments" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
