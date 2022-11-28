@@ -10,7 +10,7 @@ object Rest {
 
     // Celular
     //Todo Colocar o ipv4 especifico da sua máquina (cmd + ipconfig)
-    val baseURL = "http://192.168.43.144:8002/"
+    val baseURL = "http://192.168.15.92:8002/"
 
     fun getInstance(): Retrofit {
         return Retrofit
