@@ -42,7 +42,6 @@ class RegisterEquipamentActivity : Fragment() {
         TransitionManager.beginDelayedTransition(container, Fade())
 //dialog
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

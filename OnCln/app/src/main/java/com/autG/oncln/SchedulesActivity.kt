@@ -36,7 +36,9 @@ internal class SchedulesActivity : Fragment() {
 
         binding.includeText.textTitulo.text = getText(R.string.title_input_scheduling)
 
-        binding.itemFiltros.botaoFiltroCadastrar.text =  getText(R.string.txt_btn_registers)
+
+        //TODO só deixar colorido quando o filtro estiver ativo
+        binding.itemFiltros.botaoFiltroCadastrar.text = getText(R.string.txt_btn_registers)
         binding.itemFiltros.botaoFiltroCadastrar.setBackgroundColor(
             ContextCompat.getColor(
                 requireContext(),
@@ -44,22 +46,22 @@ internal class SchedulesActivity : Fragment() {
             )
         )
 
-        binding.itemFiltros.botaoFiltroEmUso.text =  getText(R.string.txt_btn_in_use)
-        binding.itemFiltros.botaoFiltroEmUso.setBackgroundColor(
-            ContextCompat.getColor(
-                requireContext(),
-                R.color.blue_secondary
-            )
-        )
+        binding.itemFiltros.botaoFiltroEmUso.text = getText(R.string.txt_btn_in_use)
+        //binding.itemFiltros.botaoFiltroEmUso.setBackgroundColor(
+        //    ContextCompat.getColor(
+        //        requireContext(),
+        //        R.color.blue_secondary
+        //    )
+        //)
 
 
-        binding.itemFiltros.botaoFiltroOciosas.text =  getText(R.string.txt_btn_idle)
-        binding.itemFiltros.botaoFiltroOciosas.setBackgroundColor(
-            ContextCompat.getColor(
-                requireContext(),
-                R.color.green_primary
-            )
-        )
+        binding.itemFiltros.botaoFiltroOciosas.text = getText(R.string.txt_btn_idle)
+        //binding.itemFiltros.botaoFiltroOciosas.setBackgroundColor(
+        //    ContextCompat.getColor(
+        //        requireContext(),
+        //        R.color.green_primary
+        //    )
+        //)
 
         binding.recycleListRoom.layoutManager = LinearLayoutManager(context)
 

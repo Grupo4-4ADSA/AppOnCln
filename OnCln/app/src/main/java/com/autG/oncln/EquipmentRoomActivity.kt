@@ -38,34 +38,10 @@ internal class EquipmentRoomActivity : Fragment() {
     ): View? {
         binding = ActivityEquipmentRoomBinding.inflate(inflater, container, false)
 
-        binding.includeText.textTitulo.text = getText(R.string.title_equipaments)
+        //TODO colocar de acordo com a sala selecionada
+        binding.includeTextRoom.textTitulo.text = getText(R.string.text_example_room)
 
-        binding.includeText.textTitulo.text = getText(R.string.title_rooms)
-
-        binding.itemFiltros.botaoFiltroCadastrar.text = getText(R.string.txt_btn_registers)
-        binding.itemFiltros.botaoFiltroCadastrar.setBackgroundColor(
-            ContextCompat.getColor(
-                requireContext(),
-                R.color.purple_primary
-            )
-        )
-
-        binding.itemFiltros.botaoFiltroEmUso.text = getText(R.string.txt_btn_in_use)
-        binding.itemFiltros.botaoFiltroEmUso.setBackgroundColor(
-            ContextCompat.getColor(
-                requireContext(),
-                R.color.blue_secondary
-            )
-        )
-
-        binding.itemFiltros.botaoFiltroOciosas.text = getText(R.string.txt_btn_idle)
-        binding.itemFiltros.botaoFiltroOciosas.setBackgroundColor(
-            ContextCompat.getColor(
-                requireContext(),
-                R.color.green_primary
-            )
-        )
-
+        binding.includeTextFloor.textTitulo.text = getText(R.string.text_example_floor)
 
         binding.recycleListRoom.layoutManager =
             GridLayoutManager(
@@ -83,7 +59,6 @@ internal class EquipmentRoomActivity : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
 
     }
 

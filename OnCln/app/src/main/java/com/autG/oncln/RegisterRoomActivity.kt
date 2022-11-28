@@ -98,7 +98,8 @@ internal class RegisterRoomActivity : Fragment() {
                 }
 
                 override fun onFailure(call: Call<SalaResponse>, t: Throwable) {
-                    Toast.makeText(context, "Sem conexão com servidor", Toast.LENGTH_LONG).show()
+                    Toast.makeText(context, getText(R.string.txt_offline_system), Toast.LENGTH_LONG)
+                        .show()
                 }
             })
     }
