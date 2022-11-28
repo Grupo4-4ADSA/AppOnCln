@@ -1,5 +1,7 @@
 package com.autG.oncln
 
+import android.content.Context
+import android.content.res.Configuration
 import android.os.Bundle
 import android.transition.Fade
 import android.transition.TransitionManager
@@ -40,18 +42,26 @@ class SettingsActivity : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.botaoAlterarSenha.setOnClickListener {
-            janelaDeAlteracaoDeSenha()
-        }
-        binding.switchMode.switchMode.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-                (activity as NavigationHost).menuAction()
-                binding.textModoDark.text = "Light mode"
+
+        with(binding) {
+            if (context?.isDarkThemeOn() == true) {
+                textModoDark.text = "Light mode"
+                switchMode.switchMode.isChecked = true
             } else {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-                (activity as NavigationHost).menuAction()
-                binding.textModoDark.text = "Dark mode"
+                textModoDark.text = "Dark mode"
+            }
+            botaoAlterarSenha.setOnClickListener {
+                janelaDeAlteracaoDeSenha()
+            }
+
+            switchMode.switchMode.setOnCheckedChangeListener { _, isChecked ->
+                if (isChecked) {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                    (activity as NavigationHost).menuAction()
+                } else {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                    (activity as NavigationHost).menuAction()
+                }
             }
         }
 
@@ -92,6 +102,9 @@ class SettingsActivity : Fragment() {
                 Toast.makeText(requireContext(), "Cancelar", Toast.LENGTH_LONG).show()
             }
         }
+    }
+    fun Context.isDarkThemeOn(): Boolean{
+        return resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK == Configuration.UI_MODE_NIGHT_YES
     }
 
 }
