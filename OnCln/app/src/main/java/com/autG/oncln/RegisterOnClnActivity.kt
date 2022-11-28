@@ -92,7 +92,7 @@ class RegisterOnClnActivity : Fragment() {
         //Para fazer a requisição de um novo oncln, o backend exige informações completas,
         //ao inves de somente o id da sala, por isso essa forma de linkar temporaria
         val body = OnClnRequest(
-            sala = SalaRequest(roomName, floor = 1, predio = Predio()),
+            sala = SalaRequest(roomName),
             qrCode = qrCodeValue,
             ip = "12345"
         )
