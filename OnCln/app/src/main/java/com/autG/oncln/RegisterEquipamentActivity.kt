@@ -51,7 +51,7 @@ class RegisterEquipamentActivity : Fragment() {
 
         val authRequest = retrofit.create(Auth::class.java)
 
-        authRequest.requestRooms().enqueue(object : Callback<Rooms?> {
+        authRequest.requestRoomsToOnCln().enqueue(object : Callback<Rooms?> {
             override fun onResponse(
                 call: Call<Rooms?>, response: Response<Rooms?>
             ) {

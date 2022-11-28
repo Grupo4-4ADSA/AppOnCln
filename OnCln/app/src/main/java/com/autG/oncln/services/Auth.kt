@@ -24,4 +24,8 @@ interface Auth {
     @GET("/rooms/all/251")
     fun requestRooms():
             Call<Rooms>
+
+    @GET("/rooms/251")
+    fun requestRoomsToOnCln():
+            Call<Rooms>
 }
