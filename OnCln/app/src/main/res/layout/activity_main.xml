@@ -17,21 +17,12 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout="@layout/component_menu_lateral" />
 
-    <View
-        android:id="@+id/background_menu"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/black_transparent"
-        android:elevation="@dimen/dimen_small_8"
-        android:visibility="gone" />
-
     <ImageButton
         android:id="@+id/btn_menu_lateral"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dimen_medium_16"
         android:padding="@dimen/dimen_small_8"
-        android:visibility="gone"
         android:background="@color/transparent"
         android:elevation="@dimen/dimen_small_8"
         android:src="@drawable/ic_nav_bar"
@@ -59,7 +50,6 @@
             android:id="@+id/nav_fragment_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout="@layout/navbar_bottom" />

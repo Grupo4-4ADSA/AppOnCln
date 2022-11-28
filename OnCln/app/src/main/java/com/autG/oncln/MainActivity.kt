@@ -1,10 +1,9 @@
 package com.autG.oncln
 
-import android.content.res.Configuration
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.autG.oncln.dataClass.MenuData
@@ -12,6 +11,7 @@ import com.autG.oncln.databinding.ActivityMainBinding
 import com.autG.oncln.menus.EmptyScreen
 import com.autG.oncln.menus.NavBarBottom
 import com.autG.oncln.menus.NavigationBar
+import com.autG.oncln.services.Cache
 import com.autG.oncln.services.NavigationHost
 import java.util.*
 import kotlin.concurrent.schedule
@@ -21,7 +21,8 @@ class MainActivity : AppCompatActivity(), NavigationHost {
 
 
     private lateinit var binding: ActivityMainBinding
-    private lateinit var backScreen: MenuData
+    private var backScreen: MenuData = MenuData(R.layout.activity_home, R.layout.activity_home)
+    private lateinit var prefs: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,17 +30,31 @@ class MainActivity : AppCompatActivity(), NavigationHost {
         val view = binding.root
         setContentView(view)
 
-        if (savedInstanceState == null) {
+        prefs = getSharedPreferences("preferences", MODE_PRIVATE)
 
-            supportFragmentManager
-                .beginTransaction()
-                .add(R.id.nav_host_fragment_container, LoginActivity(), LoginActivity().toString())
-                .add(
-                    R.id.nav_fragment_container,
-                    setLayoutMenu(R.id.layout_home, R.layout.activity_home),
-                    "navbarBottom"
-                )
-                .commit()
+        val cacheLogin = prefs.getBoolean("user", false)
+
+        if (savedInstanceState == null) {
+            if (!cacheLogin) {
+
+                supportFragmentManager
+                    .beginTransaction()
+                    .add(
+                        R.id.nav_host_fragment_container,
+                        LoginActivity(),
+                        LoginActivity().toString()
+                    )
+                    .add(
+                        R.id.nav_fragment_container,
+                        setLayoutMenu(R.id.layout_home, R.layout.activity_home),
+                        "navbarBottom"
+                    )
+                    .commit()
+                binding.btnMenuLateral.visibility = View.GONE
+                binding.navFragmentContainer.visibility = View.GONE
+            } else {
+                navigateTo(HomeActivity(), false, R.layout.activity_home)
+            }
         }
 
         binding.btnMenuLateral.setOnClickListener {
@@ -47,13 +62,13 @@ class MainActivity : AppCompatActivity(), NavigationHost {
             binding.navMenuLateral.visibility = View.VISIBLE
             binding.btnMenuLateral.visibility = View.GONE
 
-            if (savedInstanceState == null) {
-                supportFragmentManager
-                    .beginTransaction()
-                    .replace(R.id.nav_menu_lateral, setLayoutMenuLeft(backScreen.setPage,backScreen.setBackLayout), "menuLateral")
-                    .commit()
-            }
+            supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.nav_menu_lateral, setLayoutMenuLeft(backScreen.setPage,backScreen.setBackLayout), "menuLateral")
+                .commit()
         }
+
+
     }
 
     fun setLayoutMenu(fragment: Int, back: Int?): NavBarBottom {
@@ -102,15 +117,19 @@ class MainActivity : AppCompatActivity(), NavigationHost {
             binding.navFragmentContainer.visibility = View.VISIBLE
             binding.btnMenuLateral.visibility = View.VISIBLE
         }
+        val edit = prefs.edit()
+        edit.putBoolean("user",true)
+        edit.apply()
+
         menuAction()
     }
 
     override fun menuAction() {
+
         supportFragmentManager
             .beginTransaction()
             .replace(R.id.nav_menu_lateral, EmptyScreen(), "menuLateral")
             .commit()
             binding.btnMenuLateral.visibility = View.VISIBLE
     }
-
 }

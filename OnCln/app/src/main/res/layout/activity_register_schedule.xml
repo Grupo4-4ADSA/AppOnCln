@@ -21,9 +21,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_medium_16"
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/title_input_room"
-            android:layout_marginTop="@dimen/dimen_medium_16"
             android:textColor="?attr/colorSecondaryVariant"
             android:textSize="@dimen/dimen_medium_18_txt" />
 
@@ -70,6 +70,7 @@
                 android:inputType="none"
                 android:paddingVertical="@dimen/dimen_small_4" />
         </com.google.android.material.textfield.TextInputLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -101,9 +102,10 @@
                         android:id="@+id/input_date_initial"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="?attr/colorTertiary"
+                        android:focusable="false"
                         android:hint="@string/hint_data"
                         android:inputType="number"
-                        android:focusable="false"
                         android:textSize="@dimen/dimen_small_12_txt" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -135,9 +137,10 @@
                         android:id="@+id/input_date_final"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="?attr/colorTertiary"
+                        android:focusable="false"
                         android:hint="@string/hint_data"
                         android:inputType="number"
-                        android:focusable="false"
                         android:textSize="@dimen/dimen_small_12_txt" />
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
@@ -161,6 +164,7 @@
                 android:id="@+id/input_function"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="?attr/colorTertiary"
                 android:hint="@string/hint_life"
                 android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -183,6 +187,7 @@
                 android:id="@+id/input_life"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="?attr/colorTertiary"
                 android:hint="@string/hint_life"
                 android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>

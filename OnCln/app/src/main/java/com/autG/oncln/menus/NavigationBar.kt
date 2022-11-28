@@ -1,5 +1,6 @@
 package com.autG.oncln.menus
 
+import android.app.Dialog
 import android.os.Bundle
 import android.transition.Slide
 import android.transition.TransitionManager
@@ -7,6 +8,7 @@ import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import com.autG.oncln.*
 import com.autG.oncln.SchedulesActivity
@@ -18,7 +20,7 @@ import com.autG.oncln.databinding.ComponentMenuLateralBinding
 import com.autG.oncln.services.NavigationHost
 import com.squareup.picasso.Picasso
 
-class NavigationBar : Fragment() {
+class NavigationBar : DialogFragment() {
 
     private lateinit var binding: ComponentMenuLateralBinding
     private lateinit var containerFragment: ViewGroup

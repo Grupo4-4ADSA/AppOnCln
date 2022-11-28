@@ -33,7 +33,7 @@
             android:fontFamily="@font/readex_pro_medium"
             android:paddingVertical="@dimen/dimen_medium_16"
             android:text="@string/title_login"
-            android:textColor="@color/blue_secundary"
+            android:textColor="?attr/colorOnSecondary"
             android:textSize="@dimen/dimen_large_24_txt" />
 
         <com.google.android.material.textfield.TextInputLayout

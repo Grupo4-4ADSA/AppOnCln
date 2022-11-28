@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import com.autG.oncln.databinding.ActivitySettingsBinding
 import com.autG.oncln.databinding.ActivitySettingsPopUpBinding
+import com.autG.oncln.services.NavigationHost
 import com.squareup.picasso.Picasso
 
 class SettingsActivity : Fragment() {
@@ -30,7 +31,7 @@ class SettingsActivity : Fragment() {
     ): View? {
         binding = ActivitySettingsBinding.inflate(inflater, container,false)
 
-        Picasso.get().load("http://servidordb.ddns.net:9651/profile/SteveProfile.png").into(binding.fotoGestor)
+        Picasso.get().load("http://servidordb.ddns.net:9651/profile/marcos@sptech.com.png").into(binding.fotoGestor)
         binding.includeText.textTitulo.text = getText(R.string.title_settings)
         TransitionManager.beginDelayedTransition(container, Fade())
 
@@ -42,19 +43,16 @@ class SettingsActivity : Fragment() {
         binding.botaoAlterarSenha.setOnClickListener {
             janelaDeAlteracaoDeSenha()
         }
-
-
-        binding.switchMode.switchMode.setOnClickListener {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-            binding.textModoDark.text = "Light mode"
-        }
-
-        if (binding.switchMode.switchMode.isChecked) {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-            binding.textModoDark.text = "Light mode"
-        } else {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-            binding.textModoDark.text = "Dark mode"
+        binding.switchMode.switchMode.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                (activity as NavigationHost).menuAction()
+                binding.textModoDark.text = "Light mode"
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                (activity as NavigationHost).menuAction()
+                binding.textModoDark.text = "Dark mode"
+            }
         }
 
     }
