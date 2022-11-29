@@ -1,11 +1,17 @@
 package com.autG.oncln
 
+import android.content.Context
+import android.content.res.Configuration
+import android.content.res.Configuration.UI_MODE_NIGHT_YES
+import android.content.res.Resources
+import android.os.Build
 import android.os.Bundle
 import android.transition.Fade
 import android.transition.TransitionManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.ContextCompat.getColor
 import androidx.fragment.app.Fragment
 import com.autG.oncln.databinding.ActivityHomeBinding
@@ -70,7 +76,24 @@ internal class HomeActivity : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         with(binding) {
+            if (context?.isDarkThemeOn() == true){
+                textModoDark.text = "Light mode"
+                switchMode.isChecked = true
+            }else{
+                textModoDark.text = "Dark mode"
+            }
+            switchMode.setOnCheckedChangeListener { _, isChecked ->
+                if (isChecked) {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                    (activity as NavigationHost).menuAction()
+                } else {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                    (activity as NavigationHost).menuAction()
+
+                }
+            }
             btnAgendamento.buttonBorder.setOnClickListener {
                 (activity as NavigationHost).navigateTo(SchedulesActivity(),addToBackStack = true,
                     R.layout.activity_schedules)
@@ -90,4 +113,7 @@ internal class HomeActivity : Fragment() {
         }
     }
 
+    fun Context.isDarkThemeOn(): Boolean{
+        return resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK == UI_MODE_NIGHT_YES
+    }
 }

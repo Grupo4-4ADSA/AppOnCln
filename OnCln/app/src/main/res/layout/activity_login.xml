@@ -33,7 +33,7 @@
             android:fontFamily="@font/readex_pro_medium"
             android:paddingVertical="@dimen/dimen_medium_16"
             android:text="@string/title_login"
-            android:textColor="@color/blue_secundary"
+            android:textColor="?attr/colorOnSecondary"
             android:textSize="@dimen/dimen_large_24_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -46,7 +46,7 @@
                 android:id="@+id/input_usuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?attr/colorOnPrimary"
+                android:background="?attr/colorTertiary"
                 android:hint="@string/title_input_user"
                 android:inputType="textEmailSubject"
                 android:outlineAmbientShadowColor="@color/transparent"
@@ -69,7 +69,7 @@
                 android:id="@+id/input_senha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?attr/colorOnPrimary"
+                android:background="?attr/colorTertiary"
                 android:hint="@string/title_input_password"
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>

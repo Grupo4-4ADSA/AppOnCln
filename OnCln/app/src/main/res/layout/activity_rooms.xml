@@ -43,6 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:background="@color/transparent"
         android:paddingHorizontal="@dimen/dimen_small_12">
 
         <TextView
@@ -50,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/dimen_small_4"
-            android:textColor="@color/blue_secondary"
+            android:textColor="?attr/colorSecondary"
             android:textSize="@dimen/dimen_large_20_txt"
             android:layout_marginVertical="@dimen/dimen_medium_16"
             android:textStyle="bold"
@@ -58,7 +59,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@color/transparent">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycle_list_room"

@@ -1,5 +1,7 @@
 package com.autG.oncln
 
+import android.content.Context
+import android.content.res.Configuration
 import android.os.Bundle
 import android.transition.Fade
 import android.transition.TransitionManager
@@ -10,9 +12,11 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import com.autG.oncln.databinding.ActivitySettingsBinding
 import com.autG.oncln.databinding.ActivitySettingsPopUpBinding
+import com.autG.oncln.services.NavigationHost
 import com.squareup.picasso.Picasso
 
 class SettingsActivity : Fragment() {
@@ -29,7 +33,7 @@ class SettingsActivity : Fragment() {
     ): View? {
         binding = ActivitySettingsBinding.inflate(inflater, container,false)
 
-        Picasso.get().load("http://servidordb.ddns.net:9651/profile/SteveProfile.png").into(binding.fotoGestor)
+        Picasso.get().load("http://servidordb.ddns.net:9651/profile/marcos@sptech.com.png").into(binding.fotoGestor)
         binding.includeText.textTitulo.text = getText(R.string.title_settings)
         TransitionManager.beginDelayedTransition(container, Fade())
 
@@ -38,10 +42,28 @@ class SettingsActivity : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.botaoAlterarSenha.setOnClickListener {
-            janelaDeAlteracaoDeSenha()
-        }
 
+        with(binding) {
+            if (context?.isDarkThemeOn() == true) {
+                textModoDark.text = "Light mode"
+                switchMode.switchMode.isChecked = true
+            } else {
+                textModoDark.text = "Dark mode"
+            }
+            botaoAlterarSenha.setOnClickListener {
+                janelaDeAlteracaoDeSenha()
+            }
+
+            switchMode.switchMode.setOnCheckedChangeListener { _, isChecked ->
+                if (isChecked) {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                    (activity as NavigationHost).menuAction()
+                } else {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                    (activity as NavigationHost).menuAction()
+                }
+            }
+        }
 
     }
 
@@ -80,6 +102,9 @@ class SettingsActivity : Fragment() {
                 Toast.makeText(requireContext(), "Cancelar", Toast.LENGTH_LONG).show()
             }
         }
+    }
+    fun Context.isDarkThemeOn(): Boolean{
+        return resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK == Configuration.UI_MODE_NIGHT_YES
     }
 
 }

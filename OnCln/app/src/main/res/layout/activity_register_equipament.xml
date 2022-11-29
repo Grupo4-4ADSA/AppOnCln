@@ -31,7 +31,6 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/gray_quaternary"
             app:boxStrokeColor="@color/transparent"
             app:boxStrokeWidth="0dp">
 
@@ -39,7 +38,7 @@
                 android:id="@+id/select_room"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/black"
+                android:background="@color/gray_quaternary"
                 android:hint="@string/hint_room"
                 android:inputType="none"
                 android:paddingVertical="@dimen/dimen_small_4" />
@@ -59,16 +58,15 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:allowClickWhenDisabled="true"
             android:background="@color/gray_quaternary"
             app:boxStrokeColor="@color/transparent"
-            android:allowClickWhenDisabled="true"
             app:boxStrokeWidth="0dp">
 
             <AutoCompleteTextView
                 android:id="@+id/select_equipment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/black"
                 android:allowClickWhenDisabled="true"
                 android:hint="@string/hint_equipment_type"
                 android:inputType="none"
@@ -91,11 +89,13 @@
             app:boxStrokeWidthFocused="0dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/date_picker_actions"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="?attr/colorTertiary"
                 android:drawableRight="@drawable/ic_schedule"
-                android:hint="@string/hint_data"
-                android:inputType="datetime" />
+                android:focusable="false"
+                android:hint="@string/hint_data" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <LinearLayout
@@ -128,6 +128,7 @@
                         android:id="@+id/input_qtd"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="?attr/colorTertiary"
                         android:hint="@string/hint_amount"
                         android:inputType="number"
                         android:textSize="@dimen/dimen_small_12_txt" />
@@ -160,6 +161,7 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="?attr/colorTertiary"
                         android:hint="@string/hint_power"
                         android:inputType="number"
                         android:textSize="@dimen/dimen_small_12_txt" />
@@ -186,6 +188,7 @@
                 android:id="@+id/input_life"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="?attr/colorTertiary"
                 android:hint="@string/hint_life"
                 android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>

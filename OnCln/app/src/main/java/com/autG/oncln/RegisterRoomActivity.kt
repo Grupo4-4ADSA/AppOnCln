@@ -14,6 +14,7 @@ import com.autG.oncln.databinding.ActivityRegisterRoomBinding
 import com.autG.oncln.dtos.requests.Predio
 import com.autG.oncln.dtos.requests.SalaRequest
 import com.autG.oncln.services.Auth
+import com.google.android.material.textfield.MaterialAutoCompleteTextView
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -42,9 +43,18 @@ internal class RegisterRoomActivity : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val rooms = 15
+
+        var list = arrayOf<String>()
+        for (i in 0..rooms){
+            list += i.toString()
+        }
+
         with(binding) {
 
-            binding.btnQr.botaoAzul.setOnClickListener {
+            (textInputRoom.editText as? MaterialAutoCompleteTextView)?.setSimpleItems(list)
+
+            btnQr.botaoAzul.setOnClickListener {
                 cadastroSala()
             }
         }
@@ -55,6 +65,8 @@ internal class RegisterRoomActivity : Fragment() {
         //Todo Implementar a versão spinner futuramente
         val nomeAndar = binding.selectFloor.text.toString().toInt()
         val body = SalaRequest(nomeSala, nomeAndar, Predio(251))
+
+
 
         val registerRequest = retrofit
             .create(Auth::class.java)

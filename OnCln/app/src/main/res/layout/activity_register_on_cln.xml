@@ -33,15 +33,15 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/gray_quaternary"
-            app:boxStrokeColor="@color/transparent"
+            android:background="?attr/colorTertiary"
+            app:boxStrokeColor="?attr/colorTertiary"
             app:boxStrokeWidth="0dp">
 
             <AutoCompleteTextView
                 android:id="@+id/select_room"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/black"
+                android:background="@color/gray_quaternary"
                 android:hint="@string/hint_room"
                 android:inputType="none"
                 android:paddingVertical="@dimen/dimen_small_4" />
@@ -67,7 +67,7 @@
                 android:id="@+id/input_qr"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?attr/colorOnPrimary"
+                android:background="?attr/colorTertiary"
                 android:drawableRight="@drawable/ic_qr"
                 android:hint="@string/hint_qrcode"
                 android:inputType="textEmailSubject" />
