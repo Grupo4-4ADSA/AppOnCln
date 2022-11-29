@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/format_pop_up"
         android:orientation="vertical"
-        android:padding="10dp"
+        android:padding="@dimen/dimen_small_8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,8 +32,8 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/botao_cancelarAlteracao"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="@dimen/dimen_large_31"
+                android:layout_height="@dimen/dimen_large_31"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_gravity="center_vertical"
@@ -46,12 +46,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="20dp">
+            android:padding="@dimen/dimen_medium_20">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="@dimen/dimen_medium_16"
                 android:fontFamily="@font/readex_pro_medium"
                 android:text="@string/title_input_old_password"
                 android:textColor="@color/white"
@@ -65,7 +65,7 @@
                 android:fontFamily="@font/readex_pro_medium"
                 android:hint="@string/hint_new_password"
                 android:inputType="textPassword"
-                android:minHeight="48dp"
+                android:minHeight="@dimen/dimen_large_50"
                 android:textColor="@color/white"
                 android:textColorHighlight="@color/white"
                 android:textColorHint="@color/white"
@@ -89,7 +89,7 @@
                 android:fontFamily="@font/readex_pro_medium"
                 android:hint="@string/hint_new_password"
                 android:inputType="textPassword"
-                android:minHeight="48dp"
+                android:minHeight="@dimen/dimen_large_50"
                 android:textColor="@color/white"
                 android:textColorHint="@color/white"
                 android:textSize="14sp" />
@@ -111,7 +111,7 @@
                 android:fontFamily="@font/readex_pro_medium"
                 android:hint="@string/hint_new_password_again"
                 android:inputType="textPassword"
-                android:minHeight="48dp"
+                android:minHeight="@dimen/dimen_large_50"
                 android:textColor="@color/white"
                 android:textColorHint="@color/white"
                 android:textSize="14sp" />

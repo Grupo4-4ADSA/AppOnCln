@@ -8,7 +8,7 @@
     <Button
         android:id="@+id/botao_filtro"
         style="@style/Botao.item.lista"
-        android:layout_width="150dp"
+        android:layout_width="@dimen/dimen_large_150"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/dimen_small_4"
         android:gravity="center"

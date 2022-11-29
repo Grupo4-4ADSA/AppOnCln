@@ -6,7 +6,7 @@
     style="?attr/materialCardViewElevatedStyle"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
+    android:layout_margin="@dimen/dimen_small_8"
     app:cardCornerRadius="@dimen/dimen_medium_16"
     app:cardElevation="@dimen/dimen_small_8"
     app:strokeWidth="0dp">
@@ -30,7 +30,7 @@
 
                 <ImageView
                     android:id="@+id/img_icon"
-                    android:layout_width="40dp"
+                    android:layout_width="@dimen/dimen_large_40"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_air_conditioning"
                     app:layout_constraintStart_toStartOf="parent"

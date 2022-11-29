@@ -39,8 +39,8 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:boxStrokeWidthFocused="0dp"
-            app:boxStrokeWidth="0dp">
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_usuario"
@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:background="?attr/colorOnPrimary"
                 android:hint="@string/title_input_user"
-                android:inputType="textEmailAddress"/>
+                android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <View
@@ -59,8 +59,8 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:boxStrokeWidthFocused="0dp"
-            app:boxStrokeWidth="0dp">
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_senha"
@@ -104,7 +104,7 @@
                 android:orientation="horizontal">
 
                 <View
-                    android:layout_width="1dp"
+                    android:layout_width="@dimen/dimen_small_1"
                     android:layout_height="5dp"
                     android:layout_marginEnd="@dimen/dimen_small_8"
                     android:layout_weight="1"
@@ -121,8 +121,8 @@
                     android:textStyle="bold" />
 
                 <View
-                    android:layout_width="1dp"
-                    android:layout_height="5dp"
+                    android:layout_width="@dimen/dimen_small_1"
+                    android:layout_height="@dimen/dimen_small_4"
                     android:layout_marginStart="@dimen/dimen_small_8"
                     android:layout_weight="1"
                     android:background="@drawable/gradiente" />

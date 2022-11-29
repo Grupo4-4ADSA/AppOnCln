@@ -110,7 +110,7 @@ internal class SchedulesActivity : Fragment() {
                 }
 
                 override fun onFailure(call: Call<Rooms?>, t: Throwable) {
-                    Toast.makeText(context, "Sistema fora do ar", Toast.LENGTH_LONG).show()
+                    Toast.makeText(context, getText(R.string.txt_offline_system), Toast.LENGTH_LONG).show()
 
                 }
             })

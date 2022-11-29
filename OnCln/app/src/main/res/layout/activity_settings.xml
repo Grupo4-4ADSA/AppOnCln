@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dimen_large_24"
         android:orientation="vertical"
-        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -78,10 +77,10 @@
                 tools:text="@string/txt_name_user" />
 
             <ImageView
-                android:layout_width="11dp"
-                android:layout_height="13dp"
+                android:layout_width="@dimen/dimen_small_12"
+                android:layout_height="@dimen/dimen_small_12"
                 android:layout_gravity="center_vertical"
-                android:layout_marginStart="3dp"
+                android:layout_marginStart="@dimen/dimen_small_2"
                 android:backgroundTint="@color/blue_secondary" />
         </LinearLayout>
 
