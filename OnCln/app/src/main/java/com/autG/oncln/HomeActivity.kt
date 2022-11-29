@@ -11,16 +11,29 @@ import android.transition.TransitionManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.ContextCompat.getColor
 import androidx.fragment.app.Fragment
+import com.autG.oncln.adapter.RoomAdapter
+import com.autG.oncln.api.Rest
 import com.autG.oncln.databinding.ActivityHomeBinding
+import com.autG.oncln.dtos.responses.Buildings
+import com.autG.oncln.dtos.responses.Rooms
+import com.autG.oncln.dtos.responses.RoomsItem
+import com.autG.oncln.services.Auth
 import com.autG.oncln.services.NavigationHost
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import java.util.ArrayList
 
 
 internal class HomeActivity : Fragment() {
 
     private lateinit var binding: ActivityHomeBinding
+    private lateinit var arrayList: ArrayList<Buildings>
+    private val retrofit = Rest.getInstance()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -78,10 +91,10 @@ internal class HomeActivity : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         with(binding) {
-            if (context?.isDarkThemeOn() == true){
+            if (context?.isDarkThemeOn() == true) {
                 textModoDark.text = "Light mode"
                 switchMode.isChecked = true
-            }else{
+            } else {
                 textModoDark.text = "Dark mode"
             }
             switchMode.setOnCheckedChangeListener { _, isChecked ->
@@ -95,25 +108,65 @@ internal class HomeActivity : Fragment() {
                 }
             }
             btnAgendamento.buttonBorder.setOnClickListener {
-                (activity as NavigationHost).navigateTo(SchedulesActivity(),addToBackStack = true,
-                    R.layout.activity_schedules)
+                (activity as NavigationHost).navigateTo(
+                    SchedulesActivity(), addToBackStack = true,
+                    R.layout.activity_schedules
+                )
             }
             btnCadastrar.buttonBorder.setOnClickListener {
-                (activity as NavigationHost).navigateTo(RegistrationMenuActivity(),addToBackStack = true,
-                    R.layout.activity_registration_menu)
+                (activity as NavigationHost).navigateTo(
+                    RegistrationMenuActivity(), addToBackStack = true,
+                    R.layout.activity_registration_menu
+                )
             }
             btnConsumo.buttonBorder.setOnClickListener {
-                (activity as NavigationHost).navigateTo(EquipmentConsumptionActivity(),addToBackStack = true,
-                    R.layout.activity_equipment_consumption)
+                (activity as NavigationHost).navigateTo(
+                    EquipmentConsumptionActivity(), addToBackStack = true,
+                    R.layout.activity_equipment_consumption
+                )
             }
             btnSalas.buttonBorder.setOnClickListener {
-                (activity as NavigationHost).navigateTo(RoomsActivity(),addToBackStack = true,
-                    R.layout.activity_rooms)
+                (activity as NavigationHost).navigateTo(
+                    RoomsActivity(), addToBackStack = true,
+                    R.layout.activity_rooms
+                )
             }
         }
     }
 
-    fun Context.isDarkThemeOn(): Boolean{
+    fun Context.isDarkThemeOn(): Boolean {
         return resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK == UI_MODE_NIGHT_YES
+    }
+
+    fun getData() {
+
+        val authRequest = retrofit
+            .create(Auth::class.java)
+
+        authRequest.requestBuildings().enqueue(
+            object : Callback<Buildings?> {
+                override fun onResponse(
+                    call: Call<Buildings?>,
+                    response: Response<Buildings?>
+                ) {
+                    if (response.isSuccessful) {
+
+                        response.body()?.forEach {
+                            arrayList.add(it)
+                        }
+                    } else {
+                        Toast.makeText(
+                            requireContext(),
+                            "Falha ao carregar salas",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
+                }
+
+                override fun onFailure(call: Call<Rooms?>, t: Throwable) {
+                    Toast.makeText(context, "Sistema fora do ar", Toast.LENGTH_LONG).show()
+
+                }
+            })
     }
 }

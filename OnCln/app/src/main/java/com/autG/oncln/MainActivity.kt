@@ -19,7 +19,6 @@ import kotlin.concurrent.schedule
 
 class MainActivity : AppCompatActivity(), NavigationHost {
 
-
     private lateinit var binding: ActivityMainBinding
     private var backScreen: MenuData = MenuData(R.layout.activity_home, R.layout.activity_home)
     private lateinit var prefs: SharedPreferences
