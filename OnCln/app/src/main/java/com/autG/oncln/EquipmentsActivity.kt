@@ -102,7 +102,7 @@ internal class EquipmentsActivity : Fragment() {
                     } else {
                         Toast.makeText(
                             requireContext(),
-                            "Falha ao carregar Agendamentos",
+                            getText(R.string.txt_offline_system),
                             Toast.LENGTH_SHORT
                         ).show()
                     }

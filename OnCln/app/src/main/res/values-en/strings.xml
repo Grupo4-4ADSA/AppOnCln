@@ -95,6 +95,8 @@
     <string name="text_confirm_delete">Are you sure you want to delete?</string>
     <string name="txt_btn_cancel">Cancel</string>
     <string name="text_example_air_conditioning">Air conditioning 1</string>
+    <string name="txt_answer_ok">Registered successfully</string>
+    <string name="txt_answer_error">Error when registering</string>
     <string name="text_example_id">Id:123</string>
     <string name="text_example_floor">Floor: 2nd</string>
     <string name="text_example_data_end">Final date: 28/03/2022</string>

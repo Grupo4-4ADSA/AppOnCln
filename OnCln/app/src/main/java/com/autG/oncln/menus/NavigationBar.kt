@@ -26,7 +26,7 @@ class NavigationBar : Fragment() {
     private lateinit var containerFragment: ViewGroup
     lateinit var data: MenuData
 
-    companion object{
+    companion object {
         fun newIntance() = NavigationBar()
     }
 
@@ -44,7 +44,8 @@ class NavigationBar : Fragment() {
         val data = arguments?.getSerializable("screen") as MenuData
         binding.navigationMenuView?.setCheckedItem(filter(data))
 
-        Picasso.get().load("http://servidordb.ddns.net:9651/profile/SteveProfile.png").into(binding.profileImage);
+        Picasso.get().load("http://servidordb.ddns.net:9651/profile/SteveProfile.png")
+            .into(binding.profileImage);
 
         return binding.root
     }
@@ -93,6 +94,13 @@ class NavigationBar : Fragment() {
                     )
                     true
                 }
+                R.id.layout_oncln -> {
+                    (activity as NavigationHost).navigateTo(
+                        OnclnsActivity(), addToBackStack = true,
+                        R.layout.activity_onclns
+                    )
+                    true
+                }
                 R.id.layout_consumo_equipments -> {
                     (activity as NavigationHost).navigateTo(
                         EquipmentConsumptionActivity(), addToBackStack = true,
@@ -129,7 +137,10 @@ class NavigationBar : Fragment() {
     override fun onPause() {
         super.onPause()
 
-        TransitionManager.beginDelayedTransition(containerFragment, Slide(Gravity.RIGHT).setDuration(300))
+        TransitionManager.beginDelayedTransition(
+            containerFragment,
+            Slide(Gravity.RIGHT).setDuration(300)
+        )
     }
 
     fun filter(item: MenuData): Int {
@@ -148,6 +159,9 @@ class NavigationBar : Fragment() {
             }
             R.layout.activity_equipments -> {
                 R.id.layout_equipments
+            }
+            R.layout.activity_onclns -> {
+                R.id.layout_oncln
             }
             R.layout.activity_equipment_consumption -> {
                 R.id.layout_consumo_equipments

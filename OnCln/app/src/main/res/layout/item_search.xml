@@ -23,7 +23,6 @@
             android:background="?attr/colorTertiary"
             android:padding="@dimen/dimen_small_4" />
 
-
     </com.google.android.material.textfield.TextInputLayout>
 
 
