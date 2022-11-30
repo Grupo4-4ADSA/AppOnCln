@@ -164,7 +164,11 @@ internal class HomeActivity : Fragment() {
                     if (response.isSuccessful) {
 
                         response.body()?.forEach {
-                            arrayList.add(it)
+                            val edit = prefs.edit()
+                            edit.putString ("predioNome",it.nomePredio)
+                            edit.putInt ("andares",it.andares)
+                            edit.putInt ("subsolos",it.subsolos)
+                            edit.apply()
                         }
 
                     } else {

@@ -49,11 +49,15 @@ internal class RegisterRoomActivity : Fragment() {
 
         prefs = requireContext().getSharedPreferences("preferences", AppCompatActivity.MODE_PRIVATE)
 
-        val rooms = prefs.getInt("idPredio" , 0)
+        val rooms = prefs.getInt("andares" , 0)
+        val subsolo = prefs.getInt("subsolos", 0)
 
         var list = arrayOf<String>()
         for (i in 0..rooms){
-            list += i.toString()
+            for (j in 0..subsolo){
+                list += "$j subsolor"
+            }
+            list += "$i andar"
         }
 
         with(binding) {
