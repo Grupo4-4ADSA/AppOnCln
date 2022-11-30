@@ -135,6 +135,8 @@ class MainActivity : AppCompatActivity(), NavigationHost, Cache {
 
     override fun insertData(string: String, any: Any) {
 
+        prefs = getSharedPreferences("preferences", MODE_PRIVATE)
+
         val userData: LoginResponse = any as LoginResponse
 
         val edit = prefs.edit()

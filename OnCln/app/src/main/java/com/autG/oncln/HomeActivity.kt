@@ -96,9 +96,7 @@ internal class HomeActivity : Fragment() {
 
         prefs = requireContext().getSharedPreferences("preferences", AppCompatActivity.MODE_PRIVATE)
 
-        if (prefs.getBoolean("user", true)) {
-            getData(prefs)
-        }
+        getData(prefs)
 
         with(binding) {
             if (context?.isDarkThemeOn() == true) {
@@ -165,11 +163,16 @@ internal class HomeActivity : Fragment() {
 
                         response.body()?.forEach {
                             val edit = prefs.edit()
-                            edit.putString ("predioNome",it.nomePredio)
-                            edit.putInt ("andares",it.andares)
-                            edit.putInt ("subsolos",it.subsolos)
+                            edit.putString("predioNome", it.nomePredio)
+                            edit.putInt("andares", it.andares)
+                            edit.putInt("subsolos", it.subsolos)
                             edit.apply()
                         }
+                        Toast.makeText(
+                            requireContext(),
+                            "Deu bom",
+                            Toast.LENGTH_SHORT
+                        ).show()
 
                     } else {
                         Toast.makeText(

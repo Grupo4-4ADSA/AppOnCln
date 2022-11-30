@@ -34,11 +34,11 @@ internal class RegisterRoomActivity : Fragment() {
     ): View? {
         binding = ActivityRegisterRoomBinding.inflate(inflater, container, false)
 
+        with(binding) {
+            includeText.textTitulo.text = getText(R.string.title_rooms)
 
-        binding.includeText.textTitulo.text = getText(R.string.title_rooms)
-
-        binding.btnQr.botaoAzul.text = getText(R.string.txt_register)
-
+            btnQr.botaoAzul.text = getText(R.string.txt_register)
+        }
         TransitionManager.beginDelayedTransition(container, Fade())
 
         return binding.root
@@ -47,17 +47,24 @@ internal class RegisterRoomActivity : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        prefs = requireContext().getSharedPreferences("preferences", AppCompatActivity.MODE_PRIVATE)
+        prefs =
+            requireActivity().getSharedPreferences("preferences", AppCompatActivity.MODE_PRIVATE)
 
-        val rooms = prefs.getInt("andares" , 0)
-        val subsolo = prefs.getInt("subsolos", 0)
+        val rooms = prefs.getInt("andares", 0)
+        val subsolo = prefs.getInt("subsolos", 0) - 1
 
         var list = arrayOf<String>()
-        for (i in 0..rooms){
-            for (j in 0..subsolo){
-                list += "$j subsolor"
+        if (subsolo > 0) {
+            for (j in 0..subsolo) {
+                list += "${j + 1}º subsolo"
             }
-            list += "$i andar"
+        }
+        for (i in 0..rooms) {
+            if (i == 0) {
+                list += "Terreo"
+            } else {
+                list += "${i}º andar"
+            }
         }
 
         with(binding) {
@@ -75,7 +82,6 @@ internal class RegisterRoomActivity : Fragment() {
         //Todo Implementar a versão spinner futuramente
         val nomeAndar = binding.selectFloor.text.toString().toInt()
         val body = SalaRequest(nomeSala, nomeAndar, Predio(251))
-
 
 
         val registerRequest = retrofit

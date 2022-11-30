@@ -14,6 +14,7 @@ import com.autG.oncln.api.Rest
 import com.autG.oncln.databinding.ActivityLoginBinding
 
 import com.autG.oncln.dtos.requests.LoginRequest
+import com.autG.oncln.services.Cache
 import com.autG.oncln.services.NavigationHost
 import retrofit2.Call
 import retrofit2.Callback
@@ -39,12 +40,7 @@ internal class LoginActivity : Fragment() {
 
         with(binding) {
             btnEntrar.setOnClickListener {
-
-                (activity as NavigationHost).navigateTo(
-                    HomeActivity(),
-                    addToBackStack = false,
-                    R.layout.activity_edit_equipment
-                )
+                trylogin()
             }
         }
     }
@@ -70,7 +66,7 @@ internal class LoginActivity : Fragment() {
                                 addToBackStack = false,
                                 R.layout.activity_home
                             )
-
+                            response.body()?.let { (activity as Cache).insertData("userData", it) }
                         }
 
                         else -> {
