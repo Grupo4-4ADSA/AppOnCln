@@ -5,6 +5,7 @@ import SalaResponse
 import com.autG.oncln.dtos.requests.LoginRequest
 import com.autG.oncln.dtos.requests.OnClnRequest
 import com.autG.oncln.dtos.requests.SalaRequest
+import com.autG.oncln.dtos.responses.Buildings
 import com.autG.oncln.dtos.responses.OnClnResponse
 import com.autG.oncln.dtos.responses.OnclnItem
 import com.autG.oncln.dtos.responses.Rooms
@@ -12,6 +13,7 @@ import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
+import retrofit2.http.Path
 
 interface Auth {
 
@@ -27,6 +29,10 @@ interface Auth {
     @GET("/rooms/all/251")
     fun requestRooms():
             Call<Rooms>
+
+    @GET("/predio/{idBuilding}")
+    fun requestBuildings(@Path("idBuilding") id: Int):
+            Call<Buildings>
 
 
     @POST("/clnboxex")
