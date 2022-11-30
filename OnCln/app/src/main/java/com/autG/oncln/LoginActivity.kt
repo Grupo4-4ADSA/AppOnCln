@@ -1,11 +1,13 @@
 package com.autG.oncln
 
 import LoginResponse
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.autG.oncln.services.Auth
 import com.autG.oncln.api.Rest
@@ -18,8 +20,10 @@ import retrofit2.Callback
 import retrofit2.Response
 
 internal class LoginActivity : Fragment() {
+
     private val retrofit = Rest.getInstance()
     private lateinit var binding: ActivityLoginBinding
+    private lateinit var prefs: SharedPreferences
 
     override fun onCreateView(
         inflater: LayoutInflater,

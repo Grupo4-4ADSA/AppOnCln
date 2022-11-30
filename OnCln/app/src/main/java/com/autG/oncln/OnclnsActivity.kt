@@ -12,9 +12,13 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.autG.oncln.adapter.OnClnAdapter
 import com.autG.oncln.adapter.RoomAdapter
 import com.autG.oncln.api.Rest
 import com.autG.oncln.databinding.ActivityOnclnsBinding
+import com.autG.oncln.dtos.requests.OnClnRequest
+import com.autG.oncln.dtos.responses.OnClnResponse
+import com.autG.oncln.dtos.responses.OnclnItem
 import com.autG.oncln.dtos.responses.Rooms
 import com.autG.oncln.dtos.responses.RoomsItem
 import com.autG.oncln.menus.NavBarBottom
@@ -27,7 +31,7 @@ import java.util.ArrayList
 internal class OnclnsActivity : Fragment() {
 
     private lateinit var binding: ActivityOnclnsBinding
-    private lateinit var arrayList: ArrayList<RoomsItem>
+    private lateinit var arrayList: ArrayList<OnclnItem>
     private val retrofit = Rest.getInstance()
 
     override fun onCreateView(
@@ -48,25 +52,25 @@ internal class OnclnsActivity : Fragment() {
         )
 
         binding.itemFiltros.botaoFiltroEmUso.text =  getText(R.string.txt_btn_in_use)
-        binding.itemFiltros.botaoFiltroEmUso.setBackgroundColor(
-            ContextCompat.getColor(
-                requireContext(),
-                R.color.blue_secondary
-            )
-        )
+        //binding.itemFiltros.botaoFiltroEmUso.setBackgroundColor(
+        //    ContextCompat.getColor(
+        //        requireContext(),
+        //        R.color.blue_secondary
+        //    )
+        //)
 
         binding.itemFiltros.botaoFiltroOciosas.text =  getText(R.string.txt_btn_idle)
-        binding.itemFiltros.botaoFiltroOciosas.setBackgroundColor(
-            ContextCompat.getColor(
-                requireContext(),
-                R.color.green_primary
-            )
-        )
+        //binding.itemFiltros.botaoFiltroOciosas.setBackgroundColor(
+        //    ContextCompat.getColor(
+        //        requireContext(),
+        //        R.color.green_primary
+        //    )
+        //)
 
         binding.recycleListRoom.layoutManager = LinearLayoutManager(context)
 
         arrayList = arrayListOf()
-        requestRooms()
+        requestOncln()
 
         TransitionManager.beginDelayedTransition(container, Fade())
 
@@ -75,18 +79,19 @@ internal class OnclnsActivity : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
     }
 
-    private fun requestRooms() {
+    private fun requestOncln() {
 
         val authRequest = retrofit
             .create(Auth::class.java)
 
-        authRequest.requestRooms().enqueue(
-            object : Callback<Rooms?> {
+        authRequest.requestOnclns().enqueue(
+            object : Callback<OnClnResponse> {
                 override fun onResponse(
-                    call: Call<Rooms?>,
-                    response: Response<Rooms?>
+                    call: Call<OnClnResponse?>,
+                    response: Response<OnClnResponse?>
                 ) {
                     if (response.isSuccessful) {
 
@@ -95,19 +100,18 @@ internal class OnclnsActivity : Fragment() {
                         response.body()?.forEach {
                             arrayList.add(it)
                         }
-                        binding.recycleListRoom.adapter = RoomAdapter(arrayList, "nha",requireContext()) { msg ->
-                            Toast.makeText(requireContext(), msg, Toast.LENGTH_LONG).show()
-                        }
+                        binding.recycleListRoom.adapter = OnClnAdapter(arrayList )
+
                     } else {
                         Toast.makeText(
                             requireContext(),
-                            "Falha ao carregar salas",
+                            "Falha ao carregar onclns",
                             Toast.LENGTH_SHORT
                         ).show()
                     }
                 }
 
-                override fun onFailure(call: Call<Rooms?>, t: Throwable) {
+                override fun onFailure(call: Call<OnClnResponse?>, t: Throwable) {
                     Toast.makeText(context, getText(R.string.txt_offline_system), Toast.LENGTH_LONG).show()
 
                 }

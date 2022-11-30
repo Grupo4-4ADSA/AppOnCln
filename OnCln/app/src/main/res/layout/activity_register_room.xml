@@ -37,7 +37,7 @@
                 android:id="@+id/input_name_room"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?attr/colorOnPrimary"
+                android:background="?attr/colorTertiary"
                 android:hint="@string/hint_name"
                 android:inputType="textEmailSubject" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -53,6 +53,7 @@
             android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_room"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

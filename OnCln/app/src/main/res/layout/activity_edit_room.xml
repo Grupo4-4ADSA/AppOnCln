@@ -37,7 +37,7 @@
                 android:id="@+id/input_name_room"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
+                android:background="?attr/colorTertiary"
                 android:hint="@string/hint_name"
                 android:inputType="textEmailSubject" />
         </com.google.android.material.textfield.TextInputLayout>

@@ -1,5 +1,6 @@
 package com.autG.oncln.menus
 
+import android.app.Dialog
 import android.os.Bundle
 import android.transition.Slide
 import android.transition.TransitionManager
@@ -7,6 +8,7 @@ import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import com.autG.oncln.*
 import com.autG.oncln.SchedulesActivity
@@ -24,7 +26,7 @@ class NavigationBar : Fragment() {
     private lateinit var containerFragment: ViewGroup
     lateinit var data: MenuData
 
-    companion object{
+    companion object {
         fun newIntance() = NavigationBar()
     }
 
@@ -42,7 +44,8 @@ class NavigationBar : Fragment() {
         val data = arguments?.getSerializable("screen") as MenuData
         binding.navigationMenuView?.setCheckedItem(filter(data))
 
-        Picasso.get().load("http://servidordb.ddns.net:9651/profile/SteveProfile.png").into(binding.profileImage);
+        Picasso.get().load("http://servidordb.ddns.net:9651/profile/SteveProfile.png")
+            .into(binding.profileImage);
 
         return binding.root
     }
@@ -91,6 +94,13 @@ class NavigationBar : Fragment() {
                     )
                     true
                 }
+                R.id.layout_oncln -> {
+                    (activity as NavigationHost).navigateTo(
+                        OnclnsActivity(), addToBackStack = true,
+                        R.layout.activity_onclns
+                    )
+                    true
+                }
                 R.id.layout_consumo_equipments -> {
                     (activity as NavigationHost).navigateTo(
                         EquipmentConsumptionActivity(), addToBackStack = true,
@@ -127,37 +137,43 @@ class NavigationBar : Fragment() {
     override fun onPause() {
         super.onPause()
 
-        TransitionManager.beginDelayedTransition(containerFragment, Slide(Gravity.RIGHT).setDuration(300))
+        TransitionManager.beginDelayedTransition(
+            containerFragment,
+            Slide(Gravity.RIGHT).setDuration(300)
+        )
     }
 
     fun filter(item: MenuData): Int {
         return when (item.setPage) {
-            R.id.layout_home -> {
-                R.layout.activity_home
+            R.layout.activity_home -> {
+                R.id.layout_home
             }
-            R.id.layout_cadastrar -> {
-                R.layout.activity_registration_menu
+            R.layout.activity_registration_menu -> {
+                R.id.layout_cadastrar
             }
-            R.id.layout_salas -> {
-                R.layout.activity_rooms
+            R.layout.activity_rooms -> {
+                R.id.layout_salas
             }
-            R.id.layout_agendar -> {
-                R.layout.activity_schedules
+            R.layout.activity_schedules -> {
+                R.id.layout_agendar
             }
-            R.id.layout_equipments -> {
-                R.layout.activity_equipments
+            R.layout.activity_equipments -> {
+                R.id.layout_equipments
             }
-            R.id.layout_consumo_equipments -> {
-                R.layout.activity_equipment_consumption
+            R.layout.activity_onclns -> {
+                R.id.layout_oncln
             }
-            R.id.layout_consumo -> {
-                R.layout.activity_consumption_summary
+            R.layout.activity_equipment_consumption -> {
+                R.id.layout_consumo_equipments
             }
-            R.id.layout_ajuda -> {
-                R.layout.activity_help_center
+            R.layout.activity_consumption_summary -> {
+                R.id.layout_consumo
             }
-            R.id.layout_configuracoes -> {
-                R.layout.activity_settings
+            R.layout.activity_help_center -> {
+                R.id.layout_ajuda
+            }
+            R.layout.activity_settings -> {
+                R.id.layout_configuracoes
             }
             else -> item.setBackLayout!!
         }

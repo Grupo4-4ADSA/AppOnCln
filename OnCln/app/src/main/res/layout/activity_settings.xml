@@ -21,31 +21,26 @@
             layout="@layout/item_underlined_title" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/bloco_img_gestor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bloco_padrao_titulo">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bloco_img_gestor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/dimen_small_8"
+            android:outlineAmbientShadowColor="@color/black"
+            android:outlineSpotShadowColor="@color/black"
+            app:cardCornerRadius="@dimen/dimen_large_120"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bloco_padrao_titulo">
 
-        <FrameLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_marginTop="@dimen/dimen_large_24">
-
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/foto_gestor"
-                android:layout_width="@dimen/dimen_super_big_250"
-                android:layout_height="@dimen/dimen_super_big_250"
-                android:layout_margin="@dimen/dimen_large_36"
-                tools:src="@drawable/ic_nav_bar"/>
-        </FrameLayout>
-
-    </LinearLayout>
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/foto_gestor"
+                    android:layout_width="@dimen/dimen_super_big_162"
+                    android:layout_height="@dimen/dimen_super_big_162"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dimen_medium_20"
+                    tools:src="@drawable/ic_nav_bar" />
+        </androidx.cardview.widget.CardView>
 
     <LinearLayout
         android:id="@+id/bloco_edicao_nome_gestor"
@@ -115,7 +110,9 @@
                 android:textColor="?attr/colorSecondaryVariant"
                 android:textSize="@dimen/dimen_medium_18_txt" />
 
-            <include layout="@layout/item_switch" />
+            <include
+                android:id="@+id/switch_mode"
+                layout="@layout/item_switch" />
         </LinearLayout>
 
         <TextView
@@ -130,8 +127,8 @@
     </LinearLayout>
 
     <ImageView
-        android:layout_width="@dimen/dimen_super_big_250"
-        android:layout_height="@dimen/dimen_super_big_162"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dimen_large_36"
         android:foregroundGravity="center_vertical"
         android:orientation="vertical"
