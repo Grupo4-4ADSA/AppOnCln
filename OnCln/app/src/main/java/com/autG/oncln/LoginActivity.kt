@@ -70,6 +70,7 @@ internal class LoginActivity : Fragment() {
                                 addToBackStack = false,
                                 R.layout.activity_home
                             )
+
                         }
 
                         else -> {
@@ -83,7 +84,8 @@ internal class LoginActivity : Fragment() {
                 }
 
                 override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
-                    Toast.makeText(context, getText(R.string.txt_offline_system), Toast.LENGTH_LONG).show()
+                    Toast.makeText(context, getText(R.string.txt_offline_system), Toast.LENGTH_LONG)
+                        .show()
 
                 }
             })

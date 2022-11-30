@@ -1,5 +1,6 @@
 package com.autG.oncln
 
+import LoginResponse
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
@@ -17,7 +18,7 @@ import java.util.*
 import kotlin.concurrent.schedule
 
 
-class MainActivity : AppCompatActivity(), NavigationHost {
+class MainActivity : AppCompatActivity(), NavigationHost, Cache {
 
     private lateinit var binding: ActivityMainBinding
     private var backScreen: MenuData = MenuData(R.layout.activity_home, R.layout.activity_home)
@@ -131,4 +132,17 @@ class MainActivity : AppCompatActivity(), NavigationHost {
             .commit()
             binding.btnMenuLateral.visibility = View.VISIBLE
     }
+
+    override fun insertData(string: String, any: Any) {
+
+        val userData: LoginResponse = any as LoginResponse
+
+        val edit = prefs.edit()
+        edit.putString ("userName",userData.nome)
+        edit.putInt ("userId",userData.idGestor)
+        edit.putInt ("idPredio",userData.idPredio)
+        edit.apply()
+
+    }
+
 }

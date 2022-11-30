@@ -1,6 +1,7 @@
 package com.autG.oncln
 
 import android.content.Context
+import android.content.SharedPreferences
 import android.content.res.Configuration
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import android.content.res.Resources
@@ -12,6 +13,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.ContextCompat.getColor
 import androidx.fragment.app.Fragment
@@ -19,6 +21,7 @@ import com.autG.oncln.adapter.RoomAdapter
 import com.autG.oncln.api.Rest
 import com.autG.oncln.databinding.ActivityHomeBinding
 import com.autG.oncln.dtos.responses.Buildings
+import com.autG.oncln.dtos.responses.BuildingsItem
 import com.autG.oncln.dtos.responses.Rooms
 import com.autG.oncln.dtos.responses.RoomsItem
 import com.autG.oncln.services.Auth
@@ -32,8 +35,9 @@ import java.util.ArrayList
 internal class HomeActivity : Fragment() {
 
     private lateinit var binding: ActivityHomeBinding
-    private lateinit var arrayList: ArrayList<Buildings>
+    private lateinit var arrayList: ArrayList<BuildingsItem>
     private val retrofit = Rest.getInstance()
+    private lateinit var prefs: SharedPreferences
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -90,6 +94,12 @@ internal class HomeActivity : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        prefs = requireContext().getSharedPreferences("preferences", AppCompatActivity.MODE_PRIVATE)
+
+        if (prefs.getBoolean("user", true)) {
+            getData(prefs)
+        }
+
         with(binding) {
             if (context?.isDarkThemeOn() == true) {
                 textModoDark.text = "Light mode"
@@ -138,12 +148,14 @@ internal class HomeActivity : Fragment() {
         return resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK == UI_MODE_NIGHT_YES
     }
 
-    fun getData() {
+    fun getData(prefs: SharedPreferences) {
+
+        val cacheLogin = prefs.getInt("idPredio", 0)
 
         val authRequest = retrofit
             .create(Auth::class.java)
 
-        authRequest.requestBuildings().enqueue(
+        authRequest.requestBuildings(cacheLogin).enqueue(
             object : Callback<Buildings?> {
                 override fun onResponse(
                     call: Call<Buildings?>,
@@ -154,17 +166,18 @@ internal class HomeActivity : Fragment() {
                         response.body()?.forEach {
                             arrayList.add(it)
                         }
+
                     } else {
                         Toast.makeText(
                             requireContext(),
-                            "Falha ao carregar salas",
+                            "Falha ao adquirir dados",
                             Toast.LENGTH_SHORT
                         ).show()
                     }
                 }
 
-                override fun onFailure(call: Call<Rooms?>, t: Throwable) {
-                    Toast.makeText(context, "Sistema fora do ar", Toast.LENGTH_LONG).show()
+                override fun onFailure(call: Call<Buildings?>, t: Throwable) {
+                    Toast.makeText(context, "Sem conexão com servidor", Toast.LENGTH_LONG).show()
 
                 }
             })
