@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity(), NavigationHost, Cache {
         val view = binding.root
         setContentView(view)
 
+      //aqui
         prefs = getSharedPreferences("preferences", MODE_PRIVATE)
 
         val cacheLogin = prefs.getBoolean("user", false)

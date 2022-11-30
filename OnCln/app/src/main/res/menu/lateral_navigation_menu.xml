@@ -32,6 +32,12 @@
         android:checkable="true"
         android:title="@string/title_equipaments" />
     <item
+        android:id="@+id/layout_oncln"
+        android:enabled="true"
+        android:icon="@drawable/ic_cashier_on_cln"
+        android:checkable="true"
+        android:title="@string/app_name" />
+    <item
         android:id="@+id/layout_consumo_equipments"
         android:enabled="true"
         android:icon="@drawable/ic_grafico"

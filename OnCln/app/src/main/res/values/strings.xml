@@ -72,6 +72,8 @@
     <string name="txt_btn_in_use">Em uso</string>
     <string name="txt_btn_edit">Editar</string>
     <string name="txt_btn_delete">Deletar</string>
+    <string name="txt_answer_ok">Cadastrado com sucesso</string>
+    <string name="txt_answer_error">Erro ao cadastrar</string>
     <string name="txt_btn_cancel">Cancelar</string>
     <string name="txt_btn_idle">Ociosas</string>
     <string name="txt_btn_registers">Cadastradas</string>
