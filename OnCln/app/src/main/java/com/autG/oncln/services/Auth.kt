@@ -2,10 +2,7 @@ package com.autG.oncln.services
 
 import LoginResponse
 import SalaResponse
-import com.autG.oncln.dtos.requests.Equipments
-import com.autG.oncln.dtos.requests.LoginRequest
-import com.autG.oncln.dtos.requests.OnClnRequest
-import com.autG.oncln.dtos.requests.SalaRequest
+import com.autG.oncln.dtos.requests.*
 import com.autG.oncln.dtos.responses.Buildings
 import com.autG.oncln.dtos.responses.OnClnResponse
 import com.autG.oncln.dtos.responses.OnclnItem
@@ -51,4 +48,8 @@ interface Auth {
     @POST("/equipments")
     fun equipments(@Body body: Equipments):
             Call<Equipments>
+
+    @POST("/agendamentos")
+    fun schedule(@Body body: Schedule):
+            Call<Schedule>
 }

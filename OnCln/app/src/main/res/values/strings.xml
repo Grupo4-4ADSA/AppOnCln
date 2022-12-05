@@ -34,7 +34,7 @@
     <string name="title_consumption_summary">Resumo de consumo</string>
     <string name="title_input_consuming_equipments">Consumo/Equipamentos</string>
     <string name="title_input_date_installation">Data de instalação:</string>
-    <string name="title_input_data_end">Data inicial:</string>
+    <string name="title_input_data_end">Data:</string>
     <string name="title_input_time">Horário:</string>
     <string name="title_input_data_start">Data final:</string>
     <string name="title_input_edit_equipment">Editar equipamento</string>
@@ -109,6 +109,8 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="text_on">ligar</string>
+    <string name="text_off">desligar</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>

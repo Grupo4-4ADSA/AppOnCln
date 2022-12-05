@@ -162,7 +162,6 @@ class RegisterEquipamentActivity : Fragment(), AdapterView.OnItemSelectedListene
 
         val clnboxId = ClnBox(listId[data].toInt())
         val typeEquipment = (binding.textFieldEquip.editText as? MaterialAutoCompleteTextView)?.text.toString()
-        val dateInstalation = binding.datePickerActions.text.toString()
         val qtdEquipment = binding.inputQtd.editText?.text.toString().toInt()
         val powerEquipment = binding.inputPower.editText?.text.toString().toInt()
         val life = binding.inputLife.editText?.text.toString().toInt()
