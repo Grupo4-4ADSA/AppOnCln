@@ -1,5 +1,6 @@
 package com.autG.oncln
 
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.transition.Fade
 import android.transition.TransitionManager
@@ -7,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
@@ -27,6 +29,7 @@ internal class RoomsActivity : Fragment() {
     private lateinit var binding: ActivityRoomsBinding
     private lateinit var arrayList: ArrayList<RoomsItem>
     private val retrofit = Rest.getInstance()
+    private lateinit var prefs: SharedPreferences
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -66,7 +69,10 @@ internal class RoomsActivity : Fragment() {
         binding.recycleListRoom.layoutManager = LinearLayoutManager(context)
 
         arrayList = arrayListOf()
-        requestRooms()
+        prefs = requireContext().getSharedPreferences("preferences", AppCompatActivity.MODE_PRIVATE)
+
+        val cacheLogin = prefs.getInt("idPredio", 0)
+        requestRooms(cacheLogin)
 
         TransitionManager.beginDelayedTransition(container, Fade())
 
@@ -75,15 +81,19 @@ internal class RoomsActivity : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        prefs = requireContext().getSharedPreferences("preferences", AppCompatActivity.MODE_PRIVATE)
+
+
+        val cacheLogin = prefs.getInt("idPredio", 0)
 
     }
 
-    private fun requestRooms() {
+    private fun requestRooms(cacheLogin: Int) {
 
         val authRequest = retrofit
             .create(Auth::class.java)
 
-        authRequest.requestRooms().enqueue(
+        authRequest.requestRooms(cacheLogin).enqueue(
             object : Callback<Rooms?> {
                 override fun onResponse(
                     call: Call<Rooms?>,

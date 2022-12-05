@@ -1,5 +1,6 @@
 package com.autG.oncln
 
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.transition.Fade
 import android.transition.TransitionManager
@@ -7,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -26,6 +28,7 @@ internal class SchedulesActivity : Fragment() {
     private lateinit var binding: ActivitySchedulesBinding
     private lateinit var arrayList: ArrayList<RoomsItem>
     private val retrofit = Rest.getInstance()
+    private lateinit var prefs: SharedPreferences
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -84,7 +87,11 @@ internal class SchedulesActivity : Fragment() {
         val authRequest = retrofit
             .create(Auth::class.java)
 
-        authRequest.requestRooms().enqueue(
+        prefs = requireContext().getSharedPreferences("preferences", AppCompatActivity.MODE_PRIVATE)
+
+        val cacheLogin = prefs.getInt("idPredio", 0)
+
+        authRequest.requestRooms(cacheLogin).enqueue(
             object : Callback<Rooms?> {
                 override fun onResponse(
                     call: Call<Rooms?>,
