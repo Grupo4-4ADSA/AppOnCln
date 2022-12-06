@@ -1,5 +1,6 @@
 package com.autG.oncln
 
+import android.annotation.SuppressLint
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.text.format.DateFormat.is24HourFormat
@@ -69,6 +70,7 @@ internal class RegisterSchedulesActivity : Fragment() {
         return binding.root
     }
 
+    @SuppressLint("Range")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 

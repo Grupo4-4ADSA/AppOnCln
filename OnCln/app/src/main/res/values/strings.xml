@@ -98,12 +98,12 @@
     <string name="text_confirm_delete">Tem certeza que deseja deletar?</string>
     <string name="text_example_id">Id:123</string>
     <string name="text_example_air_conditioning">Ar condicionado 1</string>
-    <string name="text_example_floor">Andar: 2º</string>
+    <string name="text_example_floor">Andar: </string>
     <string name="text_example_data_end" >Data final: 28/03/2022</string>
     <string name="text_example_data_start">Data inicial: 28/03/2022</string>
     <string name="text_example_time">Horário: 08:50</string>
     <string name="text_example_action">Ação: Ligar</string>
-    <string name="text_example_room">Sala de reuniões</string>
+    <string name="text_example_room">Sala</string>
     <string name="title_activity_equipamento_por_sala">EquipamentoPorSalaActivity</string>
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>

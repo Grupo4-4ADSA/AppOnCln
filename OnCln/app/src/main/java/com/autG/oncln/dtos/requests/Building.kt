@@ -6,5 +6,5 @@ data class Building(
     val idPredio: Int,
     val nomePredio: String,
     val empresa: Empresa,
-    val salas: ArrayList<RoomsRequest>,
+    val salas: ArrayList<SalaRequest>,
 )

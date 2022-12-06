@@ -3,15 +3,10 @@ package com.autG.oncln.services
 import LoginResponse
 import SalaResponse
 import com.autG.oncln.dtos.requests.*
-import com.autG.oncln.dtos.responses.Buildings
-import com.autG.oncln.dtos.responses.OnClnResponse
-import com.autG.oncln.dtos.responses.OnclnItem
-import com.autG.oncln.dtos.responses.Rooms
+import com.autG.oncln.dtos.responses.*
+import com.autG.oncln.dtos.responses.EquipmentsResponse
 import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.POST
-import retrofit2.http.Path
+import retrofit2.http.*
 
 interface Auth {
 
@@ -23,9 +18,12 @@ interface Auth {
     fun register(@Body body: SalaRequest):
             Call<SalaResponse>
 
-    //TODO mudar url no futuro colocar dinamica {idPredio}
     @GET("/rooms/all/{idBuilding}")
     fun requestRooms(@Path("idBuilding") id: Int):
+            Call<Rooms>
+
+    @GET("/rooms/apenas/salas/{idBuilding}")
+    fun requestRoomsWithoutCln(@Path("idBuilding") id: Int):
             Call<Rooms>
 
     @GET("/rooms/{idBuilding}")
@@ -35,7 +33,6 @@ interface Auth {
     @GET("/predio/{idBuilding}")
     fun requestBuildings(@Path("idBuilding") id: String):
             Call<Buildings>
-
 
     @POST("/clnboxex")
     fun registerOncln(@Body body: OnClnRequest):
@@ -52,4 +49,22 @@ interface Auth {
     @POST("/agendamentos")
     fun schedule(@Body body: Schedule):
             Call<Schedule>
+
+    @PUT("/rooms/{idRoom}")
+    fun editRooms(@Body body: RoomsRequest, @Path("idRoom") id: Int):
+            Call<Generic>
+
+    @DELETE("/rooms/{idRoom}")
+    fun deleteRooms(@Path("idRoom") id: Int):
+            Call<Generic>
+
+    @GET("/equipments/predio/{idBuilding}")
+    fun requestEquipments(@Path("idBuilding") id: Int):
+            Call<EquipmentResponse>
+
+    @GET("/equipments/{idRoom}")
+    fun requestEquipmentsRoom(@Path("idRoom") id: Int):
+            Call<EquipmentResponse>
+
+
 }
