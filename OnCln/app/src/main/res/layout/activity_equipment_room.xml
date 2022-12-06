@@ -33,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/dimen_small_4"
-                android:textColor="@color/blue_secondary"
+                android:textColor="?attr/colorSecondary"
                 android:textSize="@dimen/dimen_large_20_txt"
                 android:textStyle="bold"
                 tools:text="@string/title_equipment_room" />

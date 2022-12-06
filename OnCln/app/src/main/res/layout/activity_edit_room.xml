@@ -25,7 +25,7 @@
             android:drawableRight="@drawable/ic_info"
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/title_rooms"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorSecondaryVariant"
             android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -49,32 +49,31 @@
             android:fontFamily="@font/readex_pro_medium"
             android:paddingTop="@dimen/dimen_medium_16"
             android:text="@string/title_input_floor"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorSecondaryVariant"
             android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:boxStrokeColor="@color/transparent"
             android:background="@color/gray_quaternary"
             app:boxStrokeWidth="0dp">
 
-            <AutoCompleteTextView
-                android:id="@+id/select_floor"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_room"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/black"
-                android:hint="@string/hint_floor"
-                android:inputType="none"
-                android:paddingVertical="@dimen/dimen_small_4" />
+                android:background="?attr/colorTertiary"
+                android:focusable="false"
+                android:hint="@string/hint_name"
+                android:inputType="textEmailSubject" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
     </LinearLayout>
 
     <include
-        android:id="@+id/btn_qr"
+        android:id="@+id/btn_edit_room"
         layout="@layout/btn_blue" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

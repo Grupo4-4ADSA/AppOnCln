@@ -53,9 +53,11 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent">
 
-                    <include
+                    <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/botao_ligar_desligar"
-                        layout="@layout/item_switch" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
             </LinearLayout>
@@ -69,18 +71,18 @@
                 android:textSize="@dimen/dimen_medium_16_txt"
                 tools:text="@string/text_example_room" />
 
+            <TextView
+                android:id="@+id/txt_floor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/readex_pro_medium"
+                android:textColor="@color/gray_tertiary"
+                android:textSize="@dimen/dimen_medium_16_txt"
+                tools:text="@string/text_example_floor" />
+
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/txt_floor"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/readex_pro_medium"
-                    android:textColor="@color/gray_tertiary"
-                    android:textSize="@dimen/dimen_medium_16_txt"
-                    tools:text="@string/text_example_floor" />
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"

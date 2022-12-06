@@ -98,9 +98,10 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
-            <include
+            <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/botao_ligar_desligar"
-                layout="@layout/item_switch" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -148,7 +148,7 @@ internal class HomeActivity : Fragment() {
 
     fun getData(prefs: SharedPreferences) {
 
-        val cacheLogin = prefs.getInt("idPredio", 0)
+        val cacheLogin = prefs.getInt("idPredio", 0).toString()
 
         val authRequest = retrofit
             .create(Auth::class.java)
@@ -184,8 +184,7 @@ internal class HomeActivity : Fragment() {
                 }
 
                 override fun onFailure(call: Call<Buildings?>, t: Throwable) {
-                    Toast.makeText(context, "Sem conexão com servidor", Toast.LENGTH_LONG).show()
-
+                    Toast.makeText(requireContext(), "Sem conexão com servidor", Toast.LENGTH_LONG).show()
                 }
             })
     }

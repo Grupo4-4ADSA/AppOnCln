@@ -34,7 +34,7 @@
     <string name="title_consumption_summary">consumption summary</string>
     <string name="title_input_consuming_equipments">Consumption/Equipment</string>
     <string name="title_input_date_installation">Installation date:</string>
-    <string name="title_input_data_end">Initial date:</string>
+    <string name="title_input_data_end">date:</string>
     <string name="title_input_time">Time:</string>
     <string name="title_input_data_start">Final date:</string>
     <string name="title_input_edit_equipment">edit equipment</string>
@@ -109,6 +109,8 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="text_on">on</string>
+    <string name="text_off">off</string>
 
     <string name="hello_first_fragment">hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>

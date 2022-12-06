@@ -34,7 +34,7 @@
     <string name="title_consumption_summary">Resumo de consumo</string>
     <string name="title_input_consuming_equipments">Consumo/Equipamentos</string>
     <string name="title_input_date_installation">Data de instalação:</string>
-    <string name="title_input_data_end">Data inicial:</string>
+    <string name="title_input_data_end">Data:</string>
     <string name="title_input_time">Horário:</string>
     <string name="title_input_data_start">Data final:</string>
     <string name="title_input_edit_equipment">Editar equipamento</string>
@@ -98,17 +98,19 @@
     <string name="text_confirm_delete">Tem certeza que deseja deletar?</string>
     <string name="text_example_id">Id:123</string>
     <string name="text_example_air_conditioning">Ar condicionado 1</string>
-    <string name="text_example_floor">Andar: 2º</string>
+    <string name="text_example_floor">Andar: </string>
     <string name="text_example_data_end" >Data final: 28/03/2022</string>
     <string name="text_example_data_start">Data inicial: 28/03/2022</string>
     <string name="text_example_time">Horário: 08:50</string>
     <string name="text_example_action">Ação: Ligar</string>
-    <string name="text_example_room">Sala de reuniões</string>
+    <string name="text_example_room">Sala</string>
     <string name="title_activity_equipamento_por_sala">EquipamentoPorSalaActivity</string>
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="text_on">ligar</string>
+    <string name="text_off">desligar</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>

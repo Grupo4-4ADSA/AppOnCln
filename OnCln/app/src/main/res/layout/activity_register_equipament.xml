@@ -28,6 +28,7 @@
             android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_room"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -120,12 +121,12 @@
                     android:textSize="@dimen/dimen_medium_18_txt" />
 
                 <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_qtd"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:boxStrokeWidthFocused="0dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/input_qtd"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="?attr/colorTertiary"
@@ -180,12 +181,12 @@
             android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_life"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:boxStrokeWidthFocused="0dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/input_life"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="?attr/colorTertiary"
