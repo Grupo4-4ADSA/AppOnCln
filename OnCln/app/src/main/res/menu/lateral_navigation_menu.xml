@@ -34,7 +34,7 @@
     <item
         android:id="@+id/layout_oncln"
         android:enabled="true"
-        android:icon="@drawable/ic_cashier_on_cln"
+        android:icon="@drawable/ic_so_on"
         android:checkable="true"
         android:title="@string/app_name" />
     <item
