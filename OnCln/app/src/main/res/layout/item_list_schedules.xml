@@ -27,7 +27,7 @@
             android:paddingHorizontal="@dimen/dimen_small_4">
 
             <TextView
-                android:id="@+id/txt_title"
+                android:id="@+id/txt_room"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/readex_pro_medium"
@@ -68,15 +68,6 @@
                 android:textColor="@color/gray_tertiary"
                 android:textSize="@dimen/dimen_medium_16_txt"
                 tools:text="@string/text_example_data_start" />
-
-            <TextView
-                android:id="@+id/txt_data_end"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/readex_pro_medium"
-                android:textColor="@color/gray_tertiary"
-                android:textSize="@dimen/dimen_medium_16_txt"
-                tools:text="@string/text_example_data_end" />
 
             <TextView
                 android:id="@+id/txt_time"

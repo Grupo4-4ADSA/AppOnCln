@@ -88,7 +88,7 @@ class EditRoomActivity(val idRoom: Int,val floorItem: Int) : Fragment() {
                             Toast.makeText(
                                 context,
                                 //TODO Colocar depois o item resposta
-                                "Sala cadastrada com sucesso!",
+                                "Sala editada com sucesso!",
                                 Toast.LENGTH_LONG
                             ).show()
 
@@ -101,7 +101,7 @@ class EditRoomActivity(val idRoom: Int,val floorItem: Int) : Fragment() {
                         else -> {
                             Toast.makeText(
                                 context,
-                                "Não foi possivel cadastrar",
+                                "Não foi possivel editar",
                                 Toast.LENGTH_LONG
                             ).show()
                         }

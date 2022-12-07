@@ -121,12 +121,12 @@ internal class EquipmentsActivity : Fragment() {
                             requireContext(),
                             {id, floor ->
                                 //TODO colocar um desse para editar equipamento
-                                //(activity as NavigationHost).navigateTo(
-                                //    EditRoomActivity(id, floor), addToBackStack = true,
-                                //    R.layout.activity_rooms
-                                //)
+                                (activity as NavigationHost).navigateTo(
+                                    EditEquipmentActivity(id, floor), addToBackStack = true,
+                                    R.layout.activity_rooms
+                                )
                             },
-                            { idRoom, nameRoom ->
+                            { idEquipment, name ->
                                 MaterialAlertDialogBuilder(requireContext())
                                     .setTitle(resources.getString(R.string.txt_btn_delete))
                                     .setMessage(resources.getString(R.string.text_confirm_delete))
@@ -134,7 +134,7 @@ internal class EquipmentsActivity : Fragment() {
                                         dialog.cancel()
                                     }
                                     .setPositiveButton(resources.getString(R.string.txt_btn_delete)) { dialog, which ->
-                                        deleteRooms(idRoom)
+                                        deleteEquipment(idEquipment)
                                     }
                                     .show()
                             }
@@ -144,7 +144,7 @@ internal class EquipmentsActivity : Fragment() {
                     } else {
                         Toast.makeText(
                             requireContext(),
-                            "Falha ao carregar salas",
+                            "Falha ao carregar equipamentos",
                             Toast.LENGTH_SHORT
                         ).show()
                     }
@@ -155,12 +155,12 @@ internal class EquipmentsActivity : Fragment() {
             })
     }
 
-    private fun deleteRooms(id: Int) {
+    private fun deleteEquipment(id: Int) {
 
         val authRequest = retrofit
             .create(Auth::class.java)
 
-        authRequest.deleteRooms(id).enqueue(
+        authRequest.deleteEquipments(id).enqueue(
             object : Callback<Generic?> {
                 override fun onResponse(
                     call: Call<Generic?>,
@@ -168,16 +168,16 @@ internal class EquipmentsActivity : Fragment() {
                 ) {
                     if (response.isSuccessful) {
 
-                        Toast.makeText(requireContext(), "sala excluida com Sucesso", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(requireContext(), "Equipamento excluido com Sucesso", Toast.LENGTH_SHORT).show()
 
                         (activity as NavigationHost).navigateTo(
-                            RoomsActivity(), addToBackStack = true,
-                            R.layout.activity_rooms
+                            EquipmentsActivity(), addToBackStack = true,
+                            R.layout.activity_equipments
                         )
                     } else {
                         Toast.makeText(
                             requireContext(),
-                            "Falha ao carregar salas",
+                            "Falha deletar equipamento",
                             Toast.LENGTH_SHORT
                         ).show()
                     }

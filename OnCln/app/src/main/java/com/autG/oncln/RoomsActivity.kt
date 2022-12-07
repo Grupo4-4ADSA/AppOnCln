@@ -62,7 +62,6 @@ internal class RoomsActivity : Fragment() {
         //    )
         //)
 
-
         binding.itemFiltros.botaoFiltroOciosas.text = getText(R.string.txt_btn_idle)
         //binding.itemFiltros.botaoFiltroOciosas.setBackgroundColor(
         //    ContextCompat.getColor(
@@ -93,8 +92,6 @@ internal class RoomsActivity : Fragment() {
                 R.layout.activity_rooms
             )
         }
-
-
     }
 
     private fun requestRooms(cacheLogin: Int) {

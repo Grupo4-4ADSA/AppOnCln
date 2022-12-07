@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/dimen_medium_16">
+    android:padding="@dimen/dimen_medium_16"
+    tools:context=".MainActivity">
 
     <include
         android:id="@+id/include_text"
@@ -18,30 +19,26 @@
         app:layout_constraintTop_toBottomOf="@+id/include_text">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/dimen_medium_16"
             android:fontFamily="@font/readex_pro_medium"
-            android:text="@string/title_rooms"
-            android:textColor="@color/black"
+            android:text="@string/title_input_room"
+            android:textColor="?attr/colorSecondaryVariant"
             android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/gray_quaternary"
-            app:boxStrokeColor="@color/transparent"
-            app:boxStrokeWidth="0dp">
+            app:boxStrokeWidthFocused="0dp">
 
-            <AutoCompleteTextView
-                android:id="@+id/select_room"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_name_room"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="?attr/colorTertiary"
-                android:hint="@string/hint_room"
-                android:inputType="none"
-                android:paddingVertical="@dimen/dimen_small_4" />
+                android:focusable="false"
+                android:background="?attr/colorTertiary"
+                android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -50,7 +47,7 @@
             android:layout_marginTop="@dimen/dimen_small_8"
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/title_input_equipament_type"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorSecondaryVariant"
             android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -58,6 +55,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:allowClickWhenDisabled="true"
             android:background="@color/gray_quaternary"
             app:boxStrokeColor="@color/transparent"
             app:boxStrokeWidth="0dp">
@@ -66,10 +64,9 @@
                 android:id="@+id/select_equipment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="?attr/colorTertiary"
+                android:allowClickWhenDisabled="true"
                 android:hint="@string/hint_equipment_type"
                 android:inputType="none"
-                android:focusable="false"
                 android:paddingVertical="@dimen/dimen_small_4" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -79,7 +76,7 @@
             android:layout_marginTop="@dimen/dimen_small_8"
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/title_input_date_installation"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorSecondaryVariant"
             android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -89,12 +86,13 @@
             app:boxStrokeWidthFocused="0dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/date_picker_actions"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="?attr/colorTertiary"
                 android:drawableRight="@drawable/ic_schedule"
-                android:hint="@string/hint_data"
-                android:inputType="datetime" />
+                android:focusable="false"
+                android:hint="@string/hint_data" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <LinearLayout
@@ -115,16 +113,16 @@
                     android:layout_marginTop="@dimen/dimen_small_8"
                     android:fontFamily="@font/readex_pro_medium"
                     android:text="@string/title_input_amount"
-                    android:textColor="@color/black"
+                    android:textColor="?attr/colorSecondaryVariant"
                     android:textSize="@dimen/dimen_medium_18_txt" />
 
                 <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_qtd"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:boxStrokeWidthFocused="0dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/input_qtd"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="?attr/colorTertiary"
@@ -148,7 +146,7 @@
                     android:layout_marginTop="@dimen/dimen_small_8"
                     android:fontFamily="@font/readex_pro_medium"
                     android:text="@string/title_input_power"
-                    android:textColor="@color/black"
+                    android:textColor="?attr/colorSecondaryVariant"
                     android:textSize="@dimen/dimen_medium_18_txt" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -174,17 +172,17 @@
             android:layout_marginTop="@dimen/dimen_small_8"
             android:fontFamily="@font/readex_pro_medium"
             android:text="@string/title_input_life"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorSecondaryVariant"
 
             android:textSize="@dimen/dimen_medium_18_txt" />
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_life"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:boxStrokeWidthFocused="0dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/input_life"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="?attr/colorTertiary"

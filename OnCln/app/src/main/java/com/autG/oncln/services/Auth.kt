@@ -22,6 +22,10 @@ interface Auth {
     fun requestRooms(@Path("idBuilding") id: Int):
             Call<Rooms>
 
+    @GET("/agendamentos/predio/{idPredio}")
+    fun requestSchedules(@Path("idPredio") id: Int):
+            Call<Schedules>
+
     @GET("/rooms/apenas/salas/{idBuilding}")
     fun requestRoomsWithoutCln(@Path("idBuilding") id: Int):
             Call<Rooms>
@@ -66,5 +70,11 @@ interface Auth {
     fun requestEquipmentsRoom(@Path("idRoom") id: Int):
             Call<EquipmentResponse>
 
+    @DELETE("/equipments/{idEquipment}")
+    fun deleteEquipments(@Path("idEquipment") id: Int):
+            Call<Generic>
 
+    @PATCH("/equipments/{idEquipment}")
+    fun editEquipments(@Body body: EquipmentsRequest, @Path("idEquipment") id:Int):
+            Call<Generic>
 }

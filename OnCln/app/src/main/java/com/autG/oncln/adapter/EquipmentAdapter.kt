@@ -18,10 +18,12 @@ class EquipmentAdapter(
     private val dataSet: ArrayList<EquipmentsResponse>,
     val context: Context,
     onClick: (id: Int, nameRoom: String) -> Unit,
-    delete: (idRoom: Int, nameRoom: String) -> Unit
+    delete: (idRoom: Int, nameRoom: String) -> Unit,
+    action: (ip: String) -> Unit
 ) : RecyclerView.Adapter<EquipmentAdapter.ViewHolder>() {
     private val onClick = onClick
     private val delete = delete
+    private val action = action
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val imgIcon: ImageView
@@ -57,6 +59,13 @@ class EquipmentAdapter(
         holder.txtFloor.text = "andar: ${dataSet[position].clnBox.sala.floor}"
         holder.txtRoom.text = dataSet[position].clnBox.sala.name
         holder.switch.isChecked = dataSet[position].registro != null && dataSet[position].registro?.ligado == true
+        holder.imgIcon.setImageDrawable(ContextCompat.getDrawable(context,
+            when(dataSet[position].tipo.lowercase()){
+            "ar-condicionado", "ar condicionado" -> R.drawable.ic_air_conditioning
+            "conjunto de lâmpadas" -> R.drawable.ic_lamp
+                else -> R.drawable.ic_equipments
+            }
+        ))
         holder.btnEditar.setOnClickListener {
             onClick(dataSet[position].idEquipamento, dataSet[position].clnBox.sala.name)
         }
