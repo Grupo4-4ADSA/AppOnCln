@@ -19,7 +19,7 @@ class EquipmentAdapter(
     val context: Context,
     onClick: (id: Int, nameRoom: String) -> Unit,
     delete: (idRoom: Int, nameRoom: String) -> Unit,
-    action: (ip: String) -> Unit
+    action: (porta: Int, ip: String, action: String, id: Int) -> Unit
 ) : RecyclerView.Adapter<EquipmentAdapter.ViewHolder>() {
     private val onClick = onClick
     private val delete = delete
@@ -58,7 +58,8 @@ class EquipmentAdapter(
         holder.txtType.text = dataSet[position].tipo
         holder.txtFloor.text = "andar: ${dataSet[position].clnBox.sala.floor}"
         holder.txtRoom.text = dataSet[position].clnBox.sala.name
-        holder.switch.isChecked = dataSet[position].registro != null && dataSet[position].registro?.ligado == true
+        val action = dataSet[position].registro != null && dataSet[position].registro?.ligado == true
+        holder.switch.isChecked = action
         holder.imgIcon.setImageDrawable(ContextCompat.getDrawable(context,
             when(dataSet[position].tipo.lowercase()){
             "ar-condicionado", "ar condicionado" -> R.drawable.ic_air_conditioning
@@ -72,7 +73,13 @@ class EquipmentAdapter(
         holder.btnDelete.setOnClickListener {
             delete(dataSet[position].idEquipamento, dataSet[position].clnBox.sala.name)
         }
+        holder.switch.setOnClickListener {
+            if (action){
+                action(dataSet[position].porta, dataSet[position].clnBox.ip,"off", dataSet[position].idEquipamento)
+            }else{
+                action(dataSet[position].porta, dataSet[position].clnBox.ip,"on", dataSet[position].idEquipamento)
+            }
+        }
     }
-
 
 }

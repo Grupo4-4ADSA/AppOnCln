@@ -77,4 +77,13 @@ interface Auth {
     @PATCH("/equipments/{idEquipment}")
     fun editEquipments(@Body body: EquipmentsRequest, @Path("idEquipment") id:Int):
             Call<Generic>
+
+    @GET("/1/{action}={porta}")
+    fun requestAction(@Path("porta") porta: Int, @Path("action") action: String):
+            Call<clnAction>
+
+
+    @POST("/equipments/acao/{idEquipment}")
+    fun register(@Path("idEquipment") idEquipment: Int, @Body body: Register):
+            Call<RegistroResponse>
 }

@@ -1,6 +1,7 @@
 package com.autG.oncln.menus
 
 import android.app.Dialog
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.transition.Slide
 import android.transition.TransitionManager
@@ -8,6 +9,7 @@ import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import com.autG.oncln.*
@@ -24,6 +26,7 @@ class NavigationBar : Fragment() {
 
     private lateinit var binding: ComponentMenuLateralBinding
     private lateinit var containerFragment: ViewGroup
+    private lateinit var prefs: SharedPreferences
     lateinit var data: MenuData
 
     companion object {
@@ -39,19 +42,26 @@ class NavigationBar : Fragment() {
         if (container != null) {
             containerFragment = container
         }
-        TransitionManager.beginDelayedTransition(container, Slide(Gravity.RIGHT).setDuration(300))
 
         val data = arguments?.getSerializable("screen") as MenuData
         binding.navigationMenuView?.setCheckedItem(filter(data))
 
-        Picasso.get().load("http://servidordb.ddns.net:9651/profile/SteveProfile.png")
+        Picasso.get().load("http://servidordb.ddns.net:9651/profile/marcos@sptech.com.png")
             .into(binding.profileImage);
+
+        TransitionManager.beginDelayedTransition(container, Slide(Gravity.RIGHT).setDuration(300))
 
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        prefs = requireContext().getSharedPreferences("preferences", AppCompatActivity.MODE_PRIVATE)
+
+        val cacheName = prefs.getString("userName", "")
+
+        binding.txtUserName?.text = cacheName
 
         binding.viewVoid.setOnClickListener {
             (activity as NavigationHost).menuAction()
